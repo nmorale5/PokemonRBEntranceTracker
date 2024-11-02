@@ -1,24 +1,31 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import L from 'leaflet';
 
 function App() {
+  useEffect(() => {
+    const map = L.map('map').setView([.3600, .3600]);
+
+    const imageUrl = '/PokemonRedMapNoArrows.png';
+    const altText = 'Pokemon Red/Blue Map';
+    const latLngBounds = L.latLngBounds([[0, 0], [.7200, .7200]]);
+
+    const imageOverlay = L.imageOverlay(imageUrl, latLngBounds, {
+      alt: altText,
+      interactive: true
+    }).addTo(map);
+
+    map.fitBounds(latLngBounds);
+
+    return () => {
+      map.remove();
+    }
+  }, [])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div id="map"></div>
     </div>
   );
 }
