@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
-import logo from './logo.svg';
 import './App.css';
 import L from 'leaflet';
+import {readJsonFile} from "./util";
 
 function App() {
   useEffect(() => {
@@ -17,6 +17,26 @@ function App() {
     }).addTo(map);
 
     map.fitBounds(latLngBounds);
+
+    interface Entrance {
+      x: number,
+      y: number,
+      region: string,
+    }
+
+    async function renderWarps() {
+      const warps = await readJsonFile("/PokemonData/warps.json") as { from: Entrance, to: Entrance }[];
+      for (const warp of warps) {
+        L.marker([.7200 - warp.from.y / 10000, warp.from.x / 10000], {
+          title: `${warp.from.region} to ${warp.to.region}`
+        }).addTo(map);
+        L.marker([ .7200 - warp.to.y / 10000, warp.to.x / 10000], {
+          title: `${warp.to.region} to ${warp.from.region}`
+        }).addTo(map);
+      }
+    }
+
+    void renderWarps();
 
     return () => {
       map.remove();
