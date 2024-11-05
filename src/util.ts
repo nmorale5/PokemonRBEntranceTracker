@@ -6,5 +6,5 @@ export async function readJsonFile(filename: string): Promise<any> {
 }
 
 export function latLngFromPixelCoordinates(x: number, y: number): L.LatLng {
-  return L.latLng(.7200 - y / 10000, x / 10000);
+  return L.latLng(0.72 - y / 10000, x / 10000);
 }
