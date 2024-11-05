@@ -6862,5 +6862,245 @@
       "y": 3304,
       "region": "ViridianForest"
     }
+  },
+  {
+    "from": {
+      "x": 5360,
+      "y": 5512,
+      "region": "SilphCoElevator"
+    },
+    "to": {
+      "x": 5352,
+      "y": 5560,
+      "region": "SilphCo1F"
+    }
+  },
+  {
+    "from": {
+      "x": 5360,
+      "y": 5512,
+      "region": "SilphCoElevator"
+    },
+    "to": {
+      "x": 5352,
+      "y": 5880,
+      "region": "SilphCo2F"
+    }
+  },
+  {
+    "from": {
+      "x": 5360,
+      "y": 5512,
+      "region": "SilphCoElevator"
+    },
+    "to": {
+      "x": 5352,
+      "y": 6200,
+      "region": "SilphCo3F"
+    }
+  },
+  {
+    "from": {
+      "x": 5360,
+      "y": 5512,
+      "region": "SilphCoElevator"
+    },
+    "to": {
+      "x": 5352,
+      "y": 6520,
+      "region": "SilphCo4F"
+    }
+  },
+  {
+    "from": {
+      "x": 5360,
+      "y": 5512,
+      "region": "SilphCoElevator"
+    },
+    "to": {
+      "x": 5864,
+      "y": 6520,
+      "region": "SilphCo5F"
+    }
+  },
+  {
+    "from": {
+      "x": 5360,
+      "y": 5512,
+      "region": "SilphCoElevator"
+    },
+    "to": {
+      "x": 5832,
+      "y": 6200,
+      "region": "SilphCo6F"
+    }
+  },
+  {
+    "from": {
+      "x": 5360,
+      "y": 5512,
+      "region": "SilphCoElevator"
+    },
+    "to": {
+      "x": 5832,
+      "y": 5880,
+      "region": "SilphCo7F"
+    }
+  },
+  {
+    "from": {
+      "x": 5360,
+      "y": 5512,
+      "region": "SilphCoElevator"
+    },
+    "to": {
+      "x": 5832,
+      "y": 5560,
+      "region": "SilphCo8F"
+    }
+  },
+  {
+    "from": {
+      "x": 5360,
+      "y": 5512,
+      "region": "SilphCoElevator"
+    },
+    "to": {
+      "x": 6344,
+      "y": 5880,
+      "region": "SilphCo9F"
+    }
+  },
+  {
+    "from": {
+      "x": 5360,
+      "y": 5512,
+      "region": "SilphCoElevator"
+    },
+    "to": {
+      "x": 6248,
+      "y": 6120,
+      "region": "SilphCo10F"
+    }
+  },
+  {
+    "from": {
+      "x": 5360,
+      "y": 5512,
+      "region": "SilphCoElevator"
+    },
+    "to": {
+      "x": 6264,
+      "y": 6520,
+      "region": "SilphCo11F"
+    }
+  },
+  {
+    "from": {
+      "x": 5200,
+      "y": 5832,
+      "region": "SilphCo1F"
+    },
+    "to": {
+      "x": 4520,
+      "y": 2856,
+      "region": "SaffronCity"
+    }
+  },
+  {
+    "from": {
+      "x": 3072,
+      "y": 2376,
+      "region": "CeladonMartElevator"
+    },
+    "to": {
+      "x": 3160,
+      "y": 2376,
+      "region": "CeladonMart1F"
+    }
+  },
+  {
+    "from": {
+      "x": 3072,
+      "y": 2376,
+      "region": "CeladonMartElevator"
+    },
+    "to": {
+      "x": 3160,
+      "y": 2216,
+      "region": "CeladonMart2F"
+    }
+  },
+  {
+    "from": {
+      "x": 3072,
+      "y": 2376,
+      "region": "CeladonMartElevator"
+    },
+    "to": {
+      "x": 3160,
+      "y": 2056,
+      "region": "CeladonMart3F"
+    }
+  },
+  {
+    "from": {
+      "x": 3072,
+      "y": 2376,
+      "region": "CeladonMartElevator"
+    },
+    "to": {
+      "x": 3160,
+      "y": 1896,
+      "region": "CeladonMart4F"
+    }
+  },
+  {
+    "from": {
+      "x": 3072,
+      "y": 2376,
+      "region": "CeladonMartElevator"
+    },
+    "to": {
+      "x": 2808,
+      "y": 2120,
+      "region": "CeladonMart5F"
+    }
+  },
+  {
+    "from": {
+      "x": 3888,
+      "y": 3944,
+      "region": "RocketHideoutElevator"
+    },
+    "to": {
+      "x": 3216,
+      "y": 3912,
+      "region": "RocketHideoutB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 3888,
+      "y": 3944,
+      "region": "RocketHideoutElevator"
+    },
+    "to": {
+      "x": 3728,
+      "y": 3912,
+      "region": "RocketHideoutB2F"
+    }
+  },
+  {
+    "from": {
+      "x": 3888,
+      "y": 3944,
+      "region": "RocketHideoutElevator"
+    },
+    "to": {
+      "x": 3216,
+      "y": 4328,
+      "region": "RocketHideoutB4F"
+    }
   }
 ]
