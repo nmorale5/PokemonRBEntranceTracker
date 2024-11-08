@@ -1,1 +1,2013 @@
-{"Pallet Town": [{"from": "Pallet Town", "to": "Route 1", "func": [[]], "parameter": 0, "one_way": "False"}, {"from": "Pallet Town", "to": "Pallet/Viridian Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}, {"from": "Pallet Town", "to": "Old Rod Fishing", "func": [["old_rod"]], "parameter": 0, "one_way": "True"}, {"from": "Pallet Town", "to": "Good Rod Fishing", "func": [["good_rod"]], "parameter": 0, "one_way": "True"}, {"from": "Pallet Town", "to": "Route 21", "func": [["can_surf"]], "parameter": 0, "one_way": "False"}], "Route 1": [{"from": "Route 1", "to": "Viridian City", "func": [[]], "parameter": 0, "one_way": "False"}], "Viridian City": [{"from": "Viridian City", "to": "Route 22", "func": [[]], "parameter": 0, "one_way": "False"}, {"from": "Viridian City", "to": "Pallet/Viridian Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}, {"from": "Viridian City", "to": "Viridian City-N", "func": [["oak's_parcel", "old_man", "can_cut"]], "parameter": 0, "one_way": "False"}], "Route 22": [{"from": "Route 22", "to": "Route 22-F", "func": [["defeat_viridian_gym_giovanni"]], "parameter": 0, "one_way": "True"}, {"from": "Route 22", "to": "Route 22 Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}], "Route 2-SW": [{"from": "Route 2-SW", "to": "Route 2-Grass", "func": [[]], "parameter": 0, "one_way": "True"}, {"from": "Route 2-SW", "to": "Route 2-SE", "func": [["can_cut"]], "parameter": 0, "one_way": "False"}, {"from": "Route 2-SW", "to": "Viridian City-N", "func": [[]], "parameter": 0, "one_way": "False"}], "Route 2-NW": [{"from": "Route 2-NW", "to": "Route 2-Grass", "func": [[]], "parameter": 0, "one_way": "True"}, {"from": "Route 2-NW", "to": "Route 2-NE", "func": [["can_cut"]], "parameter": 0, "one_way": "False"}, {"from": "Route 2-NW", "to": "Pewter City", "func": [[]], "parameter": 0, "one_way": "False"}], "Route 22 Gate-S": [{"from": "Route 22 Gate-S", "to": "Route 22 Gate-N", "func": [["route_22_gate_badges"]], "parameter": 0, "one_way": "False"}], "Route 23-Grass": [{"from": "Route 23-Grass", "to": "Route 23-C", "func": [["victory_road_gate_badges"]], "parameter": 0, "one_way": "False"}, {"from": "Route 23-Grass", "to": "Route 23-S", "func": [["can_surf"]], "parameter": 0, "one_way": "False"}, {"from": "Route 23-Grass", "to": "Route 23/Cerulean Cave Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}], "Viridian City-N": [{"from": "Viridian City-N", "to": "Viridian City-G", "func": [["viridian_gym_badges"]], "parameter": 0, "one_way": "False"}], "Route 2-E": [{"from": "Route 2-E", "to": "Route 2-NE", "func": [["can_cut"]], "parameter": 0, "one_way": "False"}], "Pewter City": [{"from": "Pewter City", "to": "Pewter City-E", "func": [[]], "parameter": 0, "one_way": "False"}, {"from": "Pewter City", "to": "Pewter City-M", "func": [["can_cut"]], "parameter": 0, "one_way": "True"}], "Pewter City-M": [{"from": "Pewter City-M", "to": "Pewter City", "func": [[]], "parameter": 0, "one_way": "True"}], "Pewter City-E": [{"from": "Pewter City-E", "to": "Route 3", "func": [["route_3"]], "parameter": 0, "one_way": "True"}], "Route 3": [{"from": "Route 3", "to": "Pewter City-E", "func": [[]], "parameter": 0, "one_way": "True"}], "Route 4-W": [{"from": "Route 4-W", "to": "Route 3", "func": [[]], "parameter": 0, "one_way": "False"}], "Route 24": [{"from": "Route 24", "to": "Cerulean City-Water", "func": [["can_surf"]], "parameter": 0, "one_way": "False"}, {"from": "Route 24", "to": "Route 25", "func": [[]], "parameter": 0, "one_way": "False"}, {"from": "Route 24", "to": "Route 24/25/Cerulean/Cerulean Gym Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}], "Cerulean City-Water": [{"from": "Cerulean City-Water", "to": "Route 4-Lass", "func": [["can_surf"]], "parameter": 0, "one_way": "True"}, {"from": "Cerulean City-Water", "to": "Cerulean City-Cave", "func": [["cerulean_cave"]], "parameter": 0, "one_way": "False"}], "Mt Moon B2F": [{"from": "Mt Moon B2F", "to": "Mt Moon B2F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}], "Mt Moon B2F-NE": [{"from": "Mt Moon B2F-NE", "to": "Mt Moon B2F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}], "Mt Moon B2F-C": [{"from": "Mt Moon B2F-C", "to": "Mt Moon B2F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}], "Route 4-Lass": [{"from": "Route 4-Lass", "to": "Route 4-C", "func": [[]], "parameter": 0, "one_way": "True"}], "Route 4-C": [{"from": "Route 4-C", "to": "Route 4-E", "func": [[]], "parameter": 0, "one_way": "True"}], "Route 4-E": [{"from": "Route 4-E", "to": "Cerulean City", "func": [[]], "parameter": 0, "one_way": "False"}], "Cerulean City": [{"from": "Cerulean City", "to": "Route 24", "func": [[]], "parameter": 0, "one_way": "False"}, {"from": "Cerulean City", "to": "Cerulean City-T", "func": [["help_bill"]], "parameter": 0, "one_way": "False"}, {"from": "Cerulean City", "to": "Cerulean City-Outskirts", "func": [["can_cut"]], "parameter": 0, "one_way": "True"}, {"from": "Cerulean City", "to": "Route 24/25/Cerulean/Cerulean Gym Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}], "Cerulean City-Outskirts": [{"from": "Cerulean City-Outskirts", "to": "Cerulean City", "func": [[]], "parameter": 0, "one_way": "True"}, {"from": "Cerulean City-Outskirts", "to": "Route 9", "func": [["can_cut"]], "parameter": 0, "one_way": "False"}, {"from": "Cerulean City-Outskirts", "to": "Route 5", "func": [[]], "parameter": 0, "one_way": "False"}], "Cerulean Cave B1F": [{"from": "Cerulean Cave B1F", "to": "Cerulean Cave B1F-E", "func": [["can_surf"]], "parameter": 0, "one_way": "True"}, {"from": "Cerulean Cave B1F", "to": "Route 23/Cerulean Cave Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}], "Route 9": [{"from": "Route 9", "to": "Route 10-N", "func": [[]], "parameter": 0, "one_way": "False"}], "Route 10-N": [{"from": "Route 10-N", "to": "Route 10-C", "func": [["can_surf"]], "parameter": 0, "one_way": "False"}, {"from": "Route 10-N", "to": "Route 10/Celadon Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}], "Route 10-C": [{"from": "Route 10-C", "to": "Route 10-P", "func": [["plant_key", "!extra_key_items"]], "parameter": 0, "one_way": "False"}, {"from": "Route 10-C", "to": "Route 10/Celadon Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}], "Route 25": [{"from": "Route 25", "to": "Route 24/25/Cerulean/Cerulean Gym Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}], "Cerulean Gym": [{"from": "Cerulean Gym", "to": "Route 24/25/Cerulean/Cerulean Gym Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}], "Route 6": [{"from": "Route 6", "to": "Route 6/11/Vermilion/Dock Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}, {"from": "Route 6", "to": "Vermilion City", "func": [[]], "parameter": 0, "one_way": "False"}], "Route 11": [{"from": "Route 11", "to": "Route 6/11/Vermilion/Dock Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}, {"from": "Route 11", "to": "Route 11-C", "func": [["can_strength", "!extra_strength_boulders"]], "parameter": 0, "one_way": "False"}], "Vermilion City": [{"from": "Vermilion City", "to": "Route 6/11/Vermilion/Dock Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}, {"from": "Vermilion City", "to": "Vermilion City-G", "func": [["can_surf", "can_cut"]], "parameter": 0, "one_way": "False"}, {"from": "Vermilion City", "to": "Vermilion City-Dock", "func": [["ss_ticket"]], "parameter": 0, "one_way": "False"}, {"from": "Vermilion City", "to": "Route 11", "func": [[]], "parameter": 0, "one_way": "False"}], "Vermilion Dock": [{"from": "Vermilion Dock", "to": "Route 6/11/Vermilion/Dock Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}], "Celadon City": [{"from": "Celadon City", "to": "Route 10/Celadon Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}, {"from": "Celadon City", "to": "Celadon City-G", "func": [["can_cut"]], "parameter": 0, "one_way": "False"}, {"from": "Celadon City", "to": "Route 16-E", "func": [[]], "parameter": 0, "one_way": "False"}], "Safari Zone Center-NW": [{"from": "Safari Zone Center-NW", "to": "Safari Zone Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}, {"from": "Safari Zone Center-NW", "to": "Safari Zone Center-C", "func": [["can_surf"]], "parameter": 0, "one_way": "False"}, {"from": "Safari Zone Center-NW", "to": "Safari Zone Center-Wild", "func": [[]], "parameter": 0, "one_way": "True"}], "Safari Zone Center-NE": [{"from": "Safari Zone Center-NE", "to": "Safari Zone Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}, {"from": "Safari Zone Center-NE", "to": "Safari Zone Center-C", "func": [["can_surf"]], "parameter": 0, "one_way": "False"}, {"from": "Safari Zone Center-NE", "to": "Safari Zone Center-Wild", "func": [[]], "parameter": 0, "one_way": "True"}], "Safari Zone Center-S": [{"from": "Safari Zone Center-S", "to": "Safari Zone Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}, {"from": "Safari Zone Center-S", "to": "Safari Zone Center-C", "func": [["can_surf"]], "parameter": 0, "one_way": "False"}, {"from": "Safari Zone Center-S", "to": "Safari Zone Center-Wild", "func": [[]], "parameter": 0, "one_way": "True"}], "Safari Zone West": [{"from": "Safari Zone West", "to": "Safari Zone Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}, {"from": "Safari Zone West", "to": "Safari Zone West-Wild", "func": [[]], "parameter": 0, "one_way": "True"}], "Safari Zone West-NW": [{"from": "Safari Zone West-NW", "to": "Safari Zone Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}, {"from": "Safari Zone West-NW", "to": "Safari Zone West", "func": [["can_surf"]], "parameter": 0, "one_way": "False"}, {"from": "Safari Zone West-NW", "to": "Safari Zone West-Wild", "func": [[]], "parameter": 0, "one_way": "True"}], "Safari Zone East": [{"from": "Safari Zone East", "to": "Safari Zone Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}], "Safari Zone North": [{"from": "Safari Zone North", "to": "Safari Zone Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}], "Route 12-N": [{"from": "Route 12-N", "to": "Route 12/13/17/18 Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}, {"from": "Route 12-N", "to": "Route 12-S", "func": [["can_surf"]], "parameter": 0, "one_way": "False"}], "Route 12-S": [{"from": "Route 12-S", "to": "Route 12/13/17/18 Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}, {"from": "Route 12-S", "to": "Route 12-Grass", "func": [["can_cut"]], "parameter": 0, "one_way": "True"}, {"from": "Route 12-S", "to": "Route 13-E", "func": [[]], "parameter": 0, "one_way": "False"}], "Route 13": [{"from": "Route 13", "to": "Route 12/13/17/18 Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}, {"from": "Route 13", "to": "Route 13-Grass", "func": [["can_cut"]], "parameter": 0, "one_way": "True"}, {"from": "Route 13", "to": "Route 13-E", "func": [["can_strength", "can_surf", "!extra_strength_boulders"]], "parameter": 0, "one_way": "False"}], "Route 13-E": [{"from": "Route 13-E", "to": "Route 12/13/17/18 Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}], "Route 17": [{"from": "Route 17", "to": "Route 12/13/17/18 Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}, {"from": "Route 17", "to": "Route 16-SW", "func": [[]], "parameter": 0, "one_way": "False"}, {"from": "Route 17", "to": "Route 18-W", "func": [[]], "parameter": 0, "one_way": "False"}], "Route 18-W": [{"from": "Route 18-W", "to": "Route 12/13/17/18 Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}], "Route 21": [{"from": "Route 21", "to": "Sea Routes/Cinnabar/Seafoam Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}, {"from": "Route 21", "to": "Cinnabar Island", "func": [["can_surf"]], "parameter": 0, "one_way": "False"}], "Cinnabar Island": [{"from": "Cinnabar Island", "to": "Sea Routes/Cinnabar/Seafoam Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}, {"from": "Cinnabar Island", "to": "Cinnabar Island-G", "func": [["secret_key"]], "parameter": 0, "one_way": "False"}, {"from": "Cinnabar Island", "to": "Cinnabar Island-M", "func": [["mansion_key", "!extra_key_items"]], "parameter": 0, "one_way": "False"}], "Route 20-IW": [{"from": "Route 20-IW", "to": "Sea Routes/Cinnabar/Seafoam Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}], "Route 20-IE": [{"from": "Route 20-IE", "to": "Sea Routes/Cinnabar/Seafoam Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}, {"from": "Route 20-IE", "to": "Route 20-W", "func": [["can_surf"]], "parameter": 0, "one_way": "False"}], "Route 19-N": [{"from": "Route 19-N", "to": "Sea Routes/Cinnabar/Seafoam Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}, {"from": "Route 19-N", "to": "Route 19-S", "func": [["can_surf"]], "parameter": 0, "one_way": "False"}], "Seafoam Islands B3F": [{"from": "Seafoam Islands B3F", "to": "Sea Routes/Cinnabar/Seafoam Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}, {"from": "Seafoam Islands B3F", "to": "Seafoam Islands B3F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}, {"from": "Seafoam Islands B3F", "to": "Seafoam Islands B3F-SE", "func": [["can_surf"], ["can_strength"], ["seafoam_exit_boulder"]], "parameter": 6, "one_way": "False"}], "Seafoam Islands B4F": [{"from": "Seafoam Islands B4F", "to": "Sea Routes/Cinnabar/Seafoam Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}, {"from": "Seafoam Islands B4F", "to": "Seafoam Islands B4F-W", "func": [["can_surf"]], "parameter": 0, "one_way": "True"}], "Route 23-S": [{"from": "Route 23-S", "to": "Route 23/Cerulean Cave Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}], "Cerulean Cave 1F-SE": [{"from": "Cerulean Cave 1F-SE", "to": "Route 23/Cerulean Cave Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}, {"from": "Cerulean Cave 1F-SE", "to": "Cerulean Cave 1F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}, {"from": "Cerulean Cave 1F-SE", "to": "Cerulean Cave 1F-Water", "func": [["can_surf"]], "parameter": 0, "one_way": "False"}], "Cerulean Cave 1F-NE": [{"from": "Cerulean Cave 1F-NE", "to": "Route 23/Cerulean Cave Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}, {"from": "Cerulean Cave 1F-NE", "to": "Cerulean Cave 1F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}, {"from": "Cerulean Cave 1F-NE", "to": "Cerulean Cave 1F-Water", "func": [["can_surf"]], "parameter": 0, "one_way": "False"}], "Cerulean Cave 1F-N": [{"from": "Cerulean Cave 1F-N", "to": "Route 23/Cerulean Cave Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}, {"from": "Cerulean Cave 1F-N", "to": "Cerulean Cave 1F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}, {"from": "Cerulean Cave 1F-N", "to": "Cerulean Cave 1F-Water", "func": [["can_surf"]], "parameter": 0, "one_way": "False"}], "Cerulean Cave 1F-SW": [{"from": "Cerulean Cave 1F-SW", "to": "Route 23/Cerulean Cave Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}, {"from": "Cerulean Cave 1F-SW", "to": "Cerulean Cave 1F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}, {"from": "Cerulean Cave 1F-SW", "to": "Cerulean Cave 1F-Water", "func": [["can_surf"]], "parameter": 0, "one_way": "False"}], "Fuchsia City": [{"from": "Fuchsia City", "to": "Fuchsia Fishing", "func": [["super_rod"]], "parameter": 0, "one_way": "True"}, {"from": "Fuchsia City", "to": "Route 15-W", "func": [[]], "parameter": 0, "one_way": "False"}, {"from": "Fuchsia City", "to": "Route 18-E", "func": [[]], "parameter": 0, "one_way": "False"}, {"from": "Fuchsia City", "to": "Route 19-N", "func": [[]], "parameter": 0, "one_way": "False"}], "Cinnabar Lab Fossil Room": [{"from": "Cinnabar Lab Fossil Room", "to": "Fossil Level", "func": [["fossil_checks"]], "parameter": 1, "one_way": "True"}], "Route 5 Gate-N": [{"from": "Route 5 Gate-N", "to": "Route 5 Gate-S", "func": [["can_pass_guards"]], "parameter": 0, "one_way": "False"}], "Route 6 Gate-N": [{"from": "Route 6 Gate-N", "to": "Route 6 Gate-S", "func": [["can_pass_guards"]], "parameter": 0, "one_way": "False"}], "Route 7 Gate-W": [{"from": "Route 7 Gate-W", "to": "Route 7 Gate-E", "func": [["can_pass_guards"]], "parameter": 0, "one_way": "False"}], "Route 8 Gate-W": [{"from": "Route 8 Gate-W", "to": "Route 8 Gate-E", "func": [["can_pass_guards"]], "parameter": 0, "one_way": "False"}], "Saffron City": [{"from": "Saffron City", "to": "Route 5-S", "func": [[]], "parameter": 0, "one_way": "False"}, {"from": "Saffron City", "to": "Route 6-N", "func": [[]], "parameter": 0, "one_way": "False"}, {"from": "Saffron City", "to": "Route 7-E", "func": [[]], "parameter": 0, "one_way": "False"}, {"from": "Saffron City", "to": "Route 8-W", "func": [[]], "parameter": 0, "one_way": "False"}, {"from": "Saffron City", "to": "Saffron City-Copycat", "func": [["silph_co_liberated"]], "parameter": 0, "one_way": "False"}, {"from": "Saffron City", "to": "Saffron City-Pidgey", "func": [["silph_co_liberated"]], "parameter": 0, "one_way": "False"}, {"from": "Saffron City", "to": "Saffron City-G", "func": [["silph_co_liberated"]], "parameter": 0, "one_way": "False"}, {"from": "Saffron City", "to": "Saffron City-Silph", "func": [["fuji_saved"]], "parameter": 0, "one_way": "False"}], "Route 12-W": [{"from": "Route 12-W", "to": "Route 11-E", "func": [["poke_flute"]], "parameter": 0, "one_way": "False"}, {"from": "Route 12-W", "to": "Route 12-N", "func": [["poke_flute"]], "parameter": 0, "one_way": "False"}, {"from": "Route 12-W", "to": "Route 12-S", "func": [["poke_flute"]], "parameter": 0, "one_way": "False"}], "Route 12-L": [{"from": "Route 12-L", "to": "Lavender Town", "func": [[]], "parameter": 0, "one_way": "False"}], "Route 10-S": [{"from": "Route 10-S", "to": "Lavender Town", "func": [[]], "parameter": 0, "one_way": "False"}], "Route 8": [{"from": "Route 8", "to": "Lavender Town", "func": [[]], "parameter": 0, "one_way": "False"}, {"from": "Route 8", "to": "Route 8-Grass", "func": [["can_cut"]], "parameter": 0, "one_way": "True"}], "Pokemon Tower 6F": [{"from": "Pokemon Tower 6F", "to": "Pokemon Tower 6F-S", "func": [["silph_scope", "buy_poke_doll"], ["silph_scope", "poke_doll_skip"]], "parameter": 0, "one_way": "False"}], "Route 7": [{"from": "Route 7", "to": "Celadon City", "func": [[]], "parameter": 0, "one_way": "False"}], "Route 18 Gate 1F-W": [{"from": "Route 18 Gate 1F-W", "to": "Route 18 Gate 1F-E", "func": [["has_bicycle", "bicycle_skip"]], "parameter": 0, "one_way": "False"}], "Route 16 Gate 1F-W": [{"from": "Route 16 Gate 1F-W", "to": "Route 16 Gate 1F-E", "func": [["has_bicycle", "bicycle_skip"]], "parameter": 0, "one_way": "False"}], "Route 16-E": [{"from": "Route 16-E", "to": "Route 16-NE", "func": [["can_cut"]], "parameter": 0, "one_way": "False"}, {"from": "Route 16-E", "to": "Route 16-C", "func": [["poke_flute"]], "parameter": 0, "one_way": "False"}], "Safari Zone Gate-S": [{"from": "Safari Zone Gate-S", "to": "Safari Zone Gate-N", "func": [["safari_pass", "!extra_key_items"]], "parameter": 0, "one_way": "True"}], "Route 15": [{"from": "Route 15", "to": "Route 14", "func": [[]], "parameter": 0, "one_way": "False"}], "Route 14": [{"from": "Route 14", "to": "Route 15-N", "func": [["can_cut"]], "parameter": 0, "one_way": "True"}, {"from": "Route 14", "to": "Route 14-Grass", "func": [["can_cut"]], "parameter": 0, "one_way": "True"}, {"from": "Route 14", "to": "Route 13", "func": [[]], "parameter": 0, "one_way": "False"}], "Route 20-E": [{"from": "Route 20-E", "to": "Route 20-IW", "func": [["can_surf"]], "parameter": 0, "one_way": "False"}, {"from": "Route 20-E", "to": "Route 19-S", "func": [[]], "parameter": 0, "one_way": "False"}, {"from": "Route 20-E", "to": "Route 19/20-Water", "func": [[]], "parameter": 0, "one_way": "True"}], "Route 20-W": [{"from": "Route 20-W", "to": "Cinnabar Island", "func": [["can_surf"]], "parameter": 0, "one_way": "False"}, {"from": "Route 20-W", "to": "Route 19/20-Water", "func": [[]], "parameter": 0, "one_way": "True"}], "Route 19-S": [{"from": "Route 19-S", "to": "Route 19/20-Water", "func": [[]], "parameter": 0, "one_way": "True"}], "Victory Road 3F-S": [{"from": "Victory Road 3F-S", "to": "Victory Road 3F", "func": [["can_strength"]], "parameter": 0, "one_way": "False"}, {"from": "Victory Road 3F-S", "to": "Victory Road 3F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}], "Victory Road 3F-SE": [{"from": "Victory Road 3F-SE", "to": "Victory Road 3F-S", "func": [["can_strength"]], "parameter": 0, "one_way": "True"}, {"from": "Victory Road 3F-SE", "to": "Victory Road 3F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}], "Victory Road 3F": [{"from": "Victory Road 3F", "to": "Victory Road 3F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}], "Victory Road 2F-W": [{"from": "Victory Road 2F-W", "to": "Victory Road 2F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}, {"from": "Victory Road 2F-W", "to": "Victory Road 2F-C", "func": [["can_strength"]], "parameter": 0, "one_way": "True"}], "Victory Road 2F-NW": [{"from": "Victory Road 2F-NW", "to": "Victory Road 2F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}, {"from": "Victory Road 2F-NW", "to": "Victory Road 2F-W", "func": [["can_strength"]], "parameter": 0, "one_way": "True"}], "Victory Road 2F-C": [{"from": "Victory Road 2F-C", "to": "Victory Road 2F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}, {"from": "Victory Road 2F-C", "to": "Victory Road 2F-SE", "func": [["can_strength", "victory_road_boulder"]], "parameter": 0, "one_way": "True"}], "Victory Road 2F-E": [{"from": "Victory Road 2F-E", "to": "Victory Road 2F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}], "Victory Road 2F-SE": [{"from": "Victory Road 2F-SE", "to": "Victory Road 2F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}], "Victory Road 1F-S": [{"from": "Victory Road 1F-S", "to": "Victory Road 1F", "func": [["can_strength"]], "parameter": 0, "one_way": "False"}, {"from": "Victory Road 1F-S", "to": "Victory Road 1F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}], "Victory Road 1F": [{"from": "Victory Road 1F", "to": "Victory Road 1F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}], "Mt Moon B1F-W": [{"from": "Mt Moon B1F-W", "to": "Mt Moon B1F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}], "Mt Moon B1F-C": [{"from": "Mt Moon B1F-C", "to": "Mt Moon B1F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}], "Mt Moon B1F-NE": [{"from": "Mt Moon B1F-NE", "to": "Mt Moon B1F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}], "Mt Moon B1F-SE": [{"from": "Mt Moon B1F-SE", "to": "Mt Moon B1F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}], "Cerulean Cave 2F-N": [{"from": "Cerulean Cave 2F-N", "to": "Cerulean Cave 2F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}], "Cerulean Cave 2F-E": [{"from": "Cerulean Cave 2F-E", "to": "Cerulean Cave 2F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}], "Cerulean Cave 2F-W": [{"from": "Cerulean Cave 2F-W", "to": "Cerulean Cave 2F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}], "Seafoam Islands 1F": [{"from": "Seafoam Islands 1F", "to": "Seafoam Islands 1F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}], "Seafoam Islands 1F-SE": [{"from": "Seafoam Islands 1F-SE", "to": "Seafoam Islands 1F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}], "Seafoam Islands B1F": [{"from": "Seafoam Islands B1F", "to": "Seafoam Islands B1F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}], "Seafoam Islands B1F-SE": [{"from": "Seafoam Islands B1F-SE", "to": "Seafoam Islands B1F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}], "Seafoam Islands B1F-NE": [{"from": "Seafoam Islands B1F-NE", "to": "Seafoam Islands B1F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}], "Seafoam Islands B2F-NW": [{"from": "Seafoam Islands B2F-NW", "to": "Seafoam Islands B2F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}], "Seafoam Islands B2F-NE": [{"from": "Seafoam Islands B2F-NE", "to": "Seafoam Islands B2F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}], "Seafoam Islands B2F-SW": [{"from": "Seafoam Islands B2F-SW", "to": "Seafoam Islands B2F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}], "Seafoam Islands B2F-SE": [{"from": "Seafoam Islands B2F-SE", "to": "Seafoam Islands B2F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}], "Seafoam Islands B3F-NE": [{"from": "Seafoam Islands B3F-NE", "to": "Seafoam Islands B3F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}], "Seafoam Islands B3F-SE": [{"from": "Seafoam Islands B3F-SE", "to": "Seafoam Islands B3F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}], "Seafoam Islands B4F-W": [{"from": "Seafoam Islands B4F-W", "to": "Seafoam Islands B4F", "func": [[]], "parameter": 0, "one_way": "True"}], "Celadon Gym": [{"from": "Celadon Gym", "to": "Celadon Gym-C", "func": [["can_cut"]], "parameter": 0, "one_way": "True"}], "Celadon Game Corner": [{"from": "Celadon Game Corner", "to": "Celadon Game Corner-Hidden Stairs", "func": [["hideout_key", "!extra_key_items"]], "parameter": 0, "one_way": "True"}], "Celadon Game Corner-Hidden Stairs": [{"from": "Celadon Game Corner-Hidden Stairs", "to": "Celadon Game Corner", "func": [[]], "parameter": 0, "one_way": "True"}], "Rocket Hideout B1F-SE": [{"from": "Rocket Hideout B1F-SE", "to": "Rocket Hideout B1F", "func": [[]], "parameter": 0, "one_way": "True"}], "Indigo Plateau Lobby": [{"from": "Indigo Plateau Lobby", "to": "Indigo Plateau Lobby-N", "func": [["enter_elite_four"]], "parameter": 0, "one_way": "False"}], "Pokemon Mansion 3F": [{"from": "Pokemon Mansion 3F", "to": "Pokemon Mansion 3F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}, {"from": "Pokemon Mansion 3F", "to": "Pokemon Mansion 3F-SE", "func": [[]], "parameter": 0, "one_way": "True"}], "Pokemon Mansion 3F-SW": [{"from": "Pokemon Mansion 3F-SW", "to": "Pokemon Mansion 3F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}], "Pokemon Mansion 3F-SE": [{"from": "Pokemon Mansion 3F-SE", "to": "Pokemon Mansion 3F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}], "Pokemon Mansion 2F-E": [{"from": "Pokemon Mansion 2F-E", "to": "Pokemon Mansion 2F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}], "Pokemon Mansion 1F-SE": [{"from": "Pokemon Mansion 1F-SE", "to": "Pokemon Mansion 1F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}], "Pokemon Mansion 1F": [{"from": "Pokemon Mansion 1F", "to": "Pokemon Mansion 1F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}], "Rock Tunnel 1F-S 1": [{"from": "Rock Tunnel 1F-S 1", "to": "Rock Tunnel 1F-S", "func": [["rock_tunnel"]], "parameter": 0, "one_way": "False"}], "Rock Tunnel 1F-S 2": [{"from": "Rock Tunnel 1F-S 2", "to": "Rock Tunnel 1F-S", "func": [["rock_tunnel"]], "parameter": 0, "one_way": "False"}], "Rock Tunnel 1F-NW 1": [{"from": "Rock Tunnel 1F-NW 1", "to": "Rock Tunnel 1F-NW", "func": [["rock_tunnel"]], "parameter": 0, "one_way": "False"}], "Rock Tunnel 1F-NW 2": [{"from": "Rock Tunnel 1F-NW 2", "to": "Rock Tunnel 1F-NW", "func": [["rock_tunnel"]], "parameter": 0, "one_way": "False"}], "Rock Tunnel 1F-NE 1": [{"from": "Rock Tunnel 1F-NE 1", "to": "Rock Tunnel 1F-NE", "func": [["rock_tunnel"]], "parameter": 0, "one_way": "False"}], "Rock Tunnel 1F-NE 2": [{"from": "Rock Tunnel 1F-NE 2", "to": "Rock Tunnel 1F-NE", "func": [["rock_tunnel"]], "parameter": 0, "one_way": "False"}], "Rock Tunnel B1F-W 1": [{"from": "Rock Tunnel B1F-W 1", "to": "Rock Tunnel B1F-W", "func": [["rock_tunnel"]], "parameter": 0, "one_way": "False"}], "Rock Tunnel B1F-W 2": [{"from": "Rock Tunnel B1F-W 2", "to": "Rock Tunnel B1F-W", "func": [["rock_tunnel"]], "parameter": 0, "one_way": "False"}], "Rock Tunnel B1F-E 1": [{"from": "Rock Tunnel B1F-E 1", "to": "Rock Tunnel B1F-E", "func": [["rock_tunnel"]], "parameter": 0, "one_way": "False"}], "Rock Tunnel B1F-E 2": [{"from": "Rock Tunnel B1F-E 2", "to": "Rock Tunnel B1F-E", "func": [["rock_tunnel"]], "parameter": 0, "one_way": "False"}], "Rock Tunnel 1F-S": [{"from": "Rock Tunnel 1F-S", "to": "Rock Tunnel 1F-Wild", "func": [["rock_tunnel"]], "parameter": 0, "one_way": "True"}], "Rock Tunnel 1F-NW": [{"from": "Rock Tunnel 1F-NW", "to": "Rock Tunnel 1F-Wild", "func": [["rock_tunnel"]], "parameter": 0, "one_way": "True"}], "Rock Tunnel 1F-NE": [{"from": "Rock Tunnel 1F-NE", "to": "Rock Tunnel 1F-Wild", "func": [["rock_tunnel"]], "parameter": 0, "one_way": "True"}], "Rock Tunnel B1F-W": [{"from": "Rock Tunnel B1F-W", "to": "Rock Tunnel B1F-Wild", "func": [["rock_tunnel"]], "parameter": 0, "one_way": "True"}], "Rock Tunnel B1F-E": [{"from": "Rock Tunnel B1F-E", "to": "Rock Tunnel B1F-Wild", "func": [["rock_tunnel"]], "parameter": 0, "one_way": "True"}], "Cerulean Cave 1F-NW": [{"from": "Cerulean Cave 1F-NW", "to": "Cerulean Cave 1F-Wild", "func": [[]], "parameter": 0, "one_way": "True"}], "Silph Co 2F": [{"from": "Silph Co 2F", "to": "Silph Co 2F-NW", "func": [["card_key"]], "parameter": 2, "one_way": "False"}, {"from": "Silph Co 2F", "to": "Silph Co 2F-SW", "func": [["card_key"]], "parameter": 2, "one_way": "False"}], "Silph Co 3F": [{"from": "Silph Co 3F", "to": "Silph Co 3F-C", "func": [["card_key"]], "parameter": 3, "one_way": "False"}], "Silph Co 3F-W": [{"from": "Silph Co 3F-W", "to": "Silph Co 3F-C", "func": [["card_key"]], "parameter": 3, "one_way": "False"}], "Silph Co 4F": [{"from": "Silph Co 4F", "to": "Silph Co 4F-N", "func": [["card_key"]], "parameter": 4, "one_way": "False"}, {"from": "Silph Co 4F", "to": "Silph Co 4F-W", "func": [["card_key"]], "parameter": 4, "one_way": "False"}], "Silph Co 5F": [{"from": "Silph Co 5F", "to": "Silph Co 5F-NW", "func": [["card_key"]], "parameter": 5, "one_way": "False"}, {"from": "Silph Co 5F", "to": "Silph Co 5F-SW", "func": [["card_key"]], "parameter": 5, "one_way": "False"}], "Silph Co 6F": [{"from": "Silph Co 6F", "to": "Silph Co 6F-SW", "func": [["card_key"]], "parameter": 6, "one_way": "False"}], "Silph Co 7F": [{"from": "Silph Co 7F", "to": "Silph Co 7F-E", "func": [["card_key"]], "parameter": 7, "one_way": "False"}], "Silph Co 7F-SE": [{"from": "Silph Co 7F-SE", "to": "Silph Co 7F-E", "func": [["card_key"]], "parameter": 7, "one_way": "False"}], "Silph Co 8F": [{"from": "Silph Co 8F to Silph Co 8F-W (Card Key)", "to": "Silph Co 8F-W", "func": [["card_key"]], "parameter": 8, "one_way": "True"}], "Silph Co 8F-W": [{"from": "Silph Co 8F-W to Silph Co 8F (Card Key)", "to": "Silph Co 8F", "func": [["card_key"]], "parameter": 8, "one_way": "True"}], "Silph Co 9F": [{"from": "Silph Co 9F", "to": "Silph Co 9F-SW", "func": [["card_key"]], "parameter": 9, "one_way": "False"}], "Silph Co 9F-NW": [{"from": "Silph Co 9F-NW", "to": "Silph Co 9F-SW", "func": [["card_key"]], "parameter": 9, "one_way": "False"}], "Silph Co 10F": [{"from": "Silph Co 10F", "to": "Silph Co 10F-SE", "func": [["card_key"]], "parameter": 10, "one_way": "False"}], "Silph Co 11F-W": [{"from": "Silph Co 11F-W", "to": "Silph Co 11F-C", "func": [["card_key"]], "parameter": 11, "one_way": "False"}], "Silph Co Elevator": [{"from": "Silph Co Elevator", "to": "Silph Co Elevator-1F", "func": [["!all_elevators_locked", "lift_key"]], "parameter": 0, "one_way": "False"}, {"from": "Silph Co Elevator", "to": "Silph Co Elevator-2F", "func": [["!all_elevators_locked", "lift_key"]], "parameter": 0, "one_way": "False"}, {"from": "Silph Co Elevator", "to": "Silph Co Elevator-3F", "func": [["!all_elevators_locked", "lift_key"]], "parameter": 0, "one_way": "False"}, {"from": "Silph Co Elevator", "to": "Silph Co Elevator-4F", "func": [["!all_elevators_locked", "lift_key"]], "parameter": 0, "one_way": "False"}, {"from": "Silph Co Elevator", "to": "Silph Co Elevator-5F", "func": [["!all_elevators_locked", "lift_key"]], "parameter": 0, "one_way": "False"}, {"from": "Silph Co Elevator", "to": "Silph Co Elevator-6F", "func": [["!all_elevators_locked", "lift_key"]], "parameter": 0, "one_way": "False"}, {"from": "Silph Co Elevator", "to": "Silph Co Elevator-7F", "func": [["!all_elevators_locked", "lift_key"]], "parameter": 0, "one_way": "False"}, {"from": "Silph Co Elevator", "to": "Silph Co Elevator-8F", "func": [["!all_elevators_locked", "lift_key"]], "parameter": 0, "one_way": "False"}, {"from": "Silph Co Elevator", "to": "Silph Co Elevator-9F", "func": [["!all_elevators_locked", "lift_key"]], "parameter": 0, "one_way": "False"}, {"from": "Silph Co Elevator", "to": "Silph Co Elevator-10F", "func": [["!all_elevators_locked", "lift_key"]], "parameter": 0, "one_way": "False"}, {"from": "Silph Co Elevator", "to": "Silph Co Elevator-11F", "func": [["!all_elevators_locked", "lift_key"]], "parameter": 0, "one_way": "False"}], "Rocket Hideout Elevator": [{"from": "Rocket Hideout Elevator", "to": "Rocket Hideout Elevator-B1F", "func": [["lift_key"]], "parameter": 0, "one_way": "False"}, {"from": "Rocket Hideout Elevator", "to": "Rocket Hideout Elevator-B2F", "func": [["lift_key"]], "parameter": 0, "one_way": "False"}, {"from": "Rocket Hideout Elevator", "to": "Rocket Hideout Elevator-B4F", "func": [["lift_key"]], "parameter": 0, "one_way": "False"}], "Celadon Department Store Elevator": [{"from": "Celadon Department Store Elevator", "to": "Celadon Department Store Elevator-1F", "func": [["!all_elevators_locked", "lift_key"]], "parameter": 0, "one_way": "False"}, {"from": "Celadon Department Store Elevator", "to": "Celadon Department Store Elevator-2F", "func": [["!all_elevators_locked", "lift_key"]], "parameter": 0, "one_way": "False"}, {"from": "Celadon Department Store Elevator", "to": "Celadon Department Store Elevator-3F", "func": [["!all_elevators_locked", "lift_key"]], "parameter": 0, "one_way": "False"}, {"from": "Celadon Department Store Elevator", "to": "Celadon Department Store Elevator-4F", "func": [["!all_elevators_locked", "lift_key"]], "parameter": 0, "one_way": "False"}, {"from": "Celadon Department Store Elevator", "to": "Celadon Department Store Elevator-5F", "func": [["!all_elevators_locked", "lift_key"]], "parameter": 0, "one_way": "False"}], "Route 23-N": [{"from": "Route 23-N", "to": "Indigo Plateau", "func": [[]], "parameter": 0, "one_way": "False"}]}
+{
+  "Pallet Town": [
+    { "from": "Pallet Town", "to": "Route 1", "func": [[]], "parameter": 0, "one_way": "False" },
+    {
+      "from": "Pallet Town",
+      "to": "Pallet/Viridian Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Pallet Town",
+      "to": "Old Rod Fishing",
+      "func": [["old_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Pallet Town",
+      "to": "Good Rod Fishing",
+      "func": [["good_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Pallet Town",
+      "to": "Route 21",
+      "func": [["can_surf"]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Route 1": [
+    { "from": "Route 1", "to": "Viridian City", "func": [[]], "parameter": 0, "one_way": "False" }
+  ],
+  "Viridian City": [
+    { "from": "Viridian City", "to": "Route 22", "func": [[]], "parameter": 0, "one_way": "False" },
+    {
+      "from": "Viridian City",
+      "to": "Pallet/Viridian Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Viridian City",
+      "to": "Viridian City-N",
+      "func": [["oak's_parcel", "old_man", "can_cut"]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Route 22": [
+    {
+      "from": "Route 22",
+      "to": "Route 22-F",
+      "func": [["defeat_viridian_gym_giovanni"]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Route 22",
+      "to": "Route 22 Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Route 2-SW": [
+    {
+      "from": "Route 2-SW",
+      "to": "Route 2-Grass",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Route 2-SW",
+      "to": "Route 2-SE",
+      "func": [["can_cut"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    {
+      "from": "Route 2-SW",
+      "to": "Viridian City-N",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Route 2-NW": [
+    {
+      "from": "Route 2-NW",
+      "to": "Route 2-Grass",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Route 2-NW",
+      "to": "Route 2-NE",
+      "func": [["can_cut"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    { "from": "Route 2-NW", "to": "Pewter City", "func": [[]], "parameter": 0, "one_way": "False" }
+  ],
+  "Route 22 Gate-S": [
+    {
+      "from": "Route 22 Gate-S",
+      "to": "Route 22 Gate-N",
+      "func": [["route_22_gate_badges"]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Route 23-Grass": [
+    {
+      "from": "Route 23-Grass",
+      "to": "Route 23-C",
+      "func": [["victory_road_gate_badges"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    {
+      "from": "Route 23-Grass",
+      "to": "Route 23-S",
+      "func": [["can_surf"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    {
+      "from": "Route 23-Grass",
+      "to": "Route 23/Cerulean Cave Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Viridian City-N": [
+    {
+      "from": "Viridian City-N",
+      "to": "Viridian City-G",
+      "func": [["viridian_gym_badges"]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Route 2-E": [
+    {
+      "from": "Route 2-E",
+      "to": "Route 2-NE",
+      "func": [["can_cut"]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Pewter City": [
+    {
+      "from": "Pewter City",
+      "to": "Pewter City-E",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    {
+      "from": "Pewter City",
+      "to": "Pewter City-M",
+      "func": [["can_cut"]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Pewter City-M": [
+    {
+      "from": "Pewter City-M",
+      "to": "Pewter City",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Pewter City-E": [
+    {
+      "from": "Pewter City-E",
+      "to": "Route 3",
+      "func": [["route_3"]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Route 3": [
+    { "from": "Route 3", "to": "Pewter City-E", "func": [[]], "parameter": 0, "one_way": "True" }
+  ],
+  "Route 4-W": [
+    { "from": "Route 4-W", "to": "Route 3", "func": [[]], "parameter": 0, "one_way": "False" }
+  ],
+  "Route 24": [
+    {
+      "from": "Route 24",
+      "to": "Cerulean City-Water",
+      "func": [["can_surf"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    { "from": "Route 24", "to": "Route 25", "func": [[]], "parameter": 0, "one_way": "False" },
+    {
+      "from": "Route 24",
+      "to": "Route 24/25/Cerulean/Cerulean Gym Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Cerulean City-Water": [
+    {
+      "from": "Cerulean City-Water",
+      "to": "Route 4-Lass",
+      "func": [["can_surf"]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Cerulean City-Water",
+      "to": "Cerulean City-Cave",
+      "func": [["cerulean_cave"]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Mt Moon B2F": [
+    {
+      "from": "Mt Moon B2F",
+      "to": "Mt Moon B2F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Mt Moon B2F-NE": [
+    {
+      "from": "Mt Moon B2F-NE",
+      "to": "Mt Moon B2F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Mt Moon B2F-C": [
+    {
+      "from": "Mt Moon B2F-C",
+      "to": "Mt Moon B2F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Route 4-Lass": [
+    { "from": "Route 4-Lass", "to": "Route 4-C", "func": [[]], "parameter": 0, "one_way": "True" }
+  ],
+  "Route 4-C": [
+    { "from": "Route 4-C", "to": "Route 4-E", "func": [[]], "parameter": 0, "one_way": "True" }
+  ],
+  "Route 4-E": [
+    { "from": "Route 4-E", "to": "Cerulean City", "func": [[]], "parameter": 0, "one_way": "False" }
+  ],
+  "Cerulean City": [
+    { "from": "Cerulean City", "to": "Route 24", "func": [[]], "parameter": 0, "one_way": "False" },
+    {
+      "from": "Cerulean City",
+      "to": "Cerulean City-T",
+      "func": [["help_bill"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    {
+      "from": "Cerulean City",
+      "to": "Cerulean City-Outskirts",
+      "func": [["can_cut"]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Cerulean City",
+      "to": "Route 24/25/Cerulean/Cerulean Gym Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Cerulean City-Outskirts": [
+    {
+      "from": "Cerulean City-Outskirts",
+      "to": "Cerulean City",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Cerulean City-Outskirts",
+      "to": "Route 9",
+      "func": [["can_cut"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    {
+      "from": "Cerulean City-Outskirts",
+      "to": "Route 5",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Cerulean Cave B1F": [
+    {
+      "from": "Cerulean Cave B1F",
+      "to": "Cerulean Cave B1F-E",
+      "func": [["can_surf"]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Cerulean Cave B1F",
+      "to": "Route 23/Cerulean Cave Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Route 9": [
+    { "from": "Route 9", "to": "Route 10-N", "func": [[]], "parameter": 0, "one_way": "False" }
+  ],
+  "Route 10-N": [
+    {
+      "from": "Route 10-N",
+      "to": "Route 10-C",
+      "func": [["can_surf"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    {
+      "from": "Route 10-N",
+      "to": "Route 10/Celadon Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Route 10-C": [
+    {
+      "from": "Route 10-C",
+      "to": "Route 10-P",
+      "func": [["plant_key", "!extra_key_items"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    {
+      "from": "Route 10-C",
+      "to": "Route 10/Celadon Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Route 25": [
+    {
+      "from": "Route 25",
+      "to": "Route 24/25/Cerulean/Cerulean Gym Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Cerulean Gym": [
+    {
+      "from": "Cerulean Gym",
+      "to": "Route 24/25/Cerulean/Cerulean Gym Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Route 6": [
+    {
+      "from": "Route 6",
+      "to": "Route 6/11/Vermilion/Dock Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    { "from": "Route 6", "to": "Vermilion City", "func": [[]], "parameter": 0, "one_way": "False" }
+  ],
+  "Route 11": [
+    {
+      "from": "Route 11",
+      "to": "Route 6/11/Vermilion/Dock Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Route 11",
+      "to": "Route 11-C",
+      "func": [["can_strength", "!extra_strength_boulders"]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Vermilion City": [
+    {
+      "from": "Vermilion City",
+      "to": "Route 6/11/Vermilion/Dock Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Vermilion City",
+      "to": "Vermilion City-G",
+      "func": [["can_surf", "can_cut"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    {
+      "from": "Vermilion City",
+      "to": "Vermilion City-Dock",
+      "func": [["ss_ticket"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    { "from": "Vermilion City", "to": "Route 11", "func": [[]], "parameter": 0, "one_way": "False" }
+  ],
+  "Vermilion Dock": [
+    {
+      "from": "Vermilion Dock",
+      "to": "Route 6/11/Vermilion/Dock Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Celadon City": [
+    {
+      "from": "Celadon City",
+      "to": "Route 10/Celadon Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Celadon City",
+      "to": "Celadon City-G",
+      "func": [["can_cut"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    { "from": "Celadon City", "to": "Route 16-E", "func": [[]], "parameter": 0, "one_way": "False" }
+  ],
+  "Safari Zone Center-NW": [
+    {
+      "from": "Safari Zone Center-NW",
+      "to": "Safari Zone Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Safari Zone Center-NW",
+      "to": "Safari Zone Center-C",
+      "func": [["can_surf"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    {
+      "from": "Safari Zone Center-NW",
+      "to": "Safari Zone Center-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Safari Zone Center-NE": [
+    {
+      "from": "Safari Zone Center-NE",
+      "to": "Safari Zone Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Safari Zone Center-NE",
+      "to": "Safari Zone Center-C",
+      "func": [["can_surf"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    {
+      "from": "Safari Zone Center-NE",
+      "to": "Safari Zone Center-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Safari Zone Center-S": [
+    {
+      "from": "Safari Zone Center-S",
+      "to": "Safari Zone Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Safari Zone Center-S",
+      "to": "Safari Zone Center-C",
+      "func": [["can_surf"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    {
+      "from": "Safari Zone Center-S",
+      "to": "Safari Zone Center-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Safari Zone West": [
+    {
+      "from": "Safari Zone West",
+      "to": "Safari Zone Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Safari Zone West",
+      "to": "Safari Zone West-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Safari Zone West-NW": [
+    {
+      "from": "Safari Zone West-NW",
+      "to": "Safari Zone Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Safari Zone West-NW",
+      "to": "Safari Zone West",
+      "func": [["can_surf"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    {
+      "from": "Safari Zone West-NW",
+      "to": "Safari Zone West-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Safari Zone East": [
+    {
+      "from": "Safari Zone East",
+      "to": "Safari Zone Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Safari Zone North": [
+    {
+      "from": "Safari Zone North",
+      "to": "Safari Zone Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Route 12-N": [
+    {
+      "from": "Route 12-N",
+      "to": "Route 12/13/17/18 Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Route 12-N",
+      "to": "Route 12-S",
+      "func": [["can_surf"]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Route 12-S": [
+    {
+      "from": "Route 12-S",
+      "to": "Route 12/13/17/18 Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Route 12-S",
+      "to": "Route 12-Grass",
+      "func": [["can_cut"]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    { "from": "Route 12-S", "to": "Route 13-E", "func": [[]], "parameter": 0, "one_way": "False" }
+  ],
+  "Route 13": [
+    {
+      "from": "Route 13",
+      "to": "Route 12/13/17/18 Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Route 13",
+      "to": "Route 13-Grass",
+      "func": [["can_cut"]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Route 13",
+      "to": "Route 13-E",
+      "func": [["can_strength", "can_surf", "!extra_strength_boulders"]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Route 13-E": [
+    {
+      "from": "Route 13-E",
+      "to": "Route 12/13/17/18 Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Route 17": [
+    {
+      "from": "Route 17",
+      "to": "Route 12/13/17/18 Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    { "from": "Route 17", "to": "Route 16-SW", "func": [[]], "parameter": 0, "one_way": "False" },
+    { "from": "Route 17", "to": "Route 18-W", "func": [[]], "parameter": 0, "one_way": "False" }
+  ],
+  "Route 18-W": [
+    {
+      "from": "Route 18-W",
+      "to": "Route 12/13/17/18 Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Route 21": [
+    {
+      "from": "Route 21",
+      "to": "Sea Routes/Cinnabar/Seafoam Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Route 21",
+      "to": "Cinnabar Island",
+      "func": [["can_surf"]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Cinnabar Island": [
+    {
+      "from": "Cinnabar Island",
+      "to": "Sea Routes/Cinnabar/Seafoam Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Cinnabar Island",
+      "to": "Cinnabar Island-G",
+      "func": [["secret_key"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    {
+      "from": "Cinnabar Island",
+      "to": "Cinnabar Island-M",
+      "func": [["mansion_key", "!extra_key_items"]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Route 20-IW": [
+    {
+      "from": "Route 20-IW",
+      "to": "Sea Routes/Cinnabar/Seafoam Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Route 20-IE": [
+    {
+      "from": "Route 20-IE",
+      "to": "Sea Routes/Cinnabar/Seafoam Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Route 20-IE",
+      "to": "Route 20-W",
+      "func": [["can_surf"]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Route 19-N": [
+    {
+      "from": "Route 19-N",
+      "to": "Sea Routes/Cinnabar/Seafoam Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Route 19-N",
+      "to": "Route 19-S",
+      "func": [["can_surf"]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Seafoam Islands B3F": [
+    {
+      "from": "Seafoam Islands B3F",
+      "to": "Sea Routes/Cinnabar/Seafoam Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Seafoam Islands B3F",
+      "to": "Seafoam Islands B3F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Seafoam Islands B3F",
+      "to": "Seafoam Islands B3F-SE",
+      "func": [["can_surf"], ["can_strength"], ["seafoam_exit_boulder"]],
+      "parameter": 6,
+      "one_way": "False"
+    }
+  ],
+  "Seafoam Islands B4F": [
+    {
+      "from": "Seafoam Islands B4F",
+      "to": "Sea Routes/Cinnabar/Seafoam Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Seafoam Islands B4F",
+      "to": "Seafoam Islands B4F-W",
+      "func": [["can_surf"]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Route 23-S": [
+    {
+      "from": "Route 23-S",
+      "to": "Route 23/Cerulean Cave Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Cerulean Cave 1F-SE": [
+    {
+      "from": "Cerulean Cave 1F-SE",
+      "to": "Route 23/Cerulean Cave Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Cerulean Cave 1F-SE",
+      "to": "Cerulean Cave 1F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Cerulean Cave 1F-SE",
+      "to": "Cerulean Cave 1F-Water",
+      "func": [["can_surf"]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Cerulean Cave 1F-NE": [
+    {
+      "from": "Cerulean Cave 1F-NE",
+      "to": "Route 23/Cerulean Cave Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Cerulean Cave 1F-NE",
+      "to": "Cerulean Cave 1F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Cerulean Cave 1F-NE",
+      "to": "Cerulean Cave 1F-Water",
+      "func": [["can_surf"]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Cerulean Cave 1F-N": [
+    {
+      "from": "Cerulean Cave 1F-N",
+      "to": "Route 23/Cerulean Cave Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Cerulean Cave 1F-N",
+      "to": "Cerulean Cave 1F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Cerulean Cave 1F-N",
+      "to": "Cerulean Cave 1F-Water",
+      "func": [["can_surf"]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Cerulean Cave 1F-SW": [
+    {
+      "from": "Cerulean Cave 1F-SW",
+      "to": "Route 23/Cerulean Cave Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Cerulean Cave 1F-SW",
+      "to": "Cerulean Cave 1F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Cerulean Cave 1F-SW",
+      "to": "Cerulean Cave 1F-Water",
+      "func": [["can_surf"]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Fuchsia City": [
+    {
+      "from": "Fuchsia City",
+      "to": "Fuchsia Fishing",
+      "func": [["super_rod"]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Fuchsia City",
+      "to": "Route 15-W",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    {
+      "from": "Fuchsia City",
+      "to": "Route 18-E",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    { "from": "Fuchsia City", "to": "Route 19-N", "func": [[]], "parameter": 0, "one_way": "False" }
+  ],
+  "Cinnabar Lab Fossil Room": [
+    {
+      "from": "Cinnabar Lab Fossil Room",
+      "to": "Fossil Level",
+      "func": [["fossil_checks"]],
+      "parameter": 1,
+      "one_way": "True"
+    }
+  ],
+  "Route 5 Gate-N": [
+    {
+      "from": "Route 5 Gate-N",
+      "to": "Route 5 Gate-S",
+      "func": [["can_pass_guards"]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Route 6 Gate-N": [
+    {
+      "from": "Route 6 Gate-N",
+      "to": "Route 6 Gate-S",
+      "func": [["can_pass_guards"]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Route 7 Gate-W": [
+    {
+      "from": "Route 7 Gate-W",
+      "to": "Route 7 Gate-E",
+      "func": [["can_pass_guards"]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Route 8 Gate-W": [
+    {
+      "from": "Route 8 Gate-W",
+      "to": "Route 8 Gate-E",
+      "func": [["can_pass_guards"]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Saffron City": [
+    { "from": "Saffron City", "to": "Route 5-S", "func": [[]], "parameter": 0, "one_way": "False" },
+    { "from": "Saffron City", "to": "Route 6-N", "func": [[]], "parameter": 0, "one_way": "False" },
+    { "from": "Saffron City", "to": "Route 7-E", "func": [[]], "parameter": 0, "one_way": "False" },
+    { "from": "Saffron City", "to": "Route 8-W", "func": [[]], "parameter": 0, "one_way": "False" },
+    {
+      "from": "Saffron City",
+      "to": "Saffron City-Copycat",
+      "func": [["silph_co_liberated"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    {
+      "from": "Saffron City",
+      "to": "Saffron City-Pidgey",
+      "func": [["silph_co_liberated"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    {
+      "from": "Saffron City",
+      "to": "Saffron City-G",
+      "func": [["silph_co_liberated"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    {
+      "from": "Saffron City",
+      "to": "Saffron City-Silph",
+      "func": [["fuji_saved"]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Route 12-W": [
+    {
+      "from": "Route 12-W",
+      "to": "Route 11-E",
+      "func": [["poke_flute"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    {
+      "from": "Route 12-W",
+      "to": "Route 12-N",
+      "func": [["poke_flute"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    {
+      "from": "Route 12-W",
+      "to": "Route 12-S",
+      "func": [["poke_flute"]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Route 12-L": [
+    {
+      "from": "Route 12-L",
+      "to": "Lavender Town",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Route 10-S": [
+    {
+      "from": "Route 10-S",
+      "to": "Lavender Town",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Route 8": [
+    { "from": "Route 8", "to": "Lavender Town", "func": [[]], "parameter": 0, "one_way": "False" },
+    {
+      "from": "Route 8",
+      "to": "Route 8-Grass",
+      "func": [["can_cut"]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Pokemon Tower 6F": [
+    {
+      "from": "Pokemon Tower 6F",
+      "to": "Pokemon Tower 6F-S",
+      "func": [
+        ["silph_scope", "buy_poke_doll"],
+        ["silph_scope", "poke_doll_skip"]
+      ],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Route 7": [
+    { "from": "Route 7", "to": "Celadon City", "func": [[]], "parameter": 0, "one_way": "False" }
+  ],
+  "Route 18 Gate 1F-W": [
+    {
+      "from": "Route 18 Gate 1F-W",
+      "to": "Route 18 Gate 1F-E",
+      "func": [["has_bicycle", "bicycle_skip"]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Route 16 Gate 1F-W": [
+    {
+      "from": "Route 16 Gate 1F-W",
+      "to": "Route 16 Gate 1F-E",
+      "func": [["has_bicycle", "bicycle_skip"]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Route 16-E": [
+    {
+      "from": "Route 16-E",
+      "to": "Route 16-NE",
+      "func": [["can_cut"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    {
+      "from": "Route 16-E",
+      "to": "Route 16-C",
+      "func": [["poke_flute"]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Safari Zone Gate-S": [
+    {
+      "from": "Safari Zone Gate-S",
+      "to": "Safari Zone Gate-N",
+      "func": [["safari_pass", "!extra_key_items"]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Route 15": [
+    { "from": "Route 15", "to": "Route 14", "func": [[]], "parameter": 0, "one_way": "False" }
+  ],
+  "Route 14": [
+    {
+      "from": "Route 14",
+      "to": "Route 15-N",
+      "func": [["can_cut"]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Route 14",
+      "to": "Route 14-Grass",
+      "func": [["can_cut"]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    { "from": "Route 14", "to": "Route 13", "func": [[]], "parameter": 0, "one_way": "False" }
+  ],
+  "Route 20-E": [
+    {
+      "from": "Route 20-E",
+      "to": "Route 20-IW",
+      "func": [["can_surf"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    { "from": "Route 20-E", "to": "Route 19-S", "func": [[]], "parameter": 0, "one_way": "False" },
+    {
+      "from": "Route 20-E",
+      "to": "Route 19/20-Water",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Route 20-W": [
+    {
+      "from": "Route 20-W",
+      "to": "Cinnabar Island",
+      "func": [["can_surf"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    {
+      "from": "Route 20-W",
+      "to": "Route 19/20-Water",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Route 19-S": [
+    {
+      "from": "Route 19-S",
+      "to": "Route 19/20-Water",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Victory Road 3F-S": [
+    {
+      "from": "Victory Road 3F-S",
+      "to": "Victory Road 3F",
+      "func": [["can_strength"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    {
+      "from": "Victory Road 3F-S",
+      "to": "Victory Road 3F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Victory Road 3F-SE": [
+    {
+      "from": "Victory Road 3F-SE",
+      "to": "Victory Road 3F-S",
+      "func": [["can_strength"]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Victory Road 3F-SE",
+      "to": "Victory Road 3F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Victory Road 3F": [
+    {
+      "from": "Victory Road 3F",
+      "to": "Victory Road 3F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Victory Road 2F-W": [
+    {
+      "from": "Victory Road 2F-W",
+      "to": "Victory Road 2F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Victory Road 2F-W",
+      "to": "Victory Road 2F-C",
+      "func": [["can_strength"]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Victory Road 2F-NW": [
+    {
+      "from": "Victory Road 2F-NW",
+      "to": "Victory Road 2F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Victory Road 2F-NW",
+      "to": "Victory Road 2F-W",
+      "func": [["can_strength"]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Victory Road 2F-C": [
+    {
+      "from": "Victory Road 2F-C",
+      "to": "Victory Road 2F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Victory Road 2F-C",
+      "to": "Victory Road 2F-SE",
+      "func": [["can_strength", "victory_road_boulder"]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Victory Road 2F-E": [
+    {
+      "from": "Victory Road 2F-E",
+      "to": "Victory Road 2F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Victory Road 2F-SE": [
+    {
+      "from": "Victory Road 2F-SE",
+      "to": "Victory Road 2F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Victory Road 1F-S": [
+    {
+      "from": "Victory Road 1F-S",
+      "to": "Victory Road 1F",
+      "func": [["can_strength"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    {
+      "from": "Victory Road 1F-S",
+      "to": "Victory Road 1F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Victory Road 1F": [
+    {
+      "from": "Victory Road 1F",
+      "to": "Victory Road 1F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Mt Moon B1F-W": [
+    {
+      "from": "Mt Moon B1F-W",
+      "to": "Mt Moon B1F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Mt Moon B1F-C": [
+    {
+      "from": "Mt Moon B1F-C",
+      "to": "Mt Moon B1F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Mt Moon B1F-NE": [
+    {
+      "from": "Mt Moon B1F-NE",
+      "to": "Mt Moon B1F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Mt Moon B1F-SE": [
+    {
+      "from": "Mt Moon B1F-SE",
+      "to": "Mt Moon B1F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Cerulean Cave 2F-N": [
+    {
+      "from": "Cerulean Cave 2F-N",
+      "to": "Cerulean Cave 2F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Cerulean Cave 2F-E": [
+    {
+      "from": "Cerulean Cave 2F-E",
+      "to": "Cerulean Cave 2F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Cerulean Cave 2F-W": [
+    {
+      "from": "Cerulean Cave 2F-W",
+      "to": "Cerulean Cave 2F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Seafoam Islands 1F": [
+    {
+      "from": "Seafoam Islands 1F",
+      "to": "Seafoam Islands 1F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Seafoam Islands 1F-SE": [
+    {
+      "from": "Seafoam Islands 1F-SE",
+      "to": "Seafoam Islands 1F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Seafoam Islands B1F": [
+    {
+      "from": "Seafoam Islands B1F",
+      "to": "Seafoam Islands B1F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Seafoam Islands B1F-SE": [
+    {
+      "from": "Seafoam Islands B1F-SE",
+      "to": "Seafoam Islands B1F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Seafoam Islands B1F-NE": [
+    {
+      "from": "Seafoam Islands B1F-NE",
+      "to": "Seafoam Islands B1F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Seafoam Islands B2F-NW": [
+    {
+      "from": "Seafoam Islands B2F-NW",
+      "to": "Seafoam Islands B2F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Seafoam Islands B2F-NE": [
+    {
+      "from": "Seafoam Islands B2F-NE",
+      "to": "Seafoam Islands B2F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Seafoam Islands B2F-SW": [
+    {
+      "from": "Seafoam Islands B2F-SW",
+      "to": "Seafoam Islands B2F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Seafoam Islands B2F-SE": [
+    {
+      "from": "Seafoam Islands B2F-SE",
+      "to": "Seafoam Islands B2F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Seafoam Islands B3F-NE": [
+    {
+      "from": "Seafoam Islands B3F-NE",
+      "to": "Seafoam Islands B3F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Seafoam Islands B3F-SE": [
+    {
+      "from": "Seafoam Islands B3F-SE",
+      "to": "Seafoam Islands B3F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Seafoam Islands B4F-W": [
+    {
+      "from": "Seafoam Islands B4F-W",
+      "to": "Seafoam Islands B4F",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Celadon Gym": [
+    {
+      "from": "Celadon Gym",
+      "to": "Celadon Gym-C",
+      "func": [["can_cut"]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Celadon Game Corner": [
+    {
+      "from": "Celadon Game Corner",
+      "to": "Celadon Game Corner-Hidden Stairs",
+      "func": [["hideout_key", "!extra_key_items"]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Celadon Game Corner-Hidden Stairs": [
+    {
+      "from": "Celadon Game Corner-Hidden Stairs",
+      "to": "Celadon Game Corner",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Rocket Hideout B1F-SE": [
+    {
+      "from": "Rocket Hideout B1F-SE",
+      "to": "Rocket Hideout B1F",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Indigo Plateau Lobby": [
+    {
+      "from": "Indigo Plateau Lobby",
+      "to": "Indigo Plateau Lobby-N",
+      "func": [["enter_elite_four"]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Pokemon Mansion 3F": [
+    {
+      "from": "Pokemon Mansion 3F",
+      "to": "Pokemon Mansion 3F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Pokemon Mansion 3F",
+      "to": "Pokemon Mansion 3F-SE",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Pokemon Mansion 3F-SW": [
+    {
+      "from": "Pokemon Mansion 3F-SW",
+      "to": "Pokemon Mansion 3F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Pokemon Mansion 3F-SE": [
+    {
+      "from": "Pokemon Mansion 3F-SE",
+      "to": "Pokemon Mansion 3F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Pokemon Mansion 2F-E": [
+    {
+      "from": "Pokemon Mansion 2F-E",
+      "to": "Pokemon Mansion 2F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Pokemon Mansion 1F-SE": [
+    {
+      "from": "Pokemon Mansion 1F-SE",
+      "to": "Pokemon Mansion 1F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Pokemon Mansion 1F": [
+    {
+      "from": "Pokemon Mansion 1F",
+      "to": "Pokemon Mansion 1F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Rock Tunnel 1F-S 1": [
+    {
+      "from": "Rock Tunnel 1F-S 1",
+      "to": "Rock Tunnel 1F-S",
+      "func": [["rock_tunnel"]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Rock Tunnel 1F-S 2": [
+    {
+      "from": "Rock Tunnel 1F-S 2",
+      "to": "Rock Tunnel 1F-S",
+      "func": [["rock_tunnel"]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Rock Tunnel 1F-NW 1": [
+    {
+      "from": "Rock Tunnel 1F-NW 1",
+      "to": "Rock Tunnel 1F-NW",
+      "func": [["rock_tunnel"]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Rock Tunnel 1F-NW 2": [
+    {
+      "from": "Rock Tunnel 1F-NW 2",
+      "to": "Rock Tunnel 1F-NW",
+      "func": [["rock_tunnel"]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Rock Tunnel 1F-NE 1": [
+    {
+      "from": "Rock Tunnel 1F-NE 1",
+      "to": "Rock Tunnel 1F-NE",
+      "func": [["rock_tunnel"]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Rock Tunnel 1F-NE 2": [
+    {
+      "from": "Rock Tunnel 1F-NE 2",
+      "to": "Rock Tunnel 1F-NE",
+      "func": [["rock_tunnel"]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Rock Tunnel B1F-W 1": [
+    {
+      "from": "Rock Tunnel B1F-W 1",
+      "to": "Rock Tunnel B1F-W",
+      "func": [["rock_tunnel"]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Rock Tunnel B1F-W 2": [
+    {
+      "from": "Rock Tunnel B1F-W 2",
+      "to": "Rock Tunnel B1F-W",
+      "func": [["rock_tunnel"]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Rock Tunnel B1F-E 1": [
+    {
+      "from": "Rock Tunnel B1F-E 1",
+      "to": "Rock Tunnel B1F-E",
+      "func": [["rock_tunnel"]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Rock Tunnel B1F-E 2": [
+    {
+      "from": "Rock Tunnel B1F-E 2",
+      "to": "Rock Tunnel B1F-E",
+      "func": [["rock_tunnel"]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Rock Tunnel 1F-S": [
+    {
+      "from": "Rock Tunnel 1F-S",
+      "to": "Rock Tunnel 1F-Wild",
+      "func": [["rock_tunnel"]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Rock Tunnel 1F-NW": [
+    {
+      "from": "Rock Tunnel 1F-NW",
+      "to": "Rock Tunnel 1F-Wild",
+      "func": [["rock_tunnel"]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Rock Tunnel 1F-NE": [
+    {
+      "from": "Rock Tunnel 1F-NE",
+      "to": "Rock Tunnel 1F-Wild",
+      "func": [["rock_tunnel"]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Rock Tunnel B1F-W": [
+    {
+      "from": "Rock Tunnel B1F-W",
+      "to": "Rock Tunnel B1F-Wild",
+      "func": [["rock_tunnel"]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Rock Tunnel B1F-E": [
+    {
+      "from": "Rock Tunnel B1F-E",
+      "to": "Rock Tunnel B1F-Wild",
+      "func": [["rock_tunnel"]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Cerulean Cave 1F-NW": [
+    {
+      "from": "Cerulean Cave 1F-NW",
+      "to": "Cerulean Cave 1F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Silph Co 2F": [
+    {
+      "from": "Silph Co 2F",
+      "to": "Silph Co 2F-NW",
+      "func": [["card_key"]],
+      "parameter": 2,
+      "one_way": "False"
+    },
+    {
+      "from": "Silph Co 2F",
+      "to": "Silph Co 2F-SW",
+      "func": [["card_key"]],
+      "parameter": 2,
+      "one_way": "False"
+    }
+  ],
+  "Silph Co 3F": [
+    {
+      "from": "Silph Co 3F",
+      "to": "Silph Co 3F-C",
+      "func": [["card_key"]],
+      "parameter": 3,
+      "one_way": "False"
+    }
+  ],
+  "Silph Co 3F-W": [
+    {
+      "from": "Silph Co 3F-W",
+      "to": "Silph Co 3F-C",
+      "func": [["card_key"]],
+      "parameter": 3,
+      "one_way": "False"
+    }
+  ],
+  "Silph Co 4F": [
+    {
+      "from": "Silph Co 4F",
+      "to": "Silph Co 4F-N",
+      "func": [["card_key"]],
+      "parameter": 4,
+      "one_way": "False"
+    },
+    {
+      "from": "Silph Co 4F",
+      "to": "Silph Co 4F-W",
+      "func": [["card_key"]],
+      "parameter": 4,
+      "one_way": "False"
+    }
+  ],
+  "Silph Co 5F": [
+    {
+      "from": "Silph Co 5F",
+      "to": "Silph Co 5F-NW",
+      "func": [["card_key"]],
+      "parameter": 5,
+      "one_way": "False"
+    },
+    {
+      "from": "Silph Co 5F",
+      "to": "Silph Co 5F-SW",
+      "func": [["card_key"]],
+      "parameter": 5,
+      "one_way": "False"
+    }
+  ],
+  "Silph Co 6F": [
+    {
+      "from": "Silph Co 6F",
+      "to": "Silph Co 6F-SW",
+      "func": [["card_key"]],
+      "parameter": 6,
+      "one_way": "False"
+    }
+  ],
+  "Silph Co 7F": [
+    {
+      "from": "Silph Co 7F",
+      "to": "Silph Co 7F-E",
+      "func": [["card_key"]],
+      "parameter": 7,
+      "one_way": "False"
+    }
+  ],
+  "Silph Co 7F-SE": [
+    {
+      "from": "Silph Co 7F-SE",
+      "to": "Silph Co 7F-E",
+      "func": [["card_key"]],
+      "parameter": 7,
+      "one_way": "False"
+    }
+  ],
+  "Silph Co 8F": [
+    {
+      "from": "Silph Co 8F to Silph Co 8F-W (Card Key)",
+      "to": "Silph Co 8F-W",
+      "func": [["card_key"]],
+      "parameter": 8,
+      "one_way": "True"
+    }
+  ],
+  "Silph Co 8F-W": [
+    {
+      "from": "Silph Co 8F-W to Silph Co 8F (Card Key)",
+      "to": "Silph Co 8F",
+      "func": [["card_key"]],
+      "parameter": 8,
+      "one_way": "True"
+    }
+  ],
+  "Silph Co 9F": [
+    {
+      "from": "Silph Co 9F",
+      "to": "Silph Co 9F-SW",
+      "func": [["card_key"]],
+      "parameter": 9,
+      "one_way": "False"
+    }
+  ],
+  "Silph Co 9F-NW": [
+    {
+      "from": "Silph Co 9F-NW",
+      "to": "Silph Co 9F-SW",
+      "func": [["card_key"]],
+      "parameter": 9,
+      "one_way": "False"
+    }
+  ],
+  "Silph Co 10F": [
+    {
+      "from": "Silph Co 10F",
+      "to": "Silph Co 10F-SE",
+      "func": [["card_key"]],
+      "parameter": 10,
+      "one_way": "False"
+    }
+  ],
+  "Silph Co 11F-W": [
+    {
+      "from": "Silph Co 11F-W",
+      "to": "Silph Co 11F-C",
+      "func": [["card_key"]],
+      "parameter": 11,
+      "one_way": "False"
+    }
+  ],
+  "Silph Co Elevator": [
+    {
+      "from": "Silph Co Elevator",
+      "to": "Silph Co Elevator-1F",
+      "func": [["!all_elevators_locked", "lift_key"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    {
+      "from": "Silph Co Elevator",
+      "to": "Silph Co Elevator-2F",
+      "func": [["!all_elevators_locked", "lift_key"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    {
+      "from": "Silph Co Elevator",
+      "to": "Silph Co Elevator-3F",
+      "func": [["!all_elevators_locked", "lift_key"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    {
+      "from": "Silph Co Elevator",
+      "to": "Silph Co Elevator-4F",
+      "func": [["!all_elevators_locked", "lift_key"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    {
+      "from": "Silph Co Elevator",
+      "to": "Silph Co Elevator-5F",
+      "func": [["!all_elevators_locked", "lift_key"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    {
+      "from": "Silph Co Elevator",
+      "to": "Silph Co Elevator-6F",
+      "func": [["!all_elevators_locked", "lift_key"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    {
+      "from": "Silph Co Elevator",
+      "to": "Silph Co Elevator-7F",
+      "func": [["!all_elevators_locked", "lift_key"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    {
+      "from": "Silph Co Elevator",
+      "to": "Silph Co Elevator-8F",
+      "func": [["!all_elevators_locked", "lift_key"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    {
+      "from": "Silph Co Elevator",
+      "to": "Silph Co Elevator-9F",
+      "func": [["!all_elevators_locked", "lift_key"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    {
+      "from": "Silph Co Elevator",
+      "to": "Silph Co Elevator-10F",
+      "func": [["!all_elevators_locked", "lift_key"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    {
+      "from": "Silph Co Elevator",
+      "to": "Silph Co Elevator-11F",
+      "func": [["!all_elevators_locked", "lift_key"]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Rocket Hideout Elevator": [
+    {
+      "from": "Rocket Hideout Elevator",
+      "to": "Rocket Hideout Elevator-B1F",
+      "func": [["lift_key"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    {
+      "from": "Rocket Hideout Elevator",
+      "to": "Rocket Hideout Elevator-B2F",
+      "func": [["lift_key"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    {
+      "from": "Rocket Hideout Elevator",
+      "to": "Rocket Hideout Elevator-B4F",
+      "func": [["lift_key"]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Celadon Department Store Elevator": [
+    {
+      "from": "Celadon Department Store Elevator",
+      "to": "Celadon Department Store Elevator-1F",
+      "func": [["!all_elevators_locked", "lift_key"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    {
+      "from": "Celadon Department Store Elevator",
+      "to": "Celadon Department Store Elevator-2F",
+      "func": [["!all_elevators_locked", "lift_key"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    {
+      "from": "Celadon Department Store Elevator",
+      "to": "Celadon Department Store Elevator-3F",
+      "func": [["!all_elevators_locked", "lift_key"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    {
+      "from": "Celadon Department Store Elevator",
+      "to": "Celadon Department Store Elevator-4F",
+      "func": [["!all_elevators_locked", "lift_key"]],
+      "parameter": 0,
+      "one_way": "False"
+    },
+    {
+      "from": "Celadon Department Store Elevator",
+      "to": "Celadon Department Store Elevator-5F",
+      "func": [["!all_elevators_locked", "lift_key"]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Route 23-N": [
+    {
+      "from": "Route 23-N",
+      "to": "Indigo Plateau",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "False"
+    }
+  ]
+}

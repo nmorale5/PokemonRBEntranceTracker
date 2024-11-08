@@ -10,7 +10,7 @@ export default function Map() {
     const map = L.map("map").setView(latLngFromPixelCoordinates(3600, 3600));
     const latLngBounds = L.latLngBounds(
       latLngFromPixelCoordinates(0, 0),
-      latLngFromPixelCoordinates(7200, 7200),
+      latLngFromPixelCoordinates(7200, 7200)
     );
     L.imageOverlay("/PokemonRedMapNoArrows.png", latLngBounds, {
       alt: "Pokemon Red/Blue Map",
@@ -37,8 +37,10 @@ export default function Map() {
       }).addTo(map);
     });
 
-    map.on("click", async function(e) {
-      const [x, y] = pixelCoordinatesFromLatLng(e.latlng).map(num => Math.round((num + 8) / 16) * 16 - 8); // get the center of the nearest 16x16 square
+    map.on("click", async function (e) {
+      const [x, y] = pixelCoordinatesFromLatLng(e.latlng).map(
+        (num) => Math.round((num + 8) / 16) * 16 - 8
+      ); // get the center of the nearest 16x16 square
       await navigator.clipboard.writeText(`,\n    "coordinates": { "x": ${x}, "y": ${y} }`);
     });
 
