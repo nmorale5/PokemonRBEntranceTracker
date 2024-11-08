@@ -1,7 +1,3 @@
-const MAX_KEY_ITEMS = 100;
-const MAX_TRAINERS = 317;
-const NUM_POKEMON = 151;
-
 import { CheckAccessibility, Check, generateChecks, generatePokemonChecks } from "./Checks";
 import {
   WarpAccessibility,
@@ -10,6 +6,10 @@ import {
   generateWarps,
   generateConstantWarps,
 } from "./Warps";
+
+const MAX_KEY_ITEMS = 100;
+const MAX_TRAINERS = 317;
+const NUM_POKEMON = 151;
 
 ////////////////////// SETTINGS ///////////////////////////////////
 
@@ -194,7 +194,7 @@ export function updateRegionAccessibility(state: State) {
   /**
    * Updates the Regions set to include all the accessible regions.
    */
-  shortestPath("Pallet Town", "", state); // Abusing the benefit of attempting a full search from the start location
+  shortestPath("Pallet Town", "", state, true); // Abusing the benefit of attempting a full search from the start location
 }
 
 export function shortestPath(
@@ -217,40 +217,54 @@ export function shortestPath(
   exploredRegions.set(startRegion, []);
   let toExplore: Array<string> = [startRegion]; // regions to find new paths from
   let nextExplore: Array<string> = [];
+  let counter = 0;
   while (toExplore.length > 0) {
+    if (!modifyState){
+      console.log(exploredRegions);
+      console.log(counter);
+    }
     for (const region of toExplore) {
       if (modifyState) {
         state.regions.add(region); // Only add the state if you are doing the update for accessibility!
       }
       for (const warp of combinedWarps) {
-        if (warp instanceof ConstantWarp) {
-          if (
-            !exploredRegions.has(warp.toWarp) &&
-            warp.accessibility === WarpAccessibility.Accessible
-          ) {
-            nextExplore.push(warp.toWarp);
-            exploredRegions.set(warp.toWarp, exploredRegions.get(region)!.concat([warp]));
+        warp.updateAccessibility();
+        if (warp.region === region) {
+          if (warp instanceof ConstantWarp) {
+            if (
+              !exploredRegions.has(warp.toWarp) &&
+              warp.accessibility === WarpAccessibility.Accessible
+            ) {
+              nextExplore.push(warp.toWarp);
+              exploredRegions.set(warp.toWarp, exploredRegions.get(region)!.concat([warp]));
+            }
+          } else if (warp.linkedWarp) {
+            const linkedWarp: Warp = warp.linkedWarp;
+            if (
+              !exploredRegions.has(linkedWarp.region) &&
+              warp.accessibility === WarpAccessibility.Accessible
+            ) {
+              nextExplore.push(linkedWarp.region);
+              exploredRegions.set(linkedWarp.region, exploredRegions.get(region)!.concat([warp]));
+            }
+          } else {
+            // Warp is undiscovered, no information. Later, we might be able to do something
+            // for non-randomized maps here. Or, we could preset all of the warp links
           }
-        } else if (warp.linkedWarp) {
-          const linkedWarp: Warp = warp.linkedWarp;
-          if (
-            !exploredRegions.has(linkedWarp.region) &&
-            warp.accessibility === WarpAccessibility.Accessible
-          ) {
-            nextExplore.push(linkedWarp.region);
-            exploredRegions.set(linkedWarp.region, exploredRegions.get(region)!.concat([warp]));
-          }
-        } else {
-          // Warp is undiscovered, no information. Later, we might be able to do something
-          // for non-randomized maps here. Or, we could preset all of the warp links
         }
         if (exploredRegions.has(endRegion)) {
+          console.log(exploredRegions);
           return exploredRegions.get(endRegion)!;
         }
       }
+      counter += 1;
     }
     toExplore = nextExplore;
+    nextExplore = [];
   }
+  // if (modifyState) {
+  //   return new Set(exploredRegions);
+  // }
   return [];
 }
 

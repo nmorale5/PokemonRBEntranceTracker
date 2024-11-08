@@ -150,7 +150,7 @@ enabled_to_func.set("rock_tunnel", canRockTunnel);
 function setAccessible(cnf: Array<Array<string>>): (state: State) => CheckAccessibility {
   function helper(state: State): CheckAccessibility {
     for (const clause of cnf) {
-      let satisfied = false;
+      let satisfied = true;
       for (const expr of clause) {
         const func = enabled_to_func.get(expr)!;
         satisfied = (func as (state: State) => boolean)(state);

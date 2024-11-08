@@ -60,7 +60,7 @@ describe("getCheckStatus", () => {
     state.items.add("Gold Teeth");
     for (const check of checks) {
       check.updateCheckStatus();
-      if (check.name === "Safari Zone Warden") {
+      if (check.name === "Safari Zone Warden" || check.type === "Pokemon") {
         expect(getCheckStatus(check)).toBe(CheckAccessibility.Accessible);
       } else {
         expect(getCheckStatus(check)).toBe(CheckAccessibility.Inaccessible);
@@ -108,11 +108,12 @@ describe("shortestPath", () => {
     state.regions.add("Pallet Town");
     updateRegionAccessibility(state);
     const path = shortestPath("Pallet Town", "Route 22", state);
+    console.log(generateTextPath(path));
     expect(path.length).toBe(3);
-    expect(generateTextPath(path)).toBe([
+    expect(generateTextPath(path).reduce((prev, next) => prev + next, "")).toBe([
       "Pallet Town to Route 1",
       "Route 1 to Viridian City",
       "Viridian City to Route 22",
-    ]);
+    ].reduce((prev, next) => prev + next, ""));
   });
 });

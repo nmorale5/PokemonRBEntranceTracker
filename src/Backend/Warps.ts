@@ -82,18 +82,18 @@ export class ConstantWarp extends Warp {
     public toWarp: string,
     public region: string,
     public state: State,
-    public flags: () => WarpAccessibility
+    public flags: (state: State) => WarpAccessibility
   ) {
     super(fromWarp, toWarp, region, state);
   }
 
   updateAccessibility(): void {
     if (this.state.regions.has(this.region)) {
-      const canTraverse = this.flags();
-      this.accessibility = canTraverse;
-      if (canTraverse) {
-        this.state.regions.add(this.toWarp); // Another place to change accessibility... good or bad?
-      }
+      // const canTraverse = this.flags();
+      this.accessibility = this.flags(this.state);
+      // if (canTraverse) {
+      //   this.state.regions.add(this.toWarp); // Another place to change accessibility... good or bad?
+      // }
     } else {
       this.accessibility = WarpAccessibility.Inaccessible;
     }
@@ -219,11 +219,11 @@ function setFlags(
   cnf: Array<Array<string>>,
   state: State,
   params: number
-): () => WarpAccessibility {
+): (state: State) => WarpAccessibility {
   // Does the CNF to logic magic, and uses flag_to_func
   function helper(): WarpAccessibility {
     for (const clause of cnf) {
-      let satisfied = false;
+      let satisfied = true;
       for (const expr of clause) {
         const func = flag_to_func.get(expr)!;
         if (takesParam.has(expr)) {
