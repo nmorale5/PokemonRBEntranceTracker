@@ -1,0 +1,3908 @@
+[
+  {
+    "name": "Fishing Guru",
+    "region": "Vermilion Old Rod House",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 4008, "y": 3672 }
+  },
+  {
+    "name": "Fishing Guru's Brother",
+    "region": "Fuchsia Good Rod House",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 4216, "y": 5608 }
+  },
+  {
+    "name": "Fishing Guru's Brother",
+    "region": "Route 12 Super Rod House",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 6216, "y": 4120 }
+  },
+  {
+    "name": "Player's PC",
+    "region": "Player's House 2F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 1192, "y": 4520 }
+  },
+  {
+    "name": "Mansion Lady",
+    "region": "Celadon Mansion 1F",
+    "type": "Basic",
+    "inclusion": "tea",
+    "coordinates": { "x": 3512, "y": 2376 }
+  },
+  {
+    "name": "Rival's Sister",
+    "region": "Rival's House",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 1896, "y": 4552 }
+  },
+  {
+    "name": "Oak's Post-Route-22-Rival Gift",
+    "region": "Oak's Lab",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 1944, "y": 4696 }
+  },
+  {
+    "name": "Free Sample Man",
+    "region": "Route 1",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 1592, "y": 4344 }
+  },
+  {
+    "name": "Sleepy Guy",
+    "region": "Viridian City",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 1448, "y": 3752 }
+  },
+  {
+    "name": "Item for Oak",
+    "region": "Viridian Pokemart",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 2056, "y": 3752 }
+  },
+  {
+    "name": "Giovanni TM",
+    "region": "Viridian Gym",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 2056, "y": 3368 }
+  },
+  {
+    "name": "Oak's Aide",
+    "region": "Route 2 Gate",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 1336, "y": 2808 }
+  },
+  {
+    "name": "Scientist",
+    "region": "Pewter Museum 1F-E",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 1656, "y": 1528 }
+  },
+  {
+    "name": "Brock TM",
+    "region": "Pewter Gym",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 1224, "y": 1736 }
+  },
+  {
+    "name": "",
+    "region": "Cerulean Bicycle Shop",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 4328, "y": 2008 }
+  },
+  {
+    "name": "Misty TM",
+    "region": "Cerulean Gym",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 4968, "y": 1848 }
+  },
+  {
+    "name": "Nugget Bridge",
+    "region": "Route 24",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 4568, "y": 1032 }
+  },
+  {
+    "name": "Bill",
+    "region": "Bill's House",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 5416, "y": 696 }
+  },
+  {
+    "name": "Mr. Fuji",
+    "region": "Lavender Mr. Fuji's House",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 6232, "y": 2952 }
+  },
+  {
+    "name": "Mourning Girl",
+    "region": "Route 12 Gate 2F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 6424, "y": 3224 }
+  },
+  {
+    "name": "Fan Club President",
+    "region": "Vermilion Pokemon Fan Club",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 4120, "y": 3784 }
+  },
+  {
+    "name": "Lt. Surge TM",
+    "region": "Vermilion Gym",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 4120, "y": 3944 }
+  },
+  {
+    "name": "Captain",
+    "region": "S.S. Anne Captain's Room",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 6920, "y": 5080 }
+  },
+  {
+    "name": "Oak's Aide",
+    "region": "Route 11 Gate 2F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 5512, "y": 4248 }
+  },
+  {
+    "name": "Stranded Man",
+    "region": "Celadon City",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 3464, "y": 2776 }
+  },
+  {
+    "name": "Thirsty Girl Gets Water",
+    "region": "Celadon Department Store Roof",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 2520, "y": 2184 }
+  },
+  {
+    "name": "Thirsty Girl Gets Soda Pop",
+    "region": "Celadon Department Store Roof",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 2520, "y": 2184 }
+  },
+  {
+    "name": "Thirsty Girl Gets Lemonade",
+    "region": "Celadon Department Store Roof",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 2520, "y": 2184 }
+  },
+  {
+    "name": "Counter Man",
+    "region": "Celadon Department Store 3F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 3400, "y": 2120 }
+  },
+  {
+    "name": "Gambling Addict",
+    "region": "Celadon Diner",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 3304, "y": 3144 }
+  },
+  {
+    "name": "Erika TM",
+    "region": "Celadon Gym-C",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 2984, "y": 3016 }
+  },
+  {
+    "name": "Silph Co President",
+    "region": "Silph Co 11F-C",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 6168, "y": 6600 }
+  },
+  {
+    "name": "Woman",
+    "region": "Silph Co 2F-NW",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 5192, "y": 5896 }
+  },
+  {
+    "name": "Woman",
+    "region": "Route 16 Fly House",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 2568, "y": 2536 }
+  },
+  {
+    "name": "Oak's Aide",
+    "region": "Route 15 Gate 2F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 4232, "y": 5112 }
+  },
+  {
+    "name": "Safari Zone Warden",
+    "region": "Fuchsia Warden's House",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 3976, "y": 5608 }
+  },
+  {
+    "name": "Koga TM",
+    "region": "Fuchsia Gym",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 3144, "y": 5720 }
+  },
+  {
+    "name": "",
+    "region": "Safari Zone Secret House",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 3352, "y": 6632 }
+  },
+  {
+    "name": "Lab Scientist",
+    "region": "Cinnabar Lab R&D Room",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 1320, "y": 6792 }
+  },
+  {
+    "name": "Blaine TM",
+    "region": "Cinnabar Gym",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 1912, "y": 5992 }
+  },
+  {
+    "name": "Copycat",
+    "region": "Saffron Copycat's House 2F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 4136, "y": 2216 }
+  },
+  {
+    "name": "Mr. Psychic",
+    "region": "Saffron Mr. Psychic's House",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 5112, "y": 3016 }
+  },
+  {
+    "name": "Sabrina TM",
+    "region": "Saffron Gym-C",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 5080, "y": 2424 }
+  },
+  {
+    "name": "Choice A",
+    "region": "Fossil",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 1896, "y": 984 }
+  },
+  {
+    "name": "Choice B",
+    "region": "Fossil",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 1912, "y": 984 }
+  },
+  {
+    "name": "Rocket Thief",
+    "region": "Cerulean City-Outskirts",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 4712, "y": 1496 }
+  },
+  {
+    "name": "South Item",
+    "region": "Route 2-SE",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 1720, "y": 3096 }
+  },
+  {
+    "name": "North Item",
+    "region": "Route 2-SE",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 1720, "y": 2952 }
+  },
+  {
+    "name": "Item",
+    "region": "Route 4-C",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 3704, "y": 1544 }
+  },
+  {
+    "name": "Item",
+    "region": "Route 9",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 5032, "y": 1736 }
+  },
+  {
+    "name": "Island Item",
+    "region": "Route 12-N",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 6056, "y": 3496 }
+  },
+  {
+    "name": "Item Behind Cuttable Tree",
+    "region": "Route 12-Grass",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 5912, "y": 4360 }
+  },
+  {
+    "name": "Item",
+    "region": "Route 15-N",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 4200, "y": 5320 }
+  },
+  {
+    "name": "Item",
+    "region": "Route 24",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 4552, "y": 872 }
+  },
+  {
+    "name": "Item",
+    "region": "Route 25",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 5064, "y": 824 }
+  },
+  {
+    "name": "Item",
+    "region": "Viridian Gym",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 2280, "y": 3496 }
+  },
+  {
+    "name": "Southwest Item",
+    "region": "Cerulean Cave 1F-Water",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 3672, "y": 1064 }
+  },
+  {
+    "name": "Northeast Item",
+    "region": "Cerulean Cave 1F-Water",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 3864, "y": 904 }
+  },
+  {
+    "name": "Northwest Item",
+    "region": "Cerulean Cave 1F-N",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 3640, "y": 856 }
+  },
+  {
+    "name": "North Item",
+    "region": "Pokemon Tower 3F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 6728, "y": 2792 }
+  },
+  {
+    "name": "East Item",
+    "region": "Pokemon Tower 4F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 6728, "y": 3256 }
+  },
+  {
+    "name": "West Item",
+    "region": "Pokemon Tower 4F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 6680, "y": 3256 }
+  },
+  {
+    "name": "South Item",
+    "region": "Pokemon Tower 4F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 6728, "y": 3352 }
+  },
+  {
+    "name": "Southwest Item",
+    "region": "Pokemon Tower 5F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 6632, "y": 3640 }
+  },
+  {
+    "name": "West Item",
+    "region": "Pokemon Tower 6F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 6632, "y": 3864 }
+  },
+  {
+    "name": "Southeast Item",
+    "region": "Pokemon Tower 6F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 6760, "y": 3960 }
+  },
+  {
+    "name": "Behind Boulder Item",
+    "region": "Fuchsia Warden's House",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 4072, "y": 5608 }
+  },
+  {
+    "name": "North Item",
+    "region": "Pokemon Mansion 1F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 1224, "y": 6088 }
+  },
+  {
+    "name": "South Item",
+    "region": "Pokemon Mansion 1F-SE",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 1288, "y": 6376 }
+  },
+  {
+    "name": "Southwest Item",
+    "region": "Power Plant",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 5816, "y": 1288 }
+  },
+  {
+    "name": "North Item",
+    "region": "Power Plant",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 6152, "y": 936 }
+  },
+  {
+    "name": "Northeast Item",
+    "region": "Power Plant",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 6248, "y": 936 }
+  },
+  {
+    "name": "Southeast Item",
+    "region": "Power Plant",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 6120, "y": 1400 }
+  },
+  {
+    "name": "South Item",
+    "region": "Power Plant",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 6024, "y": 1400 }
+  },
+  {
+    "name": "Northeast Item",
+    "region": "Victory Road 2F-C",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 632, "y": 1832 }
+  },
+  {
+    "name": "East Item",
+    "region": "Victory Road 2F-C",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 488, "y": 1896 }
+  },
+  {
+    "name": "West Item",
+    "region": "Victory Road 2F-W",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 344, "y": 1928 }
+  },
+  {
+    "name": "North Item Near Moltres",
+    "region": "Victory Road 2F-NW",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 376, "y": 1752 }
+  },
+  {
+    "name": "East Item",
+    "region": "Viridian Forest",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 2264, "y": 2728 }
+  },
+  {
+    "name": "Northwest Item",
+    "region": "Viridian Forest",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 2056, "y": 3016 }
+  },
+  {
+    "name": "Southwest Item",
+    "region": "Viridian Forest",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 1880, "y": 3048 }
+  },
+  {
+    "name": "West Item",
+    "region": "Mt Moon 1F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 2888, "y": 1208 }
+  },
+  {
+    "name": "Northwest Item",
+    "region": "Mt Moon 1F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 2888, "y": 920 }
+  },
+  {
+    "name": "Southeast Item",
+    "region": "Mt Moon 1F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 3416, "y": 1384 }
+  },
+  {
+    "name": "East Item",
+    "region": "Mt Moon 1F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 3432, "y": 1256 }
+  },
+  {
+    "name": "South Item",
+    "region": "Mt Moon 1F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 3176, "y": 1416 }
+  },
+  {
+    "name": "Southwest Item",
+    "region": "Mt Moon 1F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 2936, "y": 1400 }
+  },
+  {
+    "name": "South Item",
+    "region": "Mt Moon B2F-C",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 2104, "y": 1224 }
+  },
+  {
+    "name": "North Item",
+    "region": "Mt Moon B2F-NE",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 2168, "y": 968 }
+  },
+  {
+    "name": "Item",
+    "region": "S.S. Anne 1F Rooms-Youngster and Lass Room",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 6376, "y": 4840 }
+  },
+  {
+    "name": "Fisherman and Gentleman Room Item",
+    "region": "S.S. Anne 2F Rooms-Fisherman and Gentleman Room",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 6376, "y": 5160 }
+  },
+  {
+    "name": "Gentleman and Lass Room Item",
+    "region": "S.S. Anne 2F Rooms-Gentleman and Lass Room",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 6504, "y": 5176 }
+  },
+  {
+    "name": "East Single Sailor Room Item",
+    "region": "S.S. Anne B1F Rooms-East Single Sailor Room",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 6536, "y": 4952 }
+  },
+  {
+    "name": "West Single Sailor Room Item",
+    "region": "S.S. Anne B1F Rooms-West Single Sailor Room",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 6456, "y": 4952 }
+  },
+  {
+    "name": "Machoke Room Item",
+    "region": "S.S. Anne B1F Rooms-Machoke Room",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 6728, "y": 4936 }
+  },
+  {
+    "name": "Northeast Item",
+    "region": "Victory Road 3F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 616, "y": 2152 }
+  },
+  {
+    "name": "Northwest Item",
+    "region": "Victory Road 3F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 312, "y": 2184 }
+  },
+  {
+    "name": "West Item",
+    "region": "Rocket Hideout B1F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 3000, "y": 3832 }
+  },
+  {
+    "name": "Southwest Item",
+    "region": "Rocket Hideout B1F-S",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 2968, "y": 3880 }
+  },
+  {
+    "name": "Northwest Left Item",
+    "region": "Rocket Hideout B2F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 3352, "y": 3784 }
+  },
+  {
+    "name": "Northeast Item",
+    "region": "Rocket Hideout B2F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 3592, "y": 3736 }
+  },
+  {
+    "name": "Northwest Right Item",
+    "region": "Rocket Hideout B2F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 3432, "y": 3800 }
+  },
+  {
+    "name": "Southwest Item",
+    "region": "Rocket Hideout B2F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 3384, "y": 3944 }
+  },
+  {
+    "name": "East Item",
+    "region": "Rocket Hideout B3F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 3752, "y": 4360 }
+  },
+  {
+    "name": "Center Item",
+    "region": "Rocket Hideout B3F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 3656, "y": 4312 }
+  },
+  {
+    "name": "West Item",
+    "region": "Rocket Hideout B4F-NW",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 2984, "y": 4280 }
+  },
+  {
+    "name": "Northwest Item",
+    "region": "Rocket Hideout B4F-NW",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 2968, "y": 4152 }
+  },
+  {
+    "name": "Southwest Item",
+    "region": "Rocket Hideout B4F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 3016, "y": 4408 }
+  },
+  {
+    "name": "Giovanni Item",
+    "region": "Rocket Hideout B4F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 3224, "y": 4136 }
+  },
+  {
+    "name": "Rocket Grunt Item",
+    "region": "Rocket Hideout B4F-NW",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 3000, "y": 4120 }
+  },
+  {
+    "name": "Item",
+    "region": "Silph Co 3F-W",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 5160, "y": 6280 }
+  },
+  {
+    "name": "Left Item",
+    "region": "Silph Co 4F-W",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 5080, "y": 6664 }
+  },
+  {
+    "name": "Middle Item",
+    "region": "Silph Co 4F-W",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 5096, "y": 6632 }
+  },
+  {
+    "name": "Right Item",
+    "region": "Silph Co 4F-W",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 5112, "y": 6648 }
+  },
+  {
+    "name": "Southwest Item",
+    "region": "Silph Co 5F-SW",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 5576, "y": 6728 }
+  },
+  {
+    "name": "Northwest Item",
+    "region": "Silph Co 5F-NW",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 5608, "y": 6616 }
+  },
+  {
+    "name": "Southeast Item",
+    "region": "Silph Co 5F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 5880, "y": 6776 }
+  },
+  {
+    "name": "Southwest Top Item",
+    "region": "Silph Co 6F-SW",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 5592, "y": 6392 }
+  },
+  {
+    "name": "Southwest Bottom Item",
+    "region": "Silph Co 6F-SW",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 5576, "y": 6440 }
+  },
+  {
+    "name": "West Item",
+    "region": "Silph Co 7F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 5560, "y": 6024 }
+  },
+  {
+    "name": "East Item",
+    "region": "Silph Co 7F-E",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 5928, "y": 6056 }
+  },
+  {
+    "name": "Left Item",
+    "region": "Silph Co 10F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 6088, "y": 6392 }
+  },
+  {
+    "name": "Bottom Item",
+    "region": "Silph Co 10F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 6120, "y": 6424 }
+  },
+  {
+    "name": "Right Item",
+    "region": "Silph Co 10F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 6136, "y": 6376 }
+  },
+  {
+    "name": "Northeast Item",
+    "region": "Pokemon Mansion 2F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 1448, "y": 5672 }
+  },
+  {
+    "name": "Southwest Item",
+    "region": "Pokemon Mansion 3F-SW",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 1016, "y": 5496 }
+  },
+  {
+    "name": "Northeast Item",
+    "region": "Pokemon Mansion 3F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 1400, "y": 5320 }
+  },
+  {
+    "name": "North Item",
+    "region": "Pokemon Mansion B1F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 648, "y": 6072 }
+  },
+  {
+    "name": "Southwest Item",
+    "region": "Pokemon Mansion B1F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 504, "y": 6392 }
+  },
+  {
+    "name": "South Item",
+    "region": "Pokemon Mansion B1F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 792, "y": 6440 }
+  },
+  {
+    "name": "Northwest Item",
+    "region": "Pokemon Mansion B1F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 568, "y": 6104 }
+  },
+  {
+    "name": "West Item",
+    "region": "Pokemon Mansion B1F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 568, "y": 6248 }
+  },
+  {
+    "name": "Northeast Item",
+    "region": "Safari Zone East",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 4824, "y": 6584 }
+  },
+  {
+    "name": "West Item",
+    "region": "Safari Zone East",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 4536, "y": 6536 }
+  },
+  {
+    "name": "East Item",
+    "region": "Safari Zone East",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 4808, "y": 6632 }
+  },
+  {
+    "name": "Center Item",
+    "region": "Safari Zone East",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 4728, "y": 6616 }
+  },
+  {
+    "name": "Northeast Item",
+    "region": "Safari Zone North",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 4216, "y": 6024 }
+  },
+  {
+    "name": "North Item",
+    "region": "Safari Zone North",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 4120, "y": 6120 }
+  },
+  {
+    "name": "Southwest Item",
+    "region": "Safari Zone West",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 3592, "y": 6936 }
+  },
+  {
+    "name": "Northwest Item",
+    "region": "Safari Zone West-NW",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 3608, "y": 6728 }
+  },
+  {
+    "name": "Southeast Item",
+    "region": "Safari Zone West",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 3752, "y": 6904 }
+  },
+  {
+    "name": "Northeast Item",
+    "region": "Safari Zone West-NW",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 3768, "y": 6728 }
+  },
+  {
+    "name": "Island Item",
+    "region": "Safari Zone Center-C",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 4200, "y": 6776 }
+  },
+  {
+    "name": "East Item",
+    "region": "Cerulean Cave 2F-E",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 4024, "y": 680 }
+  },
+  {
+    "name": "Southwest Item",
+    "region": "Cerulean Cave 2F-W",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 3624, "y": 776 }
+  },
+  {
+    "name": "North Item",
+    "region": "Cerulean Cave 2F-N",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 3768, "y": 632 }
+  },
+  {
+    "name": "Center Item",
+    "region": "Cerulean Cave B1F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 3816, "y": 1320 }
+  },
+  {
+    "name": "North Item",
+    "region": "Cerulean Cave B1F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 3848, "y": 1192 }
+  },
+  {
+    "name": "Top Item",
+    "region": "Victory Road 1F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 536, "y": 1432 }
+  },
+  {
+    "name": "Left Item",
+    "region": "Victory Road 1F",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 504, "y": 1464 }
+  },
+  {
+    "name": "Southwest Item",
+    "region": "Rock Tunnel B1F-E",
+    "type": "Basic",
+    "inclusion": "extra_key_items",
+    "coordinates": { "x": 6440, "y": 1608 }
+  },
+  {
+    "name": "West Item",
+    "region": "Rock Tunnel B1F-W",
+    "type": "Basic",
+    "inclusion": "extra_key_items",
+    "coordinates": { "x": 6456, "y": 1512 }
+  },
+  {
+    "name": "Northwest Item",
+    "region": "Rock Tunnel B1F-W",
+    "type": "Basic",
+    "inclusion": "extra_key_items",
+    "coordinates": { "x": 6520, "y": 1160 }
+  },
+  {
+    "name": "North Item",
+    "region": "Rock Tunnel B1F-W",
+    "type": "Basic",
+    "inclusion": "extra_key_items",
+    "coordinates": { "x": 6712, "y": 1176 }
+  },
+  {
+    "name": "Brock Prize",
+    "region": "Pewter Gym",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 1224, "y": 1736 }
+  },
+  {
+    "name": "Misty Prize",
+    "region": "Cerulean Gym",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 4968, "y": 1848 }
+  },
+  {
+    "name": "Lt. Surge Prize",
+    "region": "Vermilion Gym",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 4120, "y": 3944 }
+  },
+  {
+    "name": "Erika Prize",
+    "region": "Celadon Gym-C",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 2984, "y": 3016 }
+  },
+  {
+    "name": "Koga Prize",
+    "region": "Fuchsia Gym",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 3144, "y": 5720 }
+  },
+  {
+    "name": "Sabrina Prize",
+    "region": "Saffron Gym-C",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 5080, "y": 2424 }
+  },
+  {
+    "name": "Blaine Prize",
+    "region": "Cinnabar Gym",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 1912, "y": 5992 }
+  },
+  {
+    "name": "Giovanni Prize",
+    "region": "Viridian Gym",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 2056, "y": 3368 }
+  },
+  {
+    "name": "Hidden Item Northwest by Trainer",
+    "region": "Viridian Forest",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 1880, "y": 2840 }
+  },
+  {
+    "name": "Hidden Item Entrance Tree",
+    "region": "Viridian Forest",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 2120, "y": 3224 }
+  },
+  {
+    "name": "Hidden Item Dead End Before Fossils",
+    "region": "Mt Moon B2F",
+    "type": "Hidden",
+    "inclusion": "hidden_moon_stones",
+    "coordinates": { "x": 1992, "y": 1080 }
+  },
+  {
+    "name": "Hidden Item Fence Outside Bill's House",
+    "region": "Route 25",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 5320, "y": 840 }
+  },
+  {
+    "name": "Hidden Item Bush By Grass",
+    "region": "Route 9",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 5096, "y": 1608 }
+  },
+  {
+    "name": "Hidden Item Kitchen Trash",
+    "region": "S.S. Anne Kitchen",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 6136, "y": 5128 }
+  },
+  {
+    "name": "Hidden Item Under Pillow",
+    "region": "S.S. Anne B1F Rooms-Fisherman Room",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 6424, "y": 4936 }
+  },
+  {
+    "name": "Hidden Item Behind Rock Tunnel Entrance Cuttable Tree",
+    "region": "Route 10-N",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 5976, "y": 1768 }
+  },
+  {
+    "name": "Hidden Item Bush",
+    "region": "Route 10-S",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 6088, "y": 2344 }
+  },
+  {
+    "name": "Hidden Item Pot Plant",
+    "region": "Rocket Hideout B1F",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 3160, "y": 3848 }
+  },
+  {
+    "name": "Hidden Item Near East Item",
+    "region": "Rocket Hideout B3F",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 3768, "y": 4360 }
+  },
+  {
+    "name": "Hidden Item Behind Giovanni",
+    "region": "Rocket Hideout B4F",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 3224, "y": 4104 }
+  },
+  {
+    "name": "Hidden Item Near West Staircase",
+    "region": "Pokemon Tower 5F",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 6600, "y": 3608 }
+  },
+  {
+    "name": "Hidden Item Dead End Bush",
+    "region": "Route 13",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 5208, "y": 4888 }
+  },
+  {
+    "name": "Hidden Item Dead End By Water Corner",
+    "region": "Route 13",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 5448, "y": 4872 }
+  },
+  {
+    "name": "Hidden Item Secret Key Room Corner",
+    "region": "Pokemon Mansion B1F",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 504, "y": 6184 }
+  },
+  {
+    "name": "Hidden Item Secret House Statue",
+    "region": "Safari Zone West-NW",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 3560, "y": 6696 }
+  },
+  {
+    "name": "Hidden Item Pot Plant",
+    "region": "Silph Co 5F",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 5736, "y": 6568 }
+  },
+  {
+    "name": "Hidden Item Nurse Bed",
+    "region": "Silph Co 9F-SW",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 6088, "y": 6120 }
+  },
+  {
+    "name": "Hidden Item Desk",
+    "region": "Saffron Copycat's House 2F",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 4088, "y": 2184 }
+  },
+  {
+    "name": "Hidden Item Center Rocks",
+    "region": "Cerulean Cave 1F-SW",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 3784, "y": 1032 }
+  },
+  {
+    "name": "Hidden Item Northeast Rocks",
+    "region": "Cerulean Cave B1F-E",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 3992, "y": 1224 }
+  },
+  {
+    "name": "Hidden Item Central Dead End",
+    "region": "Power Plant",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 5976, "y": 1144 }
+  },
+  {
+    "name": "Hidden Item Before Zapdos",
+    "region": "Power Plant",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 5896, "y": 904 }
+  },
+  {
+    "name": "Hidden Item Rock",
+    "region": "Seafoam Islands B2F-NW",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 2776, "y": 7144 }
+  },
+  {
+    "name": "Hidden Item Corner Island",
+    "region": "Seafoam Islands B4F-W",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 2424, "y": 6856 }
+  },
+  {
+    "name": "Hidden Item Block Near Entrance Carpet",
+    "region": "Pokemon Mansion 1F",
+    "type": "Hidden",
+    "inclusion": "hidden_moon_stones",
+    "coordinates": { "x": 1128, "y": 6296 }
+  },
+  {
+    "name": "Hidden Item Behind Burglar",
+    "region": "Pokemon Mansion 3F-SW",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 1016, "y": 5384 }
+  },
+  {
+    "name": "Hidden Item Rocks Before Victory Road",
+    "region": "Route 23-Grass",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 856, "y": 1912 }
+  },
+  {
+    "name": "Hidden Item East Bush After Water",
+    "region": "Route 23-Grass",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 1016, "y": 2328 }
+  },
+  {
+    "name": "Hidden Item On Island",
+    "region": "Route 23-S",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 840, "y": 2648 }
+  },
+  {
+    "name": "Hidden Item Rock Before Moltres",
+    "region": "Victory Road 2F-NW",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 280, "y": 1784 }
+  },
+  {
+    "name": "Hidden Item Rock In Final Room",
+    "region": "Victory Road 2F-E",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 616, "y": 1864 }
+  },
+  {
+    "name": "Hidden Item Cuttable Tree",
+    "region": "Viridian City",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 1576, "y": 3448 }
+  },
+  {
+    "name": "Hidden Item Isolated Bush Near Gate",
+    "region": "Route 11",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 5640, "y": 3880 }
+  },
+  {
+    "name": "Hidden Item Bush Near Gate",
+    "region": "Route 12-W",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 5864, "y": 3944 }
+  },
+  {
+    "name": "Hidden Item In Grass",
+    "region": "Route 17",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 2712, "y": 3160 }
+  },
+  {
+    "name": "Hidden Item Near Northernmost Sign",
+    "region": "Route 17",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 2600, "y": 3656 }
+  },
+  {
+    "name": "Hidden Item East Center",
+    "region": "Route 17",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 2744, "y": 4088 }
+  },
+  {
+    "name": "Hidden Item West Center",
+    "region": "Route 17",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 2536, "y": 4392 }
+  },
+  {
+    "name": "Hidden Item Before Final Bridge",
+    "region": "Route 17",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 2600, "y": 4872 }
+  },
+  {
+    "name": "Hidden Item Near Northern Stairs",
+    "region": "Underground Path North South",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 3976, "y": 1912 }
+  },
+  {
+    "name": "Hidden Item Near Southern Stairs",
+    "region": "Underground Path North South",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 3992, "y": 2392 }
+  },
+  {
+    "name": "Hidden Item West",
+    "region": "Underground Path West East",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 4936, "y": 3288 }
+  },
+  {
+    "name": "Hidden Item East",
+    "region": "Underground Path West East",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 5080, "y": 3336 }
+  },
+  {
+    "name": "Hidden Item Dead End Near Cuttable Tree",
+    "region": "Celadon City",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 3880, "y": 2760 }
+  },
+  {
+    "name": "Hidden Item Northeast Of Grass",
+    "region": "Route 25",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 4872, "y": 808 }
+  },
+  {
+    "name": "Hidden Item Lone Rock",
+    "region": "Mt Moon B2F-NE",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 2232, "y": 1032 }
+  },
+  {
+    "name": "Hidden Item Rock",
+    "region": "Seafoam Islands B3F",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 2168, "y": 7160 }
+  },
+  {
+    "name": "Hidden Item In Water Near Fan Club",
+    "region": "Vermilion City",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 4456, "y": 3848 }
+  },
+  {
+    "name": "Hidden Item Gym Badge Guy's Backyard",
+    "region": "Cerulean City-Badge House Backyard",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 4472, "y": 1496 }
+  },
+  {
+    "name": "Hidden Item Plateau East Of Mt Moon",
+    "region": "Route 4-C",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 3432, "y": 1544 }
+  },
+  {
+    "name": "Oak's Parcel Reward",
+    "region": "Oak's Lab",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 1944, "y": 4696 }
+  },
+  {
+    "name": "Scientist",
+    "region": "Pokemon Mansion 1F-SE",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 1272, "y": 6312 }
+  },
+  {
+    "name": "Burglar",
+    "region": "Pokemon Mansion 2F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 1048, "y": 5832 }
+  },
+  {
+    "name": "Scientist",
+    "region": "Pokemon Mansion 3F-SE",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 1320, "y": 5416 }
+  },
+  {
+    "name": "Burglar",
+    "region": "Pokemon Mansion 3F-SW",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 1080, "y": 5416 }
+  },
+  {
+    "name": "Scientist",
+    "region": "Pokemon Mansion B1F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 920, "y": 6216 }
+  },
+  {
+    "name": "Burglar",
+    "region": "Pokemon Mansion B1F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 744, "y": 6408 }
+  },
+  {
+    "name": "Rocket 1",
+    "region": "Silph Co 11F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6296, "y": 6664 }
+  },
+  {
+    "name": "Rocket 2",
+    "region": "Silph Co 11F-W",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6104, "y": 6776 }
+  },
+  {
+    "name": "Scientist",
+    "region": "Silph Co 10F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6216, "y": 6232 }
+  },
+  {
+    "name": "Rocket",
+    "region": "Silph Co 10F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6072, "y": 6344 }
+  },
+  {
+    "name": "Rocket 1",
+    "region": "Silph Co 9F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6264, "y": 6136 }
+  },
+  {
+    "name": "Scientist",
+    "region": "Silph Co 9F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6392, "y": 6088 }
+  },
+  {
+    "name": "Rocket 2",
+    "region": "Silph Co 9F-NW",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6088, "y": 5944 }
+  },
+  {
+    "name": "Rocket 1",
+    "region": "Silph Co 8F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5848, "y": 5592 }
+  },
+  {
+    "name": "Rocket 2",
+    "region": "Silph Co 8F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5736, "y": 5800 }
+  },
+  {
+    "name": "Scientist",
+    "region": "Silph Co 8F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5704, "y": 5592 }
+  },
+  {
+    "name": "Rocket 1",
+    "region": "Silph Co 7F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5864, "y": 5912 }
+  },
+  {
+    "name": "Rocket 2",
+    "region": "Silph Co 7F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5752, "y": 5896 }
+  },
+  {
+    "name": "Scientist",
+    "region": "Silph Co 7F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5576, "y": 6088 }
+  },
+  {
+    "name": "Rocket 3",
+    "region": "Silph Co 7F-SE",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5848, "y": 6104 }
+  },
+  {
+    "name": "Rocket 1",
+    "region": "Silph Co 6F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5816, "y": 6248 }
+  },
+  {
+    "name": "Scientist",
+    "region": "Silph Co 6F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5656, "y": 6328 }
+  },
+  {
+    "name": "Rocket 2",
+    "region": "Silph Co 6F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5768, "y": 6440 }
+  },
+  {
+    "name": "Rocket 1",
+    "region": "Silph Co 5F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5992, "y": 6584 }
+  },
+  {
+    "name": "Juggler",
+    "region": "Silph Co 5F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5832, "y": 6680 }
+  },
+  {
+    "name": "Scientist",
+    "region": "Silph Co 5F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5672, "y": 6568 }
+  },
+  {
+    "name": "Rocket 2",
+    "region": "Silph Co 5F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5672, "y": 6776 }
+  },
+  {
+    "name": "Rocket 1",
+    "region": "Silph Co 4F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5448, "y": 6680 }
+  },
+  {
+    "name": "Rocket 2",
+    "region": "Silph Co 4F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5176, "y": 6744 }
+  },
+  {
+    "name": "Scientist",
+    "region": "Silph Co 4F-N",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5256, "y": 6616 }
+  },
+  {
+    "name": "Scientist",
+    "region": "Silph Co 3F-W",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5144, "y": 6344 }
+  },
+  {
+    "name": "Rocket",
+    "region": "Silph Co 3F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5352, "y": 6312 }
+  },
+  {
+    "name": "Rocket 1",
+    "region": "Silph Co 2F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5416, "y": 5992 }
+  },
+  {
+    "name": "Rocket 2",
+    "region": "Silph Co 2F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5288, "y": 6056 }
+  },
+  {
+    "name": "Scientist 1",
+    "region": "Silph Co 2F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5416, "y": 6088 }
+  },
+  {
+    "name": "Scientist 2",
+    "region": "Silph Co 2F-SW",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5112, "y": 6072 }
+  },
+  {
+    "name": "Rocket 1",
+    "region": "Rocket Hideout B1F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3016, "y": 3704 }
+  },
+  {
+    "name": "Rocket 2",
+    "region": "Rocket Hideout B1F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3240, "y": 3736 }
+  },
+  {
+    "name": "Rocket 3",
+    "region": "Rocket Hideout B1F-S",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3272, "y": 3896 }
+  },
+  {
+    "name": "Rocket 4",
+    "region": "Rocket Hideout B1F-S",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3112, "y": 3880 }
+  },
+  {
+    "name": "Rocket 5",
+    "region": "Rocket Hideout B1F-SE",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3064, "y": 4008 }
+  },
+  {
+    "name": "Rocket",
+    "region": "Rocket Hideout B2F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3656, "y": 3800 }
+  },
+  {
+    "name": "Rocket 1",
+    "region": "Rocket Hideout B3F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3752, "y": 4280 }
+  },
+  {
+    "name": "Rocket 2",
+    "region": "Rocket Hideout B3F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3496, "y": 4440 }
+  },
+  {
+    "name": "Rocket 1",
+    "region": "Rocket Hideout B4F-NW",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3000, "y": 4120 }
+  },
+  {
+    "name": "Rocket 2",
+    "region": "Rocket Hideout B4F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3192, "y": 4280 }
+  },
+  {
+    "name": "Rocket 3",
+    "region": "Rocket Hideout B4F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3240, "y": 4280 }
+  },
+  {
+    "name": "Gentleman 1",
+    "region": "S.S. Anne 1F Rooms-West Gentleman Room",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6600, "y": 4824 }
+  },
+  {
+    "name": "Gentleman 2",
+    "region": "S.S. Anne 1F Rooms-East Gentleman Room",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6712, "y": 4808 }
+  },
+  {
+    "name": "Lass",
+    "region": "S.S. Anne 1F Rooms-Youngster and Lass Room",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6392, "y": 4776 }
+  },
+  {
+    "name": "Youngster",
+    "region": "S.S. Anne 1F Rooms-Youngster and Lass Room",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6360, "y": 4824 }
+  },
+  {
+    "name": "Fisherman",
+    "region": "S.S. Anne 2F Rooms-Fisherman and Gentleman Room",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6392, "y": 5208 }
+  },
+  {
+    "name": "Gentleman 1",
+    "region": "S.S. Anne 2F Rooms-Fisherman and Gentleman Room",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6344, "y": 5176 }
+  },
+  {
+    "name": "Gentleman 2",
+    "region": "S.S. Anne 2F Rooms-Gentleman and Lass Room",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6504, "y": 5208 }
+  },
+  {
+    "name": "Lass",
+    "region": "S.S. Anne 2F Rooms-Gentleman and Lass Room",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6536, "y": 5160 }
+  },
+  {
+    "name": "Sailor 1",
+    "region": "S.S. Anne Bow",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5640, "y": 5336 }
+  },
+  {
+    "name": "Sailor 2",
+    "region": "S.S. Anne Bow",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5544, "y": 5272 }
+  },
+  {
+    "name": "Sailor 1",
+    "region": "S.S. Anne B1F Rooms-Two Sailors Room",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6648, "y": 4936 }
+  },
+  {
+    "name": "Sailor 2",
+    "region": "S.S. Anne B1F Rooms-Two Sailors Room",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6616, "y": 4968 }
+  },
+  {
+    "name": "Sailor 3",
+    "region": "S.S. Anne B1F Rooms-East Single Sailor Room",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6568, "y": 4952 }
+  },
+  {
+    "name": "Sailor 4",
+    "region": "S.S. Anne B1F Rooms-West Single Sailor Room",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6488, "y": 4968 }
+  },
+  {
+    "name": "Fisherman",
+    "region": "S.S. Anne B1F Rooms-Fisherman Room",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6376, "y": 4984 }
+  },
+  {
+    "name": "Sailor 5",
+    "region": "S.S. Anne B1F Rooms-Fisherman Room",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6376, "y": 4952 }
+  },
+  {
+    "name": "Bug Catcher 1",
+    "region": "Mt Moon 1F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2968, "y": 1240 }
+  },
+  {
+    "name": "Lass 1",
+    "region": "Mt Moon 1F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3112, "y": 1256 }
+  },
+  {
+    "name": "Super Nerd",
+    "region": "Mt Moon 1F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3240, "y": 1384 }
+  },
+  {
+    "name": "Bug Catcher 2",
+    "region": "Mt Moon 1F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3336, "y": 1320 }
+  },
+  {
+    "name": "Lass 2",
+    "region": "Mt Moon 1F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3336, "y": 952 }
+  },
+  {
+    "name": "Youngster",
+    "region": "Mt Moon 1F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3048, "y": 1144 }
+  },
+  {
+    "name": "Hiker",
+    "region": "Mt Moon 1F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2936, "y": 984 }
+  },
+  {
+    "name": "Rocket 1",
+    "region": "Mt Moon B2F-C",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 1944, "y": 1240 }
+  },
+  {
+    "name": "Rocket 2",
+    "region": "Mt Moon B2F-NE",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2168, "y": 1064 }
+  },
+  {
+    "name": "Rocket 3",
+    "region": "Mt Moon B2F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2168, "y": 1160 }
+  },
+  {
+    "name": "Rocket 4",
+    "region": "Mt Moon B2F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 1880, "y": 1144 }
+  },
+  {
+    "name": "Bug Catcher 1",
+    "region": "Viridian Forest",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2344, "y": 3080 }
+  },
+  {
+    "name": "Bug Catcher 2",
+    "region": "Viridian Forest",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2344, "y": 2856 }
+  },
+  {
+    "name": "Bug Catcher 3",
+    "region": "Viridian Forest",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 1896, "y": 2840 }
+  },
+  {
+    "name": "Hiker 1",
+    "region": "Route 25",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 4840, "y": 856 }
+  },
+  {
+    "name": "Youngster 1",
+    "region": "Route 25",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 4936, "y": 824 }
+  },
+  {
+    "name": "Hiker 2",
+    "region": "Route 25",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 4920, "y": 904 }
+  },
+  {
+    "name": "Youngster 2",
+    "region": "Route 25",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5000, "y": 872 }
+  },
+  {
+    "name": "Lass 1",
+    "region": "Route 25",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5000, "y": 920 }
+  },
+  {
+    "name": "Hiker 3",
+    "region": "Route 25",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5080, "y": 936 }
+  },
+  {
+    "name": "Jr. Trainer M",
+    "region": "Route 25",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5096, "y": 856 }
+  },
+  {
+    "name": "Youngster 3",
+    "region": "Route 25",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5224, "y": 840 }
+  },
+  {
+    "name": "Lass 2",
+    "region": "Route 25",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5304, "y": 856 }
+  },
+  {
+    "name": "Bug Catcher",
+    "region": "Route 24",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 4568, "y": 1288 }
+  },
+  {
+    "name": "Lass 1",
+    "region": "Route 24",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 4552, "y": 1240 }
+  },
+  {
+    "name": "Youngster",
+    "region": "Route 24",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 4568, "y": 1192 }
+  },
+  {
+    "name": "Lass 2",
+    "region": "Route 24",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 4552, "y": 1144 }
+  },
+  {
+    "name": "Jr. Trainer M 1",
+    "region": "Route 24",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 4568, "y": 1096 }
+  },
+  {
+    "name": "Jr. Trainer M 2",
+    "region": "Route 24",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 4472, "y": 1112 }
+  },
+  {
+    "name": "Fisherman 1",
+    "region": "Route 21",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 1576, "y": 5208 }
+  },
+  {
+    "name": "Fisherman 2",
+    "region": "Route 21",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 1608, "y": 5224 }
+  },
+  {
+    "name": "Cue Ball",
+    "region": "Route 21",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 1672, "y": 5320 }
+  },
+  {
+    "name": "Swimmer 1",
+    "region": "Route 21",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 1704, "y": 5304 }
+  },
+  {
+    "name": "Fisherman 3",
+    "region": "Route 21",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 1736, "y": 5720 }
+  },
+  {
+    "name": "Fisherman 4",
+    "region": "Route 21",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 1784, "y": 5736 }
+  },
+  {
+    "name": "Swimmer 2",
+    "region": "Route 21",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 1768, "y": 5832 }
+  },
+  {
+    "name": "Swimmer 3",
+    "region": "Route 21",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 1752, "y": 5960 }
+  },
+  {
+    "name": "Swimmer 4",
+    "region": "Route 21",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 1592, "y": 5960 }
+  },
+  {
+    "name": "Beauty 1",
+    "region": "Route 20-W",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2072, "y": 6392 }
+  },
+  {
+    "name": "Jr. Trainer F 1",
+    "region": "Route 20-W",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2216, "y": 6456 }
+  },
+  {
+    "name": "Beauty 2",
+    "region": "Route 20-W",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2232, "y": 6376 }
+  },
+  {
+    "name": "Bird Keeper",
+    "region": "Route 20-W",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2376, "y": 6408 }
+  },
+  {
+    "name": "Swimmer 1",
+    "region": "Route 20-W",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2440, "y": 6472 }
+  },
+  {
+    "name": "Jr. Trainer F 2",
+    "region": "Route 20-W",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2712, "y": 6488 }
+  },
+  {
+    "name": "Beauty 3",
+    "region": "Route 20-E",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2552, "y": 6424 }
+  },
+  {
+    "name": "Beauty 4",
+    "region": "Route 20-E",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2920, "y": 6440 }
+  },
+  {
+    "name": "Swimmer 2",
+    "region": "Route 20-E",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3224, "y": 6392 }
+  },
+  {
+    "name": "Swimmer 3",
+    "region": "Route 20-E",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3224, "y": 6472 }
+  },
+  {
+    "name": "Swimmer 1",
+    "region": "Route 19-N",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3592, "y": 6392 }
+  },
+  {
+    "name": "Swimmer 2",
+    "region": "Route 19-N",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3560, "y": 6376 }
+  },
+  {
+    "name": "Swimmer 3",
+    "region": "Route 19-S",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3608, "y": 6376 }
+  },
+  {
+    "name": "Swimmer 4",
+    "region": "Route 19-S",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3576, "y": 6360 }
+  },
+  {
+    "name": "Swimmer 5",
+    "region": "Route 19-S",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3688, "y": 6184 }
+  },
+  {
+    "name": "Swimmer 6",
+    "region": "Route 19-S",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3496, "y": 6120 }
+  },
+  {
+    "name": "Swimmer 7",
+    "region": "Route 19-S",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3640, "y": 6088 }
+  },
+  {
+    "name": "Beauty 1",
+    "region": "Route 19-S",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3576, "y": 5864 }
+  },
+  {
+    "name": "Beauty 2",
+    "region": "Route 19-S",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3560, "y": 5800 }
+  },
+  {
+    "name": "Beauty 3",
+    "region": "Route 19-S",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3640, "y": 5800 }
+  },
+  {
+    "name": "Bird Keeper 1",
+    "region": "Route 18-E",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3144, "y": 5448 }
+  },
+  {
+    "name": "Bird Keeper 2",
+    "region": "Route 18-E",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3112, "y": 5480 }
+  },
+  {
+    "name": "Bird Keeper 3",
+    "region": "Route 18-E",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3048, "y": 5416 }
+  },
+  {
+    "name": "Cue Ball 1",
+    "region": "Route 17",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2632, "y": 4824 }
+  },
+  {
+    "name": "Biker 1",
+    "region": "Route 17",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2552, "y": 4504 }
+  },
+  {
+    "name": "Cue Ball 2",
+    "region": "Route 17",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2696, "y": 4504 }
+  },
+  {
+    "name": "Biker 2",
+    "region": "Route 17",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2504, "y": 4024 }
+  },
+  {
+    "name": "Biker 3",
+    "region": "Route 17",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2744, "y": 3864 }
+  },
+  {
+    "name": "Cue Ball 3",
+    "region": "Route 17",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2696, "y": 3480 }
+  },
+  {
+    "name": "Cue Ball 4",
+    "region": "Route 17",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2584, "y": 3448 }
+  },
+  {
+    "name": "Biker 4",
+    "region": "Route 17",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2664, "y": 3240 }
+  },
+  {
+    "name": "Cue Ball 5",
+    "region": "Route 17",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2536, "y": 3224 }
+  },
+  {
+    "name": "Biker 5",
+    "region": "Route 17",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2648, "y": 3192 }
+  },
+  {
+    "name": "Biker",
+    "region": "Route 16-SW",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2520, "y": 2840 }
+  },
+  {
+    "name": "Cue Ball 1",
+    "region": "Route 16-SW",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2568, "y": 2808 }
+  },
+  {
+    "name": "Cue Ball 2",
+    "region": "Route 16-SW",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2616, "y": 2824 }
+  },
+  {
+    "name": "Biker 2",
+    "region": "Route 16-SW",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2648, "y": 2840 }
+  },
+  {
+    "name": "Cue Ball 3",
+    "region": "Route 16-SW",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2696, "y": 2856 }
+  },
+  {
+    "name": "Biker 3",
+    "region": "Route 16-SW",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2744, "y": 2840 }
+  },
+  {
+    "name": "Jr. Trainer F 1",
+    "region": "Route 15-N",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 4504, "y": 5320 }
+  },
+  {
+    "name": "Beauty 1",
+    "region": "Route 15",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 4760, "y": 5416 }
+  },
+  {
+    "name": "Jr. Trainer F 2",
+    "region": "Route 15",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 4760, "y": 5400 }
+  },
+  {
+    "name": "Biker 1",
+    "region": "Route 15",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 4680, "y": 5400 }
+  },
+  {
+    "name": "Biker 2",
+    "region": "Route 15",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 4648, "y": 5400 }
+  },
+  {
+    "name": "Jr. Trainer F 3",
+    "region": "Route 15",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 4568, "y": 5416 }
+  },
+  {
+    "name": "Beauty 2",
+    "region": "Route 15",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 4568, "y": 5400 }
+  },
+  {
+    "name": "Bird Keeper 1",
+    "region": "Route 15",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 4472, "y": 5448 }
+  },
+  {
+    "name": "Bird Keeper 2",
+    "region": "Route 15",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 4408, "y": 5448 }
+  },
+  {
+    "name": "Jr. Trainer F 4",
+    "region": "Route 15",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 4200, "y": 5448 }
+  },
+  {
+    "name": "Bird Keeper 1",
+    "region": "Route 14",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5112, "y": 4760 }
+  },
+  {
+    "name": "Bird Keeper 2",
+    "region": "Route 14",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 4936, "y": 4728 }
+  },
+  {
+    "name": "Bird Keeper 3",
+    "region": "Route 14",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5064, "y": 4840 }
+  },
+  {
+    "name": "Bird Keeper 4",
+    "region": "Route 14",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5096, "y": 4904 }
+  },
+  {
+    "name": "Biker 1",
+    "region": "Route 14",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5112, "y": 5144 }
+  },
+  {
+    "name": "Bird Keeper 5",
+    "region": "Route 14",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5112, "y": 5160 }
+  },
+  {
+    "name": "Biker 2",
+    "region": "Route 14",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 4952, "y": 5288 }
+  },
+  {
+    "name": "Biker 3",
+    "region": "Route 14",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 4936, "y": 5160 }
+  },
+  {
+    "name": "Biker 4",
+    "region": "Route 14",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 4936, "y": 5144 }
+  },
+  {
+    "name": "Bird Keeper 6",
+    "region": "Route 14",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 4968, "y": 5448 }
+  },
+  {
+    "name": "Jr. Trainer F 1",
+    "region": "Route 13-E",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5992, "y": 4744 }
+  },
+  {
+    "name": "Bird Keeper 1",
+    "region": "Route 13-E",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5976, "y": 4824 }
+  },
+  {
+    "name": "Jr. Trainer F 2",
+    "region": "Route 13-E",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5960, "y": 4824 }
+  },
+  {
+    "name": "Beauty 1",
+    "region": "Route 13",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5720, "y": 4760 }
+  },
+  {
+    "name": "Beauty 2",
+    "region": "Route 13",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5704, "y": 4760 }
+  },
+  {
+    "name": "Jr. Trainer F 3",
+    "region": "Route 13",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5624, "y": 4808 }
+  },
+  {
+    "name": "Jr. Trainer F 4",
+    "region": "Route 13",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5560, "y": 4824 }
+  },
+  {
+    "name": "Bird Keeper 2",
+    "region": "Route 13",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5304, "y": 4872 }
+  },
+  {
+    "name": "Bird Keeper 3",
+    "region": "Route 13",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5384, "y": 4728 }
+  },
+  {
+    "name": "Biker",
+    "region": "Route 13",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5352, "y": 4776 }
+  },
+  {
+    "name": "Fisherman 1",
+    "region": "Route 12-N",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6056, "y": 3432 }
+  },
+  {
+    "name": "Fisherman 2",
+    "region": "Route 12-N",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5912, "y": 3560 }
+  },
+  {
+    "name": "Fisherman 3",
+    "region": "Route 12-N",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6024, "y": 3576 }
+  },
+  {
+    "name": "Fisherman 4",
+    "region": "Route 12-N",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5976, "y": 3768 }
+  },
+  {
+    "name": "Rocker",
+    "region": "Route 12-S",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6056, "y": 4152 }
+  },
+  {
+    "name": "Jr. Trainer M",
+    "region": "Route 12-S",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6008, "y": 4408 }
+  },
+  {
+    "name": "Fisherman 5",
+    "region": "Route 12-Grass",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5928, "y": 4328 }
+  },
+  {
+    "name": "Youngster 1",
+    "region": "Route 11",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5080, "y": 3880 }
+  },
+  {
+    "name": "Gambler 1",
+    "region": "Route 11",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5032, "y": 4024 }
+  },
+  {
+    "name": "Youngster 2",
+    "region": "Route 11",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5224, "y": 3864 }
+  },
+  {
+    "name": "Youngster 3",
+    "region": "Route 11",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5224, "y": 3992 }
+  },
+  {
+    "name": "Gambler 2",
+    "region": "Route 11",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5288, "y": 3944 }
+  },
+  {
+    "name": "Gambler 3",
+    "region": "Route 11",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5400, "y": 3848 }
+  },
+  {
+    "name": "Engineer 1",
+    "region": "Route 11",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5448, "y": 3976 }
+  },
+  {
+    "name": "Engineer 2",
+    "region": "Route 11",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5592, "y": 4056 }
+  },
+  {
+    "name": "Youngster 4",
+    "region": "Route 11",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5560, "y": 3880 }
+  },
+  {
+    "name": "Gambler 4",
+    "region": "Route 11",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5592, "y": 3912 }
+  },
+  {
+    "name": "PokeManiac",
+    "region": "Rock Tunnel 1F-NE",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6552, "y": 1848 }
+  },
+  {
+    "name": "Hiker 1",
+    "region": "Rock Tunnel 1F-NW",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6456, "y": 1960 }
+  },
+  {
+    "name": "Hiker 2",
+    "region": "Rock Tunnel 1F-NW",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6264, "y": 1976 }
+  },
+  {
+    "name": "Hiker 3",
+    "region": "Rock Tunnel 1F-NW",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6296, "y": 1800 }
+  },
+  {
+    "name": "Jr. Trainer F 1",
+    "region": "Rock Tunnel 1F-S",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6536, "y": 2104 }
+  },
+  {
+    "name": "Jr. Trainer F 2",
+    "region": "Rock Tunnel 1F-S",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6696, "y": 2104 }
+  },
+  {
+    "name": "Jr. Trainer F 3",
+    "region": "Rock Tunnel 1F-S",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6776, "y": 2056 }
+  },
+  {
+    "name": "PokeManiac 1",
+    "region": "Rock Tunnel B1F-E",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6792, "y": 1592 }
+  },
+  {
+    "name": "Jr. Trainer F 1",
+    "region": "Rock Tunnel B1F-E",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6600, "y": 1560 }
+  },
+  {
+    "name": "PokeManiac 2",
+    "region": "Rock Tunnel B1F-E",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6696, "y": 1448 }
+  },
+  {
+    "name": "Hiker 1",
+    "region": "Rock Tunnel B1F-E",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6856, "y": 1272 }
+  },
+  {
+    "name": "Hiker 2",
+    "region": "Rock Tunnel B1F-E",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6904, "y": 1192 }
+  },
+  {
+    "name": "Jr. Trainer F 2",
+    "region": "Rock Tunnel B1F-W",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6552, "y": 1320 }
+  },
+  {
+    "name": "Hiker 3",
+    "region": "Rock Tunnel B1F-W",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6472, "y": 1272 }
+  },
+  {
+    "name": "PokeManiac 3",
+    "region": "Rock Tunnel B1F-W",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6424, "y": 1192 }
+  },
+  {
+    "name": "Jr. Trainer F 1",
+    "region": "Route 10-N",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5944, "y": 1896 }
+  },
+  {
+    "name": "PokeManiac 1",
+    "region": "Route 10-C",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5992, "y": 2200 }
+  },
+  {
+    "name": "Jr. Trainer F 2",
+    "region": "Route 10-S",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5944, "y": 2360 }
+  },
+  {
+    "name": "Hiker 1",
+    "region": "Route 10-S",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5880, "y": 2408 }
+  },
+  {
+    "name": "Hiker 2",
+    "region": "Route 10-S",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5880, "y": 2472 }
+  },
+  {
+    "name": "PokeManiac 2",
+    "region": "Route 10-S",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6056, "y": 2520 }
+  },
+  {
+    "name": "Jr. Trainer F 1",
+    "region": "Route 9",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5080, "y": 1656 }
+  },
+  {
+    "name": "Hiker 1",
+    "region": "Route 9",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5128, "y": 1736 }
+  },
+  {
+    "name": "Jr. Trainer M 1",
+    "region": "Route 9",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5256, "y": 1608 }
+  },
+  {
+    "name": "Bug Catcher 1",
+    "region": "Route 9",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5224, "y": 1528 }
+  },
+  {
+    "name": "Hiker 2",
+    "region": "Route 9",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5592, "y": 1736 }
+  },
+  {
+    "name": "Bug Catcher 2",
+    "region": "Route 9",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5512, "y": 1624 }
+  },
+  {
+    "name": "Jr. Trainer M 2",
+    "region": "Route 9",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5368, "y": 1608 }
+  },
+  {
+    "name": "Hiker 3",
+    "region": "Route 9",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5560, "y": 1544 }
+  },
+  {
+    "name": "Jr. Trainer F 2",
+    "region": "Route 9",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5640, "y": 1624 }
+  },
+  {
+    "name": "Lass 1",
+    "region": "Route 8",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5688, "y": 2840 }
+  },
+  {
+    "name": "Gambler 1",
+    "region": "Route 8",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5608, "y": 2856 }
+  },
+  {
+    "name": "Super Nerd 1",
+    "region": "Route 8",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5544, "y": 2744 }
+  },
+  {
+    "name": "Lass 2",
+    "region": "Route 8",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5288, "y": 2696 }
+  },
+  {
+    "name": "Super Nerd 2",
+    "region": "Route 8",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5288, "y": 2712 }
+  },
+  {
+    "name": "Lass 3",
+    "region": "Route 8",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5288, "y": 2728 }
+  },
+  {
+    "name": "Lass 4",
+    "region": "Route 8",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5288, "y": 2744 }
+  },
+  {
+    "name": "Gambler 2",
+    "region": "Route 8",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5080, "y": 2792 }
+  },
+  {
+    "name": "Super Nerd 3",
+    "region": "Route 8",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5000, "y": 2728 }
+  },
+  {
+    "name": "Bug Catcher 1",
+    "region": "Route 6",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 4392, "y": 3336 }
+  },
+  {
+    "name": "Jr. Trainer F 1",
+    "region": "Route 6",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 4568, "y": 3432 }
+  },
+  {
+    "name": "Jr. Trainer M 1",
+    "region": "Route 6",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 4552, "y": 3432 }
+  },
+  {
+    "name": "Bug Catcher 2",
+    "region": "Route 6",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 4696, "y": 3512 }
+  },
+  {
+    "name": "Jr. Trainer F 2",
+    "region": "Route 6",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 4568, "y": 3576 }
+  },
+  {
+    "name": "Jr. Trainer M 2",
+    "region": "Route 6",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 4568, "y": 3592 }
+  },
+  {
+    "name": "Lass",
+    "region": "Route 4-Lass",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3800, "y": 1544 }
+  },
+  {
+    "name": "Lass 1",
+    "region": "Route 3",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2248, "y": 1928 }
+  },
+  {
+    "name": "Bug Catcher 1",
+    "region": "Route 3",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2152, "y": 1880 }
+  },
+  {
+    "name": "Youngster 1",
+    "region": "Route 3",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2216, "y": 1848 }
+  },
+  {
+    "name": "Bug Catcher 2",
+    "region": "Route 3",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2296, "y": 1864 }
+  },
+  {
+    "name": "Lass 2",
+    "region": "Route 3",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2360, "y": 1848 }
+  },
+  {
+    "name": "Youngster 2",
+    "region": "Route 3",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2344, "y": 1928 }
+  },
+  {
+    "name": "Bug Catcher 3",
+    "region": "Route 3",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2376, "y": 1880 }
+  },
+  {
+    "name": "Lass 3",
+    "region": "Route 3",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2520, "y": 1944 }
+  },
+  {
+    "name": "Psychic 1",
+    "region": "Saffron Gym-NE",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5208, "y": 2312 }
+  },
+  {
+    "name": "Psychic 2",
+    "region": "Saffron Gym-E",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5208, "y": 2408 }
+  },
+  {
+    "name": "Psychic 3",
+    "region": "Saffron Gym-SE",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5208, "y": 2504 }
+  },
+  {
+    "name": "Channeler 1",
+    "region": "Saffron Gym-N",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5096, "y": 2312 }
+  },
+  {
+    "name": "Psychic 4",
+    "region": "Saffron Gym-NW",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 4984, "y": 2312 }
+  },
+  {
+    "name": "Channeler 2",
+    "region": "Saffron Gym-W",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 4984, "y": 2408 }
+  },
+  {
+    "name": "Channeler 3",
+    "region": "Saffron Gym-SW",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 4984, "y": 2504 }
+  },
+  {
+    "name": "Blackbelt 1",
+    "region": "Saffron Fighting Dojo",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 4824, "y": 2408 }
+  },
+  {
+    "name": "Blackbelt 2",
+    "region": "Saffron Fighting Dojo",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 4792, "y": 2392 }
+  },
+  {
+    "name": "Blackbelt 3",
+    "region": "Saffron Fighting Dojo",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 4824, "y": 2376 }
+  },
+  {
+    "name": "Blackbelt 4",
+    "region": "Saffron Fighting Dojo",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 4792, "y": 2360 }
+  },
+  {
+    "name": "Juggler 1",
+    "region": "Fuchsia Gym",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3096, "y": 5752 }
+  },
+  {
+    "name": "Juggler 2",
+    "region": "Fuchsia Gym",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3208, "y": 5768 }
+  },
+  {
+    "name": "Juggler 3",
+    "region": "Fuchsia Gym",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3192, "y": 5688 }
+  },
+  {
+    "name": "Tamer 1",
+    "region": "Fuchsia Gym",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3208, "y": 5592 }
+  },
+  {
+    "name": "Tamer 2",
+    "region": "Fuchsia Gym",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3128, "y": 5640 }
+  },
+  {
+    "name": "Juggler 4",
+    "region": "Fuchsia Gym",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3112, "y": 5672 }
+  },
+  {
+    "name": "Lass 1",
+    "region": "Celadon Gym",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2952, "y": 3144 }
+  },
+  {
+    "name": "Beauty 1",
+    "region": "Celadon Gym",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3032, "y": 3128 }
+  },
+  {
+    "name": "Beauty 2",
+    "region": "Celadon Gym",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2936, "y": 3048 }
+  },
+  {
+    "name": "Jr. Trainer F",
+    "region": "Celadon Gym",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3064, "y": 3048 }
+  },
+  {
+    "name": "Lass 2",
+    "region": "Celadon Gym-C",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3016, "y": 3016 }
+  },
+  {
+    "name": "Cool Trainer F",
+    "region": "Celadon Gym-C",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 3000, "y": 3016 }
+  },
+  {
+    "name": "Beauty 3",
+    "region": "Celadon Gym-C",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2968, "y": 3016 }
+  },
+  {
+    "name": "Sailor",
+    "region": "Vermilion Gym",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 4040, "y": 4088 }
+  },
+  {
+    "name": "Rocker",
+    "region": "Vermilion Gym",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 4088, "y": 4056 }
+  },
+  {
+    "name": "Gentleman",
+    "region": "Vermilion Gym",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 4184, "y": 4024 }
+  },
+  {
+    "name": "Channeler 1",
+    "region": "Pokemon Tower 3F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6728, "y": 2824 }
+  },
+  {
+    "name": "Channeler 2",
+    "region": "Pokemon Tower 3F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6696, "y": 2984 }
+  },
+  {
+    "name": "Channeler 3",
+    "region": "Pokemon Tower 3F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6680, "y": 2904 }
+  },
+  {
+    "name": "Channeler 1",
+    "region": "Pokemon Tower 4F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6776, "y": 3208 }
+  },
+  {
+    "name": "Channeler 2",
+    "region": "Pokemon Tower 4F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6760, "y": 3288 }
+  },
+  {
+    "name": "Channeler 3",
+    "region": "Pokemon Tower 4F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6616, "y": 3256 }
+  },
+  {
+    "name": "Channeler 1",
+    "region": "Pokemon Tower 5F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6760, "y": 3464 }
+  },
+  {
+    "name": "Channeler 2",
+    "region": "Pokemon Tower 5F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6808, "y": 3528 }
+  },
+  {
+    "name": "Channeler 3",
+    "region": "Pokemon Tower 5F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6632, "y": 3576 }
+  },
+  {
+    "name": "Channeler 4",
+    "region": "Pokemon Tower 5F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6680, "y": 3672 }
+  },
+  {
+    "name": "Channeler 1",
+    "region": "Pokemon Tower 6F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6728, "y": 3896 }
+  },
+  {
+    "name": "Channeler 2",
+    "region": "Pokemon Tower 6F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6792, "y": 3816 }
+  },
+  {
+    "name": "Channeler 3",
+    "region": "Pokemon Tower 6F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6680, "y": 3816 }
+  },
+  {
+    "name": "Rocket 1",
+    "region": "Pokemon Tower 7F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6680, "y": 4232 }
+  },
+  {
+    "name": "Rocket 2",
+    "region": "Pokemon Tower 7F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6728, "y": 4200 }
+  },
+  {
+    "name": "Rocket 3",
+    "region": "Pokemon Tower 7F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 6680, "y": 4168 }
+  },
+  {
+    "name": "Swimmer",
+    "region": "Cerulean Gym",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 5032, "y": 1928 }
+  },
+  {
+    "name": "Jr. Trainer F",
+    "region": "Cerulean Gym",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 4936, "y": 1864 }
+  },
+  {
+    "name": "Jr. Trainer M",
+    "region": "Pewter Gym",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 1208, "y": 1816 }
+  },
+  {
+    "name": "Tamer 1",
+    "region": "Viridian Gym",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2056, "y": 3608 }
+  },
+  {
+    "name": "Blackbelt 1",
+    "region": "Viridian Gym",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2072, "y": 3464 }
+  },
+  {
+    "name": "Cooltrainer M 1",
+    "region": "Viridian Gym",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2232, "y": 3432 }
+  },
+  {
+    "name": "Cooltrainer M 2",
+    "region": "Viridian Gym",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2216, "y": 3464 }
+  },
+  {
+    "name": "Blackbelt 2",
+    "region": "Viridian Gym",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2200, "y": 3528 }
+  },
+  {
+    "name": "Tamer 2",
+    "region": "Viridian Gym",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2184, "y": 3464 }
+  },
+  {
+    "name": "Blackbelt 3",
+    "region": "Viridian Gym",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2184, "y": 3368 }
+  },
+  {
+    "name": "Cooltrainer M 3",
+    "region": "Viridian Gym",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2120, "y": 3432 }
+  },
+  {
+    "name": "Cooltrainer F",
+    "region": "Victory Road 1F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 472, "y": 1512 }
+  },
+  {
+    "name": "Cooltrainer M",
+    "region": "Victory Road 1F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 408, "y": 1464 }
+  },
+  {
+    "name": "Blackbelt",
+    "region": "Victory Road 2F-C",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 392, "y": 1896 }
+  },
+  {
+    "name": "Juggler 1",
+    "region": "Victory Road 2F-C",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 536, "y": 1960 }
+  },
+  {
+    "name": "Tamer",
+    "region": "Victory Road 2F-C",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 504, "y": 1880 }
+  },
+  {
+    "name": "Juggler 2",
+    "region": "Victory Road 2F-C",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 616, "y": 1800 }
+  },
+  {
+    "name": "PokeManiac",
+    "region": "Victory Road 2F-NW",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 264, "y": 1784 }
+  },
+  {
+    "name": "Cooltrainer M 1",
+    "region": "Victory Road 3F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 648, "y": 2152 }
+  },
+  {
+    "name": "Cooltrainer F 1",
+    "region": "Victory Road 3F-S",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 408, "y": 2120 }
+  },
+  {
+    "name": "Cooltrainer M 2",
+    "region": "Victory Road 3F-S",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 296, "y": 2296 }
+  },
+  {
+    "name": "Cooltrainer F 2",
+    "region": "Victory Road 3F",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 312, "y": 2280 }
+  },
+  {
+    "name": "Lorelei",
+    "region": "Indigo Plateau Lorelei's Room",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 888, "y": 504 }
+  },
+  {
+    "name": "Bruno",
+    "region": "Indigo Plateau Bruno's Room",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 888, "y": 280 }
+  },
+  {
+    "name": "Agatha",
+    "region": "Indigo Plateau Agatha's Room",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 888, "y": 56 }
+  },
+  {
+    "name": "Lance",
+    "region": "Indigo Plateau Lance's Room",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 392, "y": 360 }
+  },
+  {
+    "name": "Burglar 1",
+    "region": "Cinnabar Gym",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2136, "y": 6072 }
+  },
+  {
+    "name": "Super Nerd 1",
+    "region": "Cinnabar Gym",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2136, "y": 5976 }
+  },
+  {
+    "name": "Super Nerd 2",
+    "region": "Cinnabar Gym",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2040, "y": 6008 }
+  },
+  {
+    "name": "Burglar 2",
+    "region": "Cinnabar Gym",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2040, "y": 6072 }
+  },
+  {
+    "name": "Super Nerd 3",
+    "region": "Cinnabar Gym",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 2040, "y": 6168 }
+  },
+  {
+    "name": "Super Nerd 4",
+    "region": "Cinnabar Gym",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 1912, "y": 6168 }
+  },
+  {
+    "name": "Super Nerd 5",
+    "region": "Cinnabar Gym",
+    "type": "Basic",
+    "inclusion": "trainsersanity",
+    "coordinates": { "x": 1912, "y": 6072 }
+  },
+  {
+    "name": "Item Prize 1",
+    "region": "Celadon Prize Corner",
+    "type": "Basic",
+    "inclusion": "prizesanity",
+    "coordinates": { "x": 3592, "y": 3160 }
+  },
+  {
+    "name": "Item Prize 2",
+    "region": "Celadon Prize Corner",
+    "type": "Basic",
+    "inclusion": "prizesanity",
+    "coordinates": { "x": 3592, "y": 3160 }
+  },
+  {
+    "name": "Item Prize 3",
+    "region": "Celadon Prize Corner",
+    "type": "Basic",
+    "inclusion": "prizesanity",
+    "coordinates": { "x": 3592, "y": 3160 }
+  },
+  {
+    "name": "West Gambler's Gift",
+    "region": "Celadon Game Corner",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 3176, "y": 3448 }
+  },
+  {
+    "name": "Center Gambler's Gift",
+    "region": "Celadon Game Corner",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 3368, "y": 3464 }
+  },
+  {
+    "name": "East Gambler's Gift",
+    "region": "Celadon Game Corner",
+    "type": "Basic",
+    "inclusion": "",
+    "coordinates": { "x": 3416, "y": 3496 }
+  },
+  {
+    "name": "Hidden Item Northwest By Counter",
+    "region": "Celadon Game Corner",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 3144, "y": 3416 }
+  },
+  {
+    "name": "Hidden Item Southwest Corner",
+    "region": "Celadon Game Corner",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 3160, "y": 3544 }
+  },
+  {
+    "name": "Hidden Item Near Rumor Man",
+    "region": "Celadon Game Corner",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 3336, "y": 3528 }
+  },
+  {
+    "name": "Hidden Item Near Speculating Woman",
+    "region": "Celadon Game Corner",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 3288, "y": 3480 }
+  },
+  {
+    "name": "Hidden Item Near West Gifting Gambler",
+    "region": "Celadon Game Corner",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 3400, "y": 3512 }
+  },
+  {
+    "name": "Hidden Item Near Wonderful Time Woman",
+    "region": "Celadon Game Corner",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 3192, "y": 3512 }
+  },
+  {
+    "name": "Hidden Item Near Failing Gym Information Guy",
+    "region": "Celadon Game Corner",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 3288, "y": 3528 }
+  },
+  {
+    "name": "Hidden Item Near East Gifting Gambler",
+    "region": "Celadon Game Corner",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 3192, "y": 3464 }
+  },
+  {
+    "name": "Hidden Item Near Hooked Guy",
+    "region": "Celadon Game Corner",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 3208, "y": 3480 }
+  },
+  {
+    "name": "Hidden Item at End of Horizontal Machine Row",
+    "region": "Celadon Game Corner",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 3320, "y": 3400 }
+  },
+  {
+    "name": "Hidden Item in Front of Horizontal Machine Row",
+    "region": "Celadon Game Corner",
+    "type": "Hidden",
+    "inclusion": "hidden_items",
+    "coordinates": { "x": 3384, "y": 3416 }
+  },
+  {
+    "name": "Receptionist",
+    "region": "Silph Co 1F",
+    "type": "Basic",
+    "inclusion": "split_card_key",
+    "coordinates": { "x": 5096, "y": 5592 }
+  },
+  {
+    "name": "Hostage",
+    "region": "Silph Co 4F-W",
+    "type": "Basic",
+    "inclusion": "split_card_key",
+    "coordinates": { "x": 5128, "y": 6552 }
+  },
+  {
+    "name": "Hostage",
+    "region": "Silph Co 5F",
+    "type": "Basic",
+    "inclusion": "split_card_key",
+    "coordinates": { "x": 5752, "y": 6664 }
+  },
+  {
+    "name": "Hostage",
+    "region": "Silph Co 6F",
+    "type": "Basic",
+    "inclusion": "split_card_key",
+    "coordinates": { "x": 5832, "y": 6408 }
+  },
+  {
+    "name": "Hostage",
+    "region": "Silph Co 7F",
+    "type": "Basic",
+    "inclusion": "split_card_key",
+    "coordinates": { "x": 5656, "y": 6040 }
+  },
+  {
+    "name": "Hostage",
+    "region": "Silph Co 8F-W",
+    "type": "Basic",
+    "inclusion": "split_card_key",
+    "coordinates": { "x": 5608, "y": 5592 }
+  },
+  {
+    "name": "Nurse",
+    "region": "Silph Co 9F-SW",
+    "type": "Basic",
+    "inclusion": "split_card_key",
+    "coordinates": { "x": 6104, "y": 6104 }
+  },
+  {
+    "name": "Hostage",
+    "region": "Silph Co 10F-SE",
+    "type": "Basic",
+    "inclusion": "split_card_key",
+    "coordinates": { "x": 6200, "y": 6440 }
+  },
+  {
+    "name": "Secretary",
+    "region": "Silph Co 11F-C",
+    "type": "Basic",
+    "inclusion": "split_card_key",
+    "coordinates": { "x": 6216, "y": 6600 }
+  }
+]
