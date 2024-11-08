@@ -2,76 +2,14 @@ const MAX_KEY_ITEMS = 100;
 const MAX_TRAINERS = 317;
 const NUM_POKEMON = 151;
 
-import { CheckAccessibility, Check } from "./Checks";
-import { WarpAccessibility, Warp } from "./Warps";
-
-export const Items: Set<string> = new Set();
-export const Regions: Set<string> = new Set();
-
-class GraphClass {
-  // TODO
-}
-
-export const Graph: GraphClass = new GraphClass();
-
-export function entranceAccessible(entrance: Warp): WarpAccessibility {
-  /**
-   * Parameters:
-   *  Warp: Representation of an entrance
-   * Returns enum EntranceAccessibility
-   */
-  return WarpAccessibility.Other;
-}
-
-export function getCheckStatus(check: string): CheckAccessibility {
-  /**
-   * Parameters:
-   *  check: Respresentation of a check
-   * Return enum CheckAccessibility
-   */
-  // TODO: Mapping of string names of checks to Check objects
-  throw new Error("todo");
-}
-
-/** "check" refers to the specific check-giving thing that is found on the map */
-export function setCheckAcquired(checkName: string, acquired: boolean) {
-  throw new Error("todo");
-}
-
-export function shortestPath(startRegion: string, endRegion: string): Array<string> {
-  /**
-   * Parameters:
-   *  startRegion: start region string
-   *  endRegion: destination region string
-   * Returns: Ordered array of string locations to enter to arrive at endLoc, not including startLoc
-   */
-  return [];
-}
-
-export function setWarp(fromWarp: Warp, toWarp: Warp) {
-  // if there is already a toWarp on the graph, remove it before setting this warp
-  throw new Error("todo");
-}
-
-export function removeWarp(warp: Warp) {
-  throw new Error("todo");
-}
-
-export function getWarp(fromWarp: Warp): Warp | null {
-  throw new Error("todo");
-}
-
-////////////////////// ITEM STATUS ///////////////////////////////
-
-/** "item" refers to the item that is received from a check (e.g., HM01) */
-export function setItemStatus(itemName: string, found: boolean) {
-  throw new Error("todo");
-}
-
-/** "item" refers to the item that is received from a check (e.g., HM01) */
-export function getItemStatus(itemName: string): boolean {
-  throw new Error("todo");
-}
+import { CheckAccessibility, Check, generateChecks, generatePokemonChecks } from "./Checks";
+import {
+  WarpAccessibility,
+  Warp,
+  ConstantWarp,
+  generateWarps,
+  generateConstantWarps,
+} from "./Warps";
 
 ////////////////////// SETTINGS ///////////////////////////////////
 
@@ -151,7 +89,7 @@ export enum RandomizeLegendaryPokemon {
   "Any",
 }
 
-export const Settings = {
+export const defaultSettings = {
   OakWin: false, // Required?
   EliteFourBadges: 8,
   EliteFourKeyItems: 0,
@@ -197,3 +135,155 @@ export const Settings = {
   RandomizeStaticPokemon: RandomizePokemon.BSTMatch,
   RandomizeLegendaryPokemon: RandomizeLegendaryPokemon.Shuffle,
 };
+
+export class State {
+  public items: Set<string> = new Set();
+  public regions: Set<string> = new Set();
+  public checks: Array<Check>;
+  public warps: Array<Warp>;
+  public fakeWarps: Array<ConstantWarp>;
+  constructor(public settings: typeof defaultSettings) {
+    this.checks = generateChecks(this);
+    this.checks = this.checks.concat(generatePokemonChecks(this));
+    this.warps = generateWarps(this);
+    this.fakeWarps = generateConstantWarps(this);
+  }
+}
+
+// export const Items: Set<string> = new Set();
+// export const Regions: Set<string> = new Set();
+
+export function entranceAccessible(entrance: Warp): WarpAccessibility {
+  /**
+   * Parameters:
+   *  Warp: Representation of an entrance
+   * Returns enum EntranceAccessibility
+   */
+  return entrance.accessibility;
+}
+
+export function getCheckStatus(check: Check): CheckAccessibility {
+  /**
+   * Parameters:
+   *  check: Respresentation of a check
+   * Return enum CheckAccessibility
+   */
+  return check.accessibility;
+}
+
+/** "check" refers to the specific check-giving thing that is found on the map */
+export function setCheckAcquired(check: Check, acquired: boolean) {
+  check.acquired = acquired;
+}
+
+export function generateTextPath(warpPath: Array<Warp>): Array<string> {
+  /**
+   * Given an array of warps, generates an array of strings that
+   * describes the warps in a readable format
+   *
+   * Parameters:
+   *  warpPath: An array of warps
+   * Returns An array of human-readable string representations of warps
+   */
+  return warpPath.map((warp) => {
+    return warp.toString();
+  });
+}
+
+export function updateRegionAccessibility(state: State) {
+  /**
+   * Updates the Regions set to include all the accessible regions.
+   */
+  shortestPath("Pallet Town", "", state); // Abusing the benefit of attempting a full search from the start location
+}
+
+export function shortestPath(
+  startRegion: string,
+  endRegion: string,
+  state: State,
+  modifyState: boolean = false
+): Array<Warp> {
+  /**
+   * Parameters:
+   *  startRegion: start region string
+   *  endRegion: destination region string
+   * Returns: Ordered array of warps to enter to arrive at endRegion
+   */
+  if (startRegion === endRegion) {
+    return [];
+  }
+  const combinedWarps: Array<Warp> = state.warps.concat(state.fakeWarps);
+  const exploredRegions: Map<string, Array<Warp>> = new Map(); // Array of maps from region to Warp (to get there)
+  exploredRegions.set(startRegion, []);
+  let toExplore: Array<string> = [startRegion]; // regions to find new paths from
+  let nextExplore: Array<string> = [];
+  while (toExplore.length > 0) {
+    for (const region of toExplore) {
+      if (modifyState) {
+        state.regions.add(region); // Only add the state if you are doing the update for accessibility!
+      }
+      for (const warp of combinedWarps) {
+        if (warp instanceof ConstantWarp) {
+          if (
+            !exploredRegions.has(warp.toWarp) &&
+            warp.accessibility === WarpAccessibility.Accessible
+          ) {
+            nextExplore.push(warp.toWarp);
+            exploredRegions.set(warp.toWarp, exploredRegions.get(region)!.concat([warp]));
+          }
+        } else if (warp.linkedWarp) {
+          const linkedWarp: Warp = warp.linkedWarp;
+          if (
+            !exploredRegions.has(linkedWarp.region) &&
+            warp.accessibility === WarpAccessibility.Accessible
+          ) {
+            nextExplore.push(linkedWarp.region);
+            exploredRegions.set(linkedWarp.region, exploredRegions.get(region)!.concat([warp]));
+          }
+        } else {
+          // Warp is undiscovered, no information. Later, we might be able to do something
+          // for non-randomized maps here. Or, we could preset all of the warp links
+        }
+        if (exploredRegions.has(endRegion)) {
+          return exploredRegions.get(endRegion)!;
+        }
+      }
+    }
+    toExplore = nextExplore;
+  }
+  return [];
+}
+
+export function setWarp(fromWarp: Warp, toWarp: Warp) {
+  fromWarp.linkedWarp = toWarp;
+  toWarp.linkedWarp = fromWarp;
+}
+
+export function removeWarp(warp: Warp) {
+  warp.linkedWarp = null;
+}
+
+export function getWarp(fromWarp: Warp): Warp | null {
+  return fromWarp.linkedWarp;
+}
+
+////////////////////// ITEM STATUS ///////////////////////////////
+
+/** "item" refers to the item that is received from a check (e.g., HM01) */
+export function setItemStatus(itemName: string, found: boolean, state: State) {
+  if (found) {
+    state.items.add(itemName);
+  } else {
+    state.items.delete(itemName);
+  }
+}
+
+/** "item" refers to the item that is received from a check (e.g., HM01) */
+export function getItemStatus(itemName: string, state: State): boolean {
+  return state.items.has(itemName);
+}
+
+export const defaultState: State = new State(defaultSettings);
+defaultState.regions.add("Pallet Town"); // Pallet Warp
+defaultState.regions.add("Player's House 2F"); // Spawn Location
+updateRegionAccessibility(defaultState);

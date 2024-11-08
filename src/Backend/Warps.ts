@@ -1,14 +1,12 @@
-import { Graph, Items, Settings, Regions, OldMan, Route3Req } from "./GenerateGraph";
+import { State, OldMan, Route3Req, defaultState } from "./GenerateGraph";
 import {
   canCut,
-  canFlash,
   canSurf,
   canStrength,
   canRockTunnel,
   cardKeyAccess,
   canRoute3,
   canPassGuards,
-  enoughBadges,
   enoughFossils,
   pokeDollSkippable,
   canEnterCeruleanCave,
@@ -43,11 +41,12 @@ export class Warp {
    *  elevator: true if this warp requires Lift Key to use
    */
   public accessibility = WarpAccessibility.Inaccessible;
-
+  public linkedWarp: Warp | null = null;
   constructor(
     public fromWarp: string,
     public toWarp: string,
-    public region: string
+    public region: string,
+    public state: State
   ) {}
 
   equals(other: Warp) {
@@ -55,11 +54,15 @@ export class Warp {
   }
 
   updateAccessibility(): void {
-    if (Regions.has(this.region)) {
+    if (this.state.regions.has(this.region)) {
       this.accessibility = WarpAccessibility.Accessible;
     } else {
       this.accessibility = WarpAccessibility.Inaccessible;
     }
+  }
+
+  toString(): string {
+    return this.fromWarp + " to " + this.toWarp;
   }
 }
 
@@ -78,18 +81,18 @@ export class ConstantWarp extends Warp {
     public fromWarp: string,
     public toWarp: string,
     public region: string,
-    public flags: () => WarpAccessibility,
-    public oneWay: boolean = true
+    public state: State,
+    public flags: () => WarpAccessibility
   ) {
-    super(fromWarp, toWarp, region);
+    super(fromWarp, toWarp, region, state);
   }
 
   updateAccessibility(): void {
-    if (Regions.has(this.region)) {
+    if (this.state.regions.has(this.region)) {
       const canTraverse = this.flags();
       this.accessibility = canTraverse;
       if (canTraverse) {
-        Regions.add(this.toWarp);
+        this.state.regions.add(this.toWarp); // Another place to change accessibility... good or bad?
       }
     } else {
       this.accessibility = WarpAccessibility.Inaccessible;
@@ -100,152 +103,111 @@ export class ConstantWarp extends Warp {
 let map = new Map();
 map.set("1", 1);
 
-function generateWarps(): Array<Warp> {
+export function generateWarps(state: State): Array<Warp> {
   const warps: Array<Warp> = [];
   for (const region of Object.keys(warpData)) {
     const regionData = warpData[region as keyof typeof warpData];
     for (const sides of regionData) {
-      warps.push(new Warp(sides["from"], sides["to"], region));
+      warps.push(new Warp(sides["from"], sides["to"], region, state));
     }
   }
   return warps;
 }
 
-export const Warps: Array<Warp> = generateWarps();
+// export const warps: Array<Warp> = generateWarps(defaultState);
 
-// Must bind a function to all of these
-const all_flags = [
-  "seafoam_exit_boulder",
-  "lift_key",
-  "good_rod",
-  "!extra_strength_boulders",
-  "buy_poke_doll",
-  "hideout_key",
-  "can_surf",
-  "super_rod",
-  "poke_flute",
-  "fuji_saved",
-  "has_bicycle",
-  "rock_tunnel",
-  "old_man",
-  "help_bill",
-  "victory_road_boulder",
-  "plant_key",
-  "!all_elevators_locked",
-  "cerulean_cave",
-  "can_strength",
-  "safari_pass",
-  "card_key",
-  "mansion_key",
-  "enter_elite_four",
-  "!extra_key_items",
-  "route_3",
-  "secret_key",
-  "old_rod",
-  "can_pass_guards",
-  "oak's_parcel",
-  "poke_doll_skip",
-  "can_cut",
-  "ss_ticket",
-  "silph_scope",
-  "bicycle_skip",
-  "defeat_viridian_gym_giovanni",
-  "silph_co_liberated",
-  "fossil_checks",
-  "viridian_gym_badges",
-  "victory_road_gate_badges",
-  "route_22_gate_badges",
-];
-
-const flag_to_func: Map<string, (() => boolean) | ((param: number) => boolean)> = new Map();
+const flag_to_func: Map<
+  string,
+  ((state: State) => boolean) | ((state: State, param: number) => boolean)
+> = new Map();
 flag_to_func.set("seafoam_exit_boulder", seafoamExitBoulder);
-flag_to_func.set("lift_key", () => {
-  return Items.has("Lift Key");
+flag_to_func.set("lift_key", (state: State) => {
+  return state.items.has("Lift Key");
 });
-flag_to_func.set("good_rod", () => {
-  return Items.has("Good Rod");
+flag_to_func.set("good_rod", (state: State) => {
+  return state.items.has("Good Rod");
 });
-flag_to_func.set("!extra_strength_boulders", () => {
-  return !Settings.ExtraBoulders;
+flag_to_func.set("!extra_strength_boulders", (state: State) => {
+  return !state.settings.ExtraBoulders;
 });
 flag_to_func.set("buy_poke_doll", pokeDollSkippable);
-flag_to_func.set("hideout_key", () => {
-  return Items.has("Hideout Key");
+flag_to_func.set("hideout_key", (state: State) => {
+  return state.items.has("Hideout Key");
 });
 flag_to_func.set("can_surf", canSurf);
-flag_to_func.set("super_rod", () => {
-  return Items.has("Super Rod");
+flag_to_func.set("super_rod", (state: State) => {
+  return state.items.has("Super Rod");
 });
-flag_to_func.set("poke_flute", () => {
-  return Items.has("Poke Flute");
+flag_to_func.set("poke_flute", (state: State) => {
+  return state.items.has("Poke Flute");
 });
-flag_to_func.set("fuji_saved", () => {
-  return Items.has("Fuji Saved");
+flag_to_func.set("fuji_saved", (state: State) => {
+  return state.items.has("Fuji Saved");
 });
-flag_to_func.set("has_bicycle", () => {
-  return Items.has("Bicycle");
+flag_to_func.set("has_bicycle", (state: State) => {
+  return state.items.has("Bicycle");
 });
 flag_to_func.set("rock_tunnel", canRockTunnel);
-flag_to_func.set("old_man", () => {
-  return Settings.OldMan === OldMan.None;
+flag_to_func.set("old_man", (state: State) => {
+  return state.settings.OldMan === OldMan.None;
 });
-flag_to_func.set("help_bill", () => {
-  return Items.has("Help Bill");
+flag_to_func.set("help_bill", (state: State) => {
+  return state.items.has("Help Bill");
 });
 flag_to_func.set("victory_road_boulder", victoryRoadBoulder);
-flag_to_func.set("plant_key", () => {
-  return Items.has("Plant Key");
+flag_to_func.set("plant_key", (state: State) => {
+  return state.items.has("Plant Key");
 });
-flag_to_func.set("!all_elevators_locked", () => {
-  return !Settings.AllElevatorsLocked;
+flag_to_func.set("!all_elevators_locked", (state: State) => {
+  return !state.settings.AllElevatorsLocked;
 });
 flag_to_func.set("cerulean_cave", canEnterCeruleanCave);
 flag_to_func.set("can_strength", canStrength);
-flag_to_func.set("safari_pass", () => {
-  return Items.has("Safari Pass");
+flag_to_func.set("safari_pass", (state: State) => {
+  return state.items.has("Safari Pass");
 });
-flag_to_func.set("card_key", (param: number) => {
-  return cardKeyAccess(param);
+flag_to_func.set("card_key", (state: State, param: number) => {
+  return cardKeyAccess(param, state);
 });
-flag_to_func.set("mansion_key", () => {
-  return Items.has("Mansion Key");
+flag_to_func.set("mansion_key", (state: State) => {
+  return state.items.has("Mansion Key");
 });
 flag_to_func.set("enter_elite_four", canEnterEliteFour);
-flag_to_func.set("!extra_key_items", () => {
-  return !Settings.ExtraKeyItems;
+flag_to_func.set("!extra_key_items", (state: State) => {
+  return !state.settings.ExtraKeyItems;
 });
 flag_to_func.set("route_3", canRoute3);
-flag_to_func.set("secret_key", () => {
-  return Items.has("Secret Key");
+flag_to_func.set("secret_key", (state: State) => {
+  return state.items.has("Secret Key");
 });
-flag_to_func.set("old_rod", () => {
-  return Items.has("Old Rod");
+flag_to_func.set("old_rod", (state: State) => {
+  return state.items.has("Old Rod");
 });
 flag_to_func.set("can_pass_guards", canPassGuards);
-flag_to_func.set("oak's_parcel", () => {
-  return Items.has("Oak's Parcel");
+flag_to_func.set("oak's_parcel", (state: State) => {
+  return state.items.has("Oak's Parcel");
 });
-flag_to_func.set("poke_doll_skip", () => {
-  return Settings.PokeDollSkip;
+flag_to_func.set("poke_doll_skip", (state: State) => {
+  return state.settings.PokeDollSkip;
 });
 flag_to_func.set("can_cut", canCut);
-flag_to_func.set("ss_ticket", () => {
-  return Items.has("S.S. Ticket");
+flag_to_func.set("ss_ticket", (state: State) => {
+  return state.items.has("S.S. Ticket");
 });
-flag_to_func.set("silph_scope", () => {
-  return Items.has("Silph Scope");
+flag_to_func.set("silph_scope", (state: State) => {
+  return state.items.has("Silph Scope");
 });
-flag_to_func.set("bicycle_skip", () => {
-  return Settings.BicycleGateSkip;
+flag_to_func.set("bicycle_skip", (state: State) => {
+  return state.settings.BicycleGateSkip;
 });
-flag_to_func.set("defeat_viridian_gym_giovanni", () => {
-  return Items.has("Defeat Viridian Gym Giovanni");
+flag_to_func.set("defeat_viridian_gym_giovanni", (state: State) => {
+  return state.items.has("Defeat Viridian Gym Giovanni");
 });
-flag_to_func.set("silph_co_liberated", () => {
-  return Items.has("Silph Co Liberated");
+flag_to_func.set("silph_co_liberated", (state: State) => {
+  return state.items.has("Silph Co Liberated");
 });
-flag_to_func.set("fossil_checks", (param: number) => {
-  return enoughFossils(param);
+flag_to_func.set("fossil_checks", (state: State, param: number) => {
+  return enoughFossils(param, state);
 });
 flag_to_func.set("victory_road_gate_badges", canPassVictoryRoadGate);
 flag_to_func.set("route_22_gate_badges", canPassRoute22Gate);
@@ -253,7 +215,11 @@ flag_to_func.set("viridian_gym_badges", canEnterViridianGym);
 
 const takesParam = new Set(["fossil_checks", "card_key"]);
 
-function setFlags(cnf: Array<Array<string>>, params: number): () => WarpAccessibility {
+function setFlags(
+  cnf: Array<Array<string>>,
+  state: State,
+  params: number
+): () => WarpAccessibility {
   // Does the CNF to logic magic, and uses flag_to_func
   function helper(): WarpAccessibility {
     for (const clause of cnf) {
@@ -261,9 +227,9 @@ function setFlags(cnf: Array<Array<string>>, params: number): () => WarpAccessib
       for (const expr of clause) {
         const func = flag_to_func.get(expr)!;
         if (takesParam.has(expr)) {
-          satisfied = func(params);
+          satisfied = func(state, params);
         } else {
-          satisfied = (func as () => boolean)();
+          satisfied = (func as (state: State) => boolean)(state);
         }
         if (satisfied) {
           break;
@@ -278,7 +244,7 @@ function setFlags(cnf: Array<Array<string>>, params: number): () => WarpAccessib
   return helper;
 }
 
-function generateConstantWarps(): Array<ConstantWarp> {
+export function generateConstantWarps(state: State): Array<ConstantWarp> {
   const warps: Array<ConstantWarp> = [];
   for (const region of Object.keys(fakeWarpData)) {
     const regionData = fakeWarpData[region as keyof typeof fakeWarpData];
@@ -289,13 +255,24 @@ function generateConstantWarps(): Array<ConstantWarp> {
           fields["from"],
           fields["to"],
           region,
-          setFlags(fields.func, fields.parameter),
-          oneWay
+          state,
+          setFlags(fields.func, state, fields.parameter)
         )
       );
+      if (!oneWay) {
+        warps.push(
+          new ConstantWarp(
+            fields["to"],
+            fields["from"],
+            fields["to"], // could be wrong...
+            state,
+            setFlags(fields.func, state, fields.parameter)
+          )
+        );
+      }
     }
   }
   return warps;
 }
 
-export const constantWarps: Array<ConstantWarp> = generateConstantWarps();
+// export const constantWarps: Array<ConstantWarp> = generateConstantWarps(defaultState);
