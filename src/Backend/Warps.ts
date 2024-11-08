@@ -20,8 +20,8 @@ import {
   canEnterViridianGym,
 } from "./Requirements";
 
-import warpData from "./WarpData.json";
-import fakeWarpData from "./FakeWarps.json";
+import warpData from "../PokemonData/WarpData.json";
+import fakeWarpData from "../PokemonData/FakeWarps.json";
 
 // import {readJsonFile} from "../util";
 

@@ -6,8 +6,8 @@
 
 import { Graph, Settings, Items, RandomizeHidden, Regions, CardKey } from "./GenerateGraph";
 import checkData from "../PokemonData/CheckData.json";
-import checkReq from "./CheckReq.json";
-import pokeData from "./Pokemon.json";
+import checkReq from "../PokemonData/CheckReq.json";
+import pokeData from "../PokemonData/Pokemon.json";
 import {
   canCut,
   canGetHiddenItems,
