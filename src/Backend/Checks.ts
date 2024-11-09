@@ -130,7 +130,7 @@ enabled_to_func.set("buy_poke_doll", pokeDollSkippable);
 enabled_to_func.set("coin_case", (state: State) => {
   return state.items.has("Coin Case");
 });
-enabled_to_func.set("get_hidden_items", (state: State) => {
+enabled_to_func.set("hidden_items", (state: State) => {
   return canGetHiddenItems(state);
 });
 enabled_to_func.set("game_corner", (state: State) => {
@@ -152,8 +152,11 @@ function setAccessible(cnf: Array<Array<string>>): (state: State) => CheckAccess
     for (const clause of cnf) {
       let satisfied = true;
       for (const expr of clause) {
-        const func = enabled_to_func.get(expr)!;
-        satisfied = (func as (state: State) => boolean)(state);
+        const func: (state: State) => boolean = enabled_to_func.get(expr)!;
+        if (!func) {
+          console.log(expr);
+        }
+        satisfied = func(state);
         if (satisfied) {
           break;
         }

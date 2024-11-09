@@ -14,7 +14,7 @@ import {
   defaultSettings,
 } from "../Backend/GenerateGraph";
 import { CheckAccessibility, generateChecks } from "../Backend/Checks";
-import { WarpAccessibility } from "../Backend/Warps";
+import { Warp, WarpAccessibility } from "../Backend/Warps";
 
 describe("entranceAccessible", () => {
   it("should initiallize warps to be inaccessible", () => {
@@ -108,7 +108,6 @@ describe("shortestPath", () => {
     state.regions.add("Pallet Town");
     updateRegionAccessibility(state);
     const path = shortestPath("Pallet Town", "Route 22", state);
-    console.log(generateTextPath(path));
     expect(path.length).toBe(3);
     expect(generateTextPath(path).reduce((prev, next) => prev + next, "")).toBe([
       "Pallet Town to Route 1",
@@ -117,3 +116,47 @@ describe("shortestPath", () => {
     ].reduce((prev, next) => prev + next, ""));
   });
 });
+
+describe("warpOperations", () => {
+    it("should give path if there is warp to path", () => {
+      const state: State = new State(defaultSettings);
+      state.regions.add("Pallet Town");
+      for (const warp of state.warps) {
+        if (warp.toWarp === "Pokemon Tower 1F" && warp.fromWarp === "Lavender Town") {
+            for (const warp2 of state.warps) {
+                if (warp2.toWarp === "Rival's House" && warp2.fromWarp === "Pallet Town") {
+                    setWarp(warp2, warp, state);
+                    expect(getWarp(warp)).toBe(warp2);
+                    expect(getWarp(warp2)).toBe(warp);
+                }
+            }
+        }
+      }
+      const path = shortestPath("Pallet Town", "Lavender Town", state);
+      expect(path.length).toBe(1);
+      expect(generateTextPath(path).reduce((prev, next) => prev + next, "")).toBe([
+        "Pallet Town to Rival's House",
+      ].reduce((prev, next) => prev + next, ""));
+    });
+
+    it("should not give path if there is no longer a warp to path", () => {
+        const state: State = new State(defaultSettings);
+        state.regions.add("Pallet Town");
+        let removingWarp: Warp;
+        for (const warp of state.warps) {
+          if (warp.toWarp === "Pokemon Tower 1F" && warp.fromWarp === "Lavender Town") {
+              for (const warp2 of state.warps) {
+                  if (warp2.toWarp === "Rival's House" && warp2.fromWarp === "Pallet Town") {
+                      setWarp(warp2, warp, state);
+                      removingWarp = warp2;
+                  }
+              }
+          }
+        }
+        removeWarp(removingWarp!, state);
+        expect(getWarp(removingWarp!)).toBe(null);
+        const path = shortestPath("Pallet Town", "Lavender Town", state);
+        expect(path.length).toBe(0);
+        expect(state.regions.has("Lavender Town")).toBeFalsy();
+      });
+  });

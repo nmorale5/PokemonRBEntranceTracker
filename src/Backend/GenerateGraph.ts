@@ -148,6 +148,18 @@ export class State {
     this.warps = generateWarps(this);
     this.fakeWarps = generateConstantWarps(this);
   }
+
+  updateAll(): void {
+    for (const warp of this.warps) {
+      warp.updateAccessibility();
+    }
+    for (const warp of this.fakeWarps) {
+      warp.updateAccessibility();
+    }
+    for (const check of this.checks) {
+      check.updateCheckStatus();
+    }
+  }
 }
 
 // export const Items: Set<string> = new Set();
@@ -194,7 +206,9 @@ export function updateRegionAccessibility(state: State) {
   /**
    * Updates the Regions set to include all the accessible regions.
    */
+  state.regions = new Set();
   shortestPath("Pallet Town", "", state, true); // Abusing the benefit of attempting a full search from the start location
+  state.updateAll();
 }
 
 export function shortestPath(
@@ -217,12 +231,7 @@ export function shortestPath(
   exploredRegions.set(startRegion, []);
   let toExplore: Array<string> = [startRegion]; // regions to find new paths from
   let nextExplore: Array<string> = [];
-  let counter = 0;
   while (toExplore.length > 0) {
-    if (!modifyState){
-      console.log(exploredRegions);
-      console.log(counter);
-    }
     for (const region of toExplore) {
       if (modifyState) {
         state.regions.add(region); // Only add the state if you are doing the update for accessibility!
@@ -253,11 +262,9 @@ export function shortestPath(
           }
         }
         if (exploredRegions.has(endRegion)) {
-          console.log(exploredRegions);
           return exploredRegions.get(endRegion)!;
         }
       }
-      counter += 1;
     }
     toExplore = nextExplore;
     nextExplore = [];
@@ -268,16 +275,52 @@ export function shortestPath(
   return [];
 }
 
-export function setWarp(fromWarp: Warp, toWarp: Warp) {
+export function setWarp(fromWarp: Warp, toWarp: Warp, state: State) {
+  /**
+   * Adds a connection between two warps.
+   * Also mutates the region set of state in response to the additional warp.
+   * 
+   * Parameters:
+   *  fromWarp (Warp): The starting point of the connection
+   *  toWarp (Warp): The ending point of the connection
+   *  state (State): The game state object the warps are a part of
+   */
   fromWarp.linkedWarp = toWarp;
-  toWarp.linkedWarp = fromWarp;
+  if (state.settings.DoorShuffle !== DoorShuffle.Decoupled) {
+    toWarp.linkedWarp = fromWarp;
+  }
+  updateRegionAccessibility(state);
 }
 
-export function removeWarp(warp: Warp) {
+export function removeWarp(warp: Warp, state: State) {
+  /**
+   * Removes the connection made between two warps.
+   * Mutates both warp and the linkedWarp (if linked) by setting their linkedWarp
+   * attributes to null. Also mutates the set of regions of state in response to
+   * the removed warp.
+   * 
+   * Parameters:
+   *  warp (Warp): The warp on either end of the connection to disconnect
+   *  state (State): The game state object the warp is a part of
+   */
+  if (state.settings.DoorShuffle !== DoorShuffle.Decoupled) {
+    const otherWarp = warp.linkedWarp;
+    if (otherWarp?.linkedWarp) otherWarp.linkedWarp = null;
+  }
   warp.linkedWarp = null;
+  updateRegionAccessibility(state);
 }
 
 export function getWarp(fromWarp: Warp): Warp | null {
+  /**
+   * Gets the connecting warp from a warp. Consider using
+   * warp.linkedWarp directly.
+   * 
+   * Parameters:
+   *  fromWarp (Warp): The warp to get the cooresponding linked warp from.
+   * 
+   * Returns the linked warp, or null if it isn't linked.
+   */
   return fromWarp.linkedWarp;
 }
 
@@ -290,6 +333,7 @@ export function setItemStatus(itemName: string, found: boolean, state: State) {
   } else {
     state.items.delete(itemName);
   }
+  updateRegionAccessibility(state);
 }
 
 /** "item" refers to the item that is received from a check (e.g., HM01) */
