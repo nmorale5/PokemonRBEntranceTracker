@@ -1,12 +1,13 @@
-import React, { ForwardedRef, forwardRef, MutableRefObject, Ref, useEffect, useRef } from "react";
+import React, { forwardRef, MutableRefObject, useEffect, useRef } from "react";
 import "./Map.css";
-import { defaultState, State } from "../Backend/GenerateGraph";
-import { latLngFromPixelCoordinates, pixelCoordinatesFromLatLng } from "../util";
+import { defaultState } from "../Backend/GenerateGraph";
+import { latLngFromPixelCoordinates } from "../util";
 import L, { DivIcon } from "leaflet";
-import warpData from "../PokemonData/warps.json";
+import warpData from "../PokemonData/WarpData.json";
 import checkData from "../PokemonData/CheckData.json";
 import { Check, CheckAccessibility } from "../Backend/Checks";
 import { BehaviorSubject, distinctUntilChanged, map, Subscription } from "rxjs";
+import { WarpAccessibility } from "../Backend/Warps";
 
 const Map = forwardRef<BehaviorSubject<void>>((props: {}, ref) => {
   const stateRef = useRef(defaultState);
@@ -25,7 +26,7 @@ const Map = forwardRef<BehaviorSubject<void>>((props: {}, ref) => {
 
     myMap.fitBounds(latLngBounds);
 
-    warpData.forEach((warp, i) => {
+    Object.entries(warpData).flatMap(([key, value]) => value).forEach((warp, i) => {
       const warpId = `warp-${i}`;
       const icon = new DivIcon({
         className: "Warp",
@@ -41,14 +42,21 @@ const Map = forwardRef<BehaviorSubject<void>>((props: {}, ref) => {
           box-sizing: border-box;
         " />`,
       });
-      L.marker(latLngFromPixelCoordinates(warp.from.x, warp.from.y), {
-        title: `${warp.from.region} to ${warp.to.region}`,
+      L.marker(latLngFromPixelCoordinates(warp.coordinates.x, warp.coordinates.y), {
+        title: `${warp.from} to ${warp.to}`,
         icon: icon,
       }).addTo(myMap);
-      L.marker(latLngFromPixelCoordinates(warp.to.x, warp.to.y), {
-        title: `${warp.to.region} to ${warp.from.region}`,
-        icon: icon,
-      }).addTo(myMap);
+      unsubscribeArray.push((ref! as MutableRefObject<BehaviorSubject<void>>).current.pipe(
+        map(_ => stateRef.current),
+        map(state => state.warps.find(w => w.fromWarp === warp.from && w.toWarp === warp.to)!),
+        distinctUntilChanged((prevWarp, curWarp) => prevWarp.accessibility === curWarp.accessibility),
+      ).subscribe((warp) => {
+        document.getElementById(warpId)!.style.backgroundColor = warp.accessibility === WarpAccessibility.Accessible
+          ? "lawngreen"
+          : warp.accessibility === WarpAccessibility.Inaccessible
+            ? "red"
+            : "gray"
+      }));
     });
 
     checkData.forEach((check, i) => {
@@ -83,12 +91,36 @@ const Map = forwardRef<BehaviorSubject<void>>((props: {}, ref) => {
       }));
     });
 
-    myMap.on("click", async function(e) {
-      const [x, y] = pixelCoordinatesFromLatLng(e.latlng).map(
-        (num) => Math.round((num + 8) / 16) * 16 - 8,
-      ); // get the center of the nearest 16x16 square
-      await navigator.clipboard.writeText(`,\n    "coordinates": { "x": ${x}, "y": ${y} }`);
-    });
+    // function findClosestCoordinate(
+    //   coordinates: [number, number][],
+    //   c: [number, number]
+    // ): [number, number] {
+    //   return coordinates.reduce((closest, current) => {
+    //     const distance = Math.sqrt(
+    //       Math.pow(current[0] - c[0], 2) + Math.pow(current[1] - c[1], 2)
+    //     );
+    //     const closestDistance = Math.sqrt(
+    //       Math.pow(closest[0] - c[0], 2) + Math.pow(closest[1] - c[1], 2)
+    //     );
+    //
+    //     return distance < closestDistance ? current : closest;
+    //   });
+    // }
+
+    // myMap.on("click", async function(e) {
+    //   const [x, y] = pixelCoordinatesFromLatLng(e.latlng);
+    //   const [newX, newY] = findClosestCoordinate(warpData.map(warp => warp.from)
+    //     .concat(warpData.map(warp => warp.to))
+    //     .map(({x, y}) => [x, y]), [x, y])
+    //   await navigator.clipboard.writeText(`,\n      "coordinates": {\n        "x": ${newX},\n        "y": ${newY}\n      }`);
+    // });
+
+    // myMap.on("click", async function(e) {
+    //   const [x, y] = pixelCoordinatesFromLatLng(e.latlng).map(
+    //     (num) => Math.round((num + 8) / 16) * 16 - 8,
+    //   );
+    //   await navigator.clipboard.writeText(`,\n      "coordinates": {\n        "x": ${x},\n        "y": ${y}\n      }`);
+    // });
 
     return () => {
       myMap.remove();
