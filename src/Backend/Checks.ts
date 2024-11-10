@@ -1,10 +1,10 @@
 // What we need to know about each check:
 //  1. Is check actually a check (Depends on Settings) -- Results in check not being added
-//  2. Can check be physically reached (Depends on Graph) -- Means method of check must take Graph as parameter
-//  3. Can check be received (Depends on items like Coin Case or events like Liberated Silph Co.)
-//  4. Has check already been received (Depends on external input (player/arch))
+//  2. Can the check be physically reached (Depends on Graph) -- Means method of check must take Graph as parameter
+//  3. Can the check be received (Depends on items like Coin Case or events like Liberated Silph Co.)
+//  4. Has the check already been received (Depends on external input (player/arch))
 
-import { State, RandomizeHidden, CardKey, defaultState } from "./GenerateGraph";
+import { State, RandomizeHidden, CardKey } from "./GenerateGraph";
 import checkData from "../PokemonData/CheckData.json";
 import checkReq from "../PokemonData/CheckReq.json";
 import pokeData from "../PokemonData/Pokemon.json";

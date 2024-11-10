@@ -185,7 +185,7 @@ export function getCheckStatus(check: Check): CheckAccessibility {
    * Consider using check.accessibility
    * 
    * Parameters:
-   *  check: Respresentation of a check
+   *  check: Representation of a check
    * Return enum CheckAccessibility
    */
   return check.accessibility;
@@ -279,7 +279,7 @@ export function shortestPath(
             }
           } else {
             // Warp is undiscovered, no information. Later, we might be able to do something
-            // for non-randomized maps here. Or, we could preset all of the warp links
+            // for non-randomized maps here. Or, we could preset all the warp links
           }
         }
         if (exploredRegions.has(endRegion)) {
@@ -338,7 +338,7 @@ export function getWarp(fromWarp: Warp): Warp | null {
    * warp.linkedWarp directly.
    * 
    * Parameters:
-   *  fromWarp (Warp): The warp to get the cooresponding linked warp from.
+   *  fromWarp (Warp): The warp to get the corresponding linked warp from.
    * 
    * Returns the linked warp, or null if it isn't linked.
    */

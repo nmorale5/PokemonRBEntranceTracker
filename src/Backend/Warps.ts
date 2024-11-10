@@ -1,4 +1,4 @@
-import { State, OldMan, Route3Req, defaultState } from "./GenerateGraph";
+import { State, OldMan } from "./GenerateGraph";
 import {
   canCut,
   canSurf,

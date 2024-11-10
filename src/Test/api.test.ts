@@ -1,19 +1,16 @@
 import {
   entranceAccessible,
   getCheckStatus,
-  setCheckAcquired,
   generateTextPath,
   shortestPath,
   updateRegionAccessibility,
   setWarp,
   removeWarp,
   getWarp,
-  setItemStatus,
-  getItemStatus,
   State,
   defaultSettings,
 } from "../Backend/GenerateGraph";
-import { CheckAccessibility, generateChecks } from "../Backend/Checks";
+import { CheckAccessibility } from "../Backend/Checks";
 import { Warp, WarpAccessibility } from "../Backend/Warps";
 
 describe("entranceAccessible", () => {
@@ -41,7 +38,7 @@ describe("entranceAccessible", () => {
 });
 
 describe("getCheckStatus", () => {
-  it("should initiallize checks to be inaccessible", () => {
+  it("should initialize checks to be inaccessible", () => {
     const state: State = new State(defaultSettings);
     const checks = state.checks;
     for (const check of checks) {
