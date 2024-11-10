@@ -17,7 +17,7 @@ import { CheckAccessibility, generateChecks } from "../Backend/Checks";
 import { Warp, WarpAccessibility } from "../Backend/Warps";
 
 describe("entranceAccessible", () => {
-  it("should initiallize warps to be inaccessible", () => {
+  it("should initialize warps to be inaccessible", () => {
     const state: State = new State(defaultSettings);
     const warps = state.warps;
     for (const warp of warps) {

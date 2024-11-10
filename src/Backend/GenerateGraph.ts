@@ -150,6 +150,13 @@ export class State {
   }
 
   updateAll(): void {
+    /**
+     * Performs updates to the accessibility of warps and items based on player inventory,
+     * the regions that are available, and the settings.
+     * 
+     * This should be called every time the set of items or settings is changed, and is
+     * automatically called whenever the set of regions changes.
+     */
     for (const warp of this.warps) {
       warp.updateAccessibility();
     }
@@ -162,11 +169,10 @@ export class State {
   }
 }
 
-// export const Items: Set<string> = new Set();
-// export const Regions: Set<string> = new Set();
-
 export function entranceAccessible(entrance: Warp): WarpAccessibility {
   /**
+   * Consider using entrance.accessibility
+   * 
    * Parameters:
    *  Warp: Representation of an entrance
    * Returns enum EntranceAccessibility
@@ -176,6 +182,8 @@ export function entranceAccessible(entrance: Warp): WarpAccessibility {
 
 export function getCheckStatus(check: Check): CheckAccessibility {
   /**
+   * Consider using check.accessibility
+   * 
    * Parameters:
    *  check: Respresentation of a check
    * Return enum CheckAccessibility
@@ -185,6 +193,13 @@ export function getCheckStatus(check: Check): CheckAccessibility {
 
 /** "check" refers to the specific check-giving thing that is found on the map */
 export function setCheckAcquired(check: Check, acquired: boolean) {
+  /**
+   * Please just use check.acquired.
+   * 
+   * Parameters:
+   *  check (Check): The check to set acquired to
+   *  acquired (boolean): The value to set acquired to
+   */
   check.acquired = acquired;
 }
 
@@ -205,6 +220,9 @@ export function generateTextPath(warpPath: Array<Warp>): Array<string> {
 export function updateRegionAccessibility(state: State) {
   /**
    * Updates the Regions set to include all the accessible regions.
+   * 
+   * Parameters:
+   *  state (State): The game state to modify the regions of
    */
   state.regions = new Set();
   shortestPath("Pallet Town", "", state, true); // Abusing the benefit of attempting a full search from the start location
@@ -218,9 +236,12 @@ export function shortestPath(
   modifyState: boolean = false
 ): Array<Warp> {
   /**
+   * Gets shortest path from one region to another.
+   * 
    * Parameters:
    *  startRegion: start region string
    *  endRegion: destination region string
+   *  state: game state
    * Returns: Ordered array of warps to enter to arrive at endRegion
    */
   if (startRegion === endRegion) {
