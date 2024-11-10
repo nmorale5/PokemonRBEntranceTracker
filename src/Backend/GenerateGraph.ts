@@ -206,7 +206,7 @@ export function updateRegionAccessibility(state: State) {
   /**
    * Updates the Regions set to include all the accessible regions.
    */
-  state.regions = new Set();
+  state.regions.clear();
   shortestPath("Pallet Town", "", state, true); // Abusing the benefit of attempting a full search from the start location
   state.updateAll();
 }
