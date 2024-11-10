@@ -224,7 +224,7 @@ export function updateRegionAccessibility(state: State) {
    * Parameters:
    *  state (State): The game state to modify the regions of
    */
-  state.regions = new Set();
+  state.regions.clear();
   shortestPath("Pallet Town", "", state, true); // Abusing the benefit of attempting a full search from the start location
   state.updateAll();
 }

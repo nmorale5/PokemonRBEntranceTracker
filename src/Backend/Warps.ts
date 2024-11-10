@@ -50,7 +50,7 @@ export class Warp {
   ) {}
 
   equals(other: Warp) {
-    return other.fromWarp == this.fromWarp && other.toWarp == this.toWarp;
+    return other.fromWarp === this.fromWarp && other.toWarp === this.toWarp;
   }
 
   updateAccessibility(): void {
