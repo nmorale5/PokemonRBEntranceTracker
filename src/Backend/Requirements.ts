@@ -43,7 +43,7 @@ function canFlash(state: State): boolean {
 }
 
 export function canLearnHM(state: State): boolean {
-  // TODO (Maybe): Implement a way to check and indicate if any Pokemon availible can actually learn an HM move
+  // TODO (Maybe): Implement a way to check and indicate if any Pokemon available can actually learn an HM move
   // That way, the player won't think they can surf/strength/cut/fly/flash when they really couldn't
   throw new Error("Not Implemented");
 }
@@ -239,7 +239,7 @@ export function canEnterEliteFour(state: State): boolean {
 
 export function pokeDollSkippable(state: State): boolean {
   // TODO: Region
-  return state.items.has("Poke Doll") || state.regions.has("Celdon Department Store 3F"); // likely incorrect
+  return state.items.has("Poke Doll") || state.regions.has("Celadon Department Store 3F"); // likely incorrect
 }
 
 export function canPassVictoryRoadGate(state: State): boolean {

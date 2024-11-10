@@ -932,23 +932,7151 @@ raw = {'Menu': [], 'Evolution': [], 'Old Rod Fishing': [], 'Good Rod Fishing': [
                                               {'address': 'Warps_AgathasRoom', 'id': (2, 3),
                                                'to': {'map': "Indigo Plateau Lance's Room", 'id': 0}}]}
 
-# formatted_data = {}
-# for region_name, array in raw.items():
-#     region_array = []
-#     for warp_info in array:
-#         warp_data = {}
-#         if "name" in warp_info:
-#             warp_data["from"] = warp_info["name"]
-#         else:
-#             warp_data["from"] = region_name
-#         to = warp_info["to"]
-#         if "name" in to:
-#             warp_data["to"] = to["name"]
-#         else:
-#             warp_data["to"] = to["map"]
-#         region_array.append(warp_data)
-#     formatted_data[region_name] = region_array
-# print(formatted_data)
+coordinates = [
+  {
+    "from": {
+      "x": 872,
+      "y": 200,
+      "region": "AgathasRoom"
+    },
+    "to": {
+      "x": 872,
+      "y": 248,
+      "region": "BrunosRoom"
+    }
+  },
+  {
+    "from": {
+      "x": 872,
+      "y": 24,
+      "region": "AgathasRoom"
+    },
+    "to": {
+      "x": 680,
+      "y": 600,
+      "region": "LancesRoom"
+    }
+  },
+  {
+    "from": {
+      "x": 872,
+      "y": 424,
+      "region": "BrunosRoom"
+    },
+    "to": {
+      "x": 872,
+      "y": 472,
+      "region": "LoreleisRoom"
+    }
+  },
+  {
+    "from": {
+      "x": 3240,
+      "y": 2728,
+      "region": "CeladonCity"
+    },
+    "to": {
+      "x": 3192,
+      "y": 2472,
+      "region": "CeladonMart1F"
+    }
+  },
+  {
+    "from": {
+      "x": 3272,
+      "y": 2728,
+      "region": "CeladonCity"
+    },
+    "to": {
+      "x": 3400,
+      "y": 2472,
+      "region": "CeladonMart1F"
+    }
+  },
+  {
+    "from": {
+      "x": 3496,
+      "y": 2664,
+      "region": "CeladonCity"
+    },
+    "to": {
+      "x": 3560,
+      "y": 2472,
+      "region": "CeladonMansion1F"
+    }
+  },
+  {
+    "from": {
+      "x": 3512,
+      "y": 2568,
+      "region": "CeladonCity"
+    },
+    "to": {
+      "x": 3560,
+      "y": 2296,
+      "region": "CeladonMansion1F"
+    }
+  },
+  {
+    "from": {
+      "x": 3768,
+      "y": 2664,
+      "region": "CeladonCity"
+    },
+    "to": {
+      "x": 3752,
+      "y": 2312,
+      "region": "CeladonPokecenter"
+    }
+  },
+  {
+    "from": {
+      "x": 3000,
+      "y": 3240,
+      "region": "CeladonGym"
+    },
+    "to": {
+      "x": 3304,
+      "y": 2952,
+      "region": "CeladonCity"
+    }
+  },
+  {
+    "from": {
+      "x": 3560,
+      "y": 2824,
+      "region": "CeladonCity"
+    },
+    "to": {
+      "x": 3400,
+      "y": 3560,
+      "region": "GameCorner"
+    }
+  },
+  {
+    "from": {
+      "x": 3640,
+      "y": 2824,
+      "region": "CeladonCity"
+    },
+    "to": {
+      "x": 3576,
+      "y": 3240,
+      "region": "GameCornerPrizeRoom"
+    }
+  },
+  {
+    "from": {
+      "x": 3368,
+      "y": 3240,
+      "region": "CeladonDiner"
+    },
+    "to": {
+      "x": 3608,
+      "y": 2952,
+      "region": "CeladonCity"
+    }
+  },
+  {
+    "from": {
+      "x": 3720,
+      "y": 3240,
+      "region": "CeladonChiefHouse"
+    },
+    "to": {
+      "x": 3672,
+      "y": 2952,
+      "region": "CeladonCity"
+    }
+  },
+  {
+    "from": {
+      "x": 3800,
+      "y": 2952,
+      "region": "CeladonCity"
+    },
+    "to": {
+      "x": 3896,
+      "y": 3240,
+      "region": "CeladonHotel"
+    }
+  },
+  {
+    "from": {
+      "x": 3608,
+      "y": 2312,
+      "region": "CeladonMansion1F"
+    },
+    "to": {
+      "x": 3608,
+      "y": 2088,
+      "region": "CeladonMansion2F"
+    }
+  },
+  {
+    "from": {
+      "x": 3528,
+      "y": 2312,
+      "region": "CeladonMansion1F"
+    },
+    "to": {
+      "x": 3528,
+      "y": 2088,
+      "region": "CeladonMansion2F"
+    }
+  },
+  {
+    "from": {
+      "x": 3592,
+      "y": 2088,
+      "region": "CeladonMansion2F"
+    },
+    "to": {
+      "x": 3592,
+      "y": 1864,
+      "region": "CeladonMansion3F"
+    }
+  },
+  {
+    "from": {
+      "x": 3560,
+      "y": 2088,
+      "region": "CeladonMansion2F"
+    },
+    "to": {
+      "x": 3560,
+      "y": 1864,
+      "region": "CeladonMansion3F"
+    }
+  },
+  {
+    "from": {
+      "x": 3752,
+      "y": 1992,
+      "region": "CeladonMansionRoof"
+    },
+    "to": {
+      "x": 3608,
+      "y": 1864,
+      "region": "CeladonMansion3F"
+    }
+  },
+  {
+    "from": {
+      "x": 3688,
+      "y": 1992,
+      "region": "CeladonMansionRoof"
+    },
+    "to": {
+      "x": 3528,
+      "y": 1864,
+      "region": "CeladonMansion3F"
+    }
+  },
+  {
+    "from": {
+      "x": 3688,
+      "y": 2088,
+      "region": "CeladonMansionRoof"
+    },
+    "to": {
+      "x": 3816,
+      "y": 1928,
+      "region": "CeladonMansionRoofHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 3336,
+      "y": 2376,
+      "region": "CeladonMart1F"
+    },
+    "to": {
+      "x": 3336,
+      "y": 2216,
+      "region": "CeladonMart2F"
+    }
+  },
+  {
+    "from": {
+      "x": 3400,
+      "y": 2216,
+      "region": "CeladonMart2F"
+    },
+    "to": {
+      "x": 3400,
+      "y": 2056,
+      "region": "CeladonMart3F"
+    }
+  },
+  {
+    "from": {
+      "x": 3336,
+      "y": 1896,
+      "region": "CeladonMart4F"
+    },
+    "to": {
+      "x": 3336,
+      "y": 2056,
+      "region": "CeladonMart3F"
+    }
+  },
+  {
+    "from": {
+      "x": 3400,
+      "y": 1896,
+      "region": "CeladonMart4F"
+    },
+    "to": {
+      "x": 3048,
+      "y": 2120,
+      "region": "CeladonMart5F"
+    }
+  },
+  {
+    "from": {
+      "x": 2984,
+      "y": 2120,
+      "region": "CeladonMart5F"
+    },
+    "to": {
+      "x": 2680,
+      "y": 2136,
+      "region": "CeladonMartRoof"
+    }
+  },
+  {
+    "from": {
+      "x": 3992,
+      "y": 872,
+      "region": "CeruleanCave1F"
+    },
+    "to": {
+      "x": 4024,
+      "y": 552,
+      "region": "CeruleanCave2F"
+    }
+  },
+  {
+    "from": {
+      "x": 3928,
+      "y": 968,
+      "region": "CeruleanCave1F"
+    },
+    "to": {
+      "x": 3912,
+      "y": 632,
+      "region": "CeruleanCave2F"
+    }
+  },
+  {
+    "from": {
+      "x": 3848,
+      "y": 1000,
+      "region": "CeruleanCave1F"
+    },
+    "to": {
+      "x": 3864,
+      "y": 648,
+      "region": "CeruleanCave2F"
+    }
+  },
+  {
+    "from": {
+      "x": 3672,
+      "y": 872,
+      "region": "CeruleanCave1F"
+    },
+    "to": {
+      "x": 3704,
+      "y": 552,
+      "region": "CeruleanCave2F"
+    }
+  },
+  {
+    "from": {
+      "x": 3576,
+      "y": 904,
+      "region": "CeruleanCave1F"
+    },
+    "to": {
+      "x": 3576,
+      "y": 584,
+      "region": "CeruleanCave2F"
+    }
+  },
+  {
+    "from": {
+      "x": 3608,
+      "y": 1032,
+      "region": "CeruleanCave1F"
+    },
+    "to": {
+      "x": 3608,
+      "y": 712,
+      "region": "CeruleanCave2F"
+    }
+  },
+  {
+    "from": {
+      "x": 3560,
+      "y": 952,
+      "region": "CeruleanCave1F"
+    },
+    "to": {
+      "x": 3608,
+      "y": 1272,
+      "region": "CeruleanCaveB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 4664,
+      "y": 1544,
+      "region": "CeruleanCity"
+    },
+    "to": {
+      "x": 4776,
+      "y": 1320,
+      "region": "CeruleanTrashedHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 4440,
+      "y": 1608,
+      "region": "CeruleanCity"
+    },
+    "to": {
+      "x": 4280,
+      "y": 1304,
+      "region": "CeruleanTradeHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 4536,
+      "y": 1640,
+      "region": "CeruleanCity"
+    },
+    "to": {
+      "x": 4952,
+      "y": 1448,
+      "region": "CeruleanPokecenter"
+    }
+  },
+  {
+    "from": {
+      "x": 4712,
+      "y": 1672,
+      "region": "CeruleanCity"
+    },
+    "to": {
+      "x": 4968,
+      "y": 2024,
+      "region": "CeruleanGym"
+    }
+  },
+  {
+    "from": {
+      "x": 4280,
+      "y": 2088,
+      "region": "BikeShop"
+    },
+    "to": {
+      "x": 4440,
+      "y": 1768,
+      "region": "CeruleanCity"
+    }
+  },
+  {
+    "from": {
+      "x": 4632,
+      "y": 1768,
+      "region": "CeruleanCity"
+    },
+    "to": {
+      "x": 4792,
+      "y": 2088,
+      "region": "CeruleanMart"
+    }
+  },
+  {
+    "from": {
+      "x": 3960,
+      "y": 1128,
+      "region": "CeruleanCave1F"
+    },
+    "to": {
+      "x": 4296,
+      "y": 1544,
+      "region": "CeruleanCity"
+    }
+  },
+  {
+    "from": {
+      "x": 4664,
+      "y": 1512,
+      "region": "CeruleanCity"
+    },
+    "to": {
+      "x": 4792,
+      "y": 1208,
+      "region": "CeruleanTrashedHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 4120,
+      "y": 1448,
+      "region": "CeruleanBadgeHouse"
+    },
+    "to": {
+      "x": 4376,
+      "y": 1544,
+      "region": "CeruleanCity"
+    }
+  },
+  {
+    "from": {
+      "x": 4104,
+      "y": 1336,
+      "region": "CeruleanBadgeHouse"
+    },
+    "to": {
+      "x": 4376,
+      "y": 1512,
+      "region": "CeruleanCity"
+    }
+  },
+  {
+    "from": {
+      "x": 376,
+      "y": 296,
+      "region": "ChampionsRoom"
+    },
+    "to": {
+      "x": 376,
+      "y": 344,
+      "region": "LancesRoom"
+    }
+  },
+  {
+    "from": {
+      "x": 376,
+      "y": 184,
+      "region": "ChampionsRoom"
+    },
+    "to": {
+      "x": 376,
+      "y": 136,
+      "region": "HallOfFame"
+    }
+  },
+  {
+    "from": {
+      "x": 1608,
+      "y": 6312,
+      "region": "CinnabarIsland"
+    },
+    "to": {
+      "x": 1112,
+      "y": 6472,
+      "region": "PokemonMansion1F"
+    }
+  },
+  {
+    "from": {
+      "x": 2120,
+      "y": 6216,
+      "region": "CinnabarGym"
+    },
+    "to": {
+      "x": 1800,
+      "y": 6312,
+      "region": "CinnabarIsland"
+    }
+  },
+  {
+    "from": {
+      "x": 1608,
+      "y": 6408,
+      "region": "CinnabarIsland"
+    },
+    "to": {
+      "x": 1208,
+      "y": 6696,
+      "region": "CinnabarLab"
+    }
+  },
+  {
+    "from": {
+      "x": 1688,
+      "y": 6440,
+      "region": "CinnabarIsland"
+    },
+    "to": {
+      "x": 1576,
+      "y": 6696,
+      "region": "CinnabarPokecenter"
+    }
+  },
+  {
+    "from": {
+      "x": 1752,
+      "y": 6440,
+      "region": "CinnabarIsland"
+    },
+    "to": {
+      "x": 1816,
+      "y": 6696,
+      "region": "CinnabarMart"
+    }
+  },
+  {
+    "from": {
+      "x": 1544,
+      "y": 6856,
+      "region": "CinnabarLabFossilRoom"
+    },
+    "to": {
+      "x": 1416,
+      "y": 6648,
+      "region": "CinnabarLab"
+    }
+  },
+  {
+    "from": {
+      "x": 1288,
+      "y": 6648,
+      "region": "CinnabarLab"
+    },
+    "to": {
+      "x": 1144,
+      "y": 6856,
+      "region": "CinnabarLabTradeRoom"
+    }
+  },
+  {
+    "from": {
+      "x": 1352,
+      "y": 6648,
+      "region": "CinnabarLab"
+    },
+    "to": {
+      "x": 1336,
+      "y": 6856,
+      "region": "CinnabarLabMetronomeRoom"
+    }
+  },
+  {
+    "from": {
+      "x": 4184,
+      "y": 2344,
+      "region": "CopycatsHouse1F"
+    },
+    "to": {
+      "x": 4184,
+      "y": 2184,
+      "region": "CopycatsHouse2F"
+    }
+  },
+  {
+    "from": {
+      "x": 4968,
+      "y": 3704,
+      "region": "DiglettsCaveRoute11"
+    },
+    "to": {
+      "x": 4792,
+      "y": 4776,
+      "region": "DiglettsCave"
+    }
+  },
+  {
+    "from": {
+      "x": 3352,
+      "y": 5320,
+      "region": "FuchsiaCity"
+    },
+    "to": {
+      "x": 3352,
+      "y": 5064,
+      "region": "FuchsiaMart"
+    }
+  },
+  {
+    "from": {
+      "x": 3320,
+      "y": 5832,
+      "region": "FuchsiaBillsGrandpasHouse"
+    },
+    "to": {
+      "x": 3448,
+      "y": 5544,
+      "region": "FuchsiaCity"
+    }
+  },
+  {
+    "from": {
+      "x": 3576,
+      "y": 5544,
+      "region": "FuchsiaCity"
+    },
+    "to": {
+      "x": 3832,
+      "y": 5832,
+      "region": "FuchsiaPokecenter"
+    }
+  },
+  {
+    "from": {
+      "x": 3704,
+      "y": 5544,
+      "region": "FuchsiaCity"
+    },
+    "to": {
+      "x": 4008,
+      "y": 5672,
+      "region": "WardensHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 3560,
+      "y": 5160,
+      "region": "FuchsiaCity"
+    },
+    "to": {
+      "x": 4216,
+      "y": 7144,
+      "region": "SafariZoneGate"
+    }
+  },
+  {
+    "from": {
+      "x": 3352,
+      "y": 5544,
+      "region": "FuchsiaCity"
+    },
+    "to": {
+      "x": 3160,
+      "y": 5832,
+      "region": "FuchsiaGym"
+    }
+  },
+  {
+    "from": {
+      "x": 3624,
+      "y": 5320,
+      "region": "FuchsiaCity"
+    },
+    "to": {
+      "x": 3624,
+      "y": 5064,
+      "region": "FuchsiaMeetingRoom"
+    }
+  },
+  {
+    "from": {
+      "x": 3768,
+      "y": 5544,
+      "region": "FuchsiaCity"
+    },
+    "to": {
+      "x": 4168,
+      "y": 5672,
+      "region": "FuchsiaGoodRodHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 3768,
+      "y": 5496,
+      "region": "FuchsiaCity"
+    },
+    "to": {
+      "x": 4168,
+      "y": 5560,
+      "region": "FuchsiaGoodRodHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 3416,
+      "y": 3352,
+      "region": "GameCorner"
+    },
+    "to": {
+      "x": 3160,
+      "y": 3640,
+      "region": "RocketHideoutB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 856,
+      "y": 1000,
+      "region": "IndigoPlateau"
+    },
+    "to": {
+      "x": 856,
+      "y": 872,
+      "region": "IndigoPlateauLobby"
+    }
+  },
+  {
+    "from": {
+      "x": 872,
+      "y": 696,
+      "region": "IndigoPlateauLobby"
+    },
+    "to": {
+      "x": 872,
+      "y": 648,
+      "region": "LoreleisRoom"
+    }
+  },
+  {
+    "from": {
+      "x": 5640,
+      "y": 2600,
+      "region": "LavenderPokecenter"
+    },
+    "to": {
+      "x": 5880,
+      "y": 2728,
+      "region": "LavenderTown"
+    }
+  },
+  {
+    "from": {
+      "x": 6056,
+      "y": 2728,
+      "region": "LavenderTown"
+    },
+    "to": {
+      "x": 6344,
+      "y": 2728,
+      "region": "PokemonTower1F"
+    }
+  },
+  {
+    "from": {
+      "x": 5944,
+      "y": 2792,
+      "region": "LavenderTown"
+    },
+    "to": {
+      "x": 6216,
+      "y": 3048,
+      "region": "MrFujisHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 6232,
+      "y": 2888,
+      "region": "LavenderMart"
+    },
+    "to": {
+      "x": 6072,
+      "y": 2856,
+      "region": "LavenderTown"
+    }
+  },
+  {
+    "from": {
+      "x": 5720,
+      "y": 3080,
+      "region": "LavenderCuboneHouse"
+    },
+    "to": {
+      "x": 5880,
+      "y": 2856,
+      "region": "LavenderTown"
+    }
+  },
+  {
+    "from": {
+      "x": 5944,
+      "y": 2856,
+      "region": "LavenderTown"
+    },
+    "to": {
+      "x": 5720,
+      "y": 3240,
+      "region": "NameRatersHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 2936,
+      "y": 968,
+      "region": "MtMoon1F"
+    },
+    "to": {
+      "x": 2456,
+      "y": 968,
+      "region": "MtMoonB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 3128,
+      "y": 1064,
+      "region": "MtMoon1F"
+    },
+    "to": {
+      "x": 2776,
+      "y": 1032,
+      "region": "MtMoonB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 3256,
+      "y": 1128,
+      "region": "MtMoon1F"
+    },
+    "to": {
+      "x": 2776,
+      "y": 1128,
+      "region": "MtMoonB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 2648,
+      "y": 1064,
+      "region": "MtMoonB1F"
+    },
+    "to": {
+      "x": 2104,
+      "y": 1032,
+      "region": "MtMoonB2F"
+    }
+  },
+  {
+    "from": {
+      "x": 2712,
+      "y": 1160,
+      "region": "MtMoonB1F"
+    },
+    "to": {
+      "x": 2040,
+      "y": 1160,
+      "region": "MtMoonB2F"
+    }
+  },
+  {
+    "from": {
+      "x": 2584,
+      "y": 1320,
+      "region": "MtMoonB1F"
+    },
+    "to": {
+      "x": 1944,
+      "y": 1320,
+      "region": "MtMoonB2F"
+    }
+  },
+  {
+    "from": {
+      "x": 2744,
+      "y": 936,
+      "region": "MtMoonB1F"
+    },
+    "to": {
+      "x": 1784,
+      "y": 1000,
+      "region": "MtMoonB2F"
+    }
+  },
+  {
+    "from": {
+      "x": 1528,
+      "y": 1608,
+      "region": "Museum1F"
+    },
+    "to": {
+      "x": 1528,
+      "y": 1448,
+      "region": "Museum2F"
+    }
+  },
+  {
+    "from": {
+      "x": 1592,
+      "y": 4616,
+      "region": "PalletTown"
+    },
+    "to": {
+      "x": 1400,
+      "y": 4616,
+      "region": "RedsHouse1F"
+    }
+  },
+  {
+    "from": {
+      "x": 1720,
+      "y": 4616,
+      "region": "BluesHouse"
+    },
+    "to": {
+      "x": 1896,
+      "y": 4616,
+      "region": "PalletTown"
+    }
+  },
+  {
+    "from": {
+      "x": 1704,
+      "y": 4712,
+      "region": "OaksLab"
+    },
+    "to": {
+      "x": 1928,
+      "y": 4840,
+      "region": "PalletTown"
+    }
+  },
+  {
+    "from": {
+      "x": 1576,
+      "y": 1608,
+      "region": "Museum1F"
+    },
+    "to": {
+      "x": 1576,
+      "y": 1768,
+      "region": "PewterCity"
+    }
+  },
+  {
+    "from": {
+      "x": 1672,
+      "y": 1608,
+      "region": "Museum1F"
+    },
+    "to": {
+      "x": 1656,
+      "y": 1736,
+      "region": "PewterCity"
+    }
+  },
+  {
+    "from": {
+      "x": 1240,
+      "y": 1928,
+      "region": "PewterGym"
+    },
+    "to": {
+      "x": 1608,
+      "y": 1928,
+      "region": "PewterCity"
+    }
+  },
+  {
+    "from": {
+      "x": 1816,
+      "y": 1864,
+      "region": "PewterCity"
+    },
+    "to": {
+      "x": 1960,
+      "y": 1608,
+      "region": "PewterNidoranHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 1816,
+      "y": 1608,
+      "region": "PewterMart"
+    },
+    "to": {
+      "x": 1720,
+      "y": 1928,
+      "region": "PewterCity"
+    }
+  },
+  {
+    "from": {
+      "x": 1464,
+      "y": 2120,
+      "region": "PewterCity"
+    },
+    "to": {
+      "x": 1240,
+      "y": 2120,
+      "region": "PewterSpeechHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 1560,
+      "y": 2056,
+      "region": "PewterCity"
+    },
+    "to": {
+      "x": 1320,
+      "y": 2376,
+      "region": "PewterPokecenter"
+    }
+  },
+  {
+    "from": {
+      "x": 1080,
+      "y": 5720,
+      "region": "PokemonMansion2F"
+    },
+    "to": {
+      "x": 1080,
+      "y": 6200,
+      "region": "PokemonMansion1F"
+    }
+  },
+  {
+    "from": {
+      "x": 1112,
+      "y": 5720,
+      "region": "PokemonMansion2F"
+    },
+    "to": {
+      "x": 1112,
+      "y": 5400,
+      "region": "PokemonMansion3F"
+    }
+  },
+  {
+    "from": {
+      "x": 1400,
+      "y": 5784,
+      "region": "PokemonMansion2F"
+    },
+    "to": {
+      "x": 1400,
+      "y": 5464,
+      "region": "PokemonMansion3F"
+    }
+  },
+  {
+    "from": {
+      "x": 1096,
+      "y": 5576,
+      "region": "PokemonMansion2F"
+    },
+    "to": {
+      "x": 1096,
+      "y": 5256,
+      "region": "PokemonMansion3F"
+    }
+  },
+  {
+    "from": {
+      "x": 1336,
+      "y": 6408,
+      "region": "PokemonMansion1F"
+    },
+    "to": {
+      "x": 856,
+      "y": 6392,
+      "region": "PokemonMansionB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 6584,
+      "y": 2920,
+      "region": "PokemonTower3F"
+    },
+    "to": {
+      "x": 6584,
+      "y": 2600,
+      "region": "PokemonTower2F"
+    }
+  },
+  {
+    "from": {
+      "x": 6824,
+      "y": 2920,
+      "region": "PokemonTower3F"
+    },
+    "to": {
+      "x": 6824,
+      "y": 3240,
+      "region": "PokemonTower4F"
+    }
+  },
+  {
+    "from": {
+      "x": 6472,
+      "y": 2600,
+      "region": "PokemonTower1F"
+    },
+    "to": {
+      "x": 6824,
+      "y": 2600,
+      "region": "PokemonTower2F"
+    }
+  },
+  {
+    "from": {
+      "x": 6584,
+      "y": 3240,
+      "region": "PokemonTower4F"
+    },
+    "to": {
+      "x": 6584,
+      "y": 3560,
+      "region": "PokemonTower5F"
+    }
+  },
+  {
+    "from": {
+      "x": 6824,
+      "y": 3880,
+      "region": "PokemonTower6F"
+    },
+    "to": {
+      "x": 6824,
+      "y": 3560,
+      "region": "PokemonTower5F"
+    }
+  },
+  {
+    "from": {
+      "x": 6680,
+      "y": 3992,
+      "region": "PokemonTower6F"
+    },
+    "to": {
+      "x": 6680,
+      "y": 4312,
+      "region": "PokemonTower7F"
+    }
+  },
+  {
+    "from": {
+      "x": 5784,
+      "y": 1448,
+      "region": "PowerPlant"
+    },
+    "to": {
+      "x": 5928,
+      "y": 2120,
+      "region": "Route10"
+    }
+  },
+  {
+    "from": {
+      "x": 5704,
+      "y": 1064,
+      "region": "PowerPlant"
+    },
+    "to": {
+      "x": 5928,
+      "y": 2120,
+      "region": "Route10"
+    }
+  },
+  {
+    "from": {
+      "x": 6776,
+      "y": 1768,
+      "region": "RockTunnel1F"
+    },
+    "to": {
+      "x": 6904,
+      "y": 1512,
+      "region": "RockTunnelB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 6264,
+      "y": 1768,
+      "region": "RockTunnel1F"
+    },
+    "to": {
+      "x": 6808,
+      "y": 1160,
+      "region": "RockTunnelB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 6456,
+      "y": 1896,
+      "region": "RockTunnel1F"
+    },
+    "to": {
+      "x": 6744,
+      "y": 1288,
+      "region": "RockTunnelB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 6776,
+      "y": 1992,
+      "region": "RockTunnel1F"
+    },
+    "to": {
+      "x": 6424,
+      "y": 1160,
+      "region": "RockTunnelB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 1464,
+      "y": 4520,
+      "region": "RedsHouse2F"
+    },
+    "to": {
+      "x": 1304,
+      "y": 4520,
+      "region": "RedsHouse1F"
+    }
+  },
+  {
+    "from": {
+      "x": 3768,
+      "y": 3736,
+      "region": "RocketHideoutB2F"
+    },
+    "to": {
+      "x": 3192,
+      "y": 3640,
+      "region": "RocketHideoutB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 3672,
+      "y": 3736,
+      "region": "RocketHideoutB2F"
+    },
+    "to": {
+      "x": 3736,
+      "y": 4184,
+      "region": "RocketHideoutB3F"
+    }
+  },
+  {
+    "from": {
+      "x": 3672,
+      "y": 3960,
+      "region": "RocketHideoutB2F"
+    },
+    "to": {
+      "x": 3160,
+      "y": 3992,
+      "region": "RocketHideoutB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 3640,
+      "y": 4376,
+      "region": "RocketHideoutB3F"
+    },
+    "to": {
+      "x": 3128,
+      "y": 4248,
+      "region": "RocketHideoutB4F"
+    }
+  },
+  {
+    "from": {
+      "x": 5640,
+      "y": 1928,
+      "region": "RockTunnelPokecenter"
+    },
+    "to": {
+      "x": 6008,
+      "y": 1800,
+      "region": "Route10"
+    }
+  },
+  {
+    "from": {
+      "x": 6424,
+      "y": 1768,
+      "region": "RockTunnel1F"
+    },
+    "to": {
+      "x": 5960,
+      "y": 1768,
+      "region": "Route10"
+    }
+  },
+  {
+    "from": {
+      "x": 6424,
+      "y": 2248,
+      "region": "RockTunnel1F"
+    },
+    "to": {
+      "x": 5960,
+      "y": 2344,
+      "region": "Route10"
+    }
+  },
+  {
+    "from": {
+      "x": 5656,
+      "y": 3944,
+      "region": "Route11"
+    },
+    "to": {
+      "x": 5640,
+      "y": 4184,
+      "region": "Route11Gate1F"
+    }
+  },
+  {
+    "from": {
+      "x": 5800,
+      "y": 3944,
+      "region": "Route11"
+    },
+    "to": {
+      "x": 5752,
+      "y": 4184,
+      "region": "Route11Gate1F"
+    }
+  },
+  {
+    "from": {
+      "x": 4936,
+      "y": 3752,
+      "region": "DiglettsCaveRoute11"
+    },
+    "to": {
+      "x": 4936,
+      "y": 3880,
+      "region": "Route11"
+    }
+  },
+  {
+    "from": {
+      "x": 5736,
+      "y": 4248,
+      "region": "Route11Gate1F"
+    },
+    "to": {
+      "x": 5592,
+      "y": 4264,
+      "region": "Route11Gate2F"
+    }
+  },
+  {
+    "from": {
+      "x": 6008,
+      "y": 3176,
+      "region": "Route12"
+    },
+    "to": {
+      "x": 6248,
+      "y": 3160,
+      "region": "Route12Gate1F"
+    }
+  },
+  {
+    "from": {
+      "x": 5992,
+      "y": 3272,
+      "region": "Route12"
+    },
+    "to": {
+      "x": 6248,
+      "y": 3272,
+      "region": "Route12Gate1F"
+    }
+  },
+  {
+    "from": {
+      "x": 6008,
+      "y": 4168,
+      "region": "Route12"
+    },
+    "to": {
+      "x": 6216,
+      "y": 4168,
+      "region": "Route12SuperRodHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 6312,
+      "y": 3256,
+      "region": "Route12Gate1F"
+    },
+    "to": {
+      "x": 6488,
+      "y": 3272,
+      "region": "Route12Gate2F"
+    }
+  },
+  {
+    "from": {
+      "x": 4024,
+      "y": 5368,
+      "region": "Route15"
+    },
+    "to": {
+      "x": 4008,
+      "y": 5128,
+      "region": "Route15Gate1F"
+    }
+  },
+  {
+    "from": {
+      "x": 4136,
+      "y": 5368,
+      "region": "Route15"
+    },
+    "to": {
+      "x": 4120,
+      "y": 5128,
+      "region": "Route15Gate1F"
+    }
+  },
+  {
+    "from": {
+      "x": 4104,
+      "y": 5176,
+      "region": "Route15Gate1F"
+    },
+    "to": {
+      "x": 4280,
+      "y": 5192,
+      "region": "Route15Gate2F"
+    }
+  },
+  {
+    "from": {
+      "x": 2744,
+      "y": 2808,
+      "region": "Route16"
+    },
+    "to": {
+      "x": 2728,
+      "y": 2536,
+      "region": "Route16Gate1F"
+    }
+  },
+  {
+    "from": {
+      "x": 2856,
+      "y": 2808,
+      "region": "Route16"
+    },
+    "to": {
+      "x": 2840,
+      "y": 2536,
+      "region": "Route16Gate1F"
+    }
+  },
+  {
+    "from": {
+      "x": 2744,
+      "y": 2712,
+      "region": "Route16"
+    },
+    "to": {
+      "x": 2728,
+      "y": 2440,
+      "region": "Route16Gate1F"
+    }
+  },
+  {
+    "from": {
+      "x": 2856,
+      "y": 2712,
+      "region": "Route16"
+    },
+    "to": {
+      "x": 2840,
+      "y": 2440,
+      "region": "Route16Gate1F"
+    }
+  },
+  {
+    "from": {
+      "x": 2584,
+      "y": 2728,
+      "region": "Route16"
+    },
+    "to": {
+      "x": 2584,
+      "y": 2600,
+      "region": "Route16FlyHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 2824,
+      "y": 2584,
+      "region": "Route16Gate1F"
+    },
+    "to": {
+      "x": 3000,
+      "y": 2600,
+      "region": "Route16Gate2F"
+    }
+  },
+  {
+    "from": {
+      "x": 3000,
+      "y": 5368,
+      "region": "Route18"
+    },
+    "to": {
+      "x": 2984,
+      "y": 5128,
+      "region": "Route18Gate1F"
+    }
+  },
+  {
+    "from": {
+      "x": 3112,
+      "y": 5368,
+      "region": "Route18"
+    },
+    "to": {
+      "x": 3096,
+      "y": 5128,
+      "region": "Route18Gate1F"
+    }
+  },
+  {
+    "from": {
+      "x": 3080,
+      "y": 5176,
+      "region": "Route18Gate1F"
+    },
+    "to": {
+      "x": 2936,
+      "y": 5176,
+      "region": "Route18Gate2F"
+    }
+  },
+  {
+    "from": {
+      "x": 1896,
+      "y": 2344,
+      "region": "DiglettsCaveRoute2"
+    },
+    "to": {
+      "x": 1704,
+      "y": 2376,
+      "region": "Route2"
+    }
+  },
+  {
+    "from": {
+      "x": 1560,
+      "y": 2408,
+      "region": "Route2"
+    },
+    "to": {
+      "x": 1400,
+      "y": 2440,
+      "region": "ViridianForestNorthGate"
+    }
+  },
+  {
+    "from": {
+      "x": 1752,
+      "y": 2536,
+      "region": "Route2"
+    },
+    "to": {
+      "x": 1896,
+      "y": 2504,
+      "region": "Route2TradeHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 1768,
+      "y": 2792,
+      "region": "Route2"
+    },
+    "to": {
+      "x": 1400,
+      "y": 2744,
+      "region": "Route2Gate"
+    }
+  },
+  {
+    "from": {
+      "x": 1752,
+      "y": 2856,
+      "region": "Route2"
+    },
+    "to": {
+      "x": 1400,
+      "y": 2856,
+      "region": "Route2Gate"
+    }
+  },
+  {
+    "from": {
+      "x": 1560,
+      "y": 2920,
+      "region": "Route2"
+    },
+    "to": {
+      "x": 1400,
+      "y": 3016,
+      "region": "ViridianForestSouthGate"
+    }
+  },
+  {
+    "from": {
+      "x": 2600,
+      "y": 6344,
+      "region": "Route20"
+    },
+    "to": {
+      "x": 2600,
+      "y": 6216,
+      "region": "SeafoamIslands1F"
+    }
+  },
+  {
+    "from": {
+      "x": 2760,
+      "y": 6408,
+      "region": "Route20"
+    },
+    "to": {
+      "x": 2952,
+      "y": 6216,
+      "region": "SeafoamIslands1F"
+    }
+  },
+  {
+    "from": {
+      "x": 840,
+      "y": 3592,
+      "region": "Route22"
+    },
+    "to": {
+      "x": 600,
+      "y": 3592,
+      "region": "Route22Gate"
+    }
+  },
+  {
+    "from": {
+      "x": 600,
+      "y": 3480,
+      "region": "Route22Gate"
+    },
+    "to": {
+      "x": 824,
+      "y": 3432,
+      "region": "Route23"
+    }
+  },
+  {
+    "from": {
+      "x": 776,
+      "y": 1704,
+      "region": "Route23"
+    },
+    "to": {
+      "x": 504,
+      "y": 1704,
+      "region": "VictoryRoad1F"
+    }
+  },
+  {
+    "from": {
+      "x": 936,
+      "y": 1704,
+      "region": "Route23"
+    },
+    "to": {
+      "x": 664,
+      "y": 1864,
+      "region": "VictoryRoad2F"
+    }
+  },
+  {
+    "from": {
+      "x": 5432,
+      "y": 744,
+      "region": "BillsHouse"
+    },
+    "to": {
+      "x": 5432,
+      "y": 840,
+      "region": "Route25"
+    }
+  },
+  {
+    "from": {
+      "x": 4536,
+      "y": 2408,
+      "region": "Route5"
+    },
+    "to": {
+      "x": 4296,
+      "y": 2360,
+      "region": "Route5Gate"
+    }
+  },
+  {
+    "from": {
+      "x": 4552,
+      "y": 2472,
+      "region": "Route5"
+    },
+    "to": {
+      "x": 4296,
+      "y": 2440,
+      "region": "Route5Gate"
+    }
+  },
+  {
+    "from": {
+      "x": 4664,
+      "y": 2376,
+      "region": "Route5"
+    },
+    "to": {
+      "x": 4136,
+      "y": 2056,
+      "region": "UndergroundPathRoute5"
+    }
+  },
+  {
+    "from": {
+      "x": 4280,
+      "y": 2280,
+      "region": "Daycare"
+    },
+    "to": {
+      "x": 4552,
+      "y": 2280,
+      "region": "Route5"
+    }
+  },
+  {
+    "from": {
+      "x": 2600,
+      "y": 1576,
+      "region": "MtMoonPokecenter"
+    },
+    "to": {
+      "x": 2968,
+      "y": 1576,
+      "region": "Route4"
+    }
+  },
+  {
+    "from": {
+      "x": 3080,
+      "y": 1448,
+      "region": "MtMoon1F"
+    },
+    "to": {
+      "x": 3080,
+      "y": 1576,
+      "region": "Route4"
+    }
+  },
+  {
+    "from": {
+      "x": 2808,
+      "y": 936,
+      "region": "MtMoonB1F"
+    },
+    "to": {
+      "x": 3176,
+      "y": 1576,
+      "region": "Route4"
+    }
+  },
+  {
+    "from": {
+      "x": 4552,
+      "y": 3112,
+      "region": "Route6"
+    },
+    "to": {
+      "x": 4792,
+      "y": 3128,
+      "region": "Route6Gate"
+    }
+  },
+  {
+    "from": {
+      "x": 4552,
+      "y": 3208,
+      "region": "Route6"
+    },
+    "to": {
+      "x": 4792,
+      "y": 3208,
+      "region": "Route6Gate"
+    }
+  },
+  {
+    "from": {
+      "x": 4664,
+      "y": 3304,
+      "region": "Route6"
+    },
+    "to": {
+      "x": 3816,
+      "y": 2472,
+      "region": "UndergroundPathRoute6"
+    }
+  },
+  {
+    "from": {
+      "x": 4200,
+      "y": 2808,
+      "region": "Route7"
+    },
+    "to": {
+      "x": 4184,
+      "y": 3016,
+      "region": "Route7Gate"
+    }
+  },
+  {
+    "from": {
+      "x": 4088,
+      "y": 2808,
+      "region": "Route7"
+    },
+    "to": {
+      "x": 4104,
+      "y": 3016,
+      "region": "Route7Gate"
+    }
+  },
+  {
+    "from": {
+      "x": 3992,
+      "y": 2856,
+      "region": "Route7"
+    },
+    "to": {
+      "x": 3992,
+      "y": 3080,
+      "region": "UndergroundPathRoute7"
+    }
+  },
+  {
+    "from": {
+      "x": 4888,
+      "y": 2808,
+      "region": "Route8"
+    },
+    "to": {
+      "x": 4904,
+      "y": 3016,
+      "region": "Route8Gate"
+    }
+  },
+  {
+    "from": {
+      "x": 5000,
+      "y": 2808,
+      "region": "Route8"
+    },
+    "to": {
+      "x": 4984,
+      "y": 3016,
+      "region": "Route8Gate"
+    }
+  },
+  {
+    "from": {
+      "x": 5080,
+      "y": 2696,
+      "region": "Route8"
+    },
+    "to": {
+      "x": 5464,
+      "y": 3208,
+      "region": "UndergroundPathRoute8"
+    }
+  },
+  {
+    "from": {
+      "x": 6328,
+      "y": 5256,
+      "region": "SSAnne2F"
+    },
+    "to": {
+      "x": 6312,
+      "y": 5224,
+      "region": "SSAnne2FRooms"
+    }
+  },
+  {
+    "from": {
+      "x": 6392,
+      "y": 5256,
+      "region": "SSAnne2F"
+    },
+    "to": {
+      "x": 6392,
+      "y": 5224,
+      "region": "SSAnne2FRooms"
+    }
+  },
+  {
+    "from": {
+      "x": 6456,
+      "y": 5256,
+      "region": "SSAnne2F"
+    },
+    "to": {
+      "x": 6456,
+      "y": 5224,
+      "region": "SSAnne2FRooms"
+    }
+  },
+  {
+    "from": {
+      "x": 6520,
+      "y": 5256,
+      "region": "SSAnne2F"
+    },
+    "to": {
+      "x": 6536,
+      "y": 5224,
+      "region": "SSAnne2FRooms"
+    }
+  },
+  {
+    "from": {
+      "x": 6584,
+      "y": 5256,
+      "region": "SSAnne2F"
+    },
+    "to": {
+      "x": 6616,
+      "y": 5224,
+      "region": "SSAnne2FRooms"
+    }
+  },
+  {
+    "from": {
+      "x": 6648,
+      "y": 5256,
+      "region": "SSAnne2F"
+    },
+    "to": {
+      "x": 6696,
+      "y": 5224,
+      "region": "SSAnne2FRooms"
+    }
+  },
+  {
+    "from": {
+      "x": 6216,
+      "y": 5144,
+      "region": "SSAnne2F"
+    },
+    "to": {
+      "x": 6216,
+      "y": 4696,
+      "region": "SSAnne1F"
+    }
+  },
+  {
+    "from": {
+      "x": 6216,
+      "y": 5272,
+      "region": "SSAnne2F"
+    },
+    "to": {
+      "x": 6136,
+      "y": 5320,
+      "region": "SSAnne3F"
+    }
+  },
+  {
+    "from": {
+      "x": 6760,
+      "y": 5144,
+      "region": "SSAnne2F"
+    },
+    "to": {
+      "x": 6856,
+      "y": 5160,
+      "region": "SSAnneCaptainsRoom"
+    }
+  },
+  {
+    "from": {
+      "x": 5832,
+      "y": 5320,
+      "region": "SSAnne3F"
+    },
+    "to": {
+      "x": 5688,
+      "y": 5320,
+      "region": "SSAnneBow"
+    }
+  },
+  {
+    "from": {
+      "x": 6600,
+      "y": 4600,
+      "region": "SSAnne1F"
+    },
+    "to": {
+      "x": 6408,
+      "y": 4408,
+      "region": "VermilionDock"
+    }
+  },
+  {
+    "from": {
+      "x": 6680,
+      "y": 4728,
+      "region": "SSAnne1F"
+    },
+    "to": {
+      "x": 6680,
+      "y": 4760,
+      "region": "SSAnne1FRooms"
+    }
+  },
+  {
+    "from": {
+      "x": 6552,
+      "y": 4728,
+      "region": "SSAnne1F"
+    },
+    "to": {
+      "x": 6584,
+      "y": 4760,
+      "region": "SSAnne1FRooms"
+    }
+  },
+  {
+    "from": {
+      "x": 6488,
+      "y": 4728,
+      "region": "SSAnne1F"
+    },
+    "to": {
+      "x": 6504,
+      "y": 4760,
+      "region": "SSAnne1FRooms"
+    }
+  },
+  {
+    "from": {
+      "x": 6424,
+      "y": 4728,
+      "region": "SSAnne1F"
+    },
+    "to": {
+      "x": 6424,
+      "y": 4760,
+      "region": "SSAnne1FRooms"
+    }
+  },
+  {
+    "from": {
+      "x": 6360,
+      "y": 4728,
+      "region": "SSAnne1F"
+    },
+    "to": {
+      "x": 6344,
+      "y": 4760,
+      "region": "SSAnne1FRooms"
+    }
+  },
+  {
+    "from": {
+      "x": 6296,
+      "y": 4728,
+      "region": "SSAnne1F"
+    },
+    "to": {
+      "x": 6264,
+      "y": 4760,
+      "region": "SSAnne1FRooms"
+    }
+  },
+  {
+    "from": {
+      "x": 6776,
+      "y": 4840,
+      "region": "SSAnne1F"
+    },
+    "to": {
+      "x": 6776,
+      "y": 5064,
+      "region": "SSAnneB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 6232,
+      "y": 4856,
+      "region": "SSAnne1F"
+    },
+    "to": {
+      "x": 6024,
+      "y": 4984,
+      "region": "SSAnneKitchen"
+    }
+  },
+  {
+    "from": {
+      "x": 6424,
+      "y": 5000,
+      "region": "SSAnneB1FRooms"
+    },
+    "to": {
+      "x": 6456,
+      "y": 5032,
+      "region": "SSAnneB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 6504,
+      "y": 5000,
+      "region": "SSAnneB1FRooms"
+    },
+    "to": {
+      "x": 6520,
+      "y": 5032,
+      "region": "SSAnneB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 6584,
+      "y": 5000,
+      "region": "SSAnneB1FRooms"
+    },
+    "to": {
+      "x": 6584,
+      "y": 5032,
+      "region": "SSAnneB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 6648,
+      "y": 5000,
+      "region": "SSAnneB1FRooms"
+    },
+    "to": {
+      "x": 6648,
+      "y": 5032,
+      "region": "SSAnneB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 6728,
+      "y": 5000,
+      "region": "SSAnneB1FRooms"
+    },
+    "to": {
+      "x": 6712,
+      "y": 5032,
+      "region": "SSAnneB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 4216,
+      "y": 7016,
+      "region": "SafariZoneCenter"
+    },
+    "to": {
+      "x": 4216,
+      "y": 7064,
+      "region": "SafariZoneGate"
+    }
+  },
+  {
+    "from": {
+      "x": 3976,
+      "y": 6784,
+      "region": "SafariZoneCenter"
+    },
+    "to": {
+      "x": 3928,
+      "y": 6976,
+      "region": "SafariZoneWest"
+    }
+  },
+  {
+    "from": {
+      "x": 4208,
+      "y": 6616,
+      "region": "SafariZoneCenter"
+    },
+    "to": {
+      "x": 4144,
+      "y": 6568,
+      "region": "SafariZoneNorth"
+    }
+  },
+  {
+    "from": {
+      "x": 4440,
+      "y": 6784,
+      "region": "SafariZoneCenter"
+    },
+    "to": {
+      "x": 4488,
+      "y": 6784,
+      "region": "SafariZoneEast"
+    }
+  },
+  {
+    "from": {
+      "x": 4248,
+      "y": 6920,
+      "region": "SafariZoneCenter"
+    },
+    "to": {
+      "x": 4520,
+      "y": 7016,
+      "region": "SafariZoneCenterRestHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 4488,
+      "y": 6496,
+      "region": "SafariZoneEast"
+    },
+    "to": {
+      "x": 4440,
+      "y": 6496,
+      "region": "SafariZoneNorth"
+    }
+  },
+  {
+    "from": {
+      "x": 4888,
+      "y": 6568,
+      "region": "SafariZoneEast"
+    },
+    "to": {
+      "x": 4888,
+      "y": 6376,
+      "region": "SafariZoneEastRestHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 3856,
+      "y": 6568,
+      "region": "SafariZoneNorth"
+    },
+    "to": {
+      "x": 3792,
+      "y": 6616,
+      "region": "SafariZoneWest"
+    }
+  },
+  {
+    "from": {
+      "x": 3952,
+      "y": 6568,
+      "region": "SafariZoneNorth"
+    },
+    "to": {
+      "x": 3888,
+      "y": 6616,
+      "region": "SafariZoneWest"
+    }
+  },
+  {
+    "from": {
+      "x": 4376,
+      "y": 6056,
+      "region": "SafariZoneNorth"
+    },
+    "to": {
+      "x": 4376,
+      "y": 5960,
+      "region": "SafariZoneNorthRestHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 3352,
+      "y": 6696,
+      "region": "SafariZoneSecretHouse"
+    },
+    "to": {
+      "x": 3512,
+      "y": 6664,
+      "region": "SafariZoneWest"
+    }
+  },
+  {
+    "from": {
+      "x": 3640,
+      "y": 6792,
+      "region": "SafariZoneWest"
+    },
+    "to": {
+      "x": 3352,
+      "y": 6856,
+      "region": "SafariZoneWestRestHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 4952,
+      "y": 2344,
+      "region": "SaffronGym"
+    },
+    "to": {
+      "x": 5176,
+      "y": 2376,
+      "region": "SaffronGym"
+    }
+  },
+  {
+    "from": {
+      "x": 5016,
+      "y": 2344,
+      "region": "SaffronGym"
+    },
+    "to": {
+      "x": 5112,
+      "y": 2344,
+      "region": "SaffronGym"
+    }
+  },
+  {
+    "from": {
+      "x": 4952,
+      "y": 2376,
+      "region": "SaffronGym"
+    },
+    "to": {
+      "x": 5112,
+      "y": 2472,
+      "region": "SaffronGym"
+    }
+  },
+  {
+    "from": {
+      "x": 5016,
+      "y": 2376,
+      "region": "SaffronGym"
+    },
+    "to": {
+      "x": 4952,
+      "y": 2472,
+      "region": "SaffronGym"
+    }
+  },
+  {
+    "from": {
+      "x": 4952,
+      "y": 2440,
+      "region": "SaffronGym"
+    },
+    "to": {
+      "x": 5240,
+      "y": 2472,
+      "region": "SaffronGym"
+    }
+  },
+  {
+    "from": {
+      "x": 5016,
+      "y": 2440,
+      "region": "SaffronGym"
+    },
+    "to": {
+      "x": 5080,
+      "y": 2376,
+      "region": "SaffronGym"
+    }
+  },
+  {
+    "from": {
+      "x": 5016,
+      "y": 2472,
+      "region": "SaffronGym"
+    },
+    "to": {
+      "x": 5016,
+      "y": 2568,
+      "region": "SaffronGym"
+    }
+  },
+  {
+    "from": {
+      "x": 4952,
+      "y": 2536,
+      "region": "SaffronGym"
+    },
+    "to": {
+      "x": 5240,
+      "y": 2376,
+      "region": "SaffronGym"
+    }
+  },
+  {
+    "from": {
+      "x": 5016,
+      "y": 2536,
+      "region": "SaffronGym"
+    },
+    "to": {
+      "x": 5176,
+      "y": 2568,
+      "region": "SaffronGym"
+    }
+  },
+  {
+    "from": {
+      "x": 4952,
+      "y": 2568,
+      "region": "SaffronGym"
+    },
+    "to": {
+      "x": 5112,
+      "y": 2376,
+      "region": "SaffronGym"
+    }
+  },
+  {
+    "from": {
+      "x": 5080,
+      "y": 2344,
+      "region": "SaffronGym"
+    },
+    "to": {
+      "x": 5176,
+      "y": 2472,
+      "region": "SaffronGym"
+    }
+  },
+  {
+    "from": {
+      "x": 5112,
+      "y": 2536,
+      "region": "SaffronGym"
+    },
+    "to": {
+      "x": 5240,
+      "y": 2568,
+      "region": "SaffronGym"
+    }
+  },
+  {
+    "from": {
+      "x": 5176,
+      "y": 2344,
+      "region": "SaffronGym"
+    },
+    "to": {
+      "x": 5176,
+      "y": 2440,
+      "region": "SaffronGym"
+    }
+  },
+  {
+    "from": {
+      "x": 5240,
+      "y": 2344,
+      "region": "SaffronGym"
+    },
+    "to": {
+      "x": 5176,
+      "y": 2536,
+      "region": "SaffronGym"
+    }
+  },
+  {
+    "from": {
+      "x": 5240,
+      "y": 2440,
+      "region": "SaffronGym"
+    },
+    "to": {
+      "x": 5240,
+      "y": 2536,
+      "region": "SaffronGym"
+    }
+  },
+  {
+    "from": {
+      "x": 4120,
+      "y": 2440,
+      "region": "CopycatsHouse1F"
+    },
+    "to": {
+      "x": 4344,
+      "y": 2600,
+      "region": "SaffronCity"
+    }
+  },
+  {
+    "from": {
+      "x": 4808,
+      "y": 2472,
+      "region": "FightingDojo"
+    },
+    "to": {
+      "x": 4648,
+      "y": 2568,
+      "region": "SaffronCity"
+    }
+  },
+  {
+    "from": {
+      "x": 5064,
+      "y": 2568,
+      "region": "SaffronGym"
+    },
+    "to": {
+      "x": 4776,
+      "y": 2568,
+      "region": "SaffronCity"
+    }
+  },
+  {
+    "from": {
+      "x": 4440,
+      "y": 2696,
+      "region": "SaffronCity"
+    },
+    "to": {
+      "x": 4120,
+      "y": 2600,
+      "region": "SaffronPidgeyHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 4632,
+      "y": 2696,
+      "region": "SaffronCity"
+    },
+    "to": {
+      "x": 4792,
+      "y": 2248,
+      "region": "SaffronMart"
+    }
+  },
+  {
+    "from": {
+      "x": 4376,
+      "y": 2984,
+      "region": "SaffronCity"
+    },
+    "to": {
+      "x": 4200,
+      "y": 3240,
+      "region": "SaffronPokecenter"
+    }
+  },
+  {
+    "from": {
+      "x": 5064,
+      "y": 3080,
+      "region": "MrPsychicsHouse"
+    },
+    "to": {
+      "x": 4696,
+      "y": 2984,
+      "region": "SaffronCity"
+    }
+  },
+  {
+    "from": {
+      "x": 2648,
+      "y": 6024,
+      "region": "SeafoamIslands1F"
+    },
+    "to": {
+      "x": 2648,
+      "y": 6664,
+      "region": "SeafoamIslandsB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 2936,
+      "y": 5992,
+      "region": "SeafoamIslands1F"
+    },
+    "to": {
+      "x": 2936,
+      "y": 6632,
+      "region": "SeafoamIslandsB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 2904,
+      "y": 6184,
+      "region": "SeafoamIslands1F"
+    },
+    "to": {
+      "x": 2904,
+      "y": 6824,
+      "region": "SeafoamIslandsB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 2600,
+      "y": 6616,
+      "region": "SeafoamIslandsB1F"
+    },
+    "to": {
+      "x": 2616,
+      "y": 6952,
+      "region": "SeafoamIslandsB2F"
+    }
+  },
+  {
+    "from": {
+      "x": 2744,
+      "y": 6696,
+      "region": "SeafoamIslandsB1F"
+    },
+    "to": {
+      "x": 2744,
+      "y": 7016,
+      "region": "SeafoamIslandsB2F"
+    }
+  },
+  {
+    "from": {
+      "x": 2840,
+      "y": 6824,
+      "region": "SeafoamIslandsB1F"
+    },
+    "to": {
+      "x": 2840,
+      "y": 7144,
+      "region": "SeafoamIslandsB2F"
+    }
+  },
+  {
+    "from": {
+      "x": 2936,
+      "y": 6760,
+      "region": "SeafoamIslandsB1F"
+    },
+    "to": {
+      "x": 2936,
+      "y": 7080,
+      "region": "SeafoamIslandsB2F"
+    }
+  },
+  {
+    "from": {
+      "x": 2616,
+      "y": 7112,
+      "region": "SeafoamIslandsB2F"
+    },
+    "to": {
+      "x": 2104,
+      "y": 7096,
+      "region": "SeafoamIslandsB3F"
+    }
+  },
+  {
+    "from": {
+      "x": 2936,
+      "y": 6952,
+      "region": "SeafoamIslandsB2F"
+    },
+    "to": {
+      "x": 2424,
+      "y": 6952,
+      "region": "SeafoamIslandsB3F"
+    }
+  },
+  {
+    "from": {
+      "x": 2936,
+      "y": 7128,
+      "region": "SeafoamIslandsB2F"
+    },
+    "to": {
+      "x": 2424,
+      "y": 7128,
+      "region": "SeafoamIslandsB3F"
+    }
+  },
+  {
+    "from": {
+      "x": 2152,
+      "y": 7000,
+      "region": "SeafoamIslandsB3F"
+    },
+    "to": {
+      "x": 2200,
+      "y": 6696,
+      "region": "SeafoamIslandsB4F"
+    }
+  },
+  {
+    "from": {
+      "x": 2424,
+      "y": 6968,
+      "region": "SeafoamIslandsB3F"
+    },
+    "to": {
+      "x": 2424,
+      "y": 6648,
+      "region": "SeafoamIslandsB4F"
+    }
+  },
+  {
+    "from": {
+      "x": 6184,
+      "y": 6200,
+      "region": "SilphCo10F"
+    },
+    "to": {
+      "x": 6280,
+      "y": 5880,
+      "region": "SilphCo9F"
+    }
+  },
+  {
+    "from": {
+      "x": 6216,
+      "y": 6200,
+      "region": "SilphCo10F"
+    },
+    "to": {
+      "x": 6200,
+      "y": 6520,
+      "region": "SilphCo11F"
+    }
+  },
+  {
+    "from": {
+      "x": 6200,
+      "y": 6376,
+      "region": "SilphCo10F"
+    },
+    "to": {
+      "x": 5208,
+      "y": 6632,
+      "region": "SilphCo4F"
+    }
+  },
+  {
+    "from": {
+      "x": 6264,
+      "y": 6440,
+      "region": "SilphCo10F"
+    },
+    "to": {
+      "x": 5080,
+      "y": 6760,
+      "region": "SilphCo4F"
+    }
+  },
+  {
+    "from": {
+      "x": 6264,
+      "y": 6312,
+      "region": "SilphCo10F"
+    },
+    "to": {
+      "x": 5304,
+      "y": 6696,
+      "region": "SilphCo4F"
+    }
+  },
+  {
+    "from": {
+      "x": 5448,
+      "y": 5560,
+      "region": "SilphCo1F"
+    },
+    "to": {
+      "x": 5416,
+      "y": 5880,
+      "region": "SilphCo2F"
+    }
+  },
+  {
+    "from": {
+      "x": 5288,
+      "y": 5720,
+      "region": "SilphCo1F"
+    },
+    "to": {
+      "x": 5464,
+      "y": 6248,
+      "region": "SilphCo3F"
+    }
+  },
+  {
+    "from": {
+      "x": 5448,
+      "y": 5880,
+      "region": "SilphCo2F"
+    },
+    "to": {
+      "x": 5448,
+      "y": 6200,
+      "region": "SilphCo3F"
+    }
+  },
+  {
+    "from": {
+      "x": 5080,
+      "y": 5928,
+      "region": "SilphCo2F"
+    },
+    "to": {
+      "x": 5464,
+      "y": 6248,
+      "region": "SilphCo3F"
+    }
+  },
+  {
+    "from": {
+      "x": 5240,
+      "y": 5928,
+      "region": "SilphCo2F"
+    },
+    "to": {
+      "x": 5592,
+      "y": 5800,
+      "region": "SilphCo8F"
+    }
+  },
+  {
+    "from": {
+      "x": 5464,
+      "y": 6120,
+      "region": "SilphCo2F"
+    },
+    "to": {
+      "x": 5720,
+      "y": 5640,
+      "region": "SilphCo8F"
+    }
+  },
+  {
+    "from": {
+      "x": 5176,
+      "y": 6120,
+      "region": "SilphCo2F"
+    },
+    "to": {
+      "x": 5912,
+      "y": 6248,
+      "region": "SilphCo6F"
+    }
+  },
+  {
+    "from": {
+      "x": 6104,
+      "y": 6552,
+      "region": "SilphCo11F"
+    },
+    "to": {
+      "x": 5624,
+      "y": 5992,
+      "region": "SilphCo7F"
+    }
+  },
+  {
+    "from": {
+      "x": 5416,
+      "y": 6200,
+      "region": "SilphCo3F"
+    },
+    "to": {
+      "x": 5416,
+      "y": 6520,
+      "region": "SilphCo4F"
+    }
+  },
+  {
+    "from": {
+      "x": 5400,
+      "y": 6376,
+      "region": "SilphCo3F"
+    },
+    "to": {
+      "x": 5464,
+      "y": 6440,
+      "region": "SilphCo3F"
+    }
+  },
+  {
+    "from": {
+      "x": 5080,
+      "y": 6248,
+      "region": "SilphCo3F"
+    },
+    "to": {
+      "x": 5720,
+      "y": 6600,
+      "region": "SilphCo5F"
+    }
+  },
+  {
+    "from": {
+      "x": 5080,
+      "y": 6440,
+      "region": "SilphCo3F"
+    },
+    "to": {
+      "x": 5592,
+      "y": 6760,
+      "region": "SilphCo5F"
+    }
+  },
+  {
+    "from": {
+      "x": 5080,
+      "y": 6376,
+      "region": "SilphCo3F"
+    },
+    "to": {
+      "x": 6200,
+      "y": 5928,
+      "region": "SilphCo9F"
+    }
+  },
+  {
+    "from": {
+      "x": 5208,
+      "y": 6376,
+      "region": "SilphCo3F"
+    },
+    "to": {
+      "x": 5624,
+      "y": 5928,
+      "region": "SilphCo7F"
+    }
+  },
+  {
+    "from": {
+      "x": 5928,
+      "y": 6520,
+      "region": "SilphCo5F"
+    },
+    "to": {
+      "x": 5768,
+      "y": 6200,
+      "region": "SilphCo6F"
+    }
+  },
+  {
+    "from": {
+      "x": 5960,
+      "y": 6520,
+      "region": "SilphCo5F"
+    },
+    "to": {
+      "x": 5448,
+      "y": 6520,
+      "region": "SilphCo4F"
+    }
+  },
+  {
+    "from": {
+      "x": 5976,
+      "y": 6568,
+      "region": "SilphCo5F"
+    },
+    "to": {
+      "x": 5880,
+      "y": 6120,
+      "region": "SilphCo7F"
+    }
+  },
+  {
+    "from": {
+      "x": 5688,
+      "y": 6760,
+      "region": "SilphCo5F"
+    },
+    "to": {
+      "x": 6328,
+      "y": 6120,
+      "region": "SilphCo9F"
+    }
+  },
+  {
+    "from": {
+      "x": 5304,
+      "y": 6568,
+      "region": "SilphCo4F"
+    },
+    "to": {
+      "x": 5592,
+      "y": 6248,
+      "region": "SilphCo6F"
+    }
+  },
+  {
+    "from": {
+      "x": 5800,
+      "y": 6200,
+      "region": "SilphCo6F"
+    },
+    "to": {
+      "x": 5896,
+      "y": 5880,
+      "region": "SilphCo7F"
+    }
+  },
+  {
+    "from": {
+      "x": 5800,
+      "y": 5880,
+      "region": "SilphCo7F"
+    },
+    "to": {
+      "x": 5768,
+      "y": 5560,
+      "region": "SilphCo8F"
+    }
+  },
+  {
+    "from": {
+      "x": 5800,
+      "y": 5560,
+      "region": "SilphCo8F"
+    },
+    "to": {
+      "x": 6312,
+      "y": 5880,
+      "region": "SilphCo9F"
+    }
+  },
+  {
+    "from": {
+      "x": 5592,
+      "y": 5736,
+      "region": "SilphCo8F"
+    },
+    "to": {
+      "x": 5720,
+      "y": 5704,
+      "region": "SilphCo8F"
+    }
+  },
+  {
+    "from": {
+      "x": 4008,
+      "y": 1912,
+      "region": "UndergroundPathNorthSouth"
+    },
+    "to": {
+      "x": 4136,
+      "y": 2008,
+      "region": "UndergroundPathRoute5"
+    }
+  },
+  {
+    "from": {
+      "x": 3960,
+      "y": 2504,
+      "region": "UndergroundPathNorthSouth"
+    },
+    "to": {
+      "x": 3816,
+      "y": 2424,
+      "region": "UndergroundPathRoute6"
+    }
+  },
+  {
+    "from": {
+      "x": 4008,
+      "y": 3032,
+      "region": "UndergroundPathRoute7"
+    },
+    "to": {
+      "x": 4776,
+      "y": 3336,
+      "region": "UndergroundPathWestEast"
+    }
+  },
+  {
+    "from": {
+      "x": 5496,
+      "y": 3288,
+      "region": "UndergroundPathWestEast"
+    },
+    "to": {
+      "x": 5480,
+      "y": 3160,
+      "region": "UndergroundPathRoute8"
+    }
+  },
+  {
+    "from": {
+      "x": 4408,
+      "y": 3720,
+      "region": "VermilionCity"
+    },
+    "to": {
+      "x": 4200,
+      "y": 3624,
+      "region": "VermilionPokecenter"
+    }
+  },
+  {
+    "from": {
+      "x": 4120,
+      "y": 3880,
+      "region": "PokemonFanClub"
+    },
+    "to": {
+      "x": 4376,
+      "y": 3880,
+      "region": "VermilionCity"
+    }
+  },
+  {
+    "from": {
+      "x": 4600,
+      "y": 3880,
+      "region": "VermilionCity"
+    },
+    "to": {
+      "x": 4792,
+      "y": 3624,
+      "region": "VermilionMart"
+    }
+  },
+  {
+    "from": {
+      "x": 4424,
+      "y": 3976,
+      "region": "VermilionCity"
+    },
+    "to": {
+      "x": 4120,
+      "y": 4200,
+      "region": "VermilionGym"
+    }
+  },
+  {
+    "from": {
+      "x": 4600,
+      "y": 3976,
+      "region": "VermilionCity"
+    },
+    "to": {
+      "x": 4936,
+      "y": 4232,
+      "region": "VermilionPidgeyHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 6408,
+      "y": 4376,
+      "region": "VermilionDock"
+    },
+    "to": {
+      "x": 4536,
+      "y": 4168,
+      "region": "VermilionCity"
+    }
+  },
+  {
+    "from": {
+      "x": 4472,
+      "y": 3880,
+      "region": "VermilionCity"
+    },
+    "to": {
+      "x": 4280,
+      "y": 3464,
+      "region": "VermilionTradeHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 4344,
+      "y": 3720,
+      "region": "VermilionCity"
+    },
+    "to": {
+      "x": 4024,
+      "y": 3720,
+      "region": "VermilionOldRodHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 376,
+      "y": 1448,
+      "region": "VictoryRoad1F"
+    },
+    "to": {
+      "x": 200,
+      "y": 1880,
+      "region": "VictoryRoad2F"
+    }
+  },
+  {
+    "from": {
+      "x": 1720,
+      "y": 3784,
+      "region": "ViridianCity"
+    },
+    "to": {
+      "x": 2072,
+      "y": 3944,
+      "region": "ViridianPokecenter"
+    }
+  },
+  {
+    "from": {
+      "x": 1816,
+      "y": 3688,
+      "region": "ViridianCity"
+    },
+    "to": {
+      "x": 2072,
+      "y": 3784,
+      "region": "ViridianMart"
+    }
+  },
+  {
+    "from": {
+      "x": 1688,
+      "y": 3528,
+      "region": "ViridianCity"
+    },
+    "to": {
+      "x": 1400,
+      "y": 3336,
+      "region": "ViridianNicknameHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 1864,
+      "y": 3496,
+      "region": "ViridianCity"
+    },
+    "to": {
+      "x": 2280,
+      "y": 3624,
+      "region": "ViridianGym"
+    }
+  },
+  {
+    "from": {
+      "x": 568,
+      "y": 2184,
+      "region": "VictoryRoad3F"
+    },
+    "to": {
+      "x": 568,
+      "y": 1864,
+      "region": "VictoryRoad2F"
+    }
+  },
+  {
+    "from": {
+      "x": 616,
+      "y": 2200,
+      "region": "VictoryRoad3F"
+    },
+    "to": {
+      "x": 632,
+      "y": 1864,
+      "region": "VictoryRoad2F"
+    }
+  },
+  {
+    "from": {
+      "x": 632,
+      "y": 2312,
+      "region": "VictoryRoad3F"
+    },
+    "to": {
+      "x": 600,
+      "y": 1976,
+      "region": "VictoryRoad2F"
+    }
+  },
+  {
+    "from": {
+      "x": 232,
+      "y": 2072,
+      "region": "VictoryRoad3F"
+    },
+    "to": {
+      "x": 216,
+      "y": 1768,
+      "region": "VictoryRoad2F"
+    }
+  },
+  {
+    "from": {
+      "x": 1400,
+      "y": 2552,
+      "region": "ViridianForestNorthGate"
+    },
+    "to": {
+      "x": 1880,
+      "y": 2552,
+      "region": "ViridianForest"
+    }
+  },
+  {
+    "from": {
+      "x": 1400,
+      "y": 2904,
+      "region": "ViridianForestSouthGate"
+    },
+    "to": {
+      "x": 2104,
+      "y": 3304,
+      "region": "ViridianForest"
+    }
+  },
+  {
+    "from": {
+      "x": 872,
+      "y": 200,
+      "region": "AgathasRoom"
+    },
+    "to": {
+      "x": 872,
+      "y": 248,
+      "region": "BrunosRoom"
+    }
+  },
+  {
+    "from": {
+      "x": 872,
+      "y": 24,
+      "region": "AgathasRoom"
+    },
+    "to": {
+      "x": 680,
+      "y": 600,
+      "region": "LancesRoom"
+    }
+  },
+  {
+    "from": {
+      "x": 872,
+      "y": 424,
+      "region": "BrunosRoom"
+    },
+    "to": {
+      "x": 872,
+      "y": 472,
+      "region": "LoreleisRoom"
+    }
+  },
+  {
+    "from": {
+      "x": 3240,
+      "y": 2728,
+      "region": "CeladonCity"
+    },
+    "to": {
+      "x": 3192,
+      "y": 2472,
+      "region": "CeladonMart1F"
+    }
+  },
+  {
+    "from": {
+      "x": 3272,
+      "y": 2728,
+      "region": "CeladonCity"
+    },
+    "to": {
+      "x": 3400,
+      "y": 2472,
+      "region": "CeladonMart1F"
+    }
+  },
+  {
+    "from": {
+      "x": 3496,
+      "y": 2664,
+      "region": "CeladonCity"
+    },
+    "to": {
+      "x": 3560,
+      "y": 2472,
+      "region": "CeladonMansion1F"
+    }
+  },
+  {
+    "from": {
+      "x": 3512,
+      "y": 2568,
+      "region": "CeladonCity"
+    },
+    "to": {
+      "x": 3560,
+      "y": 2296,
+      "region": "CeladonMansion1F"
+    }
+  },
+  {
+    "from": {
+      "x": 3768,
+      "y": 2664,
+      "region": "CeladonCity"
+    },
+    "to": {
+      "x": 3752,
+      "y": 2312,
+      "region": "CeladonPokecenter"
+    }
+  },
+  {
+    "from": {
+      "x": 3000,
+      "y": 3240,
+      "region": "CeladonGym"
+    },
+    "to": {
+      "x": 3304,
+      "y": 2952,
+      "region": "CeladonCity"
+    }
+  },
+  {
+    "from": {
+      "x": 3560,
+      "y": 2824,
+      "region": "CeladonCity"
+    },
+    "to": {
+      "x": 3400,
+      "y": 3560,
+      "region": "GameCorner"
+    }
+  },
+  {
+    "from": {
+      "x": 3640,
+      "y": 2824,
+      "region": "CeladonCity"
+    },
+    "to": {
+      "x": 3576,
+      "y": 3240,
+      "region": "GameCornerPrizeRoom"
+    }
+  },
+  {
+    "from": {
+      "x": 3368,
+      "y": 3240,
+      "region": "CeladonDiner"
+    },
+    "to": {
+      "x": 3608,
+      "y": 2952,
+      "region": "CeladonCity"
+    }
+  },
+  {
+    "from": {
+      "x": 3720,
+      "y": 3240,
+      "region": "CeladonChiefHouse"
+    },
+    "to": {
+      "x": 3672,
+      "y": 2952,
+      "region": "CeladonCity"
+    }
+  },
+  {
+    "from": {
+      "x": 3800,
+      "y": 2952,
+      "region": "CeladonCity"
+    },
+    "to": {
+      "x": 3896,
+      "y": 3240,
+      "region": "CeladonHotel"
+    }
+  },
+  {
+    "from": {
+      "x": 3608,
+      "y": 2312,
+      "region": "CeladonMansion1F"
+    },
+    "to": {
+      "x": 3608,
+      "y": 2088,
+      "region": "CeladonMansion2F"
+    }
+  },
+  {
+    "from": {
+      "x": 3528,
+      "y": 2312,
+      "region": "CeladonMansion1F"
+    },
+    "to": {
+      "x": 3528,
+      "y": 2088,
+      "region": "CeladonMansion2F"
+    }
+  },
+  {
+    "from": {
+      "x": 3592,
+      "y": 2088,
+      "region": "CeladonMansion2F"
+    },
+    "to": {
+      "x": 3592,
+      "y": 1864,
+      "region": "CeladonMansion3F"
+    }
+  },
+  {
+    "from": {
+      "x": 3560,
+      "y": 2088,
+      "region": "CeladonMansion2F"
+    },
+    "to": {
+      "x": 3560,
+      "y": 1864,
+      "region": "CeladonMansion3F"
+    }
+  },
+  {
+    "from": {
+      "x": 3752,
+      "y": 1992,
+      "region": "CeladonMansionRoof"
+    },
+    "to": {
+      "x": 3608,
+      "y": 1864,
+      "region": "CeladonMansion3F"
+    }
+  },
+  {
+    "from": {
+      "x": 3688,
+      "y": 1992,
+      "region": "CeladonMansionRoof"
+    },
+    "to": {
+      "x": 3528,
+      "y": 1864,
+      "region": "CeladonMansion3F"
+    }
+  },
+  {
+    "from": {
+      "x": 3688,
+      "y": 2088,
+      "region": "CeladonMansionRoof"
+    },
+    "to": {
+      "x": 3816,
+      "y": 1928,
+      "region": "CeladonMansionRoofHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 3336,
+      "y": 2376,
+      "region": "CeladonMart1F"
+    },
+    "to": {
+      "x": 3336,
+      "y": 2216,
+      "region": "CeladonMart2F"
+    }
+  },
+  {
+    "from": {
+      "x": 3400,
+      "y": 2216,
+      "region": "CeladonMart2F"
+    },
+    "to": {
+      "x": 3400,
+      "y": 2056,
+      "region": "CeladonMart3F"
+    }
+  },
+  {
+    "from": {
+      "x": 3336,
+      "y": 1896,
+      "region": "CeladonMart4F"
+    },
+    "to": {
+      "x": 3336,
+      "y": 2056,
+      "region": "CeladonMart3F"
+    }
+  },
+  {
+    "from": {
+      "x": 3400,
+      "y": 1896,
+      "region": "CeladonMart4F"
+    },
+    "to": {
+      "x": 3048,
+      "y": 2120,
+      "region": "CeladonMart5F"
+    }
+  },
+  {
+    "from": {
+      "x": 2984,
+      "y": 2120,
+      "region": "CeladonMart5F"
+    },
+    "to": {
+      "x": 2680,
+      "y": 2136,
+      "region": "CeladonMartRoof"
+    }
+  },
+  {
+    "from": {
+      "x": 3992,
+      "y": 872,
+      "region": "CeruleanCave1F"
+    },
+    "to": {
+      "x": 4024,
+      "y": 552,
+      "region": "CeruleanCave2F"
+    }
+  },
+  {
+    "from": {
+      "x": 3928,
+      "y": 968,
+      "region": "CeruleanCave1F"
+    },
+    "to": {
+      "x": 3912,
+      "y": 632,
+      "region": "CeruleanCave2F"
+    }
+  },
+  {
+    "from": {
+      "x": 3848,
+      "y": 1000,
+      "region": "CeruleanCave1F"
+    },
+    "to": {
+      "x": 3864,
+      "y": 648,
+      "region": "CeruleanCave2F"
+    }
+  },
+  {
+    "from": {
+      "x": 3672,
+      "y": 872,
+      "region": "CeruleanCave1F"
+    },
+    "to": {
+      "x": 3704,
+      "y": 552,
+      "region": "CeruleanCave2F"
+    }
+  },
+  {
+    "from": {
+      "x": 3576,
+      "y": 904,
+      "region": "CeruleanCave1F"
+    },
+    "to": {
+      "x": 3576,
+      "y": 584,
+      "region": "CeruleanCave2F"
+    }
+  },
+  {
+    "from": {
+      "x": 3608,
+      "y": 1032,
+      "region": "CeruleanCave1F"
+    },
+    "to": {
+      "x": 3608,
+      "y": 712,
+      "region": "CeruleanCave2F"
+    }
+  },
+  {
+    "from": {
+      "x": 3560,
+      "y": 952,
+      "region": "CeruleanCave1F"
+    },
+    "to": {
+      "x": 3608,
+      "y": 1272,
+      "region": "CeruleanCaveB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 4664,
+      "y": 1544,
+      "region": "CeruleanCity"
+    },
+    "to": {
+      "x": 4776,
+      "y": 1320,
+      "region": "CeruleanTrashedHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 4440,
+      "y": 1608,
+      "region": "CeruleanCity"
+    },
+    "to": {
+      "x": 4280,
+      "y": 1304,
+      "region": "CeruleanTradeHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 4536,
+      "y": 1640,
+      "region": "CeruleanCity"
+    },
+    "to": {
+      "x": 4952,
+      "y": 1448,
+      "region": "CeruleanPokecenter"
+    }
+  },
+  {
+    "from": {
+      "x": 4712,
+      "y": 1672,
+      "region": "CeruleanCity"
+    },
+    "to": {
+      "x": 4968,
+      "y": 2024,
+      "region": "CeruleanGym"
+    }
+  },
+  {
+    "from": {
+      "x": 4280,
+      "y": 2088,
+      "region": "BikeShop"
+    },
+    "to": {
+      "x": 4440,
+      "y": 1768,
+      "region": "CeruleanCity"
+    }
+  },
+  {
+    "from": {
+      "x": 4632,
+      "y": 1768,
+      "region": "CeruleanCity"
+    },
+    "to": {
+      "x": 4792,
+      "y": 2088,
+      "region": "CeruleanMart"
+    }
+  },
+  {
+    "from": {
+      "x": 3960,
+      "y": 1128,
+      "region": "CeruleanCave1F"
+    },
+    "to": {
+      "x": 4296,
+      "y": 1544,
+      "region": "CeruleanCity"
+    }
+  },
+  {
+    "from": {
+      "x": 4664,
+      "y": 1512,
+      "region": "CeruleanCity"
+    },
+    "to": {
+      "x": 4792,
+      "y": 1208,
+      "region": "CeruleanTrashedHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 4120,
+      "y": 1448,
+      "region": "CeruleanBadgeHouse"
+    },
+    "to": {
+      "x": 4376,
+      "y": 1544,
+      "region": "CeruleanCity"
+    }
+  },
+  {
+    "from": {
+      "x": 4104,
+      "y": 1336,
+      "region": "CeruleanBadgeHouse"
+    },
+    "to": {
+      "x": 4376,
+      "y": 1512,
+      "region": "CeruleanCity"
+    }
+  },
+  {
+    "from": {
+      "x": 376,
+      "y": 296,
+      "region": "ChampionsRoom"
+    },
+    "to": {
+      "x": 376,
+      "y": 344,
+      "region": "LancesRoom"
+    }
+  },
+  {
+    "from": {
+      "x": 376,
+      "y": 184,
+      "region": "ChampionsRoom"
+    },
+    "to": {
+      "x": 376,
+      "y": 136,
+      "region": "HallOfFame"
+    }
+  },
+  {
+    "from": {
+      "x": 1608,
+      "y": 6312,
+      "region": "CinnabarIsland"
+    },
+    "to": {
+      "x": 1112,
+      "y": 6472,
+      "region": "PokemonMansion1F"
+    }
+  },
+  {
+    "from": {
+      "x": 2120,
+      "y": 6216,
+      "region": "CinnabarGym"
+    },
+    "to": {
+      "x": 1800,
+      "y": 6312,
+      "region": "CinnabarIsland"
+    }
+  },
+  {
+    "from": {
+      "x": 1608,
+      "y": 6408,
+      "region": "CinnabarIsland"
+    },
+    "to": {
+      "x": 1208,
+      "y": 6696,
+      "region": "CinnabarLab"
+    }
+  },
+  {
+    "from": {
+      "x": 1688,
+      "y": 6440,
+      "region": "CinnabarIsland"
+    },
+    "to": {
+      "x": 1576,
+      "y": 6696,
+      "region": "CinnabarPokecenter"
+    }
+  },
+  {
+    "from": {
+      "x": 1752,
+      "y": 6440,
+      "region": "CinnabarIsland"
+    },
+    "to": {
+      "x": 1816,
+      "y": 6696,
+      "region": "CinnabarMart"
+    }
+  },
+  {
+    "from": {
+      "x": 1544,
+      "y": 6856,
+      "region": "CinnabarLabFossilRoom"
+    },
+    "to": {
+      "x": 1416,
+      "y": 6648,
+      "region": "CinnabarLab"
+    }
+  },
+  {
+    "from": {
+      "x": 1288,
+      "y": 6648,
+      "region": "CinnabarLab"
+    },
+    "to": {
+      "x": 1144,
+      "y": 6856,
+      "region": "CinnabarLabTradeRoom"
+    }
+  },
+  {
+    "from": {
+      "x": 1352,
+      "y": 6648,
+      "region": "CinnabarLab"
+    },
+    "to": {
+      "x": 1336,
+      "y": 6856,
+      "region": "CinnabarLabMetronomeRoom"
+    }
+  },
+  {
+    "from": {
+      "x": 4184,
+      "y": 2344,
+      "region": "CopycatsHouse1F"
+    },
+    "to": {
+      "x": 4184,
+      "y": 2184,
+      "region": "CopycatsHouse2F"
+    }
+  },
+  {
+    "from": {
+      "x": 4968,
+      "y": 3704,
+      "region": "DiglettsCaveRoute11"
+    },
+    "to": {
+      "x": 4792,
+      "y": 4776,
+      "region": "DiglettsCave"
+    }
+  },
+  {
+    "from": {
+      "x": 3352,
+      "y": 5320,
+      "region": "FuchsiaCity"
+    },
+    "to": {
+      "x": 3352,
+      "y": 5064,
+      "region": "FuchsiaMart"
+    }
+  },
+  {
+    "from": {
+      "x": 3320,
+      "y": 5832,
+      "region": "FuchsiaBillsGrandpasHouse"
+    },
+    "to": {
+      "x": 3448,
+      "y": 5544,
+      "region": "FuchsiaCity"
+    }
+  },
+  {
+    "from": {
+      "x": 3576,
+      "y": 5544,
+      "region": "FuchsiaCity"
+    },
+    "to": {
+      "x": 3832,
+      "y": 5832,
+      "region": "FuchsiaPokecenter"
+    }
+  },
+  {
+    "from": {
+      "x": 3704,
+      "y": 5544,
+      "region": "FuchsiaCity"
+    },
+    "to": {
+      "x": 4008,
+      "y": 5672,
+      "region": "WardensHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 3560,
+      "y": 5160,
+      "region": "FuchsiaCity"
+    },
+    "to": {
+      "x": 4216,
+      "y": 7144,
+      "region": "SafariZoneGate"
+    }
+  },
+  {
+    "from": {
+      "x": 3352,
+      "y": 5544,
+      "region": "FuchsiaCity"
+    },
+    "to": {
+      "x": 3160,
+      "y": 5832,
+      "region": "FuchsiaGym"
+    }
+  },
+  {
+    "from": {
+      "x": 3624,
+      "y": 5320,
+      "region": "FuchsiaCity"
+    },
+    "to": {
+      "x": 3624,
+      "y": 5064,
+      "region": "FuchsiaMeetingRoom"
+    }
+  },
+  {
+    "from": {
+      "x": 3768,
+      "y": 5544,
+      "region": "FuchsiaCity"
+    },
+    "to": {
+      "x": 4168,
+      "y": 5672,
+      "region": "FuchsiaGoodRodHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 3768,
+      "y": 5496,
+      "region": "FuchsiaCity"
+    },
+    "to": {
+      "x": 4168,
+      "y": 5560,
+      "region": "FuchsiaGoodRodHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 3416,
+      "y": 3352,
+      "region": "GameCorner"
+    },
+    "to": {
+      "x": 3160,
+      "y": 3640,
+      "region": "RocketHideoutB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 856,
+      "y": 1000,
+      "region": "IndigoPlateau"
+    },
+    "to": {
+      "x": 856,
+      "y": 872,
+      "region": "IndigoPlateauLobby"
+    }
+  },
+  {
+    "from": {
+      "x": 872,
+      "y": 696,
+      "region": "IndigoPlateauLobby"
+    },
+    "to": {
+      "x": 872,
+      "y": 648,
+      "region": "LoreleisRoom"
+    }
+  },
+  {
+    "from": {
+      "x": 5640,
+      "y": 2600,
+      "region": "LavenderPokecenter"
+    },
+    "to": {
+      "x": 5880,
+      "y": 2728,
+      "region": "LavenderTown"
+    }
+  },
+  {
+    "from": {
+      "x": 6056,
+      "y": 2728,
+      "region": "LavenderTown"
+    },
+    "to": {
+      "x": 6344,
+      "y": 2728,
+      "region": "PokemonTower1F"
+    }
+  },
+  {
+    "from": {
+      "x": 5944,
+      "y": 2792,
+      "region": "LavenderTown"
+    },
+    "to": {
+      "x": 6216,
+      "y": 3048,
+      "region": "MrFujisHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 6232,
+      "y": 2888,
+      "region": "LavenderMart"
+    },
+    "to": {
+      "x": 6072,
+      "y": 2856,
+      "region": "LavenderTown"
+    }
+  },
+  {
+    "from": {
+      "x": 5720,
+      "y": 3080,
+      "region": "LavenderCuboneHouse"
+    },
+    "to": {
+      "x": 5880,
+      "y": 2856,
+      "region": "LavenderTown"
+    }
+  },
+  {
+    "from": {
+      "x": 5944,
+      "y": 2856,
+      "region": "LavenderTown"
+    },
+    "to": {
+      "x": 5720,
+      "y": 3240,
+      "region": "NameRatersHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 2936,
+      "y": 968,
+      "region": "MtMoon1F"
+    },
+    "to": {
+      "x": 2456,
+      "y": 968,
+      "region": "MtMoonB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 3128,
+      "y": 1064,
+      "region": "MtMoon1F"
+    },
+    "to": {
+      "x": 2776,
+      "y": 1032,
+      "region": "MtMoonB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 3256,
+      "y": 1128,
+      "region": "MtMoon1F"
+    },
+    "to": {
+      "x": 2776,
+      "y": 1128,
+      "region": "MtMoonB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 2648,
+      "y": 1064,
+      "region": "MtMoonB1F"
+    },
+    "to": {
+      "x": 2104,
+      "y": 1032,
+      "region": "MtMoonB2F"
+    }
+  },
+  {
+    "from": {
+      "x": 2712,
+      "y": 1160,
+      "region": "MtMoonB1F"
+    },
+    "to": {
+      "x": 2040,
+      "y": 1160,
+      "region": "MtMoonB2F"
+    }
+  },
+  {
+    "from": {
+      "x": 2584,
+      "y": 1320,
+      "region": "MtMoonB1F"
+    },
+    "to": {
+      "x": 1944,
+      "y": 1320,
+      "region": "MtMoonB2F"
+    }
+  },
+  {
+    "from": {
+      "x": 2744,
+      "y": 936,
+      "region": "MtMoonB1F"
+    },
+    "to": {
+      "x": 1784,
+      "y": 1000,
+      "region": "MtMoonB2F"
+    }
+  },
+  {
+    "from": {
+      "x": 1528,
+      "y": 1608,
+      "region": "Museum1F"
+    },
+    "to": {
+      "x": 1528,
+      "y": 1448,
+      "region": "Museum2F"
+    }
+  },
+  {
+    "from": {
+      "x": 1592,
+      "y": 4616,
+      "region": "PalletTown"
+    },
+    "to": {
+      "x": 1400,
+      "y": 4616,
+      "region": "RedsHouse1F"
+    }
+  },
+  {
+    "from": {
+      "x": 1720,
+      "y": 4616,
+      "region": "BluesHouse"
+    },
+    "to": {
+      "x": 1896,
+      "y": 4616,
+      "region": "PalletTown"
+    }
+  },
+  {
+    "from": {
+      "x": 1704,
+      "y": 4712,
+      "region": "OaksLab"
+    },
+    "to": {
+      "x": 1928,
+      "y": 4840,
+      "region": "PalletTown"
+    }
+  },
+  {
+    "from": {
+      "x": 1576,
+      "y": 1608,
+      "region": "Museum1F"
+    },
+    "to": {
+      "x": 1576,
+      "y": 1768,
+      "region": "PewterCity"
+    }
+  },
+  {
+    "from": {
+      "x": 1672,
+      "y": 1608,
+      "region": "Museum1F"
+    },
+    "to": {
+      "x": 1656,
+      "y": 1736,
+      "region": "PewterCity"
+    }
+  },
+  {
+    "from": {
+      "x": 1240,
+      "y": 1928,
+      "region": "PewterGym"
+    },
+    "to": {
+      "x": 1608,
+      "y": 1928,
+      "region": "PewterCity"
+    }
+  },
+  {
+    "from": {
+      "x": 1816,
+      "y": 1864,
+      "region": "PewterCity"
+    },
+    "to": {
+      "x": 1960,
+      "y": 1608,
+      "region": "PewterNidoranHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 1816,
+      "y": 1608,
+      "region": "PewterMart"
+    },
+    "to": {
+      "x": 1720,
+      "y": 1928,
+      "region": "PewterCity"
+    }
+  },
+  {
+    "from": {
+      "x": 1464,
+      "y": 2120,
+      "region": "PewterCity"
+    },
+    "to": {
+      "x": 1240,
+      "y": 2120,
+      "region": "PewterSpeechHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 1560,
+      "y": 2056,
+      "region": "PewterCity"
+    },
+    "to": {
+      "x": 1320,
+      "y": 2376,
+      "region": "PewterPokecenter"
+    }
+  },
+  {
+    "from": {
+      "x": 1080,
+      "y": 5720,
+      "region": "PokemonMansion2F"
+    },
+    "to": {
+      "x": 1080,
+      "y": 6200,
+      "region": "PokemonMansion1F"
+    }
+  },
+  {
+    "from": {
+      "x": 1112,
+      "y": 5720,
+      "region": "PokemonMansion2F"
+    },
+    "to": {
+      "x": 1112,
+      "y": 5400,
+      "region": "PokemonMansion3F"
+    }
+  },
+  {
+    "from": {
+      "x": 1400,
+      "y": 5784,
+      "region": "PokemonMansion2F"
+    },
+    "to": {
+      "x": 1400,
+      "y": 5464,
+      "region": "PokemonMansion3F"
+    }
+  },
+  {
+    "from": {
+      "x": 1096,
+      "y": 5576,
+      "region": "PokemonMansion2F"
+    },
+    "to": {
+      "x": 1096,
+      "y": 5256,
+      "region": "PokemonMansion3F"
+    }
+  },
+  {
+    "from": {
+      "x": 1336,
+      "y": 6408,
+      "region": "PokemonMansion1F"
+    },
+    "to": {
+      "x": 856,
+      "y": 6392,
+      "region": "PokemonMansionB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 6584,
+      "y": 2920,
+      "region": "PokemonTower3F"
+    },
+    "to": {
+      "x": 6584,
+      "y": 2600,
+      "region": "PokemonTower2F"
+    }
+  },
+  {
+    "from": {
+      "x": 6824,
+      "y": 2920,
+      "region": "PokemonTower3F"
+    },
+    "to": {
+      "x": 6824,
+      "y": 3240,
+      "region": "PokemonTower4F"
+    }
+  },
+  {
+    "from": {
+      "x": 6472,
+      "y": 2600,
+      "region": "PokemonTower1F"
+    },
+    "to": {
+      "x": 6824,
+      "y": 2600,
+      "region": "PokemonTower2F"
+    }
+  },
+  {
+    "from": {
+      "x": 6584,
+      "y": 3240,
+      "region": "PokemonTower4F"
+    },
+    "to": {
+      "x": 6584,
+      "y": 3560,
+      "region": "PokemonTower5F"
+    }
+  },
+  {
+    "from": {
+      "x": 6824,
+      "y": 3880,
+      "region": "PokemonTower6F"
+    },
+    "to": {
+      "x": 6824,
+      "y": 3560,
+      "region": "PokemonTower5F"
+    }
+  },
+  {
+    "from": {
+      "x": 6680,
+      "y": 3992,
+      "region": "PokemonTower6F"
+    },
+    "to": {
+      "x": 6680,
+      "y": 4312,
+      "region": "PokemonTower7F"
+    }
+  },
+  {
+    "from": {
+      "x": 5784,
+      "y": 1448,
+      "region": "PowerPlant"
+    },
+    "to": {
+      "x": 5928,
+      "y": 2120,
+      "region": "Route10"
+    }
+  },
+  {
+    "from": {
+      "x": 5704,
+      "y": 1064,
+      "region": "PowerPlant"
+    },
+    "to": {
+      "x": 5928,
+      "y": 2120,
+      "region": "Route10"
+    }
+  },
+  {
+    "from": {
+      "x": 6776,
+      "y": 1768,
+      "region": "RockTunnel1F"
+    },
+    "to": {
+      "x": 6904,
+      "y": 1512,
+      "region": "RockTunnelB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 6264,
+      "y": 1768,
+      "region": "RockTunnel1F"
+    },
+    "to": {
+      "x": 6808,
+      "y": 1160,
+      "region": "RockTunnelB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 6456,
+      "y": 1896,
+      "region": "RockTunnel1F"
+    },
+    "to": {
+      "x": 6744,
+      "y": 1288,
+      "region": "RockTunnelB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 6776,
+      "y": 1992,
+      "region": "RockTunnel1F"
+    },
+    "to": {
+      "x": 6424,
+      "y": 1160,
+      "region": "RockTunnelB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 1464,
+      "y": 4520,
+      "region": "RedsHouse2F"
+    },
+    "to": {
+      "x": 1304,
+      "y": 4520,
+      "region": "RedsHouse1F"
+    }
+  },
+  {
+    "from": {
+      "x": 3768,
+      "y": 3736,
+      "region": "RocketHideoutB2F"
+    },
+    "to": {
+      "x": 3192,
+      "y": 3640,
+      "region": "RocketHideoutB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 3672,
+      "y": 3736,
+      "region": "RocketHideoutB2F"
+    },
+    "to": {
+      "x": 3736,
+      "y": 4184,
+      "region": "RocketHideoutB3F"
+    }
+  },
+  {
+    "from": {
+      "x": 3672,
+      "y": 3960,
+      "region": "RocketHideoutB2F"
+    },
+    "to": {
+      "x": 3160,
+      "y": 3992,
+      "region": "RocketHideoutB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 3640,
+      "y": 4376,
+      "region": "RocketHideoutB3F"
+    },
+    "to": {
+      "x": 3128,
+      "y": 4248,
+      "region": "RocketHideoutB4F"
+    }
+  },
+  {
+    "from": {
+      "x": 5640,
+      "y": 1928,
+      "region": "RockTunnelPokecenter"
+    },
+    "to": {
+      "x": 6008,
+      "y": 1800,
+      "region": "Route10"
+    }
+  },
+  {
+    "from": {
+      "x": 6424,
+      "y": 1768,
+      "region": "RockTunnel1F"
+    },
+    "to": {
+      "x": 5960,
+      "y": 1768,
+      "region": "Route10"
+    }
+  },
+  {
+    "from": {
+      "x": 6424,
+      "y": 2248,
+      "region": "RockTunnel1F"
+    },
+    "to": {
+      "x": 5960,
+      "y": 2344,
+      "region": "Route10"
+    }
+  },
+  {
+    "from": {
+      "x": 5656,
+      "y": 3944,
+      "region": "Route11"
+    },
+    "to": {
+      "x": 5640,
+      "y": 4184,
+      "region": "Route11Gate1F"
+    }
+  },
+  {
+    "from": {
+      "x": 5800,
+      "y": 3944,
+      "region": "Route11"
+    },
+    "to": {
+      "x": 5752,
+      "y": 4184,
+      "region": "Route11Gate1F"
+    }
+  },
+  {
+    "from": {
+      "x": 4936,
+      "y": 3752,
+      "region": "DiglettsCaveRoute11"
+    },
+    "to": {
+      "x": 4936,
+      "y": 3880,
+      "region": "Route11"
+    }
+  },
+  {
+    "from": {
+      "x": 5736,
+      "y": 4248,
+      "region": "Route11Gate1F"
+    },
+    "to": {
+      "x": 5592,
+      "y": 4264,
+      "region": "Route11Gate2F"
+    }
+  },
+  {
+    "from": {
+      "x": 6008,
+      "y": 3176,
+      "region": "Route12"
+    },
+    "to": {
+      "x": 6248,
+      "y": 3160,
+      "region": "Route12Gate1F"
+    }
+  },
+  {
+    "from": {
+      "x": 5992,
+      "y": 3272,
+      "region": "Route12"
+    },
+    "to": {
+      "x": 6248,
+      "y": 3272,
+      "region": "Route12Gate1F"
+    }
+  },
+  {
+    "from": {
+      "x": 6008,
+      "y": 4168,
+      "region": "Route12"
+    },
+    "to": {
+      "x": 6216,
+      "y": 4168,
+      "region": "Route12SuperRodHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 6312,
+      "y": 3256,
+      "region": "Route12Gate1F"
+    },
+    "to": {
+      "x": 6488,
+      "y": 3272,
+      "region": "Route12Gate2F"
+    }
+  },
+  {
+    "from": {
+      "x": 4024,
+      "y": 5368,
+      "region": "Route15"
+    },
+    "to": {
+      "x": 4008,
+      "y": 5128,
+      "region": "Route15Gate1F"
+    }
+  },
+  {
+    "from": {
+      "x": 4136,
+      "y": 5368,
+      "region": "Route15"
+    },
+    "to": {
+      "x": 4120,
+      "y": 5128,
+      "region": "Route15Gate1F"
+    }
+  },
+  {
+    "from": {
+      "x": 4104,
+      "y": 5176,
+      "region": "Route15Gate1F"
+    },
+    "to": {
+      "x": 4280,
+      "y": 5192,
+      "region": "Route15Gate2F"
+    }
+  },
+  {
+    "from": {
+      "x": 2744,
+      "y": 2808,
+      "region": "Route16"
+    },
+    "to": {
+      "x": 2728,
+      "y": 2536,
+      "region": "Route16Gate1F"
+    }
+  },
+  {
+    "from": {
+      "x": 2856,
+      "y": 2808,
+      "region": "Route16"
+    },
+    "to": {
+      "x": 2840,
+      "y": 2536,
+      "region": "Route16Gate1F"
+    }
+  },
+  {
+    "from": {
+      "x": 2744,
+      "y": 2712,
+      "region": "Route16"
+    },
+    "to": {
+      "x": 2728,
+      "y": 2440,
+      "region": "Route16Gate1F"
+    }
+  },
+  {
+    "from": {
+      "x": 2856,
+      "y": 2712,
+      "region": "Route16"
+    },
+    "to": {
+      "x": 2840,
+      "y": 2440,
+      "region": "Route16Gate1F"
+    }
+  },
+  {
+    "from": {
+      "x": 2584,
+      "y": 2728,
+      "region": "Route16"
+    },
+    "to": {
+      "x": 2584,
+      "y": 2600,
+      "region": "Route16FlyHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 2824,
+      "y": 2584,
+      "region": "Route16Gate1F"
+    },
+    "to": {
+      "x": 3000,
+      "y": 2600,
+      "region": "Route16Gate2F"
+    }
+  },
+  {
+    "from": {
+      "x": 3000,
+      "y": 5368,
+      "region": "Route18"
+    },
+    "to": {
+      "x": 2984,
+      "y": 5128,
+      "region": "Route18Gate1F"
+    }
+  },
+  {
+    "from": {
+      "x": 3112,
+      "y": 5368,
+      "region": "Route18"
+    },
+    "to": {
+      "x": 3096,
+      "y": 5128,
+      "region": "Route18Gate1F"
+    }
+  },
+  {
+    "from": {
+      "x": 3080,
+      "y": 5176,
+      "region": "Route18Gate1F"
+    },
+    "to": {
+      "x": 2936,
+      "y": 5176,
+      "region": "Route18Gate2F"
+    }
+  },
+  {
+    "from": {
+      "x": 1896,
+      "y": 2344,
+      "region": "DiglettsCaveRoute2"
+    },
+    "to": {
+      "x": 1704,
+      "y": 2376,
+      "region": "Route2"
+    }
+  },
+  {
+    "from": {
+      "x": 1560,
+      "y": 2408,
+      "region": "Route2"
+    },
+    "to": {
+      "x": 1400,
+      "y": 2440,
+      "region": "ViridianForestNorthGate"
+    }
+  },
+  {
+    "from": {
+      "x": 1752,
+      "y": 2536,
+      "region": "Route2"
+    },
+    "to": {
+      "x": 1896,
+      "y": 2504,
+      "region": "Route2TradeHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 1768,
+      "y": 2792,
+      "region": "Route2"
+    },
+    "to": {
+      "x": 1400,
+      "y": 2744,
+      "region": "Route2Gate"
+    }
+  },
+  {
+    "from": {
+      "x": 1752,
+      "y": 2856,
+      "region": "Route2"
+    },
+    "to": {
+      "x": 1400,
+      "y": 2856,
+      "region": "Route2Gate"
+    }
+  },
+  {
+    "from": {
+      "x": 1560,
+      "y": 2920,
+      "region": "Route2"
+    },
+    "to": {
+      "x": 1400,
+      "y": 3016,
+      "region": "ViridianForestSouthGate"
+    }
+  },
+  {
+    "from": {
+      "x": 2600,
+      "y": 6344,
+      "region": "Route20"
+    },
+    "to": {
+      "x": 2600,
+      "y": 6216,
+      "region": "SeafoamIslands1F"
+    }
+  },
+  {
+    "from": {
+      "x": 2760,
+      "y": 6408,
+      "region": "Route20"
+    },
+    "to": {
+      "x": 2952,
+      "y": 6216,
+      "region": "SeafoamIslands1F"
+    }
+  },
+  {
+    "from": {
+      "x": 840,
+      "y": 3592,
+      "region": "Route22"
+    },
+    "to": {
+      "x": 600,
+      "y": 3592,
+      "region": "Route22Gate"
+    }
+  },
+  {
+    "from": {
+      "x": 600,
+      "y": 3480,
+      "region": "Route22Gate"
+    },
+    "to": {
+      "x": 824,
+      "y": 3432,
+      "region": "Route23"
+    }
+  },
+  {
+    "from": {
+      "x": 776,
+      "y": 1704,
+      "region": "Route23"
+    },
+    "to": {
+      "x": 504,
+      "y": 1704,
+      "region": "VictoryRoad1F"
+    }
+  },
+  {
+    "from": {
+      "x": 936,
+      "y": 1704,
+      "region": "Route23"
+    },
+    "to": {
+      "x": 664,
+      "y": 1864,
+      "region": "VictoryRoad2F"
+    }
+  },
+  {
+    "from": {
+      "x": 5432,
+      "y": 744,
+      "region": "BillsHouse"
+    },
+    "to": {
+      "x": 5432,
+      "y": 840,
+      "region": "Route25"
+    }
+  },
+  {
+    "from": {
+      "x": 4536,
+      "y": 2408,
+      "region": "Route5"
+    },
+    "to": {
+      "x": 4296,
+      "y": 2360,
+      "region": "Route5Gate"
+    }
+  },
+  {
+    "from": {
+      "x": 4552,
+      "y": 2472,
+      "region": "Route5"
+    },
+    "to": {
+      "x": 4296,
+      "y": 2440,
+      "region": "Route5Gate"
+    }
+  },
+  {
+    "from": {
+      "x": 4664,
+      "y": 2376,
+      "region": "Route5"
+    },
+    "to": {
+      "x": 4136,
+      "y": 2056,
+      "region": "UndergroundPathRoute5"
+    }
+  },
+  {
+    "from": {
+      "x": 4280,
+      "y": 2280,
+      "region": "Daycare"
+    },
+    "to": {
+      "x": 4552,
+      "y": 2280,
+      "region": "Route5"
+    }
+  },
+  {
+    "from": {
+      "x": 2600,
+      "y": 1576,
+      "region": "MtMoonPokecenter"
+    },
+    "to": {
+      "x": 2968,
+      "y": 1576,
+      "region": "Route4"
+    }
+  },
+  {
+    "from": {
+      "x": 3080,
+      "y": 1448,
+      "region": "MtMoon1F"
+    },
+    "to": {
+      "x": 3080,
+      "y": 1576,
+      "region": "Route4"
+    }
+  },
+  {
+    "from": {
+      "x": 2808,
+      "y": 936,
+      "region": "MtMoonB1F"
+    },
+    "to": {
+      "x": 3176,
+      "y": 1576,
+      "region": "Route4"
+    }
+  },
+  {
+    "from": {
+      "x": 4552,
+      "y": 3112,
+      "region": "Route6"
+    },
+    "to": {
+      "x": 4792,
+      "y": 3128,
+      "region": "Route6Gate"
+    }
+  },
+  {
+    "from": {
+      "x": 4552,
+      "y": 3208,
+      "region": "Route6"
+    },
+    "to": {
+      "x": 4792,
+      "y": 3208,
+      "region": "Route6Gate"
+    }
+  },
+  {
+    "from": {
+      "x": 4664,
+      "y": 3304,
+      "region": "Route6"
+    },
+    "to": {
+      "x": 3816,
+      "y": 2472,
+      "region": "UndergroundPathRoute6"
+    }
+  },
+  {
+    "from": {
+      "x": 4200,
+      "y": 2808,
+      "region": "Route7"
+    },
+    "to": {
+      "x": 4184,
+      "y": 3016,
+      "region": "Route7Gate"
+    }
+  },
+  {
+    "from": {
+      "x": 4088,
+      "y": 2808,
+      "region": "Route7"
+    },
+    "to": {
+      "x": 4104,
+      "y": 3016,
+      "region": "Route7Gate"
+    }
+  },
+  {
+    "from": {
+      "x": 3992,
+      "y": 2856,
+      "region": "Route7"
+    },
+    "to": {
+      "x": 3992,
+      "y": 3080,
+      "region": "UndergroundPathRoute7"
+    }
+  },
+  {
+    "from": {
+      "x": 4888,
+      "y": 2808,
+      "region": "Route8"
+    },
+    "to": {
+      "x": 4904,
+      "y": 3016,
+      "region": "Route8Gate"
+    }
+  },
+  {
+    "from": {
+      "x": 5000,
+      "y": 2808,
+      "region": "Route8"
+    },
+    "to": {
+      "x": 4984,
+      "y": 3016,
+      "region": "Route8Gate"
+    }
+  },
+  {
+    "from": {
+      "x": 5080,
+      "y": 2696,
+      "region": "Route8"
+    },
+    "to": {
+      "x": 5464,
+      "y": 3208,
+      "region": "UndergroundPathRoute8"
+    }
+  },
+  {
+    "from": {
+      "x": 6328,
+      "y": 5256,
+      "region": "SSAnne2F"
+    },
+    "to": {
+      "x": 6312,
+      "y": 5224,
+      "region": "SSAnne2FRooms"
+    }
+  },
+  {
+    "from": {
+      "x": 6392,
+      "y": 5256,
+      "region": "SSAnne2F"
+    },
+    "to": {
+      "x": 6392,
+      "y": 5224,
+      "region": "SSAnne2FRooms"
+    }
+  },
+  {
+    "from": {
+      "x": 6456,
+      "y": 5256,
+      "region": "SSAnne2F"
+    },
+    "to": {
+      "x": 6456,
+      "y": 5224,
+      "region": "SSAnne2FRooms"
+    }
+  },
+  {
+    "from": {
+      "x": 6520,
+      "y": 5256,
+      "region": "SSAnne2F"
+    },
+    "to": {
+      "x": 6536,
+      "y": 5224,
+      "region": "SSAnne2FRooms"
+    }
+  },
+  {
+    "from": {
+      "x": 6584,
+      "y": 5256,
+      "region": "SSAnne2F"
+    },
+    "to": {
+      "x": 6616,
+      "y": 5224,
+      "region": "SSAnne2FRooms"
+    }
+  },
+  {
+    "from": {
+      "x": 6648,
+      "y": 5256,
+      "region": "SSAnne2F"
+    },
+    "to": {
+      "x": 6696,
+      "y": 5224,
+      "region": "SSAnne2FRooms"
+    }
+  },
+  {
+    "from": {
+      "x": 6216,
+      "y": 5144,
+      "region": "SSAnne2F"
+    },
+    "to": {
+      "x": 6216,
+      "y": 4696,
+      "region": "SSAnne1F"
+    }
+  },
+  {
+    "from": {
+      "x": 6216,
+      "y": 5272,
+      "region": "SSAnne2F"
+    },
+    "to": {
+      "x": 6136,
+      "y": 5320,
+      "region": "SSAnne3F"
+    }
+  },
+  {
+    "from": {
+      "x": 6760,
+      "y": 5144,
+      "region": "SSAnne2F"
+    },
+    "to": {
+      "x": 6856,
+      "y": 5160,
+      "region": "SSAnneCaptainsRoom"
+    }
+  },
+  {
+    "from": {
+      "x": 5832,
+      "y": 5320,
+      "region": "SSAnne3F"
+    },
+    "to": {
+      "x": 5688,
+      "y": 5320,
+      "region": "SSAnneBow"
+    }
+  },
+  {
+    "from": {
+      "x": 6600,
+      "y": 4600,
+      "region": "SSAnne1F"
+    },
+    "to": {
+      "x": 6408,
+      "y": 4408,
+      "region": "VermilionDock"
+    }
+  },
+  {
+    "from": {
+      "x": 6680,
+      "y": 4728,
+      "region": "SSAnne1F"
+    },
+    "to": {
+      "x": 6680,
+      "y": 4760,
+      "region": "SSAnne1FRooms"
+    }
+  },
+  {
+    "from": {
+      "x": 6552,
+      "y": 4728,
+      "region": "SSAnne1F"
+    },
+    "to": {
+      "x": 6584,
+      "y": 4760,
+      "region": "SSAnne1FRooms"
+    }
+  },
+  {
+    "from": {
+      "x": 6488,
+      "y": 4728,
+      "region": "SSAnne1F"
+    },
+    "to": {
+      "x": 6504,
+      "y": 4760,
+      "region": "SSAnne1FRooms"
+    }
+  },
+  {
+    "from": {
+      "x": 6424,
+      "y": 4728,
+      "region": "SSAnne1F"
+    },
+    "to": {
+      "x": 6424,
+      "y": 4760,
+      "region": "SSAnne1FRooms"
+    }
+  },
+  {
+    "from": {
+      "x": 6360,
+      "y": 4728,
+      "region": "SSAnne1F"
+    },
+    "to": {
+      "x": 6344,
+      "y": 4760,
+      "region": "SSAnne1FRooms"
+    }
+  },
+  {
+    "from": {
+      "x": 6296,
+      "y": 4728,
+      "region": "SSAnne1F"
+    },
+    "to": {
+      "x": 6264,
+      "y": 4760,
+      "region": "SSAnne1FRooms"
+    }
+  },
+  {
+    "from": {
+      "x": 6776,
+      "y": 4840,
+      "region": "SSAnne1F"
+    },
+    "to": {
+      "x": 6776,
+      "y": 5064,
+      "region": "SSAnneB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 6232,
+      "y": 4856,
+      "region": "SSAnne1F"
+    },
+    "to": {
+      "x": 6024,
+      "y": 4984,
+      "region": "SSAnneKitchen"
+    }
+  },
+  {
+    "from": {
+      "x": 6424,
+      "y": 5000,
+      "region": "SSAnneB1FRooms"
+    },
+    "to": {
+      "x": 6456,
+      "y": 5032,
+      "region": "SSAnneB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 6504,
+      "y": 5000,
+      "region": "SSAnneB1FRooms"
+    },
+    "to": {
+      "x": 6520,
+      "y": 5032,
+      "region": "SSAnneB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 6584,
+      "y": 5000,
+      "region": "SSAnneB1FRooms"
+    },
+    "to": {
+      "x": 6584,
+      "y": 5032,
+      "region": "SSAnneB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 6648,
+      "y": 5000,
+      "region": "SSAnneB1FRooms"
+    },
+    "to": {
+      "x": 6648,
+      "y": 5032,
+      "region": "SSAnneB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 6728,
+      "y": 5000,
+      "region": "SSAnneB1FRooms"
+    },
+    "to": {
+      "x": 6712,
+      "y": 5032,
+      "region": "SSAnneB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 4216,
+      "y": 7016,
+      "region": "SafariZoneCenter"
+    },
+    "to": {
+      "x": 4216,
+      "y": 7064,
+      "region": "SafariZoneGate"
+    }
+  },
+  {
+    "from": {
+      "x": 3976,
+      "y": 6784,
+      "region": "SafariZoneCenter"
+    },
+    "to": {
+      "x": 3928,
+      "y": 6976,
+      "region": "SafariZoneWest"
+    }
+  },
+  {
+    "from": {
+      "x": 4208,
+      "y": 6616,
+      "region": "SafariZoneCenter"
+    },
+    "to": {
+      "x": 4144,
+      "y": 6568,
+      "region": "SafariZoneNorth"
+    }
+  },
+  {
+    "from": {
+      "x": 4440,
+      "y": 6784,
+      "region": "SafariZoneCenter"
+    },
+    "to": {
+      "x": 4488,
+      "y": 6784,
+      "region": "SafariZoneEast"
+    }
+  },
+  {
+    "from": {
+      "x": 4248,
+      "y": 6920,
+      "region": "SafariZoneCenter"
+    },
+    "to": {
+      "x": 4520,
+      "y": 7016,
+      "region": "SafariZoneCenterRestHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 4488,
+      "y": 6496,
+      "region": "SafariZoneEast"
+    },
+    "to": {
+      "x": 4440,
+      "y": 6496,
+      "region": "SafariZoneNorth"
+    }
+  },
+  {
+    "from": {
+      "x": 4888,
+      "y": 6568,
+      "region": "SafariZoneEast"
+    },
+    "to": {
+      "x": 4888,
+      "y": 6376,
+      "region": "SafariZoneEastRestHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 3856,
+      "y": 6568,
+      "region": "SafariZoneNorth"
+    },
+    "to": {
+      "x": 3792,
+      "y": 6616,
+      "region": "SafariZoneWest"
+    }
+  },
+  {
+    "from": {
+      "x": 3952,
+      "y": 6568,
+      "region": "SafariZoneNorth"
+    },
+    "to": {
+      "x": 3888,
+      "y": 6616,
+      "region": "SafariZoneWest"
+    }
+  },
+  {
+    "from": {
+      "x": 4376,
+      "y": 6056,
+      "region": "SafariZoneNorth"
+    },
+    "to": {
+      "x": 4376,
+      "y": 5960,
+      "region": "SafariZoneNorthRestHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 3352,
+      "y": 6696,
+      "region": "SafariZoneSecretHouse"
+    },
+    "to": {
+      "x": 3512,
+      "y": 6664,
+      "region": "SafariZoneWest"
+    }
+  },
+  {
+    "from": {
+      "x": 3640,
+      "y": 6792,
+      "region": "SafariZoneWest"
+    },
+    "to": {
+      "x": 3352,
+      "y": 6856,
+      "region": "SafariZoneWestRestHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 4952,
+      "y": 2344,
+      "region": "SaffronGym"
+    },
+    "to": {
+      "x": 5176,
+      "y": 2376,
+      "region": "SaffronGym"
+    }
+  },
+  {
+    "from": {
+      "x": 5016,
+      "y": 2344,
+      "region": "SaffronGym"
+    },
+    "to": {
+      "x": 5112,
+      "y": 2344,
+      "region": "SaffronGym"
+    }
+  },
+  {
+    "from": {
+      "x": 4952,
+      "y": 2376,
+      "region": "SaffronGym"
+    },
+    "to": {
+      "x": 5112,
+      "y": 2472,
+      "region": "SaffronGym"
+    }
+  },
+  {
+    "from": {
+      "x": 5016,
+      "y": 2376,
+      "region": "SaffronGym"
+    },
+    "to": {
+      "x": 4952,
+      "y": 2472,
+      "region": "SaffronGym"
+    }
+  },
+  {
+    "from": {
+      "x": 4952,
+      "y": 2440,
+      "region": "SaffronGym"
+    },
+    "to": {
+      "x": 5240,
+      "y": 2472,
+      "region": "SaffronGym"
+    }
+  },
+  {
+    "from": {
+      "x": 5016,
+      "y": 2440,
+      "region": "SaffronGym"
+    },
+    "to": {
+      "x": 5080,
+      "y": 2376,
+      "region": "SaffronGym"
+    }
+  },
+  {
+    "from": {
+      "x": 5016,
+      "y": 2472,
+      "region": "SaffronGym"
+    },
+    "to": {
+      "x": 5016,
+      "y": 2568,
+      "region": "SaffronGym"
+    }
+  },
+  {
+    "from": {
+      "x": 4952,
+      "y": 2536,
+      "region": "SaffronGym"
+    },
+    "to": {
+      "x": 5240,
+      "y": 2376,
+      "region": "SaffronGym"
+    }
+  },
+  {
+    "from": {
+      "x": 5016,
+      "y": 2536,
+      "region": "SaffronGym"
+    },
+    "to": {
+      "x": 5176,
+      "y": 2568,
+      "region": "SaffronGym"
+    }
+  },
+  {
+    "from": {
+      "x": 4952,
+      "y": 2568,
+      "region": "SaffronGym"
+    },
+    "to": {
+      "x": 5112,
+      "y": 2376,
+      "region": "SaffronGym"
+    }
+  },
+  {
+    "from": {
+      "x": 5080,
+      "y": 2344,
+      "region": "SaffronGym"
+    },
+    "to": {
+      "x": 5176,
+      "y": 2472,
+      "region": "SaffronGym"
+    }
+  },
+  {
+    "from": {
+      "x": 5112,
+      "y": 2536,
+      "region": "SaffronGym"
+    },
+    "to": {
+      "x": 5240,
+      "y": 2568,
+      "region": "SaffronGym"
+    }
+  },
+  {
+    "from": {
+      "x": 5176,
+      "y": 2344,
+      "region": "SaffronGym"
+    },
+    "to": {
+      "x": 5176,
+      "y": 2440,
+      "region": "SaffronGym"
+    }
+  },
+  {
+    "from": {
+      "x": 5240,
+      "y": 2344,
+      "region": "SaffronGym"
+    },
+    "to": {
+      "x": 5176,
+      "y": 2536,
+      "region": "SaffronGym"
+    }
+  },
+  {
+    "from": {
+      "x": 5240,
+      "y": 2440,
+      "region": "SaffronGym"
+    },
+    "to": {
+      "x": 5240,
+      "y": 2536,
+      "region": "SaffronGym"
+    }
+  },
+  {
+    "from": {
+      "x": 4120,
+      "y": 2440,
+      "region": "CopycatsHouse1F"
+    },
+    "to": {
+      "x": 4344,
+      "y": 2600,
+      "region": "SaffronCity"
+    }
+  },
+  {
+    "from": {
+      "x": 4808,
+      "y": 2472,
+      "region": "FightingDojo"
+    },
+    "to": {
+      "x": 4648,
+      "y": 2568,
+      "region": "SaffronCity"
+    }
+  },
+  {
+    "from": {
+      "x": 5064,
+      "y": 2568,
+      "region": "SaffronGym"
+    },
+    "to": {
+      "x": 4776,
+      "y": 2568,
+      "region": "SaffronCity"
+    }
+  },
+  {
+    "from": {
+      "x": 4440,
+      "y": 2696,
+      "region": "SaffronCity"
+    },
+    "to": {
+      "x": 4120,
+      "y": 2600,
+      "region": "SaffronPidgeyHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 4632,
+      "y": 2696,
+      "region": "SaffronCity"
+    },
+    "to": {
+      "x": 4792,
+      "y": 2248,
+      "region": "SaffronMart"
+    }
+  },
+  {
+    "from": {
+      "x": 4376,
+      "y": 2984,
+      "region": "SaffronCity"
+    },
+    "to": {
+      "x": 4200,
+      "y": 3240,
+      "region": "SaffronPokecenter"
+    }
+  },
+  {
+    "from": {
+      "x": 5064,
+      "y": 3080,
+      "region": "MrPsychicsHouse"
+    },
+    "to": {
+      "x": 4696,
+      "y": 2984,
+      "region": "SaffronCity"
+    }
+  },
+  {
+    "from": {
+      "x": 2648,
+      "y": 6024,
+      "region": "SeafoamIslands1F"
+    },
+    "to": {
+      "x": 2648,
+      "y": 6664,
+      "region": "SeafoamIslandsB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 2936,
+      "y": 5992,
+      "region": "SeafoamIslands1F"
+    },
+    "to": {
+      "x": 2936,
+      "y": 6632,
+      "region": "SeafoamIslandsB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 2904,
+      "y": 6184,
+      "region": "SeafoamIslands1F"
+    },
+    "to": {
+      "x": 2904,
+      "y": 6824,
+      "region": "SeafoamIslandsB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 2600,
+      "y": 6616,
+      "region": "SeafoamIslandsB1F"
+    },
+    "to": {
+      "x": 2616,
+      "y": 6952,
+      "region": "SeafoamIslandsB2F"
+    }
+  },
+  {
+    "from": {
+      "x": 2744,
+      "y": 6696,
+      "region": "SeafoamIslandsB1F"
+    },
+    "to": {
+      "x": 2744,
+      "y": 7016,
+      "region": "SeafoamIslandsB2F"
+    }
+  },
+  {
+    "from": {
+      "x": 2840,
+      "y": 6824,
+      "region": "SeafoamIslandsB1F"
+    },
+    "to": {
+      "x": 2840,
+      "y": 7144,
+      "region": "SeafoamIslandsB2F"
+    }
+  },
+  {
+    "from": {
+      "x": 2936,
+      "y": 6760,
+      "region": "SeafoamIslandsB1F"
+    },
+    "to": {
+      "x": 2936,
+      "y": 7080,
+      "region": "SeafoamIslandsB2F"
+    }
+  },
+  {
+    "from": {
+      "x": 2616,
+      "y": 7112,
+      "region": "SeafoamIslandsB2F"
+    },
+    "to": {
+      "x": 2104,
+      "y": 7096,
+      "region": "SeafoamIslandsB3F"
+    }
+  },
+  {
+    "from": {
+      "x": 2936,
+      "y": 6952,
+      "region": "SeafoamIslandsB2F"
+    },
+    "to": {
+      "x": 2424,
+      "y": 6952,
+      "region": "SeafoamIslandsB3F"
+    }
+  },
+  {
+    "from": {
+      "x": 2936,
+      "y": 7128,
+      "region": "SeafoamIslandsB2F"
+    },
+    "to": {
+      "x": 2424,
+      "y": 7128,
+      "region": "SeafoamIslandsB3F"
+    }
+  },
+  {
+    "from": {
+      "x": 2152,
+      "y": 7000,
+      "region": "SeafoamIslandsB3F"
+    },
+    "to": {
+      "x": 2200,
+      "y": 6696,
+      "region": "SeafoamIslandsB4F"
+    }
+  },
+  {
+    "from": {
+      "x": 2424,
+      "y": 6968,
+      "region": "SeafoamIslandsB3F"
+    },
+    "to": {
+      "x": 2424,
+      "y": 6648,
+      "region": "SeafoamIslandsB4F"
+    }
+  },
+  {
+    "from": {
+      "x": 6184,
+      "y": 6200,
+      "region": "SilphCo10F"
+    },
+    "to": {
+      "x": 6280,
+      "y": 5880,
+      "region": "SilphCo9F"
+    }
+  },
+  {
+    "from": {
+      "x": 6216,
+      "y": 6200,
+      "region": "SilphCo10F"
+    },
+    "to": {
+      "x": 6200,
+      "y": 6520,
+      "region": "SilphCo11F"
+    }
+  },
+  {
+    "from": {
+      "x": 6200,
+      "y": 6376,
+      "region": "SilphCo10F"
+    },
+    "to": {
+      "x": 5208,
+      "y": 6632,
+      "region": "SilphCo4F"
+    }
+  },
+  {
+    "from": {
+      "x": 6264,
+      "y": 6440,
+      "region": "SilphCo10F"
+    },
+    "to": {
+      "x": 5080,
+      "y": 6760,
+      "region": "SilphCo4F"
+    }
+  },
+  {
+    "from": {
+      "x": 6264,
+      "y": 6312,
+      "region": "SilphCo10F"
+    },
+    "to": {
+      "x": 5304,
+      "y": 6696,
+      "region": "SilphCo4F"
+    }
+  },
+  {
+    "from": {
+      "x": 5448,
+      "y": 5560,
+      "region": "SilphCo1F"
+    },
+    "to": {
+      "x": 5416,
+      "y": 5880,
+      "region": "SilphCo2F"
+    }
+  },
+  {
+    "from": {
+      "x": 5288,
+      "y": 5720,
+      "region": "SilphCo1F"
+    },
+    "to": {
+      "x": 5464,
+      "y": 6248,
+      "region": "SilphCo3F"
+    }
+  },
+  {
+    "from": {
+      "x": 5448,
+      "y": 5880,
+      "region": "SilphCo2F"
+    },
+    "to": {
+      "x": 5448,
+      "y": 6200,
+      "region": "SilphCo3F"
+    }
+  },
+  {
+    "from": {
+      "x": 5080,
+      "y": 5928,
+      "region": "SilphCo2F"
+    },
+    "to": {
+      "x": 5464,
+      "y": 6248,
+      "region": "SilphCo3F"
+    }
+  },
+  {
+    "from": {
+      "x": 5240,
+      "y": 5928,
+      "region": "SilphCo2F"
+    },
+    "to": {
+      "x": 5592,
+      "y": 5800,
+      "region": "SilphCo8F"
+    }
+  },
+  {
+    "from": {
+      "x": 5464,
+      "y": 6120,
+      "region": "SilphCo2F"
+    },
+    "to": {
+      "x": 5720,
+      "y": 5640,
+      "region": "SilphCo8F"
+    }
+  },
+  {
+    "from": {
+      "x": 5176,
+      "y": 6120,
+      "region": "SilphCo2F"
+    },
+    "to": {
+      "x": 5912,
+      "y": 6248,
+      "region": "SilphCo6F"
+    }
+  },
+  {
+    "from": {
+      "x": 6104,
+      "y": 6552,
+      "region": "SilphCo11F"
+    },
+    "to": {
+      "x": 5624,
+      "y": 5992,
+      "region": "SilphCo7F"
+    }
+  },
+  {
+    "from": {
+      "x": 5416,
+      "y": 6200,
+      "region": "SilphCo3F"
+    },
+    "to": {
+      "x": 5416,
+      "y": 6520,
+      "region": "SilphCo4F"
+    }
+  },
+  {
+    "from": {
+      "x": 5400,
+      "y": 6376,
+      "region": "SilphCo3F"
+    },
+    "to": {
+      "x": 5464,
+      "y": 6440,
+      "region": "SilphCo3F"
+    }
+  },
+  {
+    "from": {
+      "x": 5080,
+      "y": 6248,
+      "region": "SilphCo3F"
+    },
+    "to": {
+      "x": 5720,
+      "y": 6600,
+      "region": "SilphCo5F"
+    }
+  },
+  {
+    "from": {
+      "x": 5080,
+      "y": 6440,
+      "region": "SilphCo3F"
+    },
+    "to": {
+      "x": 5592,
+      "y": 6760,
+      "region": "SilphCo5F"
+    }
+  },
+  {
+    "from": {
+      "x": 5080,
+      "y": 6376,
+      "region": "SilphCo3F"
+    },
+    "to": {
+      "x": 6200,
+      "y": 5928,
+      "region": "SilphCo9F"
+    }
+  },
+  {
+    "from": {
+      "x": 5208,
+      "y": 6376,
+      "region": "SilphCo3F"
+    },
+    "to": {
+      "x": 5624,
+      "y": 5928,
+      "region": "SilphCo7F"
+    }
+  },
+  {
+    "from": {
+      "x": 5928,
+      "y": 6520,
+      "region": "SilphCo5F"
+    },
+    "to": {
+      "x": 5768,
+      "y": 6200,
+      "region": "SilphCo6F"
+    }
+  },
+  {
+    "from": {
+      "x": 5960,
+      "y": 6520,
+      "region": "SilphCo5F"
+    },
+    "to": {
+      "x": 5448,
+      "y": 6520,
+      "region": "SilphCo4F"
+    }
+  },
+  {
+    "from": {
+      "x": 5976,
+      "y": 6568,
+      "region": "SilphCo5F"
+    },
+    "to": {
+      "x": 5880,
+      "y": 6120,
+      "region": "SilphCo7F"
+    }
+  },
+  {
+    "from": {
+      "x": 5688,
+      "y": 6760,
+      "region": "SilphCo5F"
+    },
+    "to": {
+      "x": 6328,
+      "y": 6120,
+      "region": "SilphCo9F"
+    }
+  },
+  {
+    "from": {
+      "x": 5304,
+      "y": 6568,
+      "region": "SilphCo4F"
+    },
+    "to": {
+      "x": 5592,
+      "y": 6248,
+      "region": "SilphCo6F"
+    }
+  },
+  {
+    "from": {
+      "x": 5800,
+      "y": 6200,
+      "region": "SilphCo6F"
+    },
+    "to": {
+      "x": 5896,
+      "y": 5880,
+      "region": "SilphCo7F"
+    }
+  },
+  {
+    "from": {
+      "x": 5800,
+      "y": 5880,
+      "region": "SilphCo7F"
+    },
+    "to": {
+      "x": 5768,
+      "y": 5560,
+      "region": "SilphCo8F"
+    }
+  },
+  {
+    "from": {
+      "x": 5800,
+      "y": 5560,
+      "region": "SilphCo8F"
+    },
+    "to": {
+      "x": 6312,
+      "y": 5880,
+      "region": "SilphCo9F"
+    }
+  },
+  {
+    "from": {
+      "x": 5592,
+      "y": 5736,
+      "region": "SilphCo8F"
+    },
+    "to": {
+      "x": 5720,
+      "y": 5704,
+      "region": "SilphCo8F"
+    }
+  },
+  {
+    "from": {
+      "x": 4008,
+      "y": 1912,
+      "region": "UndergroundPathNorthSouth"
+    },
+    "to": {
+      "x": 4136,
+      "y": 2008,
+      "region": "UndergroundPathRoute5"
+    }
+  },
+  {
+    "from": {
+      "x": 3960,
+      "y": 2504,
+      "region": "UndergroundPathNorthSouth"
+    },
+    "to": {
+      "x": 3816,
+      "y": 2424,
+      "region": "UndergroundPathRoute6"
+    }
+  },
+  {
+    "from": {
+      "x": 4008,
+      "y": 3032,
+      "region": "UndergroundPathRoute7"
+    },
+    "to": {
+      "x": 4776,
+      "y": 3336,
+      "region": "UndergroundPathWestEast"
+    }
+  },
+  {
+    "from": {
+      "x": 5496,
+      "y": 3288,
+      "region": "UndergroundPathWestEast"
+    },
+    "to": {
+      "x": 5480,
+      "y": 3160,
+      "region": "UndergroundPathRoute8"
+    }
+  },
+  {
+    "from": {
+      "x": 4408,
+      "y": 3720,
+      "region": "VermilionCity"
+    },
+    "to": {
+      "x": 4200,
+      "y": 3624,
+      "region": "VermilionPokecenter"
+    }
+  },
+  {
+    "from": {
+      "x": 4120,
+      "y": 3880,
+      "region": "PokemonFanClub"
+    },
+    "to": {
+      "x": 4376,
+      "y": 3880,
+      "region": "VermilionCity"
+    }
+  },
+  {
+    "from": {
+      "x": 4600,
+      "y": 3880,
+      "region": "VermilionCity"
+    },
+    "to": {
+      "x": 4792,
+      "y": 3624,
+      "region": "VermilionMart"
+    }
+  },
+  {
+    "from": {
+      "x": 4424,
+      "y": 3976,
+      "region": "VermilionCity"
+    },
+    "to": {
+      "x": 4120,
+      "y": 4200,
+      "region": "VermilionGym"
+    }
+  },
+  {
+    "from": {
+      "x": 4600,
+      "y": 3976,
+      "region": "VermilionCity"
+    },
+    "to": {
+      "x": 4936,
+      "y": 4232,
+      "region": "VermilionPidgeyHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 6408,
+      "y": 4376,
+      "region": "VermilionDock"
+    },
+    "to": {
+      "x": 4536,
+      "y": 4168,
+      "region": "VermilionCity"
+    }
+  },
+  {
+    "from": {
+      "x": 4472,
+      "y": 3880,
+      "region": "VermilionCity"
+    },
+    "to": {
+      "x": 4280,
+      "y": 3464,
+      "region": "VermilionTradeHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 4344,
+      "y": 3720,
+      "region": "VermilionCity"
+    },
+    "to": {
+      "x": 4024,
+      "y": 3720,
+      "region": "VermilionOldRodHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 376,
+      "y": 1448,
+      "region": "VictoryRoad1F"
+    },
+    "to": {
+      "x": 200,
+      "y": 1880,
+      "region": "VictoryRoad2F"
+    }
+  },
+  {
+    "from": {
+      "x": 1720,
+      "y": 3784,
+      "region": "ViridianCity"
+    },
+    "to": {
+      "x": 2072,
+      "y": 3944,
+      "region": "ViridianPokecenter"
+    }
+  },
+  {
+    "from": {
+      "x": 1816,
+      "y": 3688,
+      "region": "ViridianCity"
+    },
+    "to": {
+      "x": 2072,
+      "y": 3784,
+      "region": "ViridianMart"
+    }
+  },
+  {
+    "from": {
+      "x": 1688,
+      "y": 3528,
+      "region": "ViridianCity"
+    },
+    "to": {
+      "x": 1400,
+      "y": 3336,
+      "region": "ViridianNicknameHouse"
+    }
+  },
+  {
+    "from": {
+      "x": 1864,
+      "y": 3496,
+      "region": "ViridianCity"
+    },
+    "to": {
+      "x": 2280,
+      "y": 3624,
+      "region": "ViridianGym"
+    }
+  },
+  {
+    "from": {
+      "x": 568,
+      "y": 2184,
+      "region": "VictoryRoad3F"
+    },
+    "to": {
+      "x": 568,
+      "y": 1864,
+      "region": "VictoryRoad2F"
+    }
+  },
+  {
+    "from": {
+      "x": 616,
+      "y": 2200,
+      "region": "VictoryRoad3F"
+    },
+    "to": {
+      "x": 632,
+      "y": 1864,
+      "region": "VictoryRoad2F"
+    }
+  },
+  {
+    "from": {
+      "x": 632,
+      "y": 2312,
+      "region": "VictoryRoad3F"
+    },
+    "to": {
+      "x": 600,
+      "y": 1976,
+      "region": "VictoryRoad2F"
+    }
+  },
+  {
+    "from": {
+      "x": 232,
+      "y": 2072,
+      "region": "VictoryRoad3F"
+    },
+    "to": {
+      "x": 216,
+      "y": 1768,
+      "region": "VictoryRoad2F"
+    }
+  },
+  {
+    "from": {
+      "x": 1400,
+      "y": 2552,
+      "region": "ViridianForestNorthGate"
+    },
+    "to": {
+      "x": 1880,
+      "y": 2552,
+      "region": "ViridianForest"
+    }
+  },
+  {
+    "from": {
+      "x": 1400,
+      "y": 2904,
+      "region": "ViridianForestSouthGate"
+    },
+    "to": {
+      "x": 2104,
+      "y": 3304,
+      "region": "ViridianForest"
+    }
+  },
+  {
+    "from": {
+      "x": 5360,
+      "y": 5512,
+      "region": "SilphCoElevator"
+    },
+    "to": {
+      "x": 5352,
+      "y": 5560,
+      "region": "SilphCo1F"
+    }
+  },
+  {
+    "from": {
+      "x": 5360,
+      "y": 5512,
+      "region": "SilphCoElevator"
+    },
+    "to": {
+      "x": 5352,
+      "y": 5880,
+      "region": "SilphCo2F"
+    }
+  },
+  {
+    "from": {
+      "x": 5360,
+      "y": 5512,
+      "region": "SilphCoElevator"
+    },
+    "to": {
+      "x": 5352,
+      "y": 6200,
+      "region": "SilphCo3F"
+    }
+  },
+  {
+    "from": {
+      "x": 5360,
+      "y": 5512,
+      "region": "SilphCoElevator"
+    },
+    "to": {
+      "x": 5352,
+      "y": 6520,
+      "region": "SilphCo4F"
+    }
+  },
+  {
+    "from": {
+      "x": 5360,
+      "y": 5512,
+      "region": "SilphCoElevator"
+    },
+    "to": {
+      "x": 5864,
+      "y": 6520,
+      "region": "SilphCo5F"
+    }
+  },
+  {
+    "from": {
+      "x": 5360,
+      "y": 5512,
+      "region": "SilphCoElevator"
+    },
+    "to": {
+      "x": 5832,
+      "y": 6200,
+      "region": "SilphCo6F"
+    }
+  },
+  {
+    "from": {
+      "x": 5360,
+      "y": 5512,
+      "region": "SilphCoElevator"
+    },
+    "to": {
+      "x": 5832,
+      "y": 5880,
+      "region": "SilphCo7F"
+    }
+  },
+  {
+    "from": {
+      "x": 5360,
+      "y": 5512,
+      "region": "SilphCoElevator"
+    },
+    "to": {
+      "x": 5832,
+      "y": 5560,
+      "region": "SilphCo8F"
+    }
+  },
+  {
+    "from": {
+      "x": 5360,
+      "y": 5512,
+      "region": "SilphCoElevator"
+    },
+    "to": {
+      "x": 6344,
+      "y": 5880,
+      "region": "SilphCo9F"
+    }
+  },
+  {
+    "from": {
+      "x": 5360,
+      "y": 5512,
+      "region": "SilphCoElevator"
+    },
+    "to": {
+      "x": 6248,
+      "y": 6200,
+      "region": "SilphCo10F"
+    }
+  },
+  {
+    "from": {
+      "x": 5360,
+      "y": 5512,
+      "region": "SilphCoElevator"
+    },
+    "to": {
+      "x": 6264,
+      "y": 6520,
+      "region": "SilphCo11F"
+    }
+  },
+  {
+    "from": {
+      "x": 5200,
+      "y": 5832,
+      "region": "SilphCo1F"
+    },
+    "to": {
+      "x": 4520,
+      "y": 2856,
+      "region": "SaffronCity"
+    }
+  },
+  {
+    "from": {
+      "x": 3072,
+      "y": 2376,
+      "region": "CeladonMartElevator"
+    },
+    "to": {
+      "x": 3160,
+      "y": 2376,
+      "region": "CeladonMart1F"
+    }
+  },
+  {
+    "from": {
+      "x": 3072,
+      "y": 2376,
+      "region": "CeladonMartElevator"
+    },
+    "to": {
+      "x": 3160,
+      "y": 2216,
+      "region": "CeladonMart2F"
+    }
+  },
+  {
+    "from": {
+      "x": 3072,
+      "y": 2376,
+      "region": "CeladonMartElevator"
+    },
+    "to": {
+      "x": 3160,
+      "y": 2056,
+      "region": "CeladonMart3F"
+    }
+  },
+  {
+    "from": {
+      "x": 3072,
+      "y": 2376,
+      "region": "CeladonMartElevator"
+    },
+    "to": {
+      "x": 3160,
+      "y": 1896,
+      "region": "CeladonMart4F"
+    }
+  },
+  {
+    "from": {
+      "x": 3072,
+      "y": 2376,
+      "region": "CeladonMartElevator"
+    },
+    "to": {
+      "x": 2808,
+      "y": 2120,
+      "region": "CeladonMart5F"
+    }
+  },
+  {
+    "from": {
+      "x": 3888,
+      "y": 3944,
+      "region": "RocketHideoutElevator"
+    },
+    "to": {
+      "x": 3216,
+      "y": 3912,
+      "region": "RocketHideoutB1F"
+    }
+  },
+  {
+    "from": {
+      "x": 3888,
+      "y": 3944,
+      "region": "RocketHideoutElevator"
+    },
+    "to": {
+      "x": 3728,
+      "y": 3912,
+      "region": "RocketHideoutB2F"
+    }
+  },
+  {
+    "from": {
+      "x": 3888,
+      "y": 3944,
+      "region": "RocketHideoutElevator"
+    },
+    "to": {
+      "x": 3216,
+      "y": 4328,
+      "region": "RocketHideoutB4F"
+    }
+  }
+]
+
+formatted_data = {}
+for region_name, array in raw.items():
+    region_array = []
+    for warp_info in array:
+        warp_data = {}
+        if "name" in warp_info:
+            warp_data["from"] = warp_info["name"]
+        else:
+            warp_data["from"] = region_name
+        to = warp_info["to"]
+        if "name" in to:
+            warp_data["to"] = to["name"]
+        else:
+            warp_data["to"] = to["map"]
+        region_array.append(warp_data)
+    formatted_data[region_name] = region_array
+
+def sanitize_string(s):
+    return s.replace(" ", "").replace("'", "").replace(".", "").replace("-", "")
+
+count = 0
+for region in formatted_data:
+    for warp in formatted_data[region]:
+        # print(warp)
+        for coord in coordinates:
+            f, t = coord["from"], coord["to"]
+            #print(f)
+            if f["region"] == sanitize_string(warp["from"]) and t["region"] == sanitize_string(warp["to"]):
+                if "coordinates" in warp:
+                    if warp["coordinates"]["x"] != "fix":
+                        warp["coordinates"] = {"x": "fix", "y": "fix"}
+                        count -= 1
+
+                warp["coordinates"] = {"x": f["x"], "y": f["y"]}
+                count += 1
+
+print(count, len(coordinates))
+print(formatted_data)
 
 
 # Format we want:
@@ -1269,13 +8397,13 @@ connect(multiworld, player, "Celadon Department Store Elevator", "Celadon Depart
 connect(multiworld, player, "Route 23-N", "Indigo Plateau")
 connect(multiworld, player, "Cerulean City-Water", "Cerulean City-Cave", [["cerulean_cave"]])
 
-all_funcs = set()
-for key, val in formatted_data.items():
-    for outer_arr in val:
-        for arr in outer_arr["func"]:
-            for elem in arr:
-                all_funcs.add(elem)
-print(list(all_funcs))
+# all_funcs = set()
+# for key, val in formatted_data.items():
+#     for outer_arr in val:
+#         for arr in outer_arr["func"]:
+#             for elem in arr:
+#                 all_funcs.add(elem)
+# print(list(all_funcs))
 # tea = "tea"
 # trainersanity = "trainsersanity"
 # stonesanity = "stonesanity"
