@@ -1,1045 +1,5720 @@
 {
-  "Menu": [],
-  "Evolution": [],
-  "Old Rod Fishing": [],
-  "Good Rod Fishing": [],
-  "Fossil Level": [],
-  "Pokedex": [],
-  "Fossil": [],
+  "Bill's House": [
+    {
+      "from": "Bill's House",
+      "to": "Route 25",
+      "coordinates": {
+        "x": 5432,
+        "y": 744
+      }
+    }
+  ],
+  "Celadon Chief House": [
+    {
+      "from": "Celadon Chief House",
+      "to": "Celadon City",
+      "coordinates": {
+        "x": 3720,
+        "y": 3240
+      }
+    }
+  ],
   "Celadon City": [
     {
       "from": "Celadon City to Celadon Department Store 1F W",
-      "to": "Celadon Department Store 1F"
+      "to": "Celadon Department Store 1F",
+      "coordinates": {
+        "x": 3240,
+        "y": 2728
+      }
     },
     {
       "from": "Celadon City to Celadon Department Store 1F E",
-      "to": "Celadon Department Store 1F"
+      "to": "Celadon Department Store 1F",
+      "coordinates": {
+        "x": 3272,
+        "y": 2728
+      }
     },
-    { "from": "Celadon City", "to": "Celadon Mansion 1F" },
-    { "from": "Celadon City", "to": "Celadon Mansion 1F-Back" },
-    { "from": "Celadon City", "to": "Celadon Pokemon Center" },
-    { "from": "Celadon City", "to": "Celadon Game Corner" },
-    { "from": "Celadon City", "to": "Celadon Prize Corner" },
-    { "from": "Celadon City", "to": "Celadon Diner" },
-    { "from": "Celadon City", "to": "Celadon Chief House" },
-    { "from": "Celadon City", "to": "Celadon Hotel" }
+    {
+      "from": "Celadon City",
+      "to": "Celadon Mansion 1F",
+      "coordinates": {
+        "x": 3496,
+        "y": 2664
+      }
+    },
+    {
+      "from": "Celadon City",
+      "to": "Celadon Mansion 1F-Back",
+      "coordinates": {
+        "x": 3512,
+        "y": 2568
+      }
+    },
+    {
+      "from": "Celadon City",
+      "to": "Celadon Pokemon Center",
+      "coordinates": {
+        "x": 3768,
+        "y": 2664
+      }
+    },
+    {
+      "from": "Celadon City",
+      "to": "Celadon Game Corner",
+      "coordinates": {
+        "x": 3560,
+        "y": 2824
+      }
+    },
+    {
+      "from": "Celadon City",
+      "to": "Celadon Prize Corner",
+      "coordinates": {
+        "x": 3640,
+        "y": 2824
+      }
+    },
+    {
+      "from": "Celadon City",
+      "to": "Celadon Diner",
+      "coordinates": {
+        "x": 3608,
+        "y": 2952
+      }
+    },
+    {
+      "from": "Celadon City",
+      "to": "Celadon Chief House",
+      "coordinates": {
+        "x": 3672,
+        "y": 2952
+      }
+    },
+    {
+      "from": "Celadon City",
+      "to": "Celadon Hotel",
+      "coordinates": {
+        "x": 3800,
+        "y": 2952
+      }
+    }
   ],
-  "Celadon City-G": [{ "from": "Celadon City-G", "to": "Celadon Gym" }],
-  "Pallet Town": [
-    { "from": "Pallet Town", "to": "Player's House 1F" },
-    { "from": "Pallet Town", "to": "Rival's House" },
-    { "from": "Pallet Town", "to": "Oak's Lab" }
+  "Celadon City-G": [
+    {
+      "from": "Celadon City-G",
+      "to": "Celadon Gym",
+      "coordinates": {
+        "x": 3304,
+        "y": 2952
+      }
+    }
   ],
-  "Viridian City": [
-    { "from": "Viridian City", "to": "Viridian Pokemon Center" },
-    { "from": "Viridian City", "to": "Viridian Pokemart" },
-    { "from": "Viridian City", "to": "Viridian School House" },
-    { "from": "Viridian City", "to": "Viridian Nickname House" }
+  "Celadon Department Store 1F": [
+    {
+      "from": "Celadon Department Store 1F to Celadon City W",
+      "to": "Celadon City",
+      "coordinates": {
+        "x": 3192,
+        "y": 2472
+      }
+    },
+    {
+      "from": "Celadon Department Store 1F to Celadon City E",
+      "to": "Celadon City",
+      "coordinates": {
+        "x": 3400,
+        "y": 2472
+      }
+    },
+    {
+      "from": "Celadon Department Store 1F",
+      "to": "Celadon Department Store 2F",
+      "coordinates": {
+        "x": 3336,
+        "y": 2376
+      }
+    },
+    {
+      "from": "Celadon Department Store 1F",
+      "to": "Celadon Department Store Elevator-1F",
+      "coordinates": {
+        "x": 3160,
+        "y": 2376
+      }
+    }
   ],
-  "Viridian City-N": [],
-  "Viridian City-G": [{ "from": "Viridian City-G", "to": "Viridian Gym" }],
-  "Pewter City-E": [],
-  "Pewter City-M": [{ "from": "Pewter City-M", "to": "Pewter Museum 1F-E" }],
-  "Pewter City": [
-    { "from": "Pewter City", "to": "Pewter Museum 1F" },
-    { "from": "Pewter City", "to": "Pewter Gym" },
-    { "from": "Pewter City", "to": "Pewter Nidoran House" },
-    { "from": "Pewter City", "to": "Pewter Pokemart" },
-    { "from": "Pewter City", "to": "Pewter Speech House" },
-    { "from": "Pewter City", "to": "Pewter Pokemon Center" }
-  ],
-  "Cerulean City-T": [{ "from": "Cerulean City-T", "to": "Cerulean Trashed House" }],
-  "Cerulean City": [
-    { "from": "Cerulean City", "to": "Cerulean Trade House" },
-    { "from": "Cerulean City", "to": "Cerulean Pokemon Center" },
-    { "from": "Cerulean City", "to": "Cerulean Gym" },
-    { "from": "Cerulean City", "to": "Cerulean Bicycle Shop" },
-    { "from": "Cerulean City", "to": "Cerulean Pokemart" },
-    { "from": "Cerulean City", "to": "Cerulean Badge House" }
-  ],
-  "Cerulean City-Badge House Backyard": [
-    { "from": "Cerulean City-Badge House Backyard", "to": "Cerulean Badge House" }
-  ],
-  "Cerulean City-Water": [],
-  "Cerulean City-Cave": [{ "from": "Cerulean City-Cave", "to": "Cerulean Cave 1F-SE" }],
-  "Cerulean City-Outskirts": [
-    { "from": "Cerulean City-Outskirts", "to": "Cerulean Trashed House" }
-  ],
-  "Vermilion City": [
-    { "from": "Vermilion City", "to": "Vermilion Pokemon Center" },
-    { "from": "Vermilion City", "to": "Vermilion Pokemon Fan Club" },
-    { "from": "Vermilion City", "to": "Vermilion Pokemart" },
-    { "from": "Vermilion City", "to": "Vermilion Pidgey House" },
-    { "from": "Vermilion City", "to": "Vermilion Trade House" },
-    { "from": "Vermilion City", "to": "Vermilion Old Rod House" }
-  ],
-  "Vermilion City-G": [{ "from": "Vermilion City-G", "to": "Vermilion Gym" }],
-  "Vermilion City-Dock": [{ "from": "Vermilion City-Dock", "to": "Vermilion Dock" }],
-  "Fuchsia City": [
-    { "from": "Fuchsia City", "to": "Fuchsia Pokemart" },
-    { "from": "Fuchsia City", "to": "Fuchsia Bill's Grandpa's House" },
-    { "from": "Fuchsia City", "to": "Fuchsia Pokemon Center" },
-    { "from": "Fuchsia City", "to": "Fuchsia Warden's House" },
-    { "from": "Fuchsia City", "to": "Safari Zone Gate-S" },
-    { "from": "Fuchsia City", "to": "Fuchsia Gym" },
-    { "from": "Fuchsia City", "to": "Fuchsia Meeting Room" },
-    { "from": "Fuchsia City", "to": "Fuchsia Good Rod House" }
-  ],
-  "Fuchsia City-Good Rod House Backyard": [
-    { "from": "Fuchsia City-Good Rod House Backyard", "to": "Fuchsia Good Rod House" }
-  ],
-  "Rival's House": [{ "from": "Rival's House", "to": "Pallet Town" }],
-  "Vermilion Trade House": [{ "from": "Vermilion Trade House", "to": "Vermilion City" }],
-  "Indigo Plateau Lobby": [{ "from": "Indigo Plateau Lobby", "to": "Indigo Plateau" }],
-  "Indigo Plateau Lobby-N": [
-    { "from": "Indigo Plateau Lobby-N", "to": "Indigo Plateau Lorelei's Room" }
-  ],
-  "Silph Co 4F": [
-    { "from": "Silph Co 4F", "to": "Silph Co 3F" },
-    { "from": "Silph Co 4F", "to": "Silph Co 5F" },
-    { "from": "Silph Co 4F", "to": "Silph Co Elevator-4F" },
-    { "from": "Silph Co 4F", "to": "Silph Co 10F-SE" },
-    { "from": "Silph Co 4F", "to": "Silph Co 10F" }
-  ],
-  "Silph Co 4F-N": [
-    { "from": "Silph Co 4F-N", "to": "Silph Co 6F" },
-    { "from": "Silph Co 4F-N", "to": "Silph Co 10F-SE" }
-  ],
-  "Silph Co 4F-W": [],
-  "Silph Co 5F-NW": [],
-  "Silph Co 6F-SW": [],
-  "Silph Co 5F": [
-    { "from": "Silph Co 5F", "to": "Silph Co 6F" },
-    { "from": "Silph Co 5F", "to": "Silph Co 4F" },
-    { "from": "Silph Co 5F", "to": "Silph Co Elevator-5F" },
-    { "from": "Silph Co 5F", "to": "Silph Co 7F-SE" },
-    { "from": "Silph Co 5F", "to": "Silph Co 9F" },
-    { "from": "Silph Co 5F", "to": "Silph Co 3F" }
-  ],
-  "Silph Co 5F-SW": [{ "from": "Silph Co 5F-SW", "to": "Silph Co 3F" }],
-  "Silph Co 6F": [
-    { "from": "Silph Co 6F", "to": "Silph Co 7F" },
-    { "from": "Silph Co 6F", "to": "Silph Co 5F" },
-    { "from": "Silph Co 6F", "to": "Silph Co Elevator-7F" },
-    { "from": "Silph Co 6F", "to": "Silph Co 4F-N" },
-    { "from": "Silph Co 6F", "to": "Silph Co 2F-SW" }
-  ],
-  "Cinnabar Island-M": [{ "from": "Cinnabar Island-M", "to": "Pokemon Mansion 1F" }],
-  "Cinnabar Island-G": [{ "from": "Cinnabar Island-G", "to": "Cinnabar Gym" }],
-  "Cinnabar Island": [
-    { "from": "Cinnabar Island", "to": "Cinnabar Lab" },
-    { "from": "Cinnabar Island", "to": "Cinnabar Pokemon Center" },
-    { "from": "Cinnabar Island", "to": "Cinnabar Pokemart" }
-  ],
-  "Route 1": [],
-  "Oak's Lab": [{ "from": "Oak's Lab", "to": "Pallet Town" }],
-  "Viridian Pokemart": [{ "from": "Viridian Pokemart", "to": "Viridian City" }],
-  "Viridian School House": [{ "from": "Viridian School House", "to": "Viridian City" }],
-  "Viridian Nickname House": [{ "from": "Viridian Nickname House", "to": "Viridian City" }],
-  "Pewter Nidoran House": [{ "from": "Pewter Nidoran House", "to": "Pewter City" }],
-  "Pewter Speech House": [{ "from": "Pewter Speech House", "to": "Pewter City" }],
-  "Cerulean Trashed House": [
-    { "from": "Cerulean Trashed House", "to": "Cerulean City-T" },
-    { "from": "Cerulean Trashed House", "to": "Cerulean City-Outskirts" }
-  ],
-  "Cerulean Trade House": [{ "from": "Cerulean Trade House", "to": "Cerulean City" }],
-  "Cerulean Bicycle Shop": [{ "from": "Cerulean Bicycle Shop", "to": "Cerulean City" }],
-  "Lavender Mr. Fuji's House": [{ "from": "Lavender Mr. Fuji's House", "to": "Lavender Town" }],
-  "Lavender Cubone House": [{ "from": "Lavender Cubone House", "to": "Lavender Town" }],
-  "Lavender Name Rater's House": [{ "from": "Lavender Name Rater's House", "to": "Lavender Town" }],
-  "Vermilion Pidgey House": [{ "from": "Vermilion Pidgey House", "to": "Vermilion City" }],
-  "Vermilion Dock": [
-    { "from": "Vermilion Dock", "to": "Vermilion City-Dock" },
-    { "from": "Vermilion Dock", "to": "S.S. Anne 1F" }
-  ],
-  "Celadon Mansion Roof House": [
-    { "from": "Celadon Mansion Roof House", "to": "Celadon Mansion Roof-Back" }
-  ],
-  "Fuchsia Pokemart": [{ "from": "Fuchsia Pokemart", "to": "Fuchsia City" }],
-  "Saffron Pidgey House": [{ "from": "Saffron Pidgey House", "to": "Saffron City-Pidgey" }],
-  "Saffron Mr. Psychic's House": [{ "from": "Saffron Mr. Psychic's House", "to": "Saffron City" }],
-  "Diglett's Cave Route 2": [
-    { "from": "Diglett's Cave Route 2", "to": "Route 2-NE" },
-    { "from": "Diglett's Cave Route 2", "to": "Diglett's Cave" }
-  ],
-  "Route 2 Trade House": [{ "from": "Route 2 Trade House", "to": "Route 2-NE" }],
-  "Route 5 Gate-S": [{ "from": "Route 5 Gate-S", "to": "Route 5-S" }],
-  "Route 5 Gate-N": [{ "from": "Route 5 Gate-N", "to": "Route 5" }],
-  "Route 6 Gate-S": [{ "from": "Route 6 Gate-S", "to": "Route 6" }],
-  "Route 6 Gate-N": [{ "from": "Route 6 Gate-N", "to": "Route 6-N" }],
-  "Route 7 Gate-W": [{ "from": "Route 7 Gate-W", "to": "Route 7" }],
-  "Route 7 Gate-E": [{ "from": "Route 7 Gate-E", "to": "Route 7-E" }],
-  "Route 8 Gate-W": [{ "from": "Route 8 Gate-W", "to": "Route 8-W" }],
-  "Route 8 Gate-E": [{ "from": "Route 8 Gate-E", "to": "Route 8" }],
-  "Underground Path Route 8": [
-    { "from": "Underground Path Route 8", "to": "Route 8" },
-    { "from": "Underground Path Route 8", "to": "Underground Path West East" }
-  ],
-  "Power Plant": [
-    { "from": "Power Plant", "to": "Route 10-P" },
-    { "from": "Power Plant to Route 10-P Back Door", "to": "Route 10-P" }
-  ],
-  "Diglett's Cave Route 11": [
-    { "from": "Diglett's Cave Route 11", "to": "Route 11" },
-    { "from": "Diglett's Cave Route 11", "to": "Diglett's Cave" }
-  ],
-  "Route 16 Fly House": [{ "from": "Route 16 Fly House", "to": "Route 16-NW" }],
-  "Route 22 Gate-S": [{ "from": "Route 22 Gate-S", "to": "Route 22" }],
-  "Route 22 Gate-N": [{ "from": "Route 22 Gate-N", "to": "Route 23-S" }],
-  "Bill's House": [{ "from": "Bill's House", "to": "Route 25" }],
-  "Lavender Town": [
-    { "from": "Lavender Town", "to": "Lavender Pokemon Center" },
-    { "from": "Lavender Town", "to": "Pokemon Tower 1F" },
-    { "from": "Lavender Town", "to": "Lavender Mr. Fuji's House" },
-    { "from": "Lavender Town", "to": "Lavender Pokemart" },
-    { "from": "Lavender Town", "to": "Lavender Cubone House" },
-    { "from": "Lavender Town", "to": "Lavender Name Rater's House" }
-  ],
-  "Viridian Pokemon Center": [{ "from": "Viridian Pokemon Center", "to": "Viridian City" }],
-  "Pokemon Mansion 1F-Wild": [],
-  "Pokemon Mansion 1F": [
-    { "from": "Pokemon Mansion 1F", "to": "Pokemon Mansion 2F" },
-    { "from": "Pokemon Mansion 1F", "to": "Cinnabar Island-M" }
-  ],
-  "Pokemon Mansion 1F-SE": [
-    { "from": "Pokemon Mansion 1F-SE", "to": "Pokemon Mansion B1F" },
-    { "from": "Pokemon Mansion 1F-SE to Cinnabar Island-M", "to": "Cinnabar Island-M" }
-  ],
-  "Pokemon Mansion 2F": [
-    { "from": "Pokemon Mansion 2F", "to": "Pokemon Mansion 1F" },
-    { "from": "Pokemon Mansion 2F", "to": "Pokemon Mansion 3F-SW" },
-    { "from": "Pokemon Mansion 2F", "to": "Pokemon Mansion 3F" }
-  ],
-  "Pokemon Mansion 2F-E": [{ "from": "Pokemon Mansion 2F-E", "to": "Pokemon Mansion 3F-SE" }],
-  "Pokemon Mansion 3F-Wild": [],
-  "Pokemon Mansion 2F-Wild": [],
-  "Pokemon Mansion 3F": [{ "from": "Pokemon Mansion 3F", "to": "Pokemon Mansion 2F" }],
-  "Pokemon Mansion 3F-SE": [{ "from": "Pokemon Mansion 3F-SE", "to": "Pokemon Mansion 2F-E" }],
-  "Pokemon Mansion 3F-SW": [{ "from": "Pokemon Mansion 3F-SW", "to": "Pokemon Mansion 2F" }],
-  "Pokemon Mansion B1F": [{ "from": "Pokemon Mansion B1F", "to": "Pokemon Mansion 1F-SE" }],
-  "Rock Tunnel 1F-NE 1": [{ "from": "Rock Tunnel 1F-NE 1", "to": "Route 10-N" }],
-  "Rock Tunnel 1F-NE 2": [{ "from": "Rock Tunnel 1F-NE 2", "to": "Rock Tunnel B1F-E 1" }],
-  "Rock Tunnel 1F-NW 1": [{ "from": "Rock Tunnel 1F-NW 1", "to": "Rock Tunnel B1F-E 2" }],
-  "Rock Tunnel 1F-NW 2": [{ "from": "Rock Tunnel 1F-NW 2", "to": "Rock Tunnel B1F-W 1" }],
-  "Rock Tunnel 1F-S 1": [{ "from": "Rock Tunnel 1F-S 1", "to": "Route 10-S" }],
-  "Rock Tunnel 1F-S 2": [{ "from": "Rock Tunnel 1F-S 2", "to": "Rock Tunnel B1F-W 2" }],
-  "Rock Tunnel 1F-Wild": [],
-  "Rock Tunnel B1F-Wild": [],
-  "Rock Tunnel 1F-NE": [],
-  "Rock Tunnel 1F-NW": [],
-  "Rock Tunnel 1F-S": [],
-  "Rock Tunnel B1F-E": [],
-  "Rock Tunnel B1F-W": [],
-  "Seafoam Islands 1F": [
-    { "from": "Seafoam Islands 1F", "to": "Route 20-IE" },
-    { "from": "Seafoam Islands 1F", "to": "Seafoam Islands B1F" },
-    { "from": "Seafoam Islands 1F", "to": "Seafoam Islands B1F-NE" }
-  ],
-  "Seafoam Islands B1F-Wild": [],
-  "Seafoam Islands 1F-Wild": [],
-  "Seafoam Islands 1F-SE": [
-    { "from": "Seafoam Islands 1F-SE", "to": "Route 20-IW" },
-    { "from": "Seafoam Islands 1F-SE", "to": "Seafoam Islands B1F-SE" }
-  ],
-  "S.S. Anne 3F": [
-    { "from": "S.S. Anne 3F", "to": "S.S. Anne Bow" },
-    { "from": "S.S. Anne 3F", "to": "S.S. Anne 2F" }
-  ],
-  "Victory Road 3F": [
-    { "from": "Victory Road 3F", "to": "Victory Road 2F-C" },
-    { "from": "Victory Road 3F", "to": "Victory Road 2F-NW" }
-  ],
-  "Victory Road 3F-SE": [
-    { "from": "Victory Road 3F-SE", "to": "Victory Road 2F-E" },
-    { "from": "Victory Road 3F-SE", "to": "Victory Road 2F-SE" }
-  ],
-  "Victory Road 3F-S": [],
-  "Victory Road 3F-Wild": [],
-  "Rocket Hideout B1F": [
-    { "from": "Rocket Hideout B1F", "to": "Rocket Hideout B2F" },
-    { "from": "Rocket Hideout B1F", "to": "Celadon Game Corner-Hidden Stairs" }
-  ],
-  "Rocket Hideout B1F-SE": [
-    { "from": "Rocket Hideout B1F-SE", "to": "Rocket Hideout Elevator-B1F" }
-  ],
-  "Rocket Hideout B1F-S": [{ "from": "Rocket Hideout B1F-S", "to": "Rocket Hideout B2F" }],
-  "Rocket Hideout B2F": [
-    { "from": "Rocket Hideout B2F", "to": "Rocket Hideout B1F" },
-    { "from": "Rocket Hideout B2F", "to": "Rocket Hideout B3F" },
-    { "from": "Rocket Hideout B2F", "to": "Rocket Hideout Elevator-B2F" },
-    { "from": "Rocket Hideout B2F", "to": "Rocket Hideout B1F-S" }
-  ],
-  "Rocket Hideout B3F": [
-    { "from": "Rocket Hideout B3F", "to": "Rocket Hideout B2F" },
-    { "from": "Rocket Hideout B3F", "to": "Rocket Hideout B4F-NW" }
-  ],
-  "Rocket Hideout B4F": [{ "from": "Rocket Hideout B4F", "to": "Rocket Hideout Elevator-B4F" }],
-  "Rocket Hideout B4F-NW": [{ "from": "Rocket Hideout B4F-NW", "to": "Rocket Hideout B3F" }],
-  "Rocket Hideout Elevator": [],
-  "Silph Co Elevator": [],
-  "Celadon Department Store Elevator": [],
-  "Rocket Hideout Elevator-B1F": [
-    { "from": "Rocket Hideout Elevator-B1F", "to": "Rocket Hideout B1F-SE" }
-  ],
-  "Rocket Hideout Elevator-B2F": [
-    { "from": "Rocket Hideout Elevator-B2F", "to": "Rocket Hideout B2F" }
-  ],
-  "Rocket Hideout Elevator-B4F": [
-    { "from": "Rocket Hideout Elevator-B4F", "to": "Rocket Hideout B4F" }
-  ],
-  "Silph Co Elevator-1F": [{ "from": "Silph Co Elevator-1F", "to": "Silph Co 1F" }],
-  "Silph Co Elevator-2F": [{ "from": "Silph Co Elevator-2F", "to": "Silph Co 2F" }],
-  "Silph Co Elevator-3F": [{ "from": "Silph Co Elevator-3F", "to": "Silph Co 3F" }],
-  "Silph Co Elevator-4F": [{ "from": "Silph Co Elevator-4F", "to": "Silph Co 4F" }],
-  "Silph Co Elevator-5F": [{ "from": "Silph Co Elevator-5F", "to": "Silph Co 5F" }],
-  "Silph Co Elevator-6F": [{ "from": "Silph Co Elevator-6F", "to": "Silph Co 6F" }],
-  "Silph Co Elevator-7F": [{ "from": "Silph Co Elevator-7F", "to": "Silph Co 7F" }],
-  "Silph Co Elevator-8F": [{ "from": "Silph Co Elevator-8F", "to": "Silph Co 8F" }],
-  "Silph Co Elevator-9F": [{ "from": "Silph Co Elevator-9F", "to": "Silph Co 9F" }],
-  "Silph Co Elevator-10F": [{ "from": "Silph Co Elevator-10F", "to": "Silph Co 10F" }],
-  "Silph Co Elevator-11F": [{ "from": "Silph Co Elevator-11F", "to": "Silph Co 11F" }],
-  "Safari Zone East": [
-    { "from": "Safari Zone East", "to": "Safari Zone North" },
-    { "from": "Safari Zone East", "to": "Safari Zone Center-S" },
-    { "from": "Safari Zone East", "to": "Safari Zone East Rest House" }
-  ],
-  "Safari Zone North": [
-    { "from": "Safari Zone North", "to": "Safari Zone West-NW" },
-    { "from": "Safari Zone North", "to": "Safari Zone West" },
-    { "from": "Safari Zone North", "to": "Safari Zone Center-NE" },
-    { "from": "Safari Zone North", "to": "Safari Zone East" },
-    { "from": "Safari Zone North", "to": "Safari Zone North Rest House" }
-  ],
-  "Safari Zone Center-C": [],
-  "Safari Zone Center-Wild": [],
-  "Safari Zone Center-NW": [{ "from": "Safari Zone Center-NW", "to": "Safari Zone West" }],
-  "Safari Zone Center-NE": [{ "from": "Safari Zone Center-NE", "to": "Safari Zone North" }],
-  "Safari Zone Center-S": [
-    { "from": "Safari Zone Center-S", "to": "Safari Zone Gate-N" },
-    { "from": "Safari Zone Center-S", "to": "Safari Zone East" },
-    { "from": "Safari Zone Center-S", "to": "Safari Zone Center Rest House" }
-  ],
-  "Safari Zone Center Rest House": [
-    { "from": "Safari Zone Center Rest House", "to": "Safari Zone Center-S" }
-  ],
-  "Safari Zone West Rest House": [
-    { "from": "Safari Zone West Rest House", "to": "Safari Zone West" }
-  ],
-  "Safari Zone East Rest House": [
-    { "from": "Safari Zone East Rest House", "to": "Safari Zone East" }
-  ],
-  "Safari Zone North Rest House": [
-    { "from": "Safari Zone North Rest House", "to": "Safari Zone North" }
-  ],
-  "Cerulean Cave 2F-E": [
-    { "from": "Cerulean Cave 2F-E", "to": "Cerulean Cave 1F-NE" },
-    { "from": "Cerulean Cave 2F-E", "to": "Cerulean Cave 1F-SE" }
-  ],
-  "Cerulean Cave 2F-Wild": [],
-  "Cerulean Cave 2F-W": [
-    { "from": "Cerulean Cave 2F-W", "to": "Cerulean Cave 1F-NW" },
-    { "from": "Cerulean Cave 2F-W", "to": "Cerulean Cave 1F-SW" }
-  ],
-  "Cerulean Cave 2F-N": [
-    { "from": "Cerulean Cave 2F-N", "to": "Cerulean Cave 1F-SW" },
-    { "from": "Cerulean Cave 2F-N", "to": "Cerulean Cave 1F-N" }
-  ],
-  "Cerulean Cave B1F": [{ "from": "Cerulean Cave B1F", "to": "Cerulean Cave 1F-NW" }],
-  "Cerulean Cave B1F-E": [],
-  "Rock Tunnel B1F-E 1": [{ "from": "Rock Tunnel B1F-E 1", "to": "Rock Tunnel 1F-NE 2" }],
-  "Rock Tunnel B1F-E 2": [{ "from": "Rock Tunnel B1F-E 2", "to": "Rock Tunnel 1F-NW 1" }],
-  "Rock Tunnel B1F-W 1": [{ "from": "Rock Tunnel B1F-W 1", "to": "Rock Tunnel 1F-NW 2" }],
-  "Rock Tunnel B1F-W 2": [{ "from": "Rock Tunnel B1F-W 2", "to": "Rock Tunnel 1F-S 2" }],
-  "Seafoam Islands B1F": [
-    { "from": "Seafoam Islands B1F", "to": "Seafoam Islands B2F-NW" },
-    { "from": "Seafoam Islands B1F", "to": "Seafoam Islands 1F" },
-    { "from": "Seafoam Islands B1F to Seafoam Islands B2F-SW N", "to": "Seafoam Islands B2F-SW" },
-    { "from": "Seafoam Islands B1F to Seafoam Islands B2F-SW S", "to": "Seafoam Islands B2F-SW" }
-  ],
-  "Seafoam Islands B1F-SE": [
-    { "from": "Seafoam Islands B1F-SE", "to": "Seafoam Islands 1F-SE" },
-    { "from": "Seafoam Islands B1F-SE", "to": "Seafoam Islands B2F-SE" }
-  ],
-  "Seafoam Islands B1F-NE": [{ "from": "Seafoam Islands B1F-NE", "to": "Seafoam Islands 1F" }],
-  "Seafoam Islands B2F-Wild": [],
-  "Seafoam Islands B2F-SE": [
-    { "from": "Seafoam Islands B2F-SE", "to": "Seafoam Islands B1F-SE" },
-    { "from": "Seafoam Islands B2F-SE", "to": "Seafoam Islands B3F-SE" }
-  ],
-  "Seafoam Islands B2F-NE": [{ "from": "Seafoam Islands B2F-NE", "to": "Seafoam Islands B3F-NE" }],
-  "Seafoam Islands B2F-SW": [
-    { "from": "Seafoam Islands B2F-SW to Seafoam Islands 1F-SW S", "to": "Seafoam Islands B1F" },
-    { "from": "Seafoam Islands B2F-SW", "to": "Seafoam Islands B3F" },
-    { "from": "Seafoam Islands B2F-SW to Seafoam Islands 1F-SW N", "to": "Seafoam Islands B1F" }
-  ],
-  "Seafoam Islands B2F-NW": [{ "from": "Seafoam Islands B2F-NW", "to": "Seafoam Islands B1F" }],
-  "Seafoam Islands B3F": [
-    { "from": "Seafoam Islands B3F", "to": "Seafoam Islands B2F-SW" },
-    { "from": "Seafoam Islands B3F", "to": "Seafoam Islands B4F" }
-  ],
-  "Seafoam Islands B3F-SE": [{ "from": "Seafoam Islands B3F-SE", "to": "Seafoam Islands B2F-SE" }],
-  "Seafoam Islands B3F-Wild": [],
-  "Seafoam Islands B3F-NE": [
-    { "from": "Seafoam Islands B3F-NE", "to": "Seafoam Islands B4F" },
-    { "from": "Seafoam Islands B3F-NE", "to": "Seafoam Islands B2F-NE" }
-  ],
-  "Seafoam Islands B4F-W": [],
-  "Seafoam Islands B4F": [
-    { "from": "Seafoam Islands B4F", "to": "Seafoam Islands B3F" },
-    { "from": "Seafoam Islands B4F", "to": "Seafoam Islands B3F-NE" }
-  ],
-  "Route 7": [
-    { "from": "Route 7", "to": "Route 7 Gate-W" },
-    { "from": "Route 7", "to": "Underground Path Route 7" }
-  ],
-  "Route 7-E": [{ "from": "Route 7-E", "to": "Route 7 Gate-E" }],
-  "Player's House 1F": [
-    { "from": "Player's House 1F", "to": "Pallet Town" },
-    { "from": "Player's House 1F", "to": "Player's House 2F" }
+  "Celadon Department Store 2F": [
+    {
+      "from": "Celadon Department Store 2F",
+      "to": "Celadon Department Store 1F",
+      "coordinates": {
+        "x": 3336,
+        "y": 2216
+      }
+    },
+    {
+      "from": "Celadon Department Store 2F",
+      "to": "Celadon Department Store 3F",
+      "coordinates": {
+        "x": 3400,
+        "y": 2216
+      }
+    },
+    {
+      "from": "Celadon Department Store 2F",
+      "to": "Celadon Department Store Elevator-2F",
+      "coordinates": {
+        "x": 3160,
+        "y": 2216
+      }
+    }
   ],
   "Celadon Department Store 3F": [
-    { "from": "Celadon Department Store 3F", "to": "Celadon Department Store 4F" },
-    { "from": "Celadon Department Store 3F", "to": "Celadon Department Store 2F" },
-    { "from": "Celadon Department Store 3F", "to": "Celadon Department Store Elevator-3F" }
+    {
+      "from": "Celadon Department Store 3F",
+      "to": "Celadon Department Store 4F",
+      "coordinates": {
+        "x": 3336,
+        "y": 2056
+      }
+    },
+    {
+      "from": "Celadon Department Store 3F",
+      "to": "Celadon Department Store 2F",
+      "coordinates": {
+        "x": 3400,
+        "y": 2056
+      }
+    },
+    {
+      "from": "Celadon Department Store 3F",
+      "to": "Celadon Department Store Elevator-3F",
+      "coordinates": {
+        "x": 3160,
+        "y": 2056
+      }
+    }
   ],
   "Celadon Department Store 4F": [
-    { "from": "Celadon Department Store 4F", "to": "Celadon Department Store 3F" },
-    { "from": "Celadon Department Store 4F", "to": "Celadon Department Store 5F" },
-    { "from": "Celadon Department Store 4F", "to": "Celadon Department Store Elevator-4F" }
-  ],
-  "Celadon Department Store Roof": [
-    { "from": "Celadon Department Store Roof", "to": "Celadon Department Store 5F" }
-  ],
-  "Celadon Department Store Elevator-1F": [
-    { "from": "Celadon Department Store Elevator-1F", "to": "Celadon Department Store 1F" }
-  ],
-  "Celadon Department Store Elevator-2F": [
-    { "from": "Celadon Department Store Elevator-2F", "to": "Celadon Department Store 2F" }
-  ],
-  "Celadon Department Store Elevator-3F": [
-    { "from": "Celadon Department Store Elevator-3F", "to": "Celadon Department Store 3F" }
-  ],
-  "Celadon Department Store Elevator-4F": [
-    { "from": "Celadon Department Store Elevator-4F", "to": "Celadon Department Store 4F" }
-  ],
-  "Celadon Department Store Elevator-5F": [
-    { "from": "Celadon Department Store Elevator-5F", "to": "Celadon Department Store 5F" }
-  ],
-  "Celadon Mansion 1F": [
-    { "from": "Celadon Mansion 1F", "to": "Celadon City" },
-    { "from": "Celadon Mansion 1F", "to": "Celadon Mansion 2F" }
-  ],
-  "Celadon Mansion 1F-Back": [
-    { "from": "Celadon Mansion 1F-Back", "to": "Celadon Mansion 2F-Back" },
-    { "from": "Celadon Mansion 1F-Back", "to": "Celadon City" }
-  ],
-  "Celadon Mansion 2F": [
-    { "from": "Celadon Mansion 2F", "to": "Celadon Mansion 3F" },
-    { "from": "Celadon Mansion 2F", "to": "Celadon Mansion 1F" }
-  ],
-  "Celadon Mansion 2F-Back": [
-    { "from": "Celadon Mansion 2F-Back", "to": "Celadon Mansion 1F-Back" },
-    { "from": "Celadon Mansion 2F-Back", "to": "Celadon Mansion 3F-Back" }
-  ],
-  "Celadon Mansion 3F": [
-    { "from": "Celadon Mansion 3F", "to": "Celadon Mansion 2F" },
-    { "from": "Celadon Mansion 3F", "to": "Celadon Mansion Roof" }
-  ],
-  "Celadon Mansion 3F-Back": [
-    { "from": "Celadon Mansion 3F-Back", "to": "Celadon Mansion Roof-Back" },
-    { "from": "Celadon Mansion 3F-Back", "to": "Celadon Mansion 2F-Back" }
-  ],
-  "Celadon Mansion Roof": [{ "from": "Celadon Mansion Roof", "to": "Celadon Mansion 3F" }],
-  "Celadon Mansion Roof-Back": [
-    { "from": "Celadon Mansion Roof-Back", "to": "Celadon Mansion 3F-Back" },
-    { "from": "Celadon Mansion Roof-Back", "to": "Celadon Mansion Roof House" }
-  ],
-  "Celadon Pokemon Center": [{ "from": "Celadon Pokemon Center", "to": "Celadon City" }],
-  "Celadon Gym": [{ "from": "Celadon Gym", "to": "Celadon City-G" }],
-  "Celadon Gym-C": [],
-  "Celadon Game Corner": [{ "from": "Celadon Game Corner", "to": "Celadon City" }],
-  "Celadon Game Corner-Hidden Stairs": [
-    { "from": "Celadon Game Corner-Hidden Stairs", "to": "Rocket Hideout B1F" }
+    {
+      "from": "Celadon Department Store 4F",
+      "to": "Celadon Department Store 3F",
+      "coordinates": {
+        "x": 3336,
+        "y": 1896
+      }
+    },
+    {
+      "from": "Celadon Department Store 4F",
+      "to": "Celadon Department Store 5F",
+      "coordinates": {
+        "x": 3400,
+        "y": 1896
+      }
+    },
+    {
+      "from": "Celadon Department Store 4F",
+      "to": "Celadon Department Store Elevator-4F",
+      "coordinates": {
+        "x": 3160,
+        "y": 1896
+      }
+    }
   ],
   "Celadon Department Store 5F": [
-    { "from": "Celadon Department Store 5F", "to": "Celadon Department Store Roof" },
-    { "from": "Celadon Department Store 5F", "to": "Celadon Department Store 4F" },
-    { "from": "Celadon Department Store 5F", "to": "Celadon Department Store Elevator-5F" }
+    {
+      "from": "Celadon Department Store 5F",
+      "to": "Celadon Department Store Roof",
+      "coordinates": {
+        "x": 2984,
+        "y": 2120
+      }
+    },
+    {
+      "from": "Celadon Department Store 5F",
+      "to": "Celadon Department Store 4F",
+      "coordinates": {
+        "x": 3048,
+        "y": 2120
+      }
+    },
+    {
+      "from": "Celadon Department Store 5F",
+      "to": "Celadon Department Store Elevator-5F",
+      "coordinates": {
+        "x": 2808,
+        "y": 2120
+      }
+    }
   ],
-  "Celadon Prize Corner": [{ "from": "Celadon Prize Corner", "to": "Celadon City" }],
-  "Celadon Diner": [{ "from": "Celadon Diner", "to": "Celadon City" }],
-  "Celadon Chief House": [{ "from": "Celadon Chief House", "to": "Celadon City" }],
-  "Celadon Hotel": [{ "from": "Celadon Hotel", "to": "Celadon City" }],
-  "Route 4 Pokemon Center": [{ "from": "Route 4 Pokemon Center", "to": "Route 4-W" }],
-  "Rock Tunnel Pokemon Center": [{ "from": "Rock Tunnel Pokemon Center", "to": "Route 10-N" }],
-  "Route 11 Gate 1F": [
-    { "from": "Route 11 Gate 1F", "to": "Route 11-C" },
-    { "from": "Route 11 Gate 1F", "to": "Route 11-E" },
-    { "from": "Route 11 Gate 1F", "to": "Route 11 Gate 2F" }
+  "Celadon Department Store Elevator": [],
+  "Celadon Department Store Elevator-1F": [
+    {
+      "from": "Celadon Department Store Elevator-1F",
+      "to": "Celadon Department Store 1F",
+      "coordinates": {
+        "x": 3072,
+        "y": 2376
+      }
+    }
   ],
-  "Route 11 Gate 2F": [{ "from": "Route 11 Gate 2F", "to": "Route 11 Gate 1F" }],
-  "Route 12 Gate 1F": [
-    { "from": "Route 12 Gate 1F", "to": "Route 12-L" },
-    { "from": "Route 12 Gate 1F", "to": "Route 12-N" },
-    { "from": "Route 12 Gate 1F", "to": "Route 12 Gate 2F" }
+  "Celadon Department Store Elevator-2F": [
+    {
+      "from": "Celadon Department Store Elevator-2F",
+      "to": "Celadon Department Store 2F",
+      "coordinates": {
+        "x": 3072,
+        "y": 2376
+      }
+    }
   ],
-  "Route 12 Gate 2F": [{ "from": "Route 12 Gate 2F", "to": "Route 12 Gate 1F" }],
-  "Route 15 Gate 1F": [
-    { "from": "Route 15 Gate 1F", "to": "Route 15-W" },
-    { "from": "Route 15 Gate 1F", "to": "Route 15" },
-    { "from": "Route 15 Gate 1F", "to": "Route 15 Gate 2F" }
+  "Celadon Department Store Elevator-3F": [
+    {
+      "from": "Celadon Department Store Elevator-3F",
+      "to": "Celadon Department Store 3F",
+      "coordinates": {
+        "x": 3072,
+        "y": 2376
+      }
+    }
   ],
-  "Route 15 Gate 2F": [{ "from": "Route 15 Gate 2F", "to": "Route 15 Gate 1F" }],
-  "Route 16 Gate 1F-W": [{ "from": "Route 16 Gate 1F-W", "to": "Route 16-SW" }],
-  "Route 16 Gate 1F-E": [
-    { "from": "Route 16 Gate 1F-E", "to": "Route 16-C" },
-    { "from": "Route 16 Gate 1F-E", "to": "Route 16 Gate 2F" }
+  "Celadon Department Store Elevator-4F": [
+    {
+      "from": "Celadon Department Store Elevator-4F",
+      "to": "Celadon Department Store 4F",
+      "coordinates": {
+        "x": 3072,
+        "y": 2376
+      }
+    }
   ],
-  "Route 16 Gate 1F-N": [
-    { "from": "Route 16 Gate 1F-N", "to": "Route 16-NW" },
-    { "from": "Route 16 Gate 1F-N", "to": "Route 16-NE" }
+  "Celadon Department Store Elevator-5F": [
+    {
+      "from": "Celadon Department Store Elevator-5F",
+      "to": "Celadon Department Store 5F",
+      "coordinates": {
+        "x": 3072,
+        "y": 2376
+      }
+    }
   ],
-  "Route 16 Gate 2F": [{ "from": "Route 16 Gate 2F", "to": "Route 16 Gate 1F-E" }],
-  "Route 18 Gate 1F-W": [{ "from": "Route 18 Gate 1F-W", "to": "Route 18-W" }],
-  "Route 18 Gate 1F-E": [
-    { "from": "Route 18 Gate 1F-E", "to": "Route 18-E" },
-    { "from": "Route 18 Gate 1F-E", "to": "Route 18 Gate 2F" }
+  "Celadon Department Store Roof": [
+    {
+      "from": "Celadon Department Store Roof",
+      "to": "Celadon Department Store 5F",
+      "coordinates": {
+        "x": 2680,
+        "y": 2136
+      }
+    }
   ],
-  "Route 18 Gate 2F": [{ "from": "Route 18 Gate 2F", "to": "Route 18 Gate 1F-E" }],
-  "Mt Moon 1F": [
-    { "from": "Mt Moon 1F", "to": "Route 4-W" },
-    { "from": "Mt Moon 1F", "to": "Mt Moon B1F-W" },
-    { "from": "Mt Moon 1F", "to": "Mt Moon B1F-C" },
-    { "from": "Mt Moon 1F", "to": "Mt Moon B1F-SE" }
+  "Celadon Diner": [
+    {
+      "from": "Celadon Diner",
+      "to": "Celadon City",
+      "coordinates": {
+        "x": 3368,
+        "y": 3240
+      }
+    }
   ],
-  "Mt Moon B2F": [
-    { "from": "Mt Moon B2F", "to": "Mt Moon B1F-W" },
-    { "from": "Mt Moon B2F", "to": "Mt Moon B1F-NE" }
+  "Celadon Game Corner": [
+    {
+      "from": "Celadon Game Corner",
+      "to": "Celadon City",
+      "coordinates": {
+        "x": 3400,
+        "y": 3560
+      }
+    }
   ],
-  "Mt Moon B2F-NE": [{ "from": "Mt Moon B2F-NE", "to": "Mt Moon B1F-C" }],
-  "Mt Moon B2F-C": [{ "from": "Mt Moon B2F-C", "to": "Mt Moon B1F-SE" }],
-  "Mt Moon B2F-Wild": [],
-  "Victory Road 1F-Wild": [],
-  "Pallet/Viridian Fishing": [],
-  "Route 22 Fishing": [],
-  "Route 24/25/Cerulean/Cerulean Gym Fishing": [],
-  "Route 6/11/Vermilion/Dock Fishing": [],
-  "Route 10/Celadon Fishing": [],
-  "Safari Zone Fishing": [],
-  "Route 12/13/17/18 Fishing": [],
-  "Sea Routes/Cinnabar/Seafoam Fishing": [],
-  "Route 23/Cerulean Cave Fishing": [],
+  "Celadon Game Corner-Hidden Stairs": [
+    {
+      "from": "Celadon Game Corner-Hidden Stairs",
+      "to": "Rocket Hideout B1F",
+      "coordinates": {
+        "x": 3416,
+        "y": 3352
+      }
+    }
+  ],
+  "Celadon Gym": [
+    {
+      "from": "Celadon Gym",
+      "to": "Celadon City-G",
+      "coordinates": {
+        "x": 3000,
+        "y": 3240
+      }
+    }
+  ],
+  "Celadon Gym-C": [],
+  "Celadon Hotel": [
+    {
+      "from": "Celadon Hotel",
+      "to": "Celadon City",
+      "coordinates": {
+        "x": 3896,
+        "y": 3240
+      }
+    }
+  ],
+  "Celadon Mansion 1F": [
+    {
+      "from": "Celadon Mansion 1F",
+      "to": "Celadon City",
+      "coordinates": {
+        "x": 3560,
+        "y": 2472
+      }
+    },
+    {
+      "from": "Celadon Mansion 1F",
+      "to": "Celadon Mansion 2F",
+      "coordinates": {
+        "x": 3608,
+        "y": 2312
+      }
+    }
+  ],
+  "Celadon Mansion 1F-Back": [
+    {
+      "from": "Celadon Mansion 1F-Back",
+      "to": "Celadon Mansion 2F-Back",
+      "coordinates": {
+        "x": 3528,
+        "y": 2312
+      }
+    },
+    {
+      "from": "Celadon Mansion 1F-Back",
+      "to": "Celadon City",
+      "coordinates": {
+        "x": 3560,
+        "y": 2296
+      }
+    }
+  ],
+  "Celadon Mansion 2F": [
+    {
+      "from": "Celadon Mansion 2F",
+      "to": "Celadon Mansion 3F",
+      "coordinates": {
+        "x": 3592,
+        "y": 2088
+      }
+    },
+    {
+      "from": "Celadon Mansion 2F",
+      "to": "Celadon Mansion 1F",
+      "coordinates": {
+        "x": 3608,
+        "y": 2088
+      }
+    }
+  ],
+  "Celadon Mansion 2F-Back": [
+    {
+      "from": "Celadon Mansion 2F-Back",
+      "to": "Celadon Mansion 1F-Back",
+      "coordinates": {
+        "x": 3528,
+        "y": 2088
+      }
+    },
+    {
+      "from": "Celadon Mansion 2F-Back",
+      "to": "Celadon Mansion 3F-Back",
+      "coordinates": {
+        "x": 3560,
+        "y": 2088
+      }
+    }
+  ],
+  "Celadon Mansion 3F": [
+    {
+      "from": "Celadon Mansion 3F",
+      "to": "Celadon Mansion 2F",
+      "coordinates": {
+        "x": 3592,
+        "y": 1864
+      }
+    },
+    {
+      "from": "Celadon Mansion 3F",
+      "to": "Celadon Mansion Roof",
+      "coordinates": {
+        "x": 3608,
+        "y": 1864
+      }
+    }
+  ],
+  "Celadon Mansion 3F-Back": [
+    {
+      "from": "Celadon Mansion 3F-Back",
+      "to": "Celadon Mansion Roof-Back",
+      "coordinates": {
+        "x": 3528,
+        "y": 1864
+      }
+    },
+    {
+      "from": "Celadon Mansion 3F-Back",
+      "to": "Celadon Mansion 2F-Back",
+      "coordinates": {
+        "x": 3560,
+        "y": 1864
+      }
+    }
+  ],
+  "Celadon Mansion Roof": [
+    {
+      "from": "Celadon Mansion Roof",
+      "to": "Celadon Mansion 3F",
+      "coordinates": {
+        "x": 3752,
+        "y": 1992
+      }
+    }
+  ],
+  "Celadon Mansion Roof House": [
+    {
+      "from": "Celadon Mansion Roof House",
+      "to": "Celadon Mansion Roof-Back",
+      "coordinates": {
+        "x": 3816,
+        "y": 1928
+      }
+    }
+  ],
+  "Celadon Mansion Roof-Back": [
+    {
+      "from": "Celadon Mansion Roof-Back",
+      "to": "Celadon Mansion 3F-Back",
+      "coordinates": {
+        "x": 3688,
+        "y": 1992
+      }
+    },
+    {
+      "from": "Celadon Mansion Roof-Back",
+      "to": "Celadon Mansion Roof House",
+      "coordinates": {
+        "x": 3688,
+        "y": 2088
+      }
+    }
+  ],
+  "Celadon Pokemon Center": [
+    {
+      "from": "Celadon Pokemon Center",
+      "to": "Celadon City",
+      "coordinates": {
+        "x": 3752,
+        "y": 2312
+      }
+    }
+  ],
+  "Celadon Prize Corner": [
+    {
+      "from": "Celadon Prize Corner",
+      "to": "Celadon City",
+      "coordinates": {
+        "x": 3576,
+        "y": 3240
+      }
+    }
+  ],
+  "Cerulean Badge House": [
+    {
+      "from": "Cerulean Badge House",
+      "to": "Cerulean City-Badge House Backyard",
+      "coordinates": {
+        "x": 4104,
+        "y": 1336
+      }
+    },
+    {
+      "from": "Cerulean Badge House",
+      "to": "Cerulean City",
+      "coordinates": {
+        "x": 4120,
+        "y": 1448
+      }
+    }
+  ],
+  "Cerulean Bicycle Shop": [
+    {
+      "from": "Cerulean Bicycle Shop",
+      "to": "Cerulean City",
+      "coordinates": {
+        "x": 4280,
+        "y": 2088
+      }
+    }
+  ],
+  "Cerulean Cave 1F-N": [
+    {
+      "from": "Cerulean Cave 1F-N",
+      "to": "Cerulean Cave 2F-N",
+      "coordinates": {
+        "x": 3672,
+        "y": 872
+      }
+    }
+  ],
+  "Cerulean Cave 1F-NE": [
+    {
+      "from": "Cerulean Cave 1F-NE",
+      "to": "Cerulean Cave 2F-E",
+      "coordinates": {
+        "x": 3992,
+        "y": 872
+      }
+    }
+  ],
+  "Cerulean Cave 1F-NW": [
+    {
+      "from": "Cerulean Cave 1F-NW",
+      "to": "Cerulean Cave 2F-W",
+      "coordinates": {
+        "x": 3576,
+        "y": 904
+      }
+    },
+    {
+      "from": "Cerulean Cave 1F-NW",
+      "to": "Cerulean Cave B1F",
+      "coordinates": {
+        "x": 3560,
+        "y": 952
+      }
+    }
+  ],
+  "Cerulean Cave 1F-SE": [
+    {
+      "from": "Cerulean Cave 1F-SE",
+      "to": "Cerulean City-Cave",
+      "coordinates": {
+        "x": 3960,
+        "y": 1128
+      }
+    },
+    {
+      "from": "Cerulean Cave 1F-SE",
+      "to": "Cerulean Cave 2F-E",
+      "coordinates": {
+        "x": 3928,
+        "y": 968
+      }
+    }
+  ],
+  "Cerulean Cave 1F-SW": [
+    {
+      "from": "Cerulean Cave 1F-SW",
+      "to": "Cerulean Cave 2F-N",
+      "coordinates": {
+        "x": 3848,
+        "y": 1000
+      }
+    },
+    {
+      "from": "Cerulean Cave 1F-SW",
+      "to": "Cerulean Cave 2F-W",
+      "coordinates": {
+        "x": 3608,
+        "y": 1032
+      }
+    }
+  ],
+  "Cerulean Cave 1F-Water": [],
+  "Cerulean Cave 1F-Wild": [],
+  "Cerulean Cave 2F-E": [
+    {
+      "from": "Cerulean Cave 2F-E",
+      "to": "Cerulean Cave 1F-NE",
+      "coordinates": {
+        "x": 4024,
+        "y": 552
+      }
+    },
+    {
+      "from": "Cerulean Cave 2F-E",
+      "to": "Cerulean Cave 1F-SE",
+      "coordinates": {
+        "x": 3912,
+        "y": 632
+      }
+    }
+  ],
+  "Cerulean Cave 2F-N": [
+    {
+      "from": "Cerulean Cave 2F-N",
+      "to": "Cerulean Cave 1F-SW",
+      "coordinates": {
+        "x": 3864,
+        "y": 648
+      }
+    },
+    {
+      "from": "Cerulean Cave 2F-N",
+      "to": "Cerulean Cave 1F-N",
+      "coordinates": {
+        "x": 3704,
+        "y": 552
+      }
+    }
+  ],
+  "Cerulean Cave 2F-W": [
+    {
+      "from": "Cerulean Cave 2F-W",
+      "to": "Cerulean Cave 1F-NW",
+      "coordinates": {
+        "x": 3576,
+        "y": 584
+      }
+    },
+    {
+      "from": "Cerulean Cave 2F-W",
+      "to": "Cerulean Cave 1F-SW",
+      "coordinates": {
+        "x": 3608,
+        "y": 712
+      }
+    }
+  ],
+  "Cerulean Cave 2F-Wild": [],
+  "Cerulean Cave B1F": [
+    {
+      "from": "Cerulean Cave B1F",
+      "to": "Cerulean Cave 1F-NW",
+      "coordinates": {
+        "x": 3608,
+        "y": 1272
+      }
+    }
+  ],
+  "Cerulean Cave B1F-E": [],
+  "Cerulean City": [
+    {
+      "from": "Cerulean City",
+      "to": "Cerulean Trade House",
+      "coordinates": {
+        "x": 4440,
+        "y": 1608
+      }
+    },
+    {
+      "from": "Cerulean City",
+      "to": "Cerulean Pokemon Center",
+      "coordinates": {
+        "x": 4536,
+        "y": 1640
+      }
+    },
+    {
+      "from": "Cerulean City",
+      "to": "Cerulean Gym",
+      "coordinates": {
+        "x": 4712,
+        "y": 1672
+      }
+    },
+    {
+      "from": "Cerulean City",
+      "to": "Cerulean Bicycle Shop",
+      "coordinates": {
+        "x": 4440,
+        "y": 1768
+      }
+    },
+    {
+      "from": "Cerulean City",
+      "to": "Cerulean Pokemart",
+      "coordinates": {
+        "x": 4632,
+        "y": 1768
+      }
+    },
+    {
+      "from": "Cerulean City",
+      "to": "Cerulean Badge House",
+      "coordinates": {
+        "x": 4376,
+        "y": 1544
+      }
+    }
+  ],
+  "Cerulean City-Badge House Backyard": [
+    {
+      "from": "Cerulean City-Badge House Backyard",
+      "to": "Cerulean Badge House",
+      "coordinates": {
+        "x": 4376,
+        "y": 1512
+      }
+    }
+  ],
+  "Cerulean City-Cave": [
+    {
+      "from": "Cerulean City-Cave",
+      "to": "Cerulean Cave 1F-SE",
+      "coordinates": {
+        "x": 4296,
+        "y": 1544
+      }
+    }
+  ],
+  "Cerulean City-Outskirts": [
+    {
+      "from": "Cerulean City-Outskirts",
+      "to": "Cerulean Trashed House",
+      "coordinates": {
+        "x": 4664,
+        "y": 1512
+      }
+    }
+  ],
+  "Cerulean City-T": [
+    {
+      "from": "Cerulean City-T",
+      "to": "Cerulean Trashed House",
+      "coordinates": {
+        "x": 4664,
+        "y": 1544
+      }
+    }
+  ],
+  "Cerulean City-Water": [],
+  "Cerulean Gym": [
+    {
+      "from": "Cerulean Gym",
+      "to": "Cerulean City",
+      "coordinates": {
+        "x": 4968,
+        "y": 2024
+      }
+    }
+  ],
+  "Cerulean Pokemart": [
+    {
+      "from": "Cerulean Pokemart",
+      "to": "Cerulean City",
+      "coordinates": {
+        "x": 4792,
+        "y": 2088
+      }
+    }
+  ],
+  "Cerulean Pokemon Center": [
+    {
+      "from": "Cerulean Pokemon Center",
+      "to": "Cerulean City",
+      "coordinates": {
+        "x": 4952,
+        "y": 1448
+      }
+    }
+  ],
+  "Cerulean Trade House": [
+    {
+      "from": "Cerulean Trade House",
+      "to": "Cerulean City",
+      "coordinates": {
+        "x": 4280,
+        "y": 1304
+      }
+    }
+  ],
+  "Cerulean Trashed House": [
+    {
+      "from": "Cerulean Trashed House",
+      "to": "Cerulean City-T",
+      "coordinates": {
+        "x": 4776,
+        "y": 1320
+      }
+    },
+    {
+      "from": "Cerulean Trashed House",
+      "to": "Cerulean City-Outskirts",
+      "coordinates": {
+        "x": 4792,
+        "y": 1208
+      }
+    }
+  ],
+  "Cinnabar Gym": [
+    {
+      "from": "Cinnabar Gym",
+      "to": "Cinnabar Island-G",
+      "coordinates": {
+        "x": 2120,
+        "y": 6216
+      }
+    }
+  ],
+  "Cinnabar Island": [
+    {
+      "from": "Cinnabar Island",
+      "to": "Cinnabar Lab",
+      "coordinates": {
+        "x": 1608,
+        "y": 6408
+      }
+    },
+    {
+      "from": "Cinnabar Island",
+      "to": "Cinnabar Pokemon Center",
+      "coordinates": {
+        "x": 1688,
+        "y": 6440
+      }
+    },
+    {
+      "from": "Cinnabar Island",
+      "to": "Cinnabar Pokemart",
+      "coordinates": {
+        "x": 1752,
+        "y": 6440
+      }
+    }
+  ],
+  "Cinnabar Island-G": [
+    {
+      "from": "Cinnabar Island-G",
+      "to": "Cinnabar Gym",
+      "coordinates": {
+        "x": 1800,
+        "y": 6312
+      }
+    }
+  ],
+  "Cinnabar Island-M": [
+    {
+      "from": "Cinnabar Island-M",
+      "to": "Pokemon Mansion 1F",
+      "coordinates": {
+        "x": 1608,
+        "y": 6312
+      }
+    }
+  ],
+  "Cinnabar Lab": [
+    {
+      "from": "Cinnabar Lab",
+      "to": "Cinnabar Island",
+      "coordinates": {
+        "x": 1208,
+        "y": 6696
+      }
+    },
+    {
+      "from": "Cinnabar Lab",
+      "to": "Cinnabar Lab Trade Room",
+      "coordinates": {
+        "x": 1288,
+        "y": 6648
+      }
+    },
+    {
+      "from": "Cinnabar Lab",
+      "to": "Cinnabar Lab R&D Room",
+      "coordinates": {
+        "x": 1352,
+        "y": 6648
+      }
+    },
+    {
+      "from": "Cinnabar Lab",
+      "to": "Cinnabar Lab Fossil Room",
+      "coordinates": {
+        "x": 1416,
+        "y": 6648
+      }
+    }
+  ],
+  "Cinnabar Lab Fossil Room": [
+    {
+      "from": "Cinnabar Lab Fossil Room",
+      "to": "Cinnabar Lab",
+      "coordinates": {
+        "x": 1544,
+        "y": 6856
+      }
+    }
+  ],
+  "Cinnabar Lab R&D Room": [
+    {
+      "from": "Cinnabar Lab R&D Room",
+      "to": "Cinnabar Lab",
+      "coordinates": {
+        "x": 1336,
+        "y": 6856
+      }
+    }
+  ],
+  "Cinnabar Lab Trade Room": [
+    {
+      "from": "Cinnabar Lab Trade Room",
+      "to": "Cinnabar Lab",
+      "coordinates": {
+        "x": 1144,
+        "y": 6856
+      }
+    }
+  ],
+  "Cinnabar Pokemart": [
+    {
+      "from": "Cinnabar Pokemart",
+      "to": "Cinnabar Island",
+      "coordinates": {
+        "x": 1816,
+        "y": 6696
+      }
+    }
+  ],
+  "Cinnabar Pokemon Center": [
+    {
+      "from": "Cinnabar Pokemon Center",
+      "to": "Cinnabar Island",
+      "coordinates": {
+        "x": 1576,
+        "y": 6696
+      }
+    }
+  ],
+  "Daycare": [
+    {
+      "from": "Daycare",
+      "to": "Route 5",
+      "coordinates": {
+        "x": 4280,
+        "y": 2280
+      }
+    }
+  ],
+  "Diglett's Cave": [
+    {
+      "from": "Diglett's Cave",
+      "to": "Diglett's Cave Route 2",
+      "coordinates": {
+        "x": 4280,
+        "y": 4360
+      }
+    },
+    {
+      "from": "Diglett's Cave",
+      "to": "Diglett's Cave Route 11",
+      "coordinates": {
+        "x": 4792,
+        "y": 4776
+      }
+    }
+  ],
+  "Diglett's Cave Route 11": [
+    {
+      "from": "Diglett's Cave Route 11",
+      "to": "Route 11",
+      "coordinates": {
+        "x": 4936,
+        "y": 3752
+      }
+    },
+    {
+      "from": "Diglett's Cave Route 11",
+      "to": "Diglett's Cave",
+      "coordinates": {
+        "x": 4968,
+        "y": 3704
+      }
+    }
+  ],
+  "Diglett's Cave Route 2": [
+    {
+      "from": "Diglett's Cave Route 2",
+      "to": "Route 2-NE",
+      "coordinates": {
+        "x": 1896,
+        "y": 2344
+      }
+    },
+    {
+      "from": "Diglett's Cave Route 2",
+      "to": "Diglett's Cave",
+      "coordinates": {
+        "x": 1928,
+        "y": 2296
+      }
+    }
+  ],
+  "Evolution": [],
+  "Fossil": [],
+  "Fossil Level": [],
+  "Fuchsia Bill's Grandpa's House": [
+    {
+      "from": "Fuchsia Bill's Grandpa's House",
+      "to": "Fuchsia City",
+      "coordinates": {
+        "x": 3320,
+        "y": 5832
+      }
+    }
+  ],
+  "Fuchsia City": [
+    {
+      "from": "Fuchsia City",
+      "to": "Fuchsia Pokemart",
+      "coordinates": {
+        "x": 3352,
+        "y": 5320
+      }
+    },
+    {
+      "from": "Fuchsia City",
+      "to": "Fuchsia Bill's Grandpa's House",
+      "coordinates": {
+        "x": 3448,
+        "y": 5544
+      }
+    },
+    {
+      "from": "Fuchsia City",
+      "to": "Fuchsia Pokemon Center",
+      "coordinates": {
+        "x": 3576,
+        "y": 5544
+      }
+    },
+    {
+      "from": "Fuchsia City",
+      "to": "Fuchsia Warden's House",
+      "coordinates": {
+        "x": 3704,
+        "y": 5544
+      }
+    },
+    {
+      "from": "Fuchsia City",
+      "to": "Safari Zone Gate-S",
+      "coordinates": {
+        "x": 3560,
+        "y": 5160
+      }
+    },
+    {
+      "from": "Fuchsia City",
+      "to": "Fuchsia Gym",
+      "coordinates": {
+        "x": 3352,
+        "y": 5544
+      }
+    },
+    {
+      "from": "Fuchsia City",
+      "to": "Fuchsia Meeting Room",
+      "coordinates": {
+        "x": 3624,
+        "y": 5320
+      }
+    },
+    {
+      "from": "Fuchsia City",
+      "to": "Fuchsia Good Rod House",
+      "coordinates": {
+        "x": 3768,
+        "y": 5544
+      }
+    }
+  ],
+  "Fuchsia City-Good Rod House Backyard": [
+    {
+      "from": "Fuchsia City-Good Rod House Backyard",
+      "to": "Fuchsia Good Rod House",
+      "coordinates": {
+        "x": 3768,
+        "y": 5496
+      }
+    }
+  ],
   "Fuchsia Fishing": [],
-  "Safari Zone West": [
-    { "from": "Safari Zone West", "to": "Safari Zone North" },
-    { "from": "Safari Zone West", "to": "Safari Zone Center-NW" },
-    { "from": "Safari Zone West", "to": "Safari Zone West Rest House" }
+  "Fuchsia Good Rod House": [
+    {
+      "from": "Fuchsia Good Rod House",
+      "to": "Fuchsia City-Good Rod House Backyard",
+      "coordinates": {
+        "x": 4168,
+        "y": 5560
+      }
+    },
+    {
+      "from": "Fuchsia Good Rod House",
+      "to": "Fuchsia City",
+      "coordinates": {
+        "x": 4168,
+        "y": 5672
+      }
+    }
   ],
-  "Safari Zone West-NW": [
-    { "from": "Safari Zone West-NW", "to": "Safari Zone North" },
-    { "from": "Safari Zone West-NW", "to": "Safari Zone Secret House" }
+  "Fuchsia Gym": [
+    {
+      "from": "Fuchsia Gym",
+      "to": "Fuchsia City",
+      "coordinates": {
+        "x": 3160,
+        "y": 5832
+      }
+    }
   ],
-  "Safari Zone West-Wild": [],
-  "Safari Zone Secret House": [{ "from": "Safari Zone Secret House", "to": "Safari Zone West-NW" }],
-  "Route 22": [{ "from": "Route 22", "to": "Route 22 Gate-S" }],
-  "Route 22-F": [],
-  "Route 20-IW": [{ "from": "Route 20-IW", "to": "Seafoam Islands 1F-SE" }],
-  "Route 20-IE": [{ "from": "Route 20-IE", "to": "Seafoam Islands 1F" }],
-  "Route 20-E": [],
-  "Route 20-W": [],
-  "Route 19/20-Water": [],
-  "Route 23-S": [{ "from": "Route 23-S", "to": "Route 22 Gate-N" }],
-  "Route 23-C": [{ "from": "Route 23-C", "to": "Victory Road 1F-S" }],
-  "Route 23-N": [{ "from": "Route 23-N", "to": "Victory Road 2F-E" }],
-  "Route 23-Grass": [],
-  "Route 24": [],
-  "Route 25": [{ "from": "Route 25", "to": "Bill's House" }],
-  "Indigo Plateau": [{ "from": "Indigo Plateau", "to": "Indigo Plateau Lobby" }],
-  "Saffron City": [
-    { "from": "Saffron City", "to": "Saffron Fighting Dojo" },
-    { "from": "Saffron City", "to": "Saffron Pokemart" },
-    { "from": "Saffron City", "to": "Saffron Pokemon Center" },
-    { "from": "Saffron City", "to": "Saffron Mr. Psychic's House" }
+  "Fuchsia Meeting Room": [
+    {
+      "from": "Fuchsia Meeting Room",
+      "to": "Fuchsia City",
+      "coordinates": {
+        "x": 3624,
+        "y": 5064
+      }
+    }
   ],
-  "Saffron City-Pidgey": [{ "from": "Saffron City-Pidgey", "to": "Saffron Pidgey House" }],
-  "Saffron City-Copycat": [{ "from": "Saffron City-Copycat", "to": "Saffron Copycat's House 1F" }],
-  "Saffron City-G": [{ "from": "Saffron City-G", "to": "Saffron Gym-S" }],
-  "Saffron City-Silph": [{ "from": "Saffron City-Silph", "to": "Silph Co 1F" }],
-  "Victory Road 2F-E": [
-    { "from": "Victory Road 2F-E", "to": "Route 23-N" },
-    { "from": "Victory Road 2F-E", "to": "Victory Road 3F-SE" }
+  "Fuchsia Pokemart": [
+    {
+      "from": "Fuchsia Pokemart",
+      "to": "Fuchsia City",
+      "coordinates": {
+        "x": 3352,
+        "y": 5064
+      }
+    }
   ],
-  "Victory Road 2F-W": [{ "from": "Victory Road 2F-W", "to": "Victory Road 1F" }],
-  "Victory Road 2F-NW": [{ "from": "Victory Road 2F-NW", "to": "Victory Road 3F" }],
-  "Victory Road 2F-C": [{ "from": "Victory Road 2F-C", "to": "Victory Road 3F" }],
-  "Victory Road 2F-SE": [{ "from": "Victory Road 2F-SE", "to": "Victory Road 3F-SE" }],
-  "Victory Road 2F-Wild": [],
-  "Mt Moon B1F-W": [
-    { "from": "Mt Moon B1F-W", "to": "Mt Moon 1F" },
-    { "from": "Mt Moon B1F-W", "to": "Mt Moon B2F" }
+  "Fuchsia Pokemon Center": [
+    {
+      "from": "Fuchsia Pokemon Center",
+      "to": "Fuchsia City",
+      "coordinates": {
+        "x": 3832,
+        "y": 5832
+      }
+    }
+  ],
+  "Fuchsia Warden's House": [
+    {
+      "from": "Fuchsia Warden's House",
+      "to": "Fuchsia City",
+      "coordinates": {
+        "x": 4008,
+        "y": 5672
+      }
+    }
+  ],
+  "Good Rod Fishing": [],
+  "Indigo Plateau": [
+    {
+      "from": "Indigo Plateau",
+      "to": "Indigo Plateau Lobby",
+      "coordinates": {
+        "x": 856,
+        "y": 1000
+      }
+    }
+  ],
+  "Indigo Plateau Agatha's Room": [
+    {
+      "from": "Indigo Plateau Agatha's Room",
+      "to": "Indigo Plateau Bruno's Room",
+      "coordinates": {
+        "x": 872,
+        "y": 200
+      }
+    },
+    {
+      "from": "Indigo Plateau Agatha's Room",
+      "to": "Indigo Plateau Lance's Room",
+      "coordinates": {
+        "x": 872,
+        "y": 24
+      }
+    }
+  ],
+  "Indigo Plateau Bruno's Room": [
+    {
+      "from": "Indigo Plateau Bruno's Room",
+      "to": "Indigo Plateau Lorelei's Room",
+      "coordinates": {
+        "x": 872,
+        "y": 424
+      }
+    },
+    {
+      "from": "Indigo Plateau Bruno's Room",
+      "to": "Indigo Plateau Agatha's Room",
+      "coordinates": {
+        "x": 872,
+        "y": 248
+      }
+    }
+  ],
+  "Indigo Plateau Champion's Room": [
+    {
+      "from": "Indigo Plateau Champion's Room",
+      "to": "Indigo Plateau Lance's Room",
+      "coordinates": {
+        "x": 376,
+        "y": 296
+      }
+    },
+    {
+      "from": "Indigo Plateau Champion's Room",
+      "to": "Indigo Plateau Hall of Fame",
+      "coordinates": {
+        "x": 376,
+        "y": 184
+      }
+    }
+  ],
+  "Indigo Plateau Hall of Fame": [
+    {
+      "from": "Indigo Plateau Hall of Fame",
+      "to": "Indigo Plateau Champion's Room",
+      "coordinates": {
+        "x": 376,
+        "y": 136
+      }
+    }
+  ],
+  "Indigo Plateau Lance's Room": [
+    {
+      "from": "Indigo Plateau Lance's Room",
+      "to": "Indigo Plateau Agatha's Room",
+      "coordinates": {
+        "x": 680,
+        "y": 600
+      }
+    },
+    {
+      "from": "Indigo Plateau Lance's Room",
+      "to": "Indigo Plateau Champion's Room",
+      "coordinates": {
+        "x": 376,
+        "y": 344
+      }
+    }
+  ],
+  "Indigo Plateau Lobby": [
+    {
+      "from": "Indigo Plateau Lobby",
+      "to": "Indigo Plateau",
+      "coordinates": {
+        "x": 856,
+        "y": 872
+      }
+    }
+  ],
+  "Indigo Plateau Lobby-N": [
+    {
+      "from": "Indigo Plateau Lobby-N",
+      "to": "Indigo Plateau Lorelei's Room",
+      "coordinates": {
+        "x": 872,
+        "y": 696
+      }
+    }
+  ],
+  "Indigo Plateau Lorelei's Room": [
+    {
+      "from": "Indigo Plateau Lorelei's Room",
+      "to": "Indigo Plateau Lobby-N",
+      "coordinates": {
+        "x": 872,
+        "y": 648
+      }
+    },
+    {
+      "from": "Indigo Plateau Lorelei's Room",
+      "to": "Indigo Plateau Bruno's Room",
+      "coordinates": {
+        "x": 872,
+        "y": 472
+      }
+    }
+  ],
+  "Lavender Cubone House": [
+    {
+      "from": "Lavender Cubone House",
+      "to": "Lavender Town",
+      "coordinates": {
+        "x": 5720,
+        "y": 3080
+      }
+    }
+  ],
+  "Lavender Mr. Fuji's House": [
+    {
+      "from": "Lavender Mr. Fuji's House",
+      "to": "Lavender Town",
+      "coordinates": {
+        "x": 6216,
+        "y": 3048
+      }
+    }
+  ],
+  "Lavender Name Rater's House": [
+    {
+      "from": "Lavender Name Rater's House",
+      "to": "Lavender Town",
+      "coordinates": {
+        "x": 5720,
+        "y": 3240
+      }
+    }
+  ],
+  "Lavender Pokemart": [
+    {
+      "from": "Lavender Pokemart",
+      "to": "Lavender Town",
+      "coordinates": {
+        "x": 6232,
+        "y": 2888
+      }
+    }
+  ],
+  "Lavender Pokemon Center": [
+    {
+      "from": "Lavender Pokemon Center",
+      "to": "Lavender Town",
+      "coordinates": {
+        "x": 5640,
+        "y": 2600
+      }
+    }
+  ],
+  "Lavender Town": [
+    {
+      "from": "Lavender Town",
+      "to": "Lavender Pokemon Center",
+      "coordinates": {
+        "x": 5880,
+        "y": 2728
+      }
+    },
+    {
+      "from": "Lavender Town",
+      "to": "Pokemon Tower 1F",
+      "coordinates": {
+        "x": 6056,
+        "y": 2728
+      }
+    },
+    {
+      "from": "Lavender Town",
+      "to": "Lavender Mr. Fuji's House",
+      "coordinates": {
+        "x": 5944,
+        "y": 2792
+      }
+    },
+    {
+      "from": "Lavender Town",
+      "to": "Lavender Pokemart",
+      "coordinates": {
+        "x": 6072,
+        "y": 2856
+      }
+    },
+    {
+      "from": "Lavender Town",
+      "to": "Lavender Cubone House",
+      "coordinates": {
+        "x": 5880,
+        "y": 2856
+      }
+    },
+    {
+      "from": "Lavender Town",
+      "to": "Lavender Name Rater's House",
+      "coordinates": {
+        "x": 5944,
+        "y": 2856
+      }
+    }
+  ],
+  "Menu": [],
+  "Mt Moon 1F": [
+    {
+      "from": "Mt Moon 1F",
+      "to": "Route 4-W",
+      "coordinates": {
+        "x": 3080,
+        "y": 1448
+      }
+    },
+    {
+      "from": "Mt Moon 1F",
+      "to": "Mt Moon B1F-W",
+      "coordinates": {
+        "x": 2936,
+        "y": 968
+      }
+    },
+    {
+      "from": "Mt Moon 1F",
+      "to": "Mt Moon B1F-C",
+      "coordinates": {
+        "x": 3128,
+        "y": 1064
+      }
+    },
+    {
+      "from": "Mt Moon 1F",
+      "to": "Mt Moon B1F-SE",
+      "coordinates": {
+        "x": 3256,
+        "y": 1128
+      }
+    }
   ],
   "Mt Moon B1F-C": [
-    { "from": "Mt Moon B1F-C", "to": "Mt Moon B2F-NE" },
-    { "from": "Mt Moon B1F-C", "to": "Mt Moon 1F" }
+    {
+      "from": "Mt Moon B1F-C",
+      "to": "Mt Moon B2F-NE",
+      "coordinates": {
+        "x": 2648,
+        "y": 1064
+      }
+    },
+    {
+      "from": "Mt Moon B1F-C",
+      "to": "Mt Moon 1F",
+      "coordinates": {
+        "x": 2776,
+        "y": 1032
+      }
+    }
   ],
   "Mt Moon B1F-NE": [
-    { "from": "Mt Moon B1F-NE", "to": "Mt Moon B2F" },
-    { "from": "Mt Moon B1F-NE", "to": "Route 4-C" }
+    {
+      "from": "Mt Moon B1F-NE",
+      "to": "Mt Moon B2F",
+      "coordinates": {
+        "x": 2744,
+        "y": 936
+      }
+    },
+    {
+      "from": "Mt Moon B1F-NE",
+      "to": "Route 4-C",
+      "coordinates": {
+        "x": 2808,
+        "y": 936
+      }
+    }
   ],
   "Mt Moon B1F-SE": [
-    { "from": "Mt Moon B1F-SE", "to": "Mt Moon 1F" },
-    { "from": "Mt Moon B1F-SE", "to": "Mt Moon B2F-C" }
+    {
+      "from": "Mt Moon B1F-SE",
+      "to": "Mt Moon 1F",
+      "coordinates": {
+        "x": 2776,
+        "y": 1128
+      }
+    },
+    {
+      "from": "Mt Moon B1F-SE",
+      "to": "Mt Moon B2F-C",
+      "coordinates": {
+        "x": 2584,
+        "y": 1320
+      }
+    }
+  ],
+  "Mt Moon B1F-W": [
+    {
+      "from": "Mt Moon B1F-W",
+      "to": "Mt Moon 1F",
+      "coordinates": {
+        "x": 2456,
+        "y": 968
+      }
+    },
+    {
+      "from": "Mt Moon B1F-W",
+      "to": "Mt Moon B2F",
+      "coordinates": {
+        "x": 2712,
+        "y": 1160
+      }
+    }
   ],
   "Mt Moon B1F-Wild": [],
-  "Silph Co 7F": [
-    { "from": "Silph Co 7F", "to": "Silph Co 8F" },
-    { "from": "Silph Co 7F", "to": "Silph Co 6F" },
-    { "from": "Silph Co 7F", "to": "Silph Co Elevator-7F" }
+  "Mt Moon B2F": [
+    {
+      "from": "Mt Moon B2F",
+      "to": "Mt Moon B1F-W",
+      "coordinates": {
+        "x": 2040,
+        "y": 1160
+      }
+    },
+    {
+      "from": "Mt Moon B2F",
+      "to": "Mt Moon B1F-NE",
+      "coordinates": {
+        "x": 1784,
+        "y": 1000
+      }
+    }
   ],
-  "Silph Co 7F-NW": [
-    { "from": "Silph Co 7F-NW", "to": "Silph Co 3F-C" },
-    { "from": "Silph Co 7F-NW", "to": "Silph Co 11F-W" }
+  "Mt Moon B2F-C": [
+    {
+      "from": "Mt Moon B2F-C",
+      "to": "Mt Moon B1F-SE",
+      "coordinates": {
+        "x": 1944,
+        "y": 1320
+      }
+    }
   ],
-  "Silph Co 7F-SE": [{ "from": "Silph Co 7F-SE", "to": "Silph Co 5F" }],
-  "Silph Co 7F-E": [],
-  "Silph Co 11F-C": [],
-  "Route 2-NW": [{ "from": "Route 2-NW", "to": "Viridian Forest North Gate" }],
-  "Route 2-SW": [{ "from": "Route 2-SW", "to": "Viridian Forest South Gate" }],
-  "Route 2-NE": [
-    { "from": "Route 2-NE", "to": "Diglett's Cave Route 2" },
-    { "from": "Route 2-NE", "to": "Route 2 Trade House" }
+  "Mt Moon B2F-NE": [
+    {
+      "from": "Mt Moon B2F-NE",
+      "to": "Mt Moon B1F-C",
+      "coordinates": {
+        "x": 2104,
+        "y": 1032
+      }
+    }
   ],
-  "Route 2-E": [{ "from": "Route 2-E", "to": "Route 2 Gate" }],
-  "Route 2-SE": [{ "from": "Route 2-SE", "to": "Route 2 Gate" }],
-  "Route 2-Grass": [],
-  "Route 3": [],
-  "Route 4-W": [
-    { "from": "Route 4-W", "to": "Route 4 Pokemon Center" },
-    { "from": "Route 4-W", "to": "Mt Moon 1F" }
+  "Mt Moon B2F-Wild": [],
+  "Oak's Lab": [
+    {
+      "from": "Oak's Lab",
+      "to": "Pallet Town",
+      "coordinates": {
+        "x": 1928,
+        "y": 4840
+      }
+    }
   ],
-  "Route 4-C": [{ "from": "Route 4-C", "to": "Mt Moon B1F-NE" }],
-  "Route 4-Lass": [],
-  "Route 4-E": [],
-  "Route 5": [
-    { "from": "Route 5", "to": "Route 5 Gate-N" },
-    { "from": "Route 5", "to": "Underground Path Route 5" },
-    { "from": "Route 5", "to": "Daycare" }
+  "Old Rod Fishing": [],
+  "Pallet Town": [
+    {
+      "from": "Pallet Town",
+      "to": "Player's House 1F",
+      "coordinates": {
+        "x": 1592,
+        "y": 4616
+      }
+    },
+    {
+      "from": "Pallet Town",
+      "to": "Rival's House",
+      "coordinates": {
+        "x": 1720,
+        "y": 4616
+      }
+    },
+    {
+      "from": "Pallet Town",
+      "to": "Oak's Lab",
+      "coordinates": {
+        "x": 1704,
+        "y": 4712
+      }
+    }
   ],
-  "Route 9": [],
-  "Route 5-S": [{ "from": "Route 5-S", "to": "Route 5 Gate-S" }],
+  "Pallet/Viridian Fishing": [],
+  "Pewter City": [
+    {
+      "from": "Pewter City",
+      "to": "Pewter Museum 1F",
+      "coordinates": {
+        "x": 1576,
+        "y": 1768
+      }
+    },
+    {
+      "from": "Pewter City",
+      "to": "Pewter Gym",
+      "coordinates": {
+        "x": 1608,
+        "y": 1928
+      }
+    },
+    {
+      "from": "Pewter City",
+      "to": "Pewter Nidoran House",
+      "coordinates": {
+        "x": 1816,
+        "y": 1864
+      }
+    },
+    {
+      "from": "Pewter City",
+      "to": "Pewter Pokemart",
+      "coordinates": {
+        "x": 1720,
+        "y": 1928
+      }
+    },
+    {
+      "from": "Pewter City",
+      "to": "Pewter Speech House",
+      "coordinates": {
+        "x": 1464,
+        "y": 2120
+      }
+    },
+    {
+      "from": "Pewter City",
+      "to": "Pewter Pokemon Center",
+      "coordinates": {
+        "x": 1560,
+        "y": 2056
+      }
+    }
+  ],
+  "Pewter City-E": [],
+  "Pewter City-M": [
+    {
+      "from": "Pewter City-M",
+      "to": "Pewter Museum 1F-E",
+      "coordinates": {
+        "x": 1656,
+        "y": 1736
+      }
+    }
+  ],
+  "Pewter Gym": [
+    {
+      "from": "Pewter Gym",
+      "to": "Pewter City",
+      "coordinates": {
+        "x": 1240,
+        "y": 1928
+      }
+    }
+  ],
+  "Pewter Museum 1F": [
+    {
+      "from": "Pewter Museum 1F",
+      "to": "Pewter City",
+      "coordinates": {
+        "x": 1576,
+        "y": 1608
+      }
+    },
+    {
+      "from": "Pewter Museum 1F",
+      "to": "Pewter Museum 2F",
+      "coordinates": {
+        "x": 1528,
+        "y": 1608
+      }
+    }
+  ],
+  "Pewter Museum 1F-E": [
+    {
+      "from": "Pewter Museum 1F-E",
+      "to": "Pewter City-M",
+      "coordinates": {
+        "x": 1672,
+        "y": 1608
+      }
+    }
+  ],
+  "Pewter Museum 2F": [
+    {
+      "from": "Pewter Museum 2F",
+      "to": "Pewter Museum 1F",
+      "coordinates": {
+        "x": 1528,
+        "y": 1448
+      }
+    }
+  ],
+  "Pewter Nidoran House": [
+    {
+      "from": "Pewter Nidoran House",
+      "to": "Pewter City",
+      "coordinates": {
+        "x": 1960,
+        "y": 1608
+      }
+    }
+  ],
+  "Pewter Pokemart": [
+    {
+      "from": "Pewter Pokemart",
+      "to": "Pewter City",
+      "coordinates": {
+        "x": 1816,
+        "y": 1608
+      }
+    }
+  ],
+  "Pewter Pokemon Center": [
+    {
+      "from": "Pewter Pokemon Center",
+      "to": "Pewter City",
+      "coordinates": {
+        "x": 1320,
+        "y": 2376
+      }
+    }
+  ],
+  "Pewter Speech House": [
+    {
+      "from": "Pewter Speech House",
+      "to": "Pewter City",
+      "coordinates": {
+        "x": 1240,
+        "y": 2120
+      }
+    }
+  ],
+  "Player's House 1F": [
+    {
+      "from": "Player's House 1F",
+      "to": "Pallet Town",
+      "coordinates": {
+        "x": 1400,
+        "y": 4616
+      }
+    },
+    {
+      "from": "Player's House 1F",
+      "to": "Player's House 2F",
+      "coordinates": {
+        "x": 1464,
+        "y": 4520
+      }
+    }
+  ],
+  "Player's House 2F": [
+    {
+      "from": "Player's House 2F",
+      "to": "Player's House 1F",
+      "coordinates": {
+        "x": 1304,
+        "y": 4520
+      }
+    }
+  ],
+  "Pokedex": [],
+  "Pokemon Mansion 1F": [
+    {
+      "from": "Pokemon Mansion 1F",
+      "to": "Pokemon Mansion 2F",
+      "coordinates": {
+        "x": 1080,
+        "y": 6200
+      }
+    },
+    {
+      "from": "Pokemon Mansion 1F",
+      "to": "Cinnabar Island-M",
+      "coordinates": {
+        "x": 1112,
+        "y": 6472
+      }
+    }
+  ],
+  "Pokemon Mansion 1F-SE": [
+    {
+      "from": "Pokemon Mansion 1F-SE",
+      "to": "Pokemon Mansion B1F",
+      "coordinates": {
+        "x": 1336,
+        "y": 6408
+      }
+    },
+    {
+      "from": "Pokemon Mansion 1F-SE to Cinnabar Island-M",
+      "to": "Cinnabar Island-M",
+      "coordinates": {
+        "x": 1432,
+        "y": 6472
+      }
+    }
+  ],
+  "Pokemon Mansion 1F-Wild": [],
+  "Pokemon Mansion 2F": [
+    {
+      "from": "Pokemon Mansion 2F",
+      "to": "Pokemon Mansion 1F",
+      "coordinates": {
+        "x": 1080,
+        "y": 5720
+      }
+    },
+    {
+      "from": "Pokemon Mansion 2F",
+      "to": "Pokemon Mansion 3F-SW",
+      "coordinates": {
+        "x": 1112,
+        "y": 5720
+      }
+    },
+    {
+      "from": "Pokemon Mansion 2F",
+      "to": "Pokemon Mansion 3F",
+      "coordinates": {
+        "x": 1096,
+        "y": 5576
+      }
+    }
+  ],
+  "Pokemon Mansion 2F-E": [
+    {
+      "from": "Pokemon Mansion 2F-E",
+      "to": "Pokemon Mansion 3F-SE",
+      "coordinates": {
+        "x": 1400,
+        "y": 5784
+      }
+    }
+  ],
+  "Pokemon Mansion 2F-Wild": [],
+  "Pokemon Mansion 3F": [
+    {
+      "from": "Pokemon Mansion 3F",
+      "to": "Pokemon Mansion 2F",
+      "coordinates": {
+        "x": 1096,
+        "y": 5256
+      }
+    }
+  ],
+  "Pokemon Mansion 3F-SE": [
+    {
+      "from": "Pokemon Mansion 3F-SE",
+      "to": "Pokemon Mansion 2F-E",
+      "coordinates": {
+        "x": 1400,
+        "y": 5464
+      }
+    }
+  ],
+  "Pokemon Mansion 3F-SW": [
+    {
+      "from": "Pokemon Mansion 3F-SW",
+      "to": "Pokemon Mansion 2F",
+      "coordinates": {
+        "x": 1112,
+        "y": 5400
+      }
+    }
+  ],
+  "Pokemon Mansion 3F-Wild": [],
+  "Pokemon Mansion B1F": [
+    {
+      "from": "Pokemon Mansion B1F",
+      "to": "Pokemon Mansion 1F-SE",
+      "coordinates": {
+        "x": 856,
+        "y": 6392
+      }
+    }
+  ],
+  "Pokemon Tower 1F": [
+    {
+      "from": "Pokemon Tower 1F",
+      "to": "Lavender Town",
+      "coordinates": {
+        "x": 6344,
+        "y": 2728
+      }
+    },
+    {
+      "from": "Pokemon Tower 1F",
+      "to": "Pokemon Tower 2F",
+      "coordinates": {
+        "x": 6472,
+        "y": 2600
+      }
+    }
+  ],
+  "Pokemon Tower 2F": [
+    {
+      "from": "Pokemon Tower 2F",
+      "to": "Pokemon Tower 3F",
+      "coordinates": {
+        "x": 6584,
+        "y": 2600
+      }
+    },
+    {
+      "from": "Pokemon Tower 2F",
+      "to": "Pokemon Tower 1F",
+      "coordinates": {
+        "x": 6824,
+        "y": 2600
+      }
+    }
+  ],
+  "Pokemon Tower 3F": [
+    {
+      "from": "Pokemon Tower 3F",
+      "to": "Pokemon Tower 2F",
+      "coordinates": {
+        "x": 6584,
+        "y": 2920
+      }
+    },
+    {
+      "from": "Pokemon Tower 3F",
+      "to": "Pokemon Tower 4F",
+      "coordinates": {
+        "x": 6824,
+        "y": 2920
+      }
+    }
+  ],
+  "Pokemon Tower 4F": [
+    {
+      "from": "Pokemon Tower 4F",
+      "to": "Pokemon Tower 5F",
+      "coordinates": {
+        "x": 6584,
+        "y": 3240
+      }
+    },
+    {
+      "from": "Pokemon Tower 4F",
+      "to": "Pokemon Tower 3F",
+      "coordinates": {
+        "x": 6824,
+        "y": 3240
+      }
+    }
+  ],
+  "Pokemon Tower 5F": [
+    {
+      "from": "Pokemon Tower 5F",
+      "to": "Pokemon Tower 4F",
+      "coordinates": {
+        "x": 6584,
+        "y": 3560
+      }
+    },
+    {
+      "from": "Pokemon Tower 5F",
+      "to": "Pokemon Tower 6F",
+      "coordinates": {
+        "x": 6824,
+        "y": 3560
+      }
+    }
+  ],
+  "Pokemon Tower 6F": [
+    {
+      "from": "Pokemon Tower 6F",
+      "to": "Pokemon Tower 5F",
+      "coordinates": {
+        "x": 6824,
+        "y": 3880
+      }
+    }
+  ],
+  "Pokemon Tower 6F-S": [
+    {
+      "from": "Pokemon Tower 6F-S",
+      "to": "Pokemon Tower 7F",
+      "coordinates": {
+        "x": 6680,
+        "y": 3992
+      }
+    }
+  ],
+  "Pokemon Tower 7F": [
+    {
+      "from": "Pokemon Tower 7F",
+      "to": "Pokemon Tower 6F-S",
+      "coordinates": {
+        "x": 6680,
+        "y": 4312
+      }
+    }
+  ],
+  "Power Plant": [
+    {
+      "from": "Power Plant",
+      "to": "Route 10-P",
+      "coordinates": {
+        "x": 5784,
+        "y": 1448
+      }
+    },
+    {
+      "from": "Power Plant to Route 10-P Back Door",
+      "to": "Route 10-P",
+      "coordinates": {
+        "x": 5704,
+        "y": 1064
+      }
+    }
+  ],
+  "Rival's House": [
+    {
+      "from": "Rival's House",
+      "to": "Pallet Town",
+      "coordinates": {
+        "x": 1896,
+        "y": 4616
+      }
+    }
+  ],
+  "Rock Tunnel 1F-NE": [],
+  "Rock Tunnel 1F-NE 1": [
+    {
+      "from": "Rock Tunnel 1F-NE 1",
+      "to": "Route 10-N",
+      "coordinates": {
+        "x": 6424,
+        "y": 1768
+      }
+    }
+  ],
+  "Rock Tunnel 1F-NE 2": [
+    {
+      "from": "Rock Tunnel 1F-NE 2",
+      "to": "Rock Tunnel B1F-E 1",
+      "coordinates": {
+        "x": 6776,
+        "y": 1768
+      }
+    }
+  ],
+  "Rock Tunnel 1F-NW": [],
+  "Rock Tunnel 1F-NW 1": [
+    {
+      "from": "Rock Tunnel 1F-NW 1",
+      "to": "Rock Tunnel B1F-E 2",
+      "coordinates": {
+        "x": 6264,
+        "y": 1768
+      }
+    }
+  ],
+  "Rock Tunnel 1F-NW 2": [
+    {
+      "from": "Rock Tunnel 1F-NW 2",
+      "to": "Rock Tunnel B1F-W 1",
+      "coordinates": {
+        "x": 6456,
+        "y": 1896
+      }
+    }
+  ],
+  "Rock Tunnel 1F-S": [],
+  "Rock Tunnel 1F-S 1": [
+    {
+      "from": "Rock Tunnel 1F-S 1",
+      "to": "Route 10-S",
+      "coordinates": {
+        "x": 6424,
+        "y": 2248
+      }
+    }
+  ],
+  "Rock Tunnel 1F-S 2": [
+    {
+      "from": "Rock Tunnel 1F-S 2",
+      "to": "Rock Tunnel B1F-W 2",
+      "coordinates": {
+        "x": 6776,
+        "y": 1992
+      }
+    }
+  ],
+  "Rock Tunnel 1F-Wild": [],
+  "Rock Tunnel B1F-E": [],
+  "Rock Tunnel B1F-E 1": [
+    {
+      "from": "Rock Tunnel B1F-E 1",
+      "to": "Rock Tunnel 1F-NE 2",
+      "coordinates": {
+        "x": 6904,
+        "y": 1512
+      }
+    }
+  ],
+  "Rock Tunnel B1F-E 2": [
+    {
+      "from": "Rock Tunnel B1F-E 2",
+      "to": "Rock Tunnel 1F-NW 1",
+      "coordinates": {
+        "x": 6808,
+        "y": 1160
+      }
+    }
+  ],
+  "Rock Tunnel B1F-W": [],
+  "Rock Tunnel B1F-W 1": [
+    {
+      "from": "Rock Tunnel B1F-W 1",
+      "to": "Rock Tunnel 1F-NW 2",
+      "coordinates": {
+        "x": 6744,
+        "y": 1288
+      }
+    }
+  ],
+  "Rock Tunnel B1F-W 2": [
+    {
+      "from": "Rock Tunnel B1F-W 2",
+      "to": "Rock Tunnel 1F-S 2",
+      "coordinates": {
+        "x": 6424,
+        "y": 1160
+      }
+    }
+  ],
+  "Rock Tunnel B1F-Wild": [],
+  "Rock Tunnel Pokemon Center": [
+    {
+      "from": "Rock Tunnel Pokemon Center",
+      "to": "Route 10-N",
+      "coordinates": {
+        "x": 5640,
+        "y": 1928
+      }
+    }
+  ],
+  "Rocket Hideout B1F": [
+    {
+      "from": "Rocket Hideout B1F",
+      "to": "Rocket Hideout B2F",
+      "coordinates": {
+        "x": 3192,
+        "y": 3640
+      }
+    },
+    {
+      "from": "Rocket Hideout B1F",
+      "to": "Celadon Game Corner-Hidden Stairs",
+      "coordinates": {
+        "x": 3160,
+        "y": 3640
+      }
+    }
+  ],
+  "Rocket Hideout B1F-S": [
+    {
+      "from": "Rocket Hideout B1F-S",
+      "to": "Rocket Hideout B2F",
+      "coordinates": {
+        "x": 3160,
+        "y": 3992
+      }
+    }
+  ],
+  "Rocket Hideout B1F-SE": [
+    {
+      "from": "Rocket Hideout B1F-SE",
+      "to": "Rocket Hideout Elevator-B1F",
+      "coordinates": {
+        "x": 3216,
+        "y": 3912
+      }
+    }
+  ],
+  "Rocket Hideout B2F": [
+    {
+      "from": "Rocket Hideout B2F",
+      "to": "Rocket Hideout B1F",
+      "coordinates": {
+        "x": 3768,
+        "y": 3736
+      }
+    },
+    {
+      "from": "Rocket Hideout B2F",
+      "to": "Rocket Hideout B3F",
+      "coordinates": {
+        "x": 3672,
+        "y": 3736
+      }
+    },
+    {
+      "from": "Rocket Hideout B2F",
+      "to": "Rocket Hideout Elevator-B2F",
+      "coordinates": {
+        "x": 3728,
+        "y": 3912
+      }
+    },
+    {
+      "from": "Rocket Hideout B2F",
+      "to": "Rocket Hideout B1F-S",
+      "coordinates": {
+        "x": 3672,
+        "y": 3960
+      }
+    }
+  ],
+  "Rocket Hideout B3F": [
+    {
+      "from": "Rocket Hideout B3F",
+      "to": "Rocket Hideout B2F",
+      "coordinates": {
+        "x": 3736,
+        "y": 4184
+      }
+    },
+    {
+      "from": "Rocket Hideout B3F",
+      "to": "Rocket Hideout B4F-NW",
+      "coordinates": {
+        "x": 3640,
+        "y": 4376
+      }
+    }
+  ],
+  "Rocket Hideout B4F": [
+    {
+      "from": "Rocket Hideout B4F",
+      "to": "Rocket Hideout Elevator-B4F",
+      "coordinates": {
+        "x": 3216,
+        "y": 4328
+      }
+    }
+  ],
+  "Rocket Hideout B4F-NW": [
+    {
+      "from": "Rocket Hideout B4F-NW",
+      "to": "Rocket Hideout B3F",
+      "coordinates": {
+        "x": 3128,
+        "y": 4248
+      }
+    }
+  ],
+  "Rocket Hideout Elevator": [],
+  "Rocket Hideout Elevator-B1F": [
+    {
+      "from": "Rocket Hideout Elevator-B1F",
+      "to": "Rocket Hideout B1F-SE",
+      "coordinates": {
+        "x": 3888,
+        "y": 3944
+      }
+    }
+  ],
+  "Rocket Hideout Elevator-B2F": [
+    {
+      "from": "Rocket Hideout Elevator-B2F",
+      "to": "Rocket Hideout B2F",
+      "coordinates": {
+        "x": 3888,
+        "y": 3944
+      }
+    }
+  ],
+  "Rocket Hideout Elevator-B4F": [
+    {
+      "from": "Rocket Hideout Elevator-B4F",
+      "to": "Rocket Hideout B4F",
+      "coordinates": {
+        "x": 3888,
+        "y": 3944
+      }
+    }
+  ],
+  "Route 1": [],
+  "Route 10-C": [],
+  "Route 10-N": [
+    {
+      "from": "Route 10-N",
+      "to": "Rock Tunnel Pokemon Center",
+      "coordinates": {
+        "x": 6008,
+        "y": 1800
+      }
+    },
+    {
+      "from": "Route 10-N",
+      "to": "Rock Tunnel 1F-NE 1",
+      "coordinates": {
+        "x": 5960,
+        "y": 1768
+      }
+    }
+  ],
+  "Route 10-P": [
+    {
+      "from": "Route 10-P",
+      "to": "Power Plant",
+      "coordinates": {
+        "x": 5928,
+        "y": 2120
+      }
+    }
+  ],
+  "Route 10-S": [
+    {
+      "from": "Route 10-S",
+      "to": "Rock Tunnel 1F-S 1",
+      "coordinates": {
+        "x": 5960,
+        "y": 2344
+      }
+    }
+  ],
+  "Route 10/Celadon Fishing": [],
+  "Route 11": [
+    {
+      "from": "Route 11",
+      "to": "Diglett's Cave Route 11",
+      "coordinates": {
+        "x": 4936,
+        "y": 3880
+      }
+    }
+  ],
+  "Route 11 Gate 1F": [
+    {
+      "from": "Route 11 Gate 1F",
+      "to": "Route 11-C",
+      "coordinates": {
+        "x": 5752,
+        "y": 4184
+      }
+    },
+    {
+      "from": "Route 11 Gate 1F",
+      "to": "Route 11-E",
+      "coordinates": {
+        "x": 5640,
+        "y": 4184
+      }
+    },
+    {
+      "from": "Route 11 Gate 1F",
+      "to": "Route 11 Gate 2F",
+      "coordinates": {
+        "x": 5736,
+        "y": 4248
+      }
+    }
+  ],
+  "Route 11 Gate 2F": [
+    {
+      "from": "Route 11 Gate 2F",
+      "to": "Route 11 Gate 1F",
+      "coordinates": {
+        "x": 5592,
+        "y": 4264
+      }
+    }
+  ],
+  "Route 11-C": [
+    {
+      "from": "Route 11-C",
+      "to": "Route 11 Gate 1F",
+      "coordinates": {
+        "x": 5800,
+        "y": 3944
+      }
+    }
+  ],
+  "Route 11-E": [
+    {
+      "from": "Route 11-E",
+      "to": "Route 11 Gate 1F",
+      "coordinates": {
+        "x": 5656,
+        "y": 3944
+      }
+    }
+  ],
+  "Route 12 Gate 1F": [
+    {
+      "from": "Route 12 Gate 1F",
+      "to": "Route 12-L",
+      "coordinates": {
+        "x": 6248,
+        "y": 3160
+      }
+    },
+    {
+      "from": "Route 12 Gate 1F",
+      "to": "Route 12-N",
+      "coordinates": {
+        "x": 6248,
+        "y": 3272
+      }
+    },
+    {
+      "from": "Route 12 Gate 1F",
+      "to": "Route 12 Gate 2F",
+      "coordinates": {
+        "x": 6312,
+        "y": 3256
+      }
+    }
+  ],
+  "Route 12 Gate 2F": [
+    {
+      "from": "Route 12 Gate 2F",
+      "to": "Route 12 Gate 1F",
+      "coordinates": {
+        "x": 6488,
+        "y": 3272
+      }
+    }
+  ],
+  "Route 12 Super Rod House": [
+    {
+      "from": "Route 12 Super Rod House",
+      "to": "Route 12-S",
+      "coordinates": {
+        "x": 6216,
+        "y": 4168
+      }
+    }
+  ],
+  "Route 12-Grass": [],
+  "Route 12-L": [
+    {
+      "from": "Route 12-L",
+      "to": "Route 12 Gate 1F",
+      "coordinates": {
+        "x": 6008,
+        "y": 3176
+      }
+    }
+  ],
+  "Route 12-N": [
+    {
+      "from": "Route 12-N",
+      "to": "Route 12 Gate 1F",
+      "coordinates": {
+        "x": 5992,
+        "y": 3272
+      }
+    }
+  ],
+  "Route 12-S": [
+    {
+      "from": "Route 12-S",
+      "to": "Route 12 Super Rod House",
+      "coordinates": {
+        "x": 6008,
+        "y": 4168
+      }
+    }
+  ],
+  "Route 12-W": [],
+  "Route 12/13/17/18 Fishing": [],
   "Route 13": [],
   "Route 13-E": [],
   "Route 13-Grass": [],
   "Route 14": [],
   "Route 14-Grass": [],
+  "Route 15": [
+    {
+      "from": "Route 15",
+      "to": "Route 15 Gate 1F",
+      "coordinates": {
+        "x": 4136,
+        "y": 5368
+      }
+    }
+  ],
+  "Route 15 Gate 1F": [
+    {
+      "from": "Route 15 Gate 1F",
+      "to": "Route 15-W",
+      "coordinates": {
+        "x": 4008,
+        "y": 5128
+      }
+    },
+    {
+      "from": "Route 15 Gate 1F",
+      "to": "Route 15",
+      "coordinates": {
+        "x": 4120,
+        "y": 5128
+      }
+    },
+    {
+      "from": "Route 15 Gate 1F",
+      "to": "Route 15 Gate 2F",
+      "coordinates": {
+        "x": 4104,
+        "y": 5176
+      }
+    }
+  ],
+  "Route 15 Gate 2F": [
+    {
+      "from": "Route 15 Gate 2F",
+      "to": "Route 15 Gate 1F",
+      "coordinates": {
+        "x": 4280,
+        "y": 5192
+      }
+    }
+  ],
+  "Route 15-N": [],
+  "Route 15-W": [
+    {
+      "from": "Route 15-W",
+      "to": "Route 15 Gate 1F",
+      "coordinates": {
+        "x": 4024,
+        "y": 5368
+      }
+    }
+  ],
+  "Route 16 Fly House": [
+    {
+      "from": "Route 16 Fly House",
+      "to": "Route 16-NW",
+      "coordinates": {
+        "x": 2584,
+        "y": 2600
+      }
+    }
+  ],
+  "Route 16 Gate 1F-E": [
+    {
+      "from": "Route 16 Gate 1F-E",
+      "to": "Route 16-C",
+      "coordinates": {
+        "x": 2840,
+        "y": 2536
+      }
+    },
+    {
+      "from": "Route 16 Gate 1F-E",
+      "to": "Route 16 Gate 2F",
+      "coordinates": {
+        "x": 2824,
+        "y": 2584
+      }
+    }
+  ],
+  "Route 16 Gate 1F-N": [
+    {
+      "from": "Route 16 Gate 1F-N",
+      "to": "Route 16-NW",
+      "coordinates": {
+        "x": 2728,
+        "y": 2440
+      }
+    },
+    {
+      "from": "Route 16 Gate 1F-N",
+      "to": "Route 16-NE",
+      "coordinates": {
+        "x": 2840,
+        "y": 2440
+      }
+    }
+  ],
+  "Route 16 Gate 1F-W": [
+    {
+      "from": "Route 16 Gate 1F-W",
+      "to": "Route 16-SW",
+      "coordinates": {
+        "x": 2728,
+        "y": 2536
+      }
+    }
+  ],
+  "Route 16 Gate 2F": [
+    {
+      "from": "Route 16 Gate 2F",
+      "to": "Route 16 Gate 1F-E",
+      "coordinates": {
+        "x": 3000,
+        "y": 2600
+      }
+    }
+  ],
+  "Route 16-C": [
+    {
+      "from": "Route 16-C",
+      "to": "Route 16 Gate 1F-E",
+      "coordinates": {
+        "x": 2856,
+        "y": 2808
+      }
+    }
+  ],
+  "Route 16-E": [],
+  "Route 16-NE": [
+    {
+      "from": "Route 16-NE",
+      "to": "Route 16 Gate 1F-N",
+      "coordinates": {
+        "x": 2856,
+        "y": 2712
+      }
+    }
+  ],
+  "Route 16-NW": [
+    {
+      "from": "Route 16-NW",
+      "to": "Route 16 Gate 1F-N",
+      "coordinates": {
+        "x": 2744,
+        "y": 2712
+      }
+    },
+    {
+      "from": "Route 16-NW",
+      "to": "Route 16 Fly House",
+      "coordinates": {
+        "x": 2584,
+        "y": 2728
+      }
+    }
+  ],
+  "Route 16-SW": [
+    {
+      "from": "Route 16-SW",
+      "to": "Route 16 Gate 1F-W",
+      "coordinates": {
+        "x": 2744,
+        "y": 2808
+      }
+    }
+  ],
   "Route 17": [],
-  "Route 19-S": [],
+  "Route 18 Gate 1F-E": [
+    {
+      "from": "Route 18 Gate 1F-E",
+      "to": "Route 18-E",
+      "coordinates": {
+        "x": 3096,
+        "y": 5128
+      }
+    },
+    {
+      "from": "Route 18 Gate 1F-E",
+      "to": "Route 18 Gate 2F",
+      "coordinates": {
+        "x": 3080,
+        "y": 5176
+      }
+    }
+  ],
+  "Route 18 Gate 1F-W": [
+    {
+      "from": "Route 18 Gate 1F-W",
+      "to": "Route 18-W",
+      "coordinates": {
+        "x": 2984,
+        "y": 5128
+      }
+    }
+  ],
+  "Route 18 Gate 2F": [
+    {
+      "from": "Route 18 Gate 2F",
+      "to": "Route 18 Gate 1F-E",
+      "coordinates": {
+        "x": 2936,
+        "y": 5176
+      }
+    }
+  ],
+  "Route 18-E": [
+    {
+      "from": "Route 18-E",
+      "to": "Route 18 Gate 1F-E",
+      "coordinates": {
+        "x": 3112,
+        "y": 5368
+      }
+    }
+  ],
+  "Route 18-W": [
+    {
+      "from": "Route 18-W",
+      "to": "Route 18 Gate 1F-W",
+      "coordinates": {
+        "x": 3000,
+        "y": 5368
+      }
+    }
+  ],
   "Route 19-N": [],
+  "Route 19-S": [],
+  "Route 19/20-Water": [],
+  "Route 2 Gate": [
+    {
+      "from": "Route 2 Gate",
+      "to": "Route 2-E",
+      "coordinates": {
+        "x": 1400,
+        "y": 2744
+      }
+    },
+    {
+      "from": "Route 2 Gate",
+      "to": "Route 2-SE",
+      "coordinates": {
+        "x": 1400,
+        "y": 2856
+      }
+    }
+  ],
+  "Route 2 Trade House": [
+    {
+      "from": "Route 2 Trade House",
+      "to": "Route 2-NE",
+      "coordinates": {
+        "x": 1896,
+        "y": 2504
+      }
+    }
+  ],
+  "Route 2-E": [
+    {
+      "from": "Route 2-E",
+      "to": "Route 2 Gate",
+      "coordinates": {
+        "x": 1768,
+        "y": 2792
+      }
+    }
+  ],
+  "Route 2-Grass": [],
+  "Route 2-NE": [
+    {
+      "from": "Route 2-NE",
+      "to": "Diglett's Cave Route 2",
+      "coordinates": {
+        "x": 1704,
+        "y": 2376
+      }
+    },
+    {
+      "from": "Route 2-NE",
+      "to": "Route 2 Trade House",
+      "coordinates": {
+        "x": 1752,
+        "y": 2536
+      }
+    }
+  ],
+  "Route 2-NW": [
+    {
+      "from": "Route 2-NW",
+      "to": "Viridian Forest North Gate",
+      "coordinates": {
+        "x": 1560,
+        "y": 2408
+      }
+    }
+  ],
+  "Route 2-SE": [
+    {
+      "from": "Route 2-SE",
+      "to": "Route 2 Gate",
+      "coordinates": {
+        "x": 1752,
+        "y": 2856
+      }
+    }
+  ],
+  "Route 2-SW": [
+    {
+      "from": "Route 2-SW",
+      "to": "Viridian Forest South Gate",
+      "coordinates": {
+        "x": 1560,
+        "y": 2920
+      }
+    }
+  ],
+  "Route 20-E": [],
+  "Route 20-IE": [
+    {
+      "from": "Route 20-IE",
+      "to": "Seafoam Islands 1F",
+      "coordinates": {
+        "x": 2600,
+        "y": 6344
+      }
+    }
+  ],
+  "Route 20-IW": [
+    {
+      "from": "Route 20-IW",
+      "to": "Seafoam Islands 1F-SE",
+      "coordinates": {
+        "x": 2760,
+        "y": 6408
+      }
+    }
+  ],
+  "Route 20-W": [],
   "Route 21": [],
-  "Vermilion Old Rod House": [{ "from": "Vermilion Old Rod House", "to": "Vermilion City" }],
-  "Celadon Department Store 2F": [
-    { "from": "Celadon Department Store 2F", "to": "Celadon Department Store 1F" },
-    { "from": "Celadon Department Store 2F", "to": "Celadon Department Store 3F" },
-    { "from": "Celadon Department Store 2F", "to": "Celadon Department Store Elevator-2F" }
+  "Route 22": [
+    {
+      "from": "Route 22",
+      "to": "Route 22 Gate-S",
+      "coordinates": {
+        "x": 840,
+        "y": 3592
+      }
+    }
   ],
-  "Fuchsia Good Rod House": [
-    { "from": "Fuchsia Good Rod House", "to": "Fuchsia City-Good Rod House Backyard" },
-    { "from": "Fuchsia Good Rod House", "to": "Fuchsia City" }
+  "Route 22 Fishing": [],
+  "Route 22 Gate-N": [
+    {
+      "from": "Route 22 Gate-N",
+      "to": "Route 23-S",
+      "coordinates": {
+        "x": 600,
+        "y": 3480
+      }
+    }
   ],
-  "Daycare": [{ "from": "Daycare", "to": "Route 5" }],
-  "Route 12 Super Rod House": [{ "from": "Route 12 Super Rod House", "to": "Route 12-S" }],
-  "Silph Co 8F": [
-    { "from": "Silph Co 8F", "to": "Silph Co 9F" },
-    { "from": "Silph Co 8F", "to": "Silph Co 7F" },
-    { "from": "Silph Co 8F", "to": "Silph Co Elevator-8F" },
-    { "from": "Silph Co 8F to Silph Co 2F S", "to": "Silph Co 2F" },
-    { "from": "Silph Co 8F to Silph Co 2F N", "to": "Silph Co 2F" },
-    { "from": "Silph Co 8F", "to": "Silph Co 8F-W" }
+  "Route 22 Gate-S": [
+    {
+      "from": "Route 22 Gate-S",
+      "to": "Route 22",
+      "coordinates": {
+        "x": 600,
+        "y": 3592
+      }
+    }
   ],
-  "Silph Co 8F-W": [{ "from": "Silph Co 8F-W", "to": "Silph Co 8F" }],
+  "Route 22-F": [],
+  "Route 23-C": [
+    {
+      "from": "Route 23-C",
+      "to": "Victory Road 1F-S",
+      "coordinates": {
+        "x": 776,
+        "y": 1704
+      }
+    }
+  ],
+  "Route 23-Grass": [],
+  "Route 23-N": [
+    {
+      "from": "Route 23-N",
+      "to": "Victory Road 2F-E",
+      "coordinates": {
+        "x": 936,
+        "y": 1704
+      }
+    }
+  ],
+  "Route 23-S": [
+    {
+      "from": "Route 23-S",
+      "to": "Route 22 Gate-N",
+      "coordinates": {
+        "x": 824,
+        "y": 3432
+      }
+    }
+  ],
+  "Route 23/Cerulean Cave Fishing": [],
+  "Route 24": [],
+  "Route 24/25/Cerulean/Cerulean Gym Fishing": [],
+  "Route 25": [
+    {
+      "from": "Route 25",
+      "to": "Bill's House",
+      "coordinates": {
+        "x": 5432,
+        "y": 840
+      }
+    }
+  ],
+  "Route 3": [],
+  "Route 4 Pokemon Center": [
+    {
+      "from": "Route 4 Pokemon Center",
+      "to": "Route 4-W",
+      "coordinates": {
+        "x": 2600,
+        "y": 1576
+      }
+    }
+  ],
+  "Route 4-C": [
+    {
+      "from": "Route 4-C",
+      "to": "Mt Moon B1F-NE",
+      "coordinates": {
+        "x": 3176,
+        "y": 1576
+      }
+    }
+  ],
+  "Route 4-E": [],
+  "Route 4-Lass": [],
+  "Route 4-W": [
+    {
+      "from": "Route 4-W",
+      "to": "Route 4 Pokemon Center",
+      "coordinates": {
+        "x": 2968,
+        "y": 1576
+      }
+    },
+    {
+      "from": "Route 4-W",
+      "to": "Mt Moon 1F",
+      "coordinates": {
+        "x": 3080,
+        "y": 1576
+      }
+    }
+  ],
+  "Route 5": [
+    {
+      "from": "Route 5",
+      "to": "Route 5 Gate-N",
+      "coordinates": {
+        "x": 4536,
+        "y": 2408
+      }
+    },
+    {
+      "from": "Route 5",
+      "to": "Underground Path Route 5",
+      "coordinates": {
+        "x": 4664,
+        "y": 2376
+      }
+    },
+    {
+      "from": "Route 5",
+      "to": "Daycare",
+      "coordinates": {
+        "x": 4552,
+        "y": 2280
+      }
+    }
+  ],
+  "Route 5 Gate-N": [
+    {
+      "from": "Route 5 Gate-N",
+      "to": "Route 5",
+      "coordinates": {
+        "x": 4296,
+        "y": 2360
+      }
+    }
+  ],
+  "Route 5 Gate-S": [
+    {
+      "from": "Route 5 Gate-S",
+      "to": "Route 5-S",
+      "coordinates": {
+        "x": 4296,
+        "y": 2440
+      }
+    }
+  ],
+  "Route 5-S": [
+    {
+      "from": "Route 5-S",
+      "to": "Route 5 Gate-S",
+      "coordinates": {
+        "x": 4552,
+        "y": 2472
+      }
+    }
+  ],
   "Route 6": [
-    { "from": "Route 6", "to": "Route 6 Gate-S" },
-    { "from": "Route 6", "to": "Underground Path Route 6" }
+    {
+      "from": "Route 6",
+      "to": "Route 6 Gate-S",
+      "coordinates": {
+        "x": 4552,
+        "y": 3208
+      }
+    },
+    {
+      "from": "Route 6",
+      "to": "Underground Path Route 6",
+      "coordinates": {
+        "x": 4664,
+        "y": 3304
+      }
+    }
   ],
-  "Route 6-N": [{ "from": "Route 6-N", "to": "Route 6 Gate-N" }],
-  "Route 8-W": [{ "from": "Route 8-W", "to": "Route 8 Gate-W" }],
+  "Route 6 Gate-N": [
+    {
+      "from": "Route 6 Gate-N",
+      "to": "Route 6-N",
+      "coordinates": {
+        "x": 4792,
+        "y": 3128
+      }
+    }
+  ],
+  "Route 6 Gate-S": [
+    {
+      "from": "Route 6 Gate-S",
+      "to": "Route 6",
+      "coordinates": {
+        "x": 4792,
+        "y": 3208
+      }
+    }
+  ],
+  "Route 6-N": [
+    {
+      "from": "Route 6-N",
+      "to": "Route 6 Gate-N",
+      "coordinates": {
+        "x": 4552,
+        "y": 3112
+      }
+    }
+  ],
+  "Route 6/11/Vermilion/Dock Fishing": [],
+  "Route 7": [
+    {
+      "from": "Route 7",
+      "to": "Route 7 Gate-W",
+      "coordinates": {
+        "x": 4088,
+        "y": 2808
+      }
+    },
+    {
+      "from": "Route 7",
+      "to": "Underground Path Route 7",
+      "coordinates": {
+        "x": 3992,
+        "y": 2856
+      }
+    }
+  ],
+  "Route 7 Gate-E": [
+    {
+      "from": "Route 7 Gate-E",
+      "to": "Route 7-E",
+      "coordinates": {
+        "x": 4184,
+        "y": 3016
+      }
+    }
+  ],
+  "Route 7 Gate-W": [
+    {
+      "from": "Route 7 Gate-W",
+      "to": "Route 7",
+      "coordinates": {
+        "x": 4104,
+        "y": 3016
+      }
+    }
+  ],
+  "Route 7-E": [
+    {
+      "from": "Route 7-E",
+      "to": "Route 7 Gate-E",
+      "coordinates": {
+        "x": 4200,
+        "y": 2808
+      }
+    }
+  ],
   "Route 8": [
-    { "from": "Route 8", "to": "Route 8 Gate-E" },
-    { "from": "Route 8", "to": "Underground Path Route 8" }
+    {
+      "from": "Route 8",
+      "to": "Route 8 Gate-E",
+      "coordinates": {
+        "x": 5000,
+        "y": 2808
+      }
+    },
+    {
+      "from": "Route 8",
+      "to": "Underground Path Route 8",
+      "coordinates": {
+        "x": 5080,
+        "y": 2696
+      }
+    }
+  ],
+  "Route 8 Gate-E": [
+    {
+      "from": "Route 8 Gate-E",
+      "to": "Route 8",
+      "coordinates": {
+        "x": 4984,
+        "y": 3016
+      }
+    }
+  ],
+  "Route 8 Gate-W": [
+    {
+      "from": "Route 8 Gate-W",
+      "to": "Route 8-W",
+      "coordinates": {
+        "x": 4904,
+        "y": 3016
+      }
+    }
   ],
   "Route 8-Grass": [],
-  "Route 10-N": [
-    { "from": "Route 10-N", "to": "Rock Tunnel Pokemon Center" },
-    { "from": "Route 10-N", "to": "Rock Tunnel 1F-NE 1" }
+  "Route 8-W": [
+    {
+      "from": "Route 8-W",
+      "to": "Route 8 Gate-W",
+      "coordinates": {
+        "x": 4888,
+        "y": 2808
+      }
+    }
   ],
-  "Route 10-S": [{ "from": "Route 10-S", "to": "Rock Tunnel 1F-S 1" }],
-  "Route 10-P": [{ "from": "Route 10-P", "to": "Power Plant" }],
-  "Route 10-C": [],
-  "Route 11": [{ "from": "Route 11", "to": "Diglett's Cave Route 11" }],
-  "Route 11-E": [{ "from": "Route 11-E", "to": "Route 11 Gate 1F" }],
-  "Route 11-C": [{ "from": "Route 11-C", "to": "Route 11 Gate 1F" }],
-  "Route 12-L": [{ "from": "Route 12-L", "to": "Route 12 Gate 1F" }],
-  "Route 12-N": [{ "from": "Route 12-N", "to": "Route 12 Gate 1F" }],
-  "Route 12-S": [{ "from": "Route 12-S", "to": "Route 12 Super Rod House" }],
-  "Route 12-W": [],
-  "Route 12-Grass": [],
-  "Route 15-N": [],
-  "Route 15-W": [{ "from": "Route 15-W", "to": "Route 15 Gate 1F" }],
-  "Route 15": [{ "from": "Route 15", "to": "Route 15 Gate 1F" }],
-  "Route 16-E": [],
-  "Route 16-C": [{ "from": "Route 16-C", "to": "Route 16 Gate 1F-E" }],
-  "Route 16-SW": [{ "from": "Route 16-SW", "to": "Route 16 Gate 1F-W" }],
-  "Route 16-NW": [
-    { "from": "Route 16-NW", "to": "Route 16 Gate 1F-N" },
-    { "from": "Route 16-NW", "to": "Route 16 Fly House" }
-  ],
-  "Route 16-NE": [{ "from": "Route 16-NE", "to": "Route 16 Gate 1F-N" }],
-  "Route 18-W": [{ "from": "Route 18-W", "to": "Route 18 Gate 1F-W" }],
-  "Route 18-E": [{ "from": "Route 18-E", "to": "Route 18 Gate 1F-E" }],
-  "Vermilion Pokemon Fan Club": [{ "from": "Vermilion Pokemon Fan Club", "to": "Vermilion City" }],
-  "Silph Co 2F-NW": [{ "from": "Silph Co 2F-NW", "to": "Silph Co 3F" }],
-  "Silph Co 2F": [
-    { "from": "Silph Co 2F", "to": "Silph Co 1F" },
-    { "from": "Silph Co 2F", "to": "Silph Co 3F" },
-    { "from": "Silph Co 2F", "to": "Silph Co Elevator-2F" },
-    { "from": "Silph Co 2F to Silph Co 8F N", "to": "Silph Co 8F" },
-    { "from": "Silph Co 2F to Silph Co 8F S", "to": "Silph Co 8F" }
-  ],
-  "Silph Co 2F-SW": [{ "from": "Silph Co 2F-SW", "to": "Silph Co 6F" }],
-  "Silph Co 3F": [
-    { "from": "Silph Co 3F", "to": "Silph Co 2F" },
-    { "from": "Silph Co 3F", "to": "Silph Co 4F" },
-    { "from": "Silph Co 3F", "to": "Silph Co Elevator-3F" },
-    { "from": "Silph Co 3F to Silph Co 3F N", "to": "Silph Co 3F" },
-    { "from": "Silph Co 3F", "to": "Silph Co 5F" },
-    { "from": "Silph Co 3F", "to": "Silph Co 5F-SW" },
-    { "from": "Silph Co 3F", "to": "Silph Co 2F-NW" },
-    { "from": "Silph Co 3F to Silph Co 3F S", "to": "Silph Co 3F" }
-  ],
-  "Silph Co 3F-C": [{ "from": "Silph Co 3F-C", "to": "Silph Co 7F-NW" }],
-  "Silph Co 3F-W": [{ "from": "Silph Co 3F-W", "to": "Silph Co 9F-NW" }],
-  "Silph Co 10F": [
-    { "from": "Silph Co 10F", "to": "Silph Co 9F" },
-    { "from": "Silph Co 10F", "to": "Silph Co 11F" },
-    { "from": "Silph Co 10F", "to": "Silph Co Elevator-10F" },
-    { "from": "Silph Co 10F", "to": "Silph Co 4F" }
-  ],
-  "Silph Co 10F-SE": [
-    { "from": "Silph Co 10F-SE", "to": "Silph Co 4F-N" },
-    { "from": "Silph Co 10F-SE", "to": "Silph Co 4F" }
-  ],
-  "Indigo Plateau Lance's Room": [
-    { "from": "Indigo Plateau Lance's Room", "to": "Indigo Plateau Agatha's Room" },
-    { "from": "Indigo Plateau Lance's Room", "to": "Indigo Plateau Champion's Room" }
-  ],
-  "Indigo Plateau Hall of Fame": [
-    { "from": "Indigo Plateau Hall of Fame", "to": "Indigo Plateau Champion's Room" }
-  ],
-  "Player's House 2F": [{ "from": "Player's House 2F", "to": "Player's House 1F" }],
-  "Pewter Museum 1F": [
-    { "from": "Pewter Museum 1F", "to": "Pewter City" },
-    { "from": "Pewter Museum 1F", "to": "Pewter Museum 2F" }
-  ],
-  "Pewter Museum 1F-E": [{ "from": "Pewter Museum 1F-E", "to": "Pewter City-M" }],
-  "Pewter Museum 2F": [{ "from": "Pewter Museum 2F", "to": "Pewter Museum 1F" }],
-  "Pewter Gym": [{ "from": "Pewter Gym", "to": "Pewter City" }],
-  "Pewter Pokemon Center": [{ "from": "Pewter Pokemon Center", "to": "Pewter City" }],
-  "Cerulean Pokemon Center": [{ "from": "Cerulean Pokemon Center", "to": "Cerulean City" }],
-  "Cerulean Gym": [{ "from": "Cerulean Gym", "to": "Cerulean City" }],
-  "Cerulean Pokemart": [{ "from": "Cerulean Pokemart", "to": "Cerulean City" }],
-  "Lavender Pokemon Center": [{ "from": "Lavender Pokemon Center", "to": "Lavender Town" }],
-  "Lavender Pokemart": [{ "from": "Lavender Pokemart", "to": "Lavender Town" }],
-  "Vermilion Pokemon Center": [{ "from": "Vermilion Pokemon Center", "to": "Vermilion City" }],
-  "Vermilion Pokemart": [{ "from": "Vermilion Pokemart", "to": "Vermilion City" }],
-  "Vermilion Gym": [{ "from": "Vermilion Gym", "to": "Vermilion City-G" }],
-  "Saffron Copycat's House 2F": [
-    { "from": "Saffron Copycat's House 2F", "to": "Saffron Copycat's House 1F" }
-  ],
-  "Saffron Fighting Dojo": [{ "from": "Saffron Fighting Dojo", "to": "Saffron City" }],
-  "Saffron Gym-NW": [
-    { "from": "Saffron Gym-NW", "to": "Saffron Gym-NE" },
-    { "from": "Saffron Gym-NW", "to": "Saffron Gym-N" },
-    { "from": "Saffron Gym-NW", "to": "Saffron Gym-C" },
-    { "from": "Saffron Gym-NW", "to": "Saffron Gym-W" }
-  ],
-  "Saffron Gym-W": [
-    { "from": "Saffron Gym-W", "to": "Saffron Gym-E" },
-    { "from": "Saffron Gym-W", "to": "Saffron Gym-N" },
-    { "from": "Saffron Gym-W", "to": "Saffron Gym-NW" },
-    { "from": "Saffron Gym-W", "to": "Saffron Gym-SW" }
-  ],
-  "Saffron Gym-SW": [
-    { "from": "Saffron Gym-SW", "to": "Saffron Gym-NE" },
-    { "from": "Saffron Gym-SW", "to": "Saffron Gym-SE" },
-    { "from": "Saffron Gym-SW", "to": "Saffron Gym-N" },
-    { "from": "Saffron Gym-SW", "to": "Saffron Gym-W" }
-  ],
-  "Saffron Gym-N": [
-    { "from": "Saffron Gym-N", "to": "Saffron Gym-E" },
-    { "from": "Saffron Gym-N", "to": "Saffron Gym-NW" },
-    { "from": "Saffron Gym-N", "to": "Saffron Gym-W" },
-    { "from": "Saffron Gym-N", "to": "Saffron Gym-SW" }
-  ],
-  "Saffron Gym-C": [{ "from": "Saffron Gym-C", "to": "Saffron Gym-NW" }],
-  "Saffron Gym-S": [
-    { "from": "Saffron Gym-S", "to": "Saffron Gym-SE" },
-    { "from": "Saffron Gym-S", "to": "Saffron City-G" }
-  ],
-  "Saffron Gym-NE": [
-    { "from": "Saffron Gym-NE", "to": "Saffron Gym-E" },
-    { "from": "Saffron Gym-NE", "to": "Saffron Gym-SE" },
-    { "from": "Saffron Gym-NE", "to": "Saffron Gym-NW" },
-    { "from": "Saffron Gym-NE", "to": "Saffron Gym-SW" }
-  ],
-  "Saffron Gym-E": [
-    { "from": "Saffron Gym-E", "to": "Saffron Gym-NE" },
-    { "from": "Saffron Gym-E", "to": "Saffron Gym-SE" },
-    { "from": "Saffron Gym-E", "to": "Saffron Gym-N" },
-    { "from": "Saffron Gym-E", "to": "Saffron Gym-W" }
-  ],
-  "Saffron Gym-SE": [
-    { "from": "Saffron Gym-SE", "to": "Saffron Gym-NE" },
-    { "from": "Saffron Gym-SE", "to": "Saffron Gym-E" },
-    { "from": "Saffron Gym-SE", "to": "Saffron Gym-SW" },
-    { "from": "Saffron Gym-SE", "to": "Saffron Gym-S" }
-  ],
-  "Saffron Pokemart": [{ "from": "Saffron Pokemart", "to": "Saffron City" }],
-  "Silph Co 1F": [
-    { "from": "Silph Co 1F", "to": "Saffron City-Silph" },
-    { "from": "Silph Co 1F", "to": "Silph Co 2F" },
-    { "from": "Silph Co 1F", "to": "Silph Co Elevator-1F" }
-  ],
-  "Saffron Pokemon Center": [{ "from": "Saffron Pokemon Center", "to": "Saffron City" }],
-  "Viridian Forest North Gate": [
-    { "from": "Viridian Forest North Gate", "to": "Route 2-NW" },
-    { "from": "Viridian Forest North Gate", "to": "Viridian Forest" }
-  ],
-  "Route 2 Gate": [
-    { "from": "Route 2 Gate", "to": "Route 2-E" },
-    { "from": "Route 2 Gate", "to": "Route 2-SE" }
-  ],
-  "Viridian Forest South Gate": [
-    { "from": "Viridian Forest South Gate", "to": "Viridian Forest" },
-    { "from": "Viridian Forest South Gate", "to": "Route 2-SW" }
-  ],
-  "Underground Path Route 5": [
-    { "from": "Underground Path Route 5", "to": "Route 5" },
-    { "from": "Underground Path Route 5", "to": "Underground Path North South" }
-  ],
-  "Underground Path Route 6": [
-    { "from": "Underground Path Route 6", "to": "Route 6" },
-    { "from": "Underground Path Route 6", "to": "Underground Path North South" }
-  ],
-  "Underground Path Route 7": [
-    { "from": "Underground Path Route 7", "to": "Route 7" },
-    { "from": "Underground Path Route 7", "to": "Underground Path West East" }
-  ],
-  "Silph Co 9F-SW": [],
-  "Silph Co 9F": [
-    { "from": "Silph Co 9F", "to": "Silph Co 10F" },
-    { "from": "Silph Co 9F", "to": "Silph Co 8F" },
-    { "from": "Silph Co 9F", "to": "Silph Co Elevator-9F" },
-    { "from": "Silph Co 9F", "to": "Silph Co 5F" }
-  ],
-  "Silph Co 9F-NW": [{ "from": "Silph Co 9F-NW", "to": "Silph Co 3F-W" }],
-  "Victory Road 1F-S": [{ "from": "Victory Road 1F-S", "to": "Route 23-C" }],
-  "Victory Road 1F": [{ "from": "Victory Road 1F", "to": "Victory Road 2F-W" }],
-  "Pokemon Tower 1F": [
-    { "from": "Pokemon Tower 1F", "to": "Lavender Town" },
-    { "from": "Pokemon Tower 1F", "to": "Pokemon Tower 2F" }
-  ],
-  "Pokemon Tower 2F": [
-    { "from": "Pokemon Tower 2F", "to": "Pokemon Tower 3F" },
-    { "from": "Pokemon Tower 2F", "to": "Pokemon Tower 1F" }
-  ],
-  "Pokemon Tower 3F": [
-    { "from": "Pokemon Tower 3F", "to": "Pokemon Tower 2F" },
-    { "from": "Pokemon Tower 3F", "to": "Pokemon Tower 4F" }
-  ],
-  "Pokemon Tower 4F": [
-    { "from": "Pokemon Tower 4F", "to": "Pokemon Tower 5F" },
-    { "from": "Pokemon Tower 4F", "to": "Pokemon Tower 3F" }
-  ],
-  "Pokemon Tower 5F": [
-    { "from": "Pokemon Tower 5F", "to": "Pokemon Tower 4F" },
-    { "from": "Pokemon Tower 5F", "to": "Pokemon Tower 6F" }
-  ],
-  "Pokemon Tower 6F": [{ "from": "Pokemon Tower 6F", "to": "Pokemon Tower 5F" }],
-  "Pokemon Tower 6F-S": [{ "from": "Pokemon Tower 6F-S", "to": "Pokemon Tower 7F" }],
-  "Pokemon Tower 7F": [{ "from": "Pokemon Tower 7F", "to": "Pokemon Tower 6F-S" }],
-  "Celadon Department Store 1F": [
-    { "from": "Celadon Department Store 1F to Celadon City W", "to": "Celadon City" },
-    { "from": "Celadon Department Store 1F to Celadon City E", "to": "Celadon City" },
-    { "from": "Celadon Department Store 1F", "to": "Celadon Department Store 2F" },
-    { "from": "Celadon Department Store 1F", "to": "Celadon Department Store Elevator-1F" }
-  ],
-  "Viridian Forest": [
-    { "from": "Viridian Forest", "to": "Viridian Forest North Gate" },
-    { "from": "Viridian Forest", "to": "Viridian Forest South Gate" }
-  ],
+  "Route 9": [],
   "S.S. Anne 1F": [
-    { "from": "S.S. Anne 1F", "to": "Vermilion Dock" },
-    { "from": "S.S. Anne 1F", "to": "S.S. Anne 1F Rooms-East Gentleman Room" },
-    { "from": "S.S. Anne 1F", "to": "S.S. Anne 1F Rooms-West Gentleman Room" },
-    { "from": "S.S. Anne 1F", "to": "S.S. Anne 1F Rooms-Cherry Pie Room" },
-    { "from": "S.S. Anne 1F", "to": "S.S. Anne 1F Rooms-Wigglytuff Room" },
-    { "from": "S.S. Anne 1F", "to": "S.S. Anne 1F Rooms-Youngster and Lass Room" },
-    { "from": "S.S. Anne 1F", "to": "S.S. Anne 1F Rooms-Police Room" },
-    { "from": "S.S. Anne 1F", "to": "S.S. Anne 2F" },
-    { "from": "S.S. Anne 1F", "to": "S.S. Anne B1F" },
-    { "from": "S.S. Anne 1F", "to": "S.S. Anne Kitchen" }
-  ],
-  "S.S. Anne 2F": [
-    { "from": "S.S. Anne 2F", "to": "S.S. Anne 2F Rooms-Snorlax Room" },
-    { "from": "S.S. Anne 2F", "to": "S.S. Anne 2F Rooms-Fisherman and Gentleman Room" },
-    { "from": "S.S. Anne 2F", "to": "S.S. Anne 2F Rooms-Surf and Cut Room" },
-    { "from": "S.S. Anne 2F", "to": "S.S. Anne 2F Rooms-Gentleman and Lass Room" },
-    { "from": "S.S. Anne 2F", "to": "S.S. Anne 2F Rooms-Safari Zone Room" },
-    { "from": "S.S. Anne 2F", "to": "S.S. Anne 2F Rooms-Seasickness Room" },
-    { "from": "S.S. Anne 2F", "to": "S.S. Anne 1F" },
-    { "from": "S.S. Anne 2F", "to": "S.S. Anne 3F" },
-    { "from": "S.S. Anne 2F", "to": "S.S. Anne Captain's Room" }
-  ],
-  "S.S. Anne B1F": [
-    { "from": "S.S. Anne B1F", "to": "S.S. Anne B1F Rooms-Machoke Room" },
-    { "from": "S.S. Anne B1F", "to": "S.S. Anne B1F Rooms-Two Sailors Room" },
-    { "from": "S.S. Anne B1F", "to": "S.S. Anne B1F Rooms-East Single Sailor Room" },
-    { "from": "S.S. Anne B1F", "to": "S.S. Anne B1F Rooms-West Single Sailor Room" },
-    { "from": "S.S. Anne B1F", "to": "S.S. Anne B1F Rooms-Fisherman Room" },
-    { "from": "S.S. Anne B1F", "to": "S.S. Anne 1F" }
-  ],
-  "S.S. Anne Bow": [{ "from": "S.S. Anne Bow", "to": "S.S. Anne 3F" }],
-  "S.S. Anne Kitchen": [{ "from": "S.S. Anne Kitchen", "to": "S.S. Anne 1F" }],
-  "S.S. Anne Captain's Room": [{ "from": "S.S. Anne Captain's Room", "to": "S.S. Anne 2F" }],
-  "S.S. Anne 1F Rooms-West Gentleman Room": [
-    { "from": "S.S. Anne 1F Rooms-West Gentleman Room", "to": "S.S. Anne 1F" }
-  ],
-  "S.S. Anne 1F Rooms-East Gentleman Room": [
-    { "from": "S.S. Anne 1F Rooms-East Gentleman Room", "to": "S.S. Anne 1F" }
-  ],
-  "S.S. Anne 1F Rooms-Police Room": [
-    { "from": "S.S. Anne 1F Rooms-Police Room", "to": "S.S. Anne 1F" }
-  ],
-  "S.S. Anne 1F Rooms-Youngster and Lass Room": [
-    { "from": "S.S. Anne 1F Rooms-Youngster and Lass Room", "to": "S.S. Anne 1F" }
-  ],
-  "S.S. Anne 1F Rooms-Wigglytuff Room": [
-    { "from": "S.S. Anne 1F Rooms-Wigglytuff Room", "to": "S.S. Anne 1F" }
+    {
+      "from": "S.S. Anne 1F",
+      "to": "Vermilion Dock",
+      "coordinates": {
+        "x": 6600,
+        "y": 4600
+      }
+    },
+    {
+      "from": "S.S. Anne 1F",
+      "to": "S.S. Anne 1F Rooms-East Gentleman Room",
+      "coordinates": {
+        "x": 6680,
+        "y": 4728
+      }
+    },
+    {
+      "from": "S.S. Anne 1F",
+      "to": "S.S. Anne 1F Rooms-West Gentleman Room",
+      "coordinates": {
+        "x": 6552,
+        "y": 4728
+      }
+    },
+    {
+      "from": "S.S. Anne 1F",
+      "to": "S.S. Anne 1F Rooms-Cherry Pie Room",
+      "coordinates": {
+        "x": 6488,
+        "y": 4728
+      }
+    },
+    {
+      "from": "S.S. Anne 1F",
+      "to": "S.S. Anne 1F Rooms-Wigglytuff Room",
+      "coordinates": {
+        "x": 6424,
+        "y": 4728
+      }
+    },
+    {
+      "from": "S.S. Anne 1F",
+      "to": "S.S. Anne 1F Rooms-Youngster and Lass Room",
+      "coordinates": {
+        "x": 6360,
+        "y": 4728
+      }
+    },
+    {
+      "from": "S.S. Anne 1F",
+      "to": "S.S. Anne 1F Rooms-Police Room",
+      "coordinates": {
+        "x": 6296,
+        "y": 4728
+      }
+    },
+    {
+      "from": "S.S. Anne 1F",
+      "to": "S.S. Anne 2F",
+      "coordinates": {
+        "x": 6216,
+        "y": 4696
+      }
+    },
+    {
+      "from": "S.S. Anne 1F",
+      "to": "S.S. Anne B1F",
+      "coordinates": {
+        "x": 6776,
+        "y": 4840
+      }
+    },
+    {
+      "from": "S.S. Anne 1F",
+      "to": "S.S. Anne Kitchen",
+      "coordinates": {
+        "x": 6232,
+        "y": 4856
+      }
+    }
   ],
   "S.S. Anne 1F Rooms-Cherry Pie Room": [
-    { "from": "S.S. Anne 1F Rooms-Cherry Pie Room", "to": "S.S. Anne 1F" }
+    {
+      "from": "S.S. Anne 1F Rooms-Cherry Pie Room",
+      "to": "S.S. Anne 1F",
+      "coordinates": {
+        "x": 6504,
+        "y": 4760
+      }
+    }
   ],
-  "S.S. Anne 2F Rooms-Snorlax Room": [
-    { "from": "S.S. Anne 2F Rooms-Snorlax Room", "to": "S.S. Anne 2F" }
+  "S.S. Anne 1F Rooms-East Gentleman Room": [
+    {
+      "from": "S.S. Anne 1F Rooms-East Gentleman Room",
+      "to": "S.S. Anne 1F",
+      "coordinates": {
+        "x": 6680,
+        "y": 4760
+      }
+    }
+  ],
+  "S.S. Anne 1F Rooms-Police Room": [
+    {
+      "from": "S.S. Anne 1F Rooms-Police Room",
+      "to": "S.S. Anne 1F",
+      "coordinates": {
+        "x": 6264,
+        "y": 4760
+      }
+    }
+  ],
+  "S.S. Anne 1F Rooms-West Gentleman Room": [
+    {
+      "from": "S.S. Anne 1F Rooms-West Gentleman Room",
+      "to": "S.S. Anne 1F",
+      "coordinates": {
+        "x": 6584,
+        "y": 4760
+      }
+    }
+  ],
+  "S.S. Anne 1F Rooms-Wigglytuff Room": [
+    {
+      "from": "S.S. Anne 1F Rooms-Wigglytuff Room",
+      "to": "S.S. Anne 1F",
+      "coordinates": {
+        "x": 6424,
+        "y": 4760
+      }
+    }
+  ],
+  "S.S. Anne 1F Rooms-Youngster and Lass Room": [
+    {
+      "from": "S.S. Anne 1F Rooms-Youngster and Lass Room",
+      "to": "S.S. Anne 1F",
+      "coordinates": {
+        "x": 6344,
+        "y": 4760
+      }
+    }
+  ],
+  "S.S. Anne 2F": [
+    {
+      "from": "S.S. Anne 2F",
+      "to": "S.S. Anne 2F Rooms-Snorlax Room",
+      "coordinates": {
+        "x": 6328,
+        "y": 5256
+      }
+    },
+    {
+      "from": "S.S. Anne 2F",
+      "to": "S.S. Anne 2F Rooms-Fisherman and Gentleman Room",
+      "coordinates": {
+        "x": 6392,
+        "y": 5256
+      }
+    },
+    {
+      "from": "S.S. Anne 2F",
+      "to": "S.S. Anne 2F Rooms-Surf and Cut Room",
+      "coordinates": {
+        "x": 6456,
+        "y": 5256
+      }
+    },
+    {
+      "from": "S.S. Anne 2F",
+      "to": "S.S. Anne 2F Rooms-Gentleman and Lass Room",
+      "coordinates": {
+        "x": 6520,
+        "y": 5256
+      }
+    },
+    {
+      "from": "S.S. Anne 2F",
+      "to": "S.S. Anne 2F Rooms-Safari Zone Room",
+      "coordinates": {
+        "x": 6584,
+        "y": 5256
+      }
+    },
+    {
+      "from": "S.S. Anne 2F",
+      "to": "S.S. Anne 2F Rooms-Seasickness Room",
+      "coordinates": {
+        "x": 6648,
+        "y": 5256
+      }
+    },
+    {
+      "from": "S.S. Anne 2F",
+      "to": "S.S. Anne 1F",
+      "coordinates": {
+        "x": 6216,
+        "y": 5144
+      }
+    },
+    {
+      "from": "S.S. Anne 2F",
+      "to": "S.S. Anne 3F",
+      "coordinates": {
+        "x": 6216,
+        "y": 5272
+      }
+    },
+    {
+      "from": "S.S. Anne 2F",
+      "to": "S.S. Anne Captain's Room",
+      "coordinates": {
+        "x": 6760,
+        "y": 5144
+      }
+    }
   ],
   "S.S. Anne 2F Rooms-Fisherman and Gentleman Room": [
-    { "from": "S.S. Anne 2F Rooms-Fisherman and Gentleman Room", "to": "S.S. Anne 2F" }
-  ],
-  "S.S. Anne 2F Rooms-Surf and Cut Room": [
-    { "from": "S.S. Anne 2F Rooms-Surf and Cut Room", "to": "S.S. Anne 2F" }
+    {
+      "from": "S.S. Anne 2F Rooms-Fisherman and Gentleman Room",
+      "to": "S.S. Anne 2F",
+      "coordinates": {
+        "x": 6392,
+        "y": 5224
+      }
+    }
   ],
   "S.S. Anne 2F Rooms-Gentleman and Lass Room": [
-    { "from": "S.S. Anne 2F Rooms-Gentleman and Lass Room", "to": "S.S. Anne 2F" }
+    {
+      "from": "S.S. Anne 2F Rooms-Gentleman and Lass Room",
+      "to": "S.S. Anne 2F",
+      "coordinates": {
+        "x": 6536,
+        "y": 5224
+      }
+    }
   ],
   "S.S. Anne 2F Rooms-Safari Zone Room": [
-    { "from": "S.S. Anne 2F Rooms-Safari Zone Room", "to": "S.S. Anne 2F" }
+    {
+      "from": "S.S. Anne 2F Rooms-Safari Zone Room",
+      "to": "S.S. Anne 2F",
+      "coordinates": {
+        "x": 6616,
+        "y": 5224
+      }
+    }
   ],
   "S.S. Anne 2F Rooms-Seasickness Room": [
-    { "from": "S.S. Anne 2F Rooms-Seasickness Room", "to": "S.S. Anne 2F" }
+    {
+      "from": "S.S. Anne 2F Rooms-Seasickness Room",
+      "to": "S.S. Anne 2F",
+      "coordinates": {
+        "x": 6696,
+        "y": 5224
+      }
+    }
   ],
-  "S.S. Anne B1F Rooms-Fisherman Room": [
-    { "from": "S.S. Anne B1F Rooms-Fisherman Room", "to": "S.S. Anne B1F" }
+  "S.S. Anne 2F Rooms-Snorlax Room": [
+    {
+      "from": "S.S. Anne 2F Rooms-Snorlax Room",
+      "to": "S.S. Anne 2F",
+      "coordinates": {
+        "x": 6312,
+        "y": 5224
+      }
+    }
   ],
-  "S.S. Anne B1F Rooms-West Single Sailor Room": [
-    { "from": "S.S. Anne B1F Rooms-West Single Sailor Room", "to": "S.S. Anne B1F" }
+  "S.S. Anne 2F Rooms-Surf and Cut Room": [
+    {
+      "from": "S.S. Anne 2F Rooms-Surf and Cut Room",
+      "to": "S.S. Anne 2F",
+      "coordinates": {
+        "x": 6456,
+        "y": 5224
+      }
+    }
+  ],
+  "S.S. Anne 3F": [
+    {
+      "from": "S.S. Anne 3F",
+      "to": "S.S. Anne Bow",
+      "coordinates": {
+        "x": 5832,
+        "y": 5320
+      }
+    },
+    {
+      "from": "S.S. Anne 3F",
+      "to": "S.S. Anne 2F",
+      "coordinates": {
+        "x": 6136,
+        "y": 5320
+      }
+    }
+  ],
+  "S.S. Anne B1F": [
+    {
+      "from": "S.S. Anne B1F",
+      "to": "S.S. Anne B1F Rooms-Machoke Room",
+      "coordinates": {
+        "x": 6712,
+        "y": 5032
+      }
+    },
+    {
+      "from": "S.S. Anne B1F",
+      "to": "S.S. Anne B1F Rooms-Two Sailors Room",
+      "coordinates": {
+        "x": 6648,
+        "y": 5032
+      }
+    },
+    {
+      "from": "S.S. Anne B1F",
+      "to": "S.S. Anne B1F Rooms-East Single Sailor Room",
+      "coordinates": {
+        "x": 6584,
+        "y": 5032
+      }
+    },
+    {
+      "from": "S.S. Anne B1F",
+      "to": "S.S. Anne B1F Rooms-West Single Sailor Room",
+      "coordinates": {
+        "x": 6520,
+        "y": 5032
+      }
+    },
+    {
+      "from": "S.S. Anne B1F",
+      "to": "S.S. Anne B1F Rooms-Fisherman Room",
+      "coordinates": {
+        "x": 6456,
+        "y": 5032
+      }
+    },
+    {
+      "from": "S.S. Anne B1F",
+      "to": "S.S. Anne 1F",
+      "coordinates": {
+        "x": 6776,
+        "y": 5064
+      }
+    }
   ],
   "S.S. Anne B1F Rooms-East Single Sailor Room": [
-    { "from": "S.S. Anne B1F Rooms-East Single Sailor Room", "to": "S.S. Anne B1F" }
+    {
+      "from": "S.S. Anne B1F Rooms-East Single Sailor Room",
+      "to": "S.S. Anne B1F",
+      "coordinates": {
+        "x": 6584,
+        "y": 5000
+      }
+    }
   ],
-  "S.S. Anne B1F Rooms-Two Sailors Room": [
-    { "from": "S.S. Anne B1F Rooms-Two Sailors Room", "to": "S.S. Anne B1F" }
+  "S.S. Anne B1F Rooms-Fisherman Room": [
+    {
+      "from": "S.S. Anne B1F Rooms-Fisherman Room",
+      "to": "S.S. Anne B1F",
+      "coordinates": {
+        "x": 6424,
+        "y": 5000
+      }
+    }
   ],
   "S.S. Anne B1F Rooms-Machoke Room": [
-    { "from": "S.S. Anne B1F Rooms-Machoke Room", "to": "S.S. Anne B1F" }
+    {
+      "from": "S.S. Anne B1F Rooms-Machoke Room",
+      "to": "S.S. Anne B1F",
+      "coordinates": {
+        "x": 6728,
+        "y": 5000
+      }
+    }
   ],
-  "Underground Path North South": [
-    { "from": "Underground Path North South", "to": "Underground Path Route 5" },
-    { "from": "Underground Path North South", "to": "Underground Path Route 6" }
+  "S.S. Anne B1F Rooms-Two Sailors Room": [
+    {
+      "from": "S.S. Anne B1F Rooms-Two Sailors Room",
+      "to": "S.S. Anne B1F",
+      "coordinates": {
+        "x": 6648,
+        "y": 5000
+      }
+    }
   ],
-  "Underground Path West East": [
-    { "from": "Underground Path West East", "to": "Underground Path Route 7" },
-    { "from": "Underground Path West East", "to": "Underground Path Route 8" }
+  "S.S. Anne B1F Rooms-West Single Sailor Room": [
+    {
+      "from": "S.S. Anne B1F Rooms-West Single Sailor Room",
+      "to": "S.S. Anne B1F",
+      "coordinates": {
+        "x": 6504,
+        "y": 5000
+      }
+    }
   ],
-  "Diglett's Cave": [
-    { "from": "Diglett's Cave", "to": "Diglett's Cave Route 2" },
-    { "from": "Diglett's Cave", "to": "Diglett's Cave Route 11" }
+  "S.S. Anne Bow": [
+    {
+      "from": "S.S. Anne Bow",
+      "to": "S.S. Anne 3F",
+      "coordinates": {
+        "x": 5688,
+        "y": 5320
+      }
+    }
+  ],
+  "S.S. Anne Captain's Room": [
+    {
+      "from": "S.S. Anne Captain's Room",
+      "to": "S.S. Anne 2F",
+      "coordinates": {
+        "x": 6856,
+        "y": 5160
+      }
+    }
+  ],
+  "S.S. Anne Kitchen": [
+    {
+      "from": "S.S. Anne Kitchen",
+      "to": "S.S. Anne 1F",
+      "coordinates": {
+        "x": 6024,
+        "y": 4984
+      }
+    }
+  ],
+  "Safari Zone Center Rest House": [
+    {
+      "from": "Safari Zone Center Rest House",
+      "to": "Safari Zone Center-S",
+      "coordinates": {
+        "x": 4520,
+        "y": 7016
+      }
+    }
+  ],
+  "Safari Zone Center-C": [],
+  "Safari Zone Center-NE": [
+    {
+      "from": "Safari Zone Center-NE",
+      "to": "Safari Zone North",
+      "coordinates": {
+        "x": 4208,
+        "y": 6616
+      }
+    }
+  ],
+  "Safari Zone Center-NW": [
+    {
+      "from": "Safari Zone Center-NW",
+      "to": "Safari Zone West",
+      "coordinates": {
+        "x": 3976,
+        "y": 6784
+      }
+    }
+  ],
+  "Safari Zone Center-S": [
+    {
+      "from": "Safari Zone Center-S",
+      "to": "Safari Zone Gate-N",
+      "coordinates": {
+        "x": 4216,
+        "y": 7016
+      }
+    },
+    {
+      "from": "Safari Zone Center-S",
+      "to": "Safari Zone East",
+      "coordinates": {
+        "x": 4440,
+        "y": 6784
+      }
+    },
+    {
+      "from": "Safari Zone Center-S",
+      "to": "Safari Zone Center Rest House",
+      "coordinates": {
+        "x": 4248,
+        "y": 6920
+      }
+    }
+  ],
+  "Safari Zone Center-Wild": [],
+  "Safari Zone East": [
+    {
+      "from": "Safari Zone East",
+      "to": "Safari Zone North",
+      "coordinates": {
+        "x": 4488,
+        "y": 6496
+      }
+    },
+    {
+      "from": "Safari Zone East",
+      "to": "Safari Zone Center-S",
+      "coordinates": {
+        "x": 4488,
+        "y": 6784
+      }
+    },
+    {
+      "from": "Safari Zone East",
+      "to": "Safari Zone East Rest House",
+      "coordinates": {
+        "x": 4888,
+        "y": 6568
+      }
+    }
+  ],
+  "Safari Zone East Rest House": [
+    {
+      "from": "Safari Zone East Rest House",
+      "to": "Safari Zone East",
+      "coordinates": {
+        "x": 4888,
+        "y": 6376
+      }
+    }
+  ],
+  "Safari Zone Fishing": [],
+  "Safari Zone Gate-N": [
+    {
+      "from": "Safari Zone Gate-N",
+      "to": "Safari Zone Center-S",
+      "coordinates": {
+        "x": 4216,
+        "y": 7064
+      }
+    }
+  ],
+  "Safari Zone Gate-S": [
+    {
+      "from": "Safari Zone Gate-S",
+      "to": "Fuchsia City",
+      "coordinates": {
+        "x": 4216,
+        "y": 7144
+      }
+    }
+  ],
+  "Safari Zone North": [
+    {
+      "from": "Safari Zone North",
+      "to": "Safari Zone West-NW",
+      "coordinates": {
+        "x": 3856,
+        "y": 6568
+      }
+    },
+    {
+      "from": "Safari Zone North",
+      "to": "Safari Zone West",
+      "coordinates": {
+        "x": 3952,
+        "y": 6568
+      }
+    },
+    {
+      "from": "Safari Zone North",
+      "to": "Safari Zone Center-NE",
+      "coordinates": {
+        "x": 4144,
+        "y": 6568
+      }
+    },
+    {
+      "from": "Safari Zone North",
+      "to": "Safari Zone East",
+      "coordinates": {
+        "x": 4440,
+        "y": 6496
+      }
+    },
+    {
+      "from": "Safari Zone North",
+      "to": "Safari Zone North Rest House",
+      "coordinates": {
+        "x": 4376,
+        "y": 6056
+      }
+    }
+  ],
+  "Safari Zone North Rest House": [
+    {
+      "from": "Safari Zone North Rest House",
+      "to": "Safari Zone North",
+      "coordinates": {
+        "x": 4376,
+        "y": 5960
+      }
+    }
+  ],
+  "Safari Zone Secret House": [
+    {
+      "from": "Safari Zone Secret House",
+      "to": "Safari Zone West-NW",
+      "coordinates": {
+        "x": 3352,
+        "y": 6696
+      }
+    }
+  ],
+  "Safari Zone West": [
+    {
+      "from": "Safari Zone West",
+      "to": "Safari Zone North",
+      "coordinates": {
+        "x": 3888,
+        "y": 6616
+      }
+    },
+    {
+      "from": "Safari Zone West",
+      "to": "Safari Zone Center-NW",
+      "coordinates": {
+        "x": 3928,
+        "y": 6976
+      }
+    },
+    {
+      "from": "Safari Zone West",
+      "to": "Safari Zone West Rest House",
+      "coordinates": {
+        "x": 3640,
+        "y": 6792
+      }
+    }
+  ],
+  "Safari Zone West Rest House": [
+    {
+      "from": "Safari Zone West Rest House",
+      "to": "Safari Zone West",
+      "coordinates": {
+        "x": 3352,
+        "y": 6856
+      }
+    }
+  ],
+  "Safari Zone West-NW": [
+    {
+      "from": "Safari Zone West-NW",
+      "to": "Safari Zone North",
+      "coordinates": {
+        "x": 3792,
+        "y": 6616
+      }
+    },
+    {
+      "from": "Safari Zone West-NW",
+      "to": "Safari Zone Secret House",
+      "coordinates": {
+        "x": 3512,
+        "y": 6664
+      }
+    }
+  ],
+  "Safari Zone West-Wild": [],
+  "Saffron City": [
+    {
+      "from": "Saffron City",
+      "to": "Saffron Fighting Dojo",
+      "coordinates": {
+        "x": 4648,
+        "y": 2568
+      }
+    },
+    {
+      "from": "Saffron City",
+      "to": "Saffron Pokemart",
+      "coordinates": {
+        "x": 4632,
+        "y": 2696
+      }
+    },
+    {
+      "from": "Saffron City",
+      "to": "Saffron Pokemon Center",
+      "coordinates": {
+        "x": 4376,
+        "y": 2984
+      }
+    },
+    {
+      "from": "Saffron City",
+      "to": "Saffron Mr. Psychic's House",
+      "coordinates": {
+        "x": 4696,
+        "y": 2984
+      }
+    }
+  ],
+  "Saffron City-Copycat": [
+    {
+      "from": "Saffron City-Copycat",
+      "to": "Saffron Copycat's House 1F",
+      "coordinates": {
+        "x": 4344,
+        "y": 2600
+      }
+    }
+  ],
+  "Saffron City-G": [
+    {
+      "from": "Saffron City-G",
+      "to": "Saffron Gym-S",
+      "coordinates": {
+        "x": 4776,
+        "y": 2568
+      }
+    }
+  ],
+  "Saffron City-Pidgey": [
+    {
+      "from": "Saffron City-Pidgey",
+      "to": "Saffron Pidgey House",
+      "coordinates": {
+        "x": 4440,
+        "y": 2696
+      }
+    }
+  ],
+  "Saffron City-Silph": [
+    {
+      "from": "Saffron City-Silph",
+      "to": "Silph Co 1F",
+      "coordinates": {
+        "x": 4520,
+        "y": 2856
+      }
+    }
+  ],
+  "Saffron Copycat's House 1F": [
+    {
+      "from": "Saffron Copycat's House 1F",
+      "to": "Saffron City-Copycat",
+      "coordinates": {
+        "x": 4120,
+        "y": 2440
+      }
+    },
+    {
+      "from": "Saffron Copycat's House 1F",
+      "to": "Saffron Copycat's House 2F",
+      "coordinates": {
+        "x": 4184,
+        "y": 2344
+      }
+    }
+  ],
+  "Saffron Copycat's House 2F": [
+    {
+      "from": "Saffron Copycat's House 2F",
+      "to": "Saffron Copycat's House 1F",
+      "coordinates": {
+        "x": 4184,
+        "y": 2184
+      }
+    }
+  ],
+  "Saffron Fighting Dojo": [
+    {
+      "from": "Saffron Fighting Dojo",
+      "to": "Saffron City",
+      "coordinates": {
+        "x": 4808,
+        "y": 2472
+      }
+    }
+  ],
+  "Saffron Gym-C": [
+    {
+      "from": "Saffron Gym-C",
+      "to": "Saffron Gym-NW",
+      "coordinates": {
+        "x": 5112,
+        "y": 2472
+      }
+    }
+  ],
+  "Saffron Gym-E": [
+    {
+      "from": "Saffron Gym-E",
+      "to": "Saffron Gym-NE",
+      "coordinates": {
+        "x": 5176,
+        "y": 2440
+      }
+    },
+    {
+      "from": "Saffron Gym-E",
+      "to": "Saffron Gym-SE",
+      "coordinates": {
+        "x": 5240,
+        "y": 2440
+      }
+    },
+    {
+      "from": "Saffron Gym-E",
+      "to": "Saffron Gym-N",
+      "coordinates": {
+        "x": 5176,
+        "y": 2472
+      }
+    },
+    {
+      "from": "Saffron Gym-E",
+      "to": "Saffron Gym-W",
+      "coordinates": {
+        "x": 5240,
+        "y": 2472
+      }
+    }
+  ],
+  "Saffron Gym-N": [
+    {
+      "from": "Saffron Gym-N",
+      "to": "Saffron Gym-E",
+      "coordinates": {
+        "x": 5080,
+        "y": 2344
+      }
+    },
+    {
+      "from": "Saffron Gym-N",
+      "to": "Saffron Gym-NW",
+      "coordinates": {
+        "x": 5112,
+        "y": 2344
+      }
+    },
+    {
+      "from": "Saffron Gym-N",
+      "to": "Saffron Gym-W",
+      "coordinates": {
+        "x": 5080,
+        "y": 2376
+      }
+    },
+    {
+      "from": "Saffron Gym-N",
+      "to": "Saffron Gym-SW",
+      "coordinates": {
+        "x": 5112,
+        "y": 2376
+      }
+    }
+  ],
+  "Saffron Gym-NE": [
+    {
+      "from": "Saffron Gym-NE",
+      "to": "Saffron Gym-E",
+      "coordinates": {
+        "x": 5176,
+        "y": 2344
+      }
+    },
+    {
+      "from": "Saffron Gym-NE",
+      "to": "Saffron Gym-SE",
+      "coordinates": {
+        "x": 5240,
+        "y": 2344
+      }
+    },
+    {
+      "from": "Saffron Gym-NE",
+      "to": "Saffron Gym-NW",
+      "coordinates": {
+        "x": 5176,
+        "y": 2376
+      }
+    },
+    {
+      "from": "Saffron Gym-NE",
+      "to": "Saffron Gym-SW",
+      "coordinates": {
+        "x": 5240,
+        "y": 2376
+      }
+    }
+  ],
+  "Saffron Gym-NW": [
+    {
+      "from": "Saffron Gym-NW",
+      "to": "Saffron Gym-NE",
+      "coordinates": {
+        "x": 4952,
+        "y": 2344
+      }
+    },
+    {
+      "from": "Saffron Gym-NW",
+      "to": "Saffron Gym-N",
+      "coordinates": {
+        "x": 5016,
+        "y": 2344
+      }
+    },
+    {
+      "from": "Saffron Gym-NW",
+      "to": "Saffron Gym-C",
+      "coordinates": {
+        "x": 4952,
+        "y": 2376
+      }
+    },
+    {
+      "from": "Saffron Gym-NW",
+      "to": "Saffron Gym-W",
+      "coordinates": {
+        "x": 5016,
+        "y": 2376
+      }
+    }
+  ],
+  "Saffron Gym-S": [
+    {
+      "from": "Saffron Gym-S",
+      "to": "Saffron Gym-SE",
+      "coordinates": {
+        "x": 5112,
+        "y": 2536
+      }
+    },
+    {
+      "from": "Saffron Gym-S",
+      "to": "Saffron City-G",
+      "coordinates": {
+        "x": 5064,
+        "y": 2568
+      }
+    }
+  ],
+  "Saffron Gym-SE": [
+    {
+      "from": "Saffron Gym-SE",
+      "to": "Saffron Gym-NE",
+      "coordinates": {
+        "x": 5176,
+        "y": 2536
+      }
+    },
+    {
+      "from": "Saffron Gym-SE",
+      "to": "Saffron Gym-E",
+      "coordinates": {
+        "x": 5240,
+        "y": 2536
+      }
+    },
+    {
+      "from": "Saffron Gym-SE",
+      "to": "Saffron Gym-SW",
+      "coordinates": {
+        "x": 5176,
+        "y": 2568
+      }
+    },
+    {
+      "from": "Saffron Gym-SE",
+      "to": "Saffron Gym-S",
+      "coordinates": {
+        "x": 5240,
+        "y": 2568
+      }
+    }
+  ],
+  "Saffron Gym-SW": [
+    {
+      "from": "Saffron Gym-SW",
+      "to": "Saffron Gym-NE",
+      "coordinates": {
+        "x": 4952,
+        "y": 2536
+      }
+    },
+    {
+      "from": "Saffron Gym-SW",
+      "to": "Saffron Gym-SE",
+      "coordinates": {
+        "x": 5016,
+        "y": 2536
+      }
+    },
+    {
+      "from": "Saffron Gym-SW",
+      "to": "Saffron Gym-N",
+      "coordinates": {
+        "x": 4952,
+        "y": 2568
+      }
+    },
+    {
+      "from": "Saffron Gym-SW",
+      "to": "Saffron Gym-W",
+      "coordinates": {
+        "x": 5016,
+        "y": 2568
+      }
+    }
+  ],
+  "Saffron Gym-W": [
+    {
+      "from": "Saffron Gym-W",
+      "to": "Saffron Gym-E",
+      "coordinates": {
+        "x": 4952,
+        "y": 2440
+      }
+    },
+    {
+      "from": "Saffron Gym-W",
+      "to": "Saffron Gym-N",
+      "coordinates": {
+        "x": 5016,
+        "y": 2440
+      }
+    },
+    {
+      "from": "Saffron Gym-W",
+      "to": "Saffron Gym-NW",
+      "coordinates": {
+        "x": 4952,
+        "y": 2472
+      }
+    },
+    {
+      "from": "Saffron Gym-W",
+      "to": "Saffron Gym-SW",
+      "coordinates": {
+        "x": 5016,
+        "y": 2472
+      }
+    }
+  ],
+  "Saffron Mr. Psychic's House": [
+    {
+      "from": "Saffron Mr. Psychic's House",
+      "to": "Saffron City",
+      "coordinates": {
+        "x": 5064,
+        "y": 3080
+      }
+    }
+  ],
+  "Saffron Pidgey House": [
+    {
+      "from": "Saffron Pidgey House",
+      "to": "Saffron City-Pidgey",
+      "coordinates": {
+        "x": 4120,
+        "y": 2600
+      }
+    }
+  ],
+  "Saffron Pokemart": [
+    {
+      "from": "Saffron Pokemart",
+      "to": "Saffron City",
+      "coordinates": {
+        "x": 4792,
+        "y": 2248
+      }
+    }
+  ],
+  "Saffron Pokemon Center": [
+    {
+      "from": "Saffron Pokemon Center",
+      "to": "Saffron City",
+      "coordinates": {
+        "x": 4200,
+        "y": 3240
+      }
+    }
+  ],
+  "Sea Routes/Cinnabar/Seafoam Fishing": [],
+  "Seafoam Islands 1F": [
+    {
+      "from": "Seafoam Islands 1F",
+      "to": "Route 20-IE",
+      "coordinates": {
+        "x": 2600,
+        "y": 6216
+      }
+    },
+    {
+      "from": "Seafoam Islands 1F",
+      "to": "Seafoam Islands B1F",
+      "coordinates": {
+        "x": 2648,
+        "y": 6024
+      }
+    },
+    {
+      "from": "Seafoam Islands 1F",
+      "to": "Seafoam Islands B1F-NE",
+      "coordinates": {
+        "x": 2936,
+        "y": 5992
+      }
+    }
+  ],
+  "Seafoam Islands 1F-SE": [
+    {
+      "from": "Seafoam Islands 1F-SE",
+      "to": "Route 20-IW",
+      "coordinates": {
+        "x": 2952,
+        "y": 6216
+      }
+    },
+    {
+      "from": "Seafoam Islands 1F-SE",
+      "to": "Seafoam Islands B1F-SE",
+      "coordinates": {
+        "x": 2904,
+        "y": 6184
+      }
+    }
+  ],
+  "Seafoam Islands 1F-Wild": [],
+  "Seafoam Islands B1F": [
+    {
+      "from": "Seafoam Islands B1F",
+      "to": "Seafoam Islands B2F-NW",
+      "coordinates": {
+        "x": 2600,
+        "y": 6616
+      }
+    },
+    {
+      "from": "Seafoam Islands B1F",
+      "to": "Seafoam Islands 1F",
+      "coordinates": {
+        "x": 2648,
+        "y": 6664
+      }
+    },
+    {
+      "from": "Seafoam Islands B1F to Seafoam Islands B2F-SW N",
+      "to": "Seafoam Islands B2F-SW",
+      "coordinates": {
+        "x": 2744,
+        "y": 6696
+      }
+    },
+    {
+      "from": "Seafoam Islands B1F to Seafoam Islands B2F-SW S",
+      "to": "Seafoam Islands B2F-SW",
+      "coordinates": {
+        "x": 2840,
+        "y": 6824
+      }
+    }
+  ],
+  "Seafoam Islands B1F-NE": [
+    {
+      "from": "Seafoam Islands B1F-NE",
+      "to": "Seafoam Islands 1F",
+      "coordinates": {
+        "x": 2936,
+        "y": 6632
+      }
+    }
+  ],
+  "Seafoam Islands B1F-SE": [
+    {
+      "from": "Seafoam Islands B1F-SE",
+      "to": "Seafoam Islands 1F-SE",
+      "coordinates": {
+        "x": 2904,
+        "y": 6824
+      }
+    },
+    {
+      "from": "Seafoam Islands B1F-SE",
+      "to": "Seafoam Islands B2F-SE",
+      "coordinates": {
+        "x": 2936,
+        "y": 6760
+      }
+    }
+  ],
+  "Seafoam Islands B1F-Wild": [],
+  "Seafoam Islands B2F-NE": [
+    {
+      "from": "Seafoam Islands B2F-NE",
+      "to": "Seafoam Islands B3F-NE",
+      "coordinates": {
+        "x": 2936,
+        "y": 6952
+      }
+    }
+  ],
+  "Seafoam Islands B2F-NW": [
+    {
+      "from": "Seafoam Islands B2F-NW",
+      "to": "Seafoam Islands B1F",
+      "coordinates": {
+        "x": 2616,
+        "y": 6952
+      }
+    }
+  ],
+  "Seafoam Islands B2F-SE": [
+    {
+      "from": "Seafoam Islands B2F-SE",
+      "to": "Seafoam Islands B1F-SE",
+      "coordinates": {
+        "x": 2936,
+        "y": 7080
+      }
+    },
+    {
+      "from": "Seafoam Islands B2F-SE",
+      "to": "Seafoam Islands B3F-SE",
+      "coordinates": {
+        "x": 2936,
+        "y": 7128
+      }
+    }
+  ],
+  "Seafoam Islands B2F-SW": [
+    {
+      "from": "Seafoam Islands B2F-SW to Seafoam Islands 1F-SW S",
+      "to": "Seafoam Islands B1F",
+      "coordinates": {
+        "x": 2840,
+        "y": 7144
+      }
+    },
+    {
+      "from": "Seafoam Islands B2F-SW",
+      "to": "Seafoam Islands B3F",
+      "coordinates": {
+        "x": 2616,
+        "y": 7112
+      }
+    },
+    {
+      "from": "Seafoam Islands B2F-SW to Seafoam Islands 1F-SW N",
+      "to": "Seafoam Islands B1F",
+      "coordinates": {
+        "x": 2744,
+        "y": 7016
+      }
+    }
+  ],
+  "Seafoam Islands B2F-Wild": [],
+  "Seafoam Islands B3F": [
+    {
+      "from": "Seafoam Islands B3F",
+      "to": "Seafoam Islands B2F-SW",
+      "coordinates": {
+        "x": 2104,
+        "y": 7096
+      }
+    },
+    {
+      "from": "Seafoam Islands B3F",
+      "to": "Seafoam Islands B4F",
+      "coordinates": {
+        "x": 2152,
+        "y": 7000
+      }
+    }
+  ],
+  "Seafoam Islands B3F-NE": [
+    {
+      "from": "Seafoam Islands B3F-NE",
+      "to": "Seafoam Islands B4F",
+      "coordinates": {
+        "x": 2424,
+        "y": 6968
+      }
+    },
+    {
+      "from": "Seafoam Islands B3F-NE",
+      "to": "Seafoam Islands B2F-NE",
+      "coordinates": {
+        "x": 2424,
+        "y": 6952
+      }
+    }
+  ],
+  "Seafoam Islands B3F-SE": [
+    {
+      "from": "Seafoam Islands B3F-SE",
+      "to": "Seafoam Islands B2F-SE",
+      "coordinates": {
+        "x": 2424,
+        "y": 7128
+      }
+    }
+  ],
+  "Seafoam Islands B3F-Wild": [],
+  "Seafoam Islands B4F": [
+    {
+      "from": "Seafoam Islands B4F",
+      "to": "Seafoam Islands B3F",
+      "coordinates": {
+        "x": 2200,
+        "y": 6696
+      }
+    },
+    {
+      "from": "Seafoam Islands B4F",
+      "to": "Seafoam Islands B3F-NE",
+      "coordinates": {
+        "x": 2424,
+        "y": 6648
+      }
+    }
+  ],
+  "Seafoam Islands B4F-W": [],
+  "Silph Co 10F": [
+    {
+      "from": "Silph Co 10F",
+      "to": "Silph Co 9F",
+      "coordinates": {
+        "x": 6184,
+        "y": 6200
+      }
+    },
+    {
+      "from": "Silph Co 10F",
+      "to": "Silph Co 11F",
+      "coordinates": {
+        "x": 6216,
+        "y": 6200
+      }
+    },
+    {
+      "from": "Silph Co 10F",
+      "to": "Silph Co Elevator-10F",
+      "coordinates": {
+        "x": 6248,
+        "y": 6200
+      }
+    },
+    {
+      "from": "Silph Co 10F",
+      "to": "Silph Co 4F",
+      "coordinates": {
+        "x": 6264,
+        "y": 6312
+      }
+    }
+  ],
+  "Silph Co 10F-SE": [
+    {
+      "from": "Silph Co 10F-SE",
+      "to": "Silph Co 4F-N",
+      "coordinates": {
+        "x": 6200,
+        "y": 6376
+      }
+    },
+    {
+      "from": "Silph Co 10F-SE",
+      "to": "Silph Co 4F",
+      "coordinates": {
+        "x": 6264,
+        "y": 6440
+      }
+    }
   ],
   "Silph Co 11F": [
-    { "from": "Silph Co 11F", "to": "Silph Co 10F" },
-    { "from": "Silph Co 11F", "to": "Silph Co Elevator-11F" }
+    {
+      "from": "Silph Co 11F",
+      "to": "Silph Co 10F",
+      "coordinates": {
+        "x": 6200,
+        "y": 6520
+      }
+    },
+    {
+      "from": "Silph Co 11F",
+      "to": "Silph Co Elevator-11F",
+      "coordinates": {
+        "x": 6264,
+        "y": 6520
+      }
+    }
   ],
-  "Silph Co 11F-W": [{ "from": "Silph Co 11F-W", "to": "Silph Co 7F-NW" }],
-  "Viridian Gym": [{ "from": "Viridian Gym", "to": "Viridian City-G" }],
-  "Pewter Pokemart": [{ "from": "Pewter Pokemart", "to": "Pewter City" }],
-  "Cerulean Cave 1F-SE": [
-    { "from": "Cerulean Cave 1F-SE", "to": "Cerulean City-Cave" },
-    { "from": "Cerulean Cave 1F-SE", "to": "Cerulean Cave 2F-E" }
+  "Silph Co 11F-C": [],
+  "Silph Co 11F-W": [
+    {
+      "from": "Silph Co 11F-W",
+      "to": "Silph Co 7F-NW",
+      "coordinates": {
+        "x": 6104,
+        "y": 6552
+      }
+    }
   ],
-  "Cerulean Cave 1F-NE": [{ "from": "Cerulean Cave 1F-NE", "to": "Cerulean Cave 2F-E" }],
-  "Cerulean Cave 1F-N": [{ "from": "Cerulean Cave 1F-N", "to": "Cerulean Cave 2F-N" }],
-  "Cerulean Cave 1F-SW": [
-    { "from": "Cerulean Cave 1F-SW", "to": "Cerulean Cave 2F-N" },
-    { "from": "Cerulean Cave 1F-SW", "to": "Cerulean Cave 2F-W" }
+  "Silph Co 1F": [
+    {
+      "from": "Silph Co 1F",
+      "to": "Saffron City-Silph",
+      "coordinates": {
+        "x": 5200,
+        "y": 5832
+      }
+    },
+    {
+      "from": "Silph Co 1F",
+      "to": "Silph Co 2F",
+      "coordinates": {
+        "x": 5448,
+        "y": 5560
+      }
+    },
+    {
+      "from": "Silph Co 1F",
+      "to": "Silph Co Elevator-1F",
+      "coordinates": {
+        "x": 5352,
+        "y": 5560
+      }
+    }
   ],
-  "Cerulean Cave 1F-NW": [
-    { "from": "Cerulean Cave 1F-NW", "to": "Cerulean Cave 2F-W" },
-    { "from": "Cerulean Cave 1F-NW", "to": "Cerulean Cave B1F" }
+  "Silph Co 2F": [
+    {
+      "from": "Silph Co 2F",
+      "to": "Silph Co 1F",
+      "coordinates": {
+        "x": 5416,
+        "y": 5880
+      }
+    },
+    {
+      "from": "Silph Co 2F",
+      "to": "Silph Co 3F",
+      "coordinates": {
+        "x": 5448,
+        "y": 5880
+      }
+    },
+    {
+      "from": "Silph Co 2F",
+      "to": "Silph Co Elevator-2F",
+      "coordinates": {
+        "x": 5352,
+        "y": 5880
+      }
+    },
+    {
+      "from": "Silph Co 2F to Silph Co 8F N",
+      "to": "Silph Co 8F",
+      "coordinates": {
+        "x": 5464,
+        "y": 6120
+      }
+    },
+    {
+      "from": "Silph Co 2F to Silph Co 8F S",
+      "to": "Silph Co 8F",
+      "coordinates": {
+        "x": 5240,
+        "y": 5928
+      }
+    }
   ],
-  "Cerulean Cave 1F-Wild": [],
-  "Cerulean Cave 1F-Water": [],
-  "Cerulean Badge House": [
-    { "from": "Cerulean Badge House", "to": "Cerulean City-Badge House Backyard" },
-    { "from": "Cerulean Badge House", "to": "Cerulean City" }
+  "Silph Co 2F-NW": [
+    {
+      "from": "Silph Co 2F-NW",
+      "to": "Silph Co 3F",
+      "coordinates": {
+        "x": 5080,
+        "y": 5928
+      }
+    }
   ],
-  "Fuchsia Bill's Grandpa's House": [
-    { "from": "Fuchsia Bill's Grandpa's House", "to": "Fuchsia City" }
+  "Silph Co 2F-SW": [
+    {
+      "from": "Silph Co 2F-SW",
+      "to": "Silph Co 6F",
+      "coordinates": {
+        "x": 5176,
+        "y": 6120
+      }
+    }
   ],
-  "Fuchsia Pokemon Center": [{ "from": "Fuchsia Pokemon Center", "to": "Fuchsia City" }],
-  "Fuchsia Warden's House": [{ "from": "Fuchsia Warden's House", "to": "Fuchsia City" }],
-  "Safari Zone Gate-S": [{ "from": "Safari Zone Gate-S", "to": "Fuchsia City" }],
-  "Safari Zone Gate-N": [{ "from": "Safari Zone Gate-N", "to": "Safari Zone Center-S" }],
-  "Fuchsia Gym": [{ "from": "Fuchsia Gym", "to": "Fuchsia City" }],
-  "Fuchsia Meeting Room": [{ "from": "Fuchsia Meeting Room", "to": "Fuchsia City" }],
-  "Cinnabar Gym": [{ "from": "Cinnabar Gym", "to": "Cinnabar Island-G" }],
-  "Cinnabar Lab": [
-    { "from": "Cinnabar Lab", "to": "Cinnabar Island" },
-    { "from": "Cinnabar Lab", "to": "Cinnabar Lab Trade Room" },
-    { "from": "Cinnabar Lab", "to": "Cinnabar Lab R&D Room" },
-    { "from": "Cinnabar Lab", "to": "Cinnabar Lab Fossil Room" }
+  "Silph Co 3F": [
+    {
+      "from": "Silph Co 3F",
+      "to": "Silph Co 2F",
+      "coordinates": {
+        "x": 5448,
+        "y": 6200
+      }
+    },
+    {
+      "from": "Silph Co 3F",
+      "to": "Silph Co 4F",
+      "coordinates": {
+        "x": 5416,
+        "y": 6200
+      }
+    },
+    {
+      "from": "Silph Co 3F",
+      "to": "Silph Co Elevator-3F",
+      "coordinates": {
+        "x": 5352,
+        "y": 6200
+      }
+    },
+    {
+      "from": "Silph Co 3F to Silph Co 3F N",
+      "to": "Silph Co 3F",
+      "coordinates": {
+        "x": 5464,
+        "y": 6440
+      }
+    },
+    {
+      "from": "Silph Co 3F",
+      "to": "Silph Co 5F",
+      "coordinates": {
+        "x": 5080,
+        "y": 6248
+      }
+    },
+    {
+      "from": "Silph Co 3F",
+      "to": "Silph Co 5F-SW",
+      "coordinates": {
+        "x": 5080,
+        "y": 6440
+      }
+    },
+    {
+      "from": "Silph Co 3F",
+      "to": "Silph Co 2F-NW",
+      "coordinates": {
+        "x": 5464,
+        "y": 6248
+      }
+    },
+    {
+      "from": "Silph Co 3F to Silph Co 3F S",
+      "to": "Silph Co 3F",
+      "coordinates": {
+        "x": 5400,
+        "y": 6376
+      }
+
+    }
   ],
-  "Cinnabar Lab Trade Room": [{ "from": "Cinnabar Lab Trade Room", "to": "Cinnabar Lab" }],
-  "Cinnabar Lab R&D Room": [{ "from": "Cinnabar Lab R&D Room", "to": "Cinnabar Lab" }],
-  "Cinnabar Lab Fossil Room": [{ "from": "Cinnabar Lab Fossil Room", "to": "Cinnabar Lab" }],
-  "Cinnabar Pokemon Center": [{ "from": "Cinnabar Pokemon Center", "to": "Cinnabar Island" }],
-  "Cinnabar Pokemart": [{ "from": "Cinnabar Pokemart", "to": "Cinnabar Island" }],
-  "Saffron Copycat's House 1F": [
-    { "from": "Saffron Copycat's House 1F", "to": "Saffron City-Copycat" },
-    { "from": "Saffron Copycat's House 1F", "to": "Saffron Copycat's House 2F" }
+  "Silph Co 3F-C": [
+    {
+      "from": "Silph Co 3F-C",
+      "to": "Silph Co 7F-NW",
+      "coordinates": {
+        "x": 5208,
+        "y": 6376
+      }
+    }
   ],
-  "Indigo Plateau Champion's Room": [
-    { "from": "Indigo Plateau Champion's Room", "to": "Indigo Plateau Lance's Room" },
-    { "from": "Indigo Plateau Champion's Room", "to": "Indigo Plateau Hall of Fame" }
+  "Silph Co 3F-W": [
+    {
+      "from": "Silph Co 3F-W",
+      "to": "Silph Co 9F-NW",
+      "coordinates": {
+        "x": 5080,
+        "y": 6376
+      }
+    }
   ],
-  "Indigo Plateau Lorelei's Room": [
-    { "from": "Indigo Plateau Lorelei's Room", "to": "Indigo Plateau Lobby-N" },
-    { "from": "Indigo Plateau Lorelei's Room", "to": "Indigo Plateau Bruno's Room" }
+  "Silph Co 4F": [
+    {
+      "from": "Silph Co 4F",
+      "to": "Silph Co 3F",
+      "coordinates": {
+        "x": 5416,
+        "y": 6520
+      }
+    },
+    {
+      "from": "Silph Co 4F",
+      "to": "Silph Co 5F",
+      "coordinates": {
+        "x": 5448,
+        "y": 6520
+      }
+    },
+    {
+      "from": "Silph Co 4F",
+      "to": "Silph Co Elevator-4F",
+      "coordinates": {
+        "x": 5352,
+        "y": 6520
+      }
+    },
+    {
+      "from": "Silph Co 4F",
+      "to": "Silph Co 10F-SE",
+      "coordinates": {
+        "x": 5080,
+        "y": 6760
+      }
+    },
+    {
+      "from": "Silph Co 4F",
+      "to": "Silph Co 10F",
+      "coordinates": {
+        "x": 5304,
+        "y": 6696
+      }
+    }
   ],
-  "Indigo Plateau Bruno's Room": [
-    { "from": "Indigo Plateau Bruno's Room", "to": "Indigo Plateau Lorelei's Room" },
-    { "from": "Indigo Plateau Bruno's Room", "to": "Indigo Plateau Agatha's Room" }
+  "Silph Co 4F-N": [
+    {
+      "from": "Silph Co 4F-N",
+      "to": "Silph Co 6F",
+      "coordinates": {
+        "x": 5304,
+        "y": 6568
+      }
+    },
+    {
+      "from": "Silph Co 4F-N",
+      "to": "Silph Co 10F-SE",
+      "coordinates": {
+        "x": 5208,
+        "y": 6632
+      }
+    }
   ],
-  "Indigo Plateau Agatha's Room": [
-    { "from": "Indigo Plateau Agatha's Room", "to": "Indigo Plateau Bruno's Room" },
-    { "from": "Indigo Plateau Agatha's Room", "to": "Indigo Plateau Lance's Room" }
+  "Silph Co 4F-W": [],
+  "Silph Co 5F": [
+    {
+      "from": "Silph Co 5F",
+      "to": "Silph Co 6F",
+      "coordinates": {
+        "x": 5928,
+        "y": 6520
+      }
+    },
+    {
+      "from": "Silph Co 5F",
+      "to": "Silph Co 4F",
+      "coordinates": {
+        "x": 5960,
+        "y": 6520
+      }
+    },
+    {
+      "from": "Silph Co 5F",
+      "to": "Silph Co Elevator-5F",
+      "coordinates": {
+        "x": 5864,
+        "y": 6520
+      }
+    },
+    {
+      "from": "Silph Co 5F",
+      "to": "Silph Co 7F-SE",
+      "coordinates": {
+        "x": 5976,
+        "y": 6568
+      }
+    },
+    {
+      "from": "Silph Co 5F",
+      "to": "Silph Co 9F",
+      "coordinates": {
+        "x": 5688,
+        "y": 6760
+      }
+    },
+    {
+      "from": "Silph Co 5F",
+      "to": "Silph Co 3F",
+      "coordinates": {
+        "x": 5720,
+        "y": 6600
+      }
+    }
+  ],
+  "Silph Co 5F-NW": [],
+  "Silph Co 5F-SW": [
+    {
+      "from": "Silph Co 5F-SW",
+      "to": "Silph Co 3F",
+      "coordinates": {
+        "x": 5592,
+        "y": 6760
+      }
+    }
+  ],
+  "Silph Co 6F": [
+    {
+      "from": "Silph Co 6F",
+      "to": "Silph Co 7F",
+      "coordinates": {
+        "x": 5800,
+        "y": 6200
+      }
+    },
+    {
+      "from": "Silph Co 6F",
+      "to": "Silph Co 5F",
+      "coordinates": {
+        "x": 5768,
+        "y": 6200
+      }
+    },
+    {
+      "from": "Silph Co 6F",
+      "to": "Silph Co Elevator-7F",
+      "coordinates": {
+        "x": 5832,
+        "y": 6200
+      }
+    },
+    {
+      "from": "Silph Co 6F",
+      "to": "Silph Co 4F-N",
+      "coordinates": {
+        "x": 5592,
+        "y": 6248
+      }
+    },
+    {
+      "from": "Silph Co 6F",
+      "to": "Silph Co 2F-SW",
+      "coordinates": {
+        "x": 5912,
+        "y": 6248
+      }
+    }
+  ],
+  "Silph Co 6F-SW": [],
+  "Silph Co 7F": [
+    {
+      "from": "Silph Co 7F",
+      "to": "Silph Co 8F",
+      "coordinates": {
+        "x": 5800,
+        "y": 5880
+      }
+    },
+    {
+      "from": "Silph Co 7F",
+      "to": "Silph Co 6F",
+      "coordinates": {
+        "x": 5896,
+        "y": 5880
+      }
+    },
+    {
+      "from": "Silph Co 7F",
+      "to": "Silph Co Elevator-7F",
+      "coordinates": {
+        "x": 5832,
+        "y": 5880
+      }
+    }
+  ],
+  "Silph Co 7F-E": [],
+  "Silph Co 7F-NW": [
+    {
+      "from": "Silph Co 7F-NW",
+      "to": "Silph Co 3F-C",
+      "coordinates": {
+        "x": 5624,
+        "y": 5928
+      }
+    },
+    {
+      "from": "Silph Co 7F-NW",
+      "to": "Silph Co 11F-W",
+      "coordinates": {
+        "x": 5624,
+        "y": 5992
+      }
+    }
+  ],
+  "Silph Co 7F-SE": [
+    {
+      "from": "Silph Co 7F-SE",
+      "to": "Silph Co 5F",
+      "coordinates": {
+        "x": 5880,
+        "y": 6120
+      }
+    }
+  ],
+  "Silph Co 8F": [
+    {
+      "from": "Silph Co 8F",
+      "to": "Silph Co 9F",
+      "coordinates": {
+        "x": 5800,
+        "y": 5560
+      }
+    },
+    {
+      "from": "Silph Co 8F",
+      "to": "Silph Co 7F",
+      "coordinates": {
+        "x": 5768,
+        "y": 5560
+      }
+    },
+    {
+      "from": "Silph Co 8F",
+      "to": "Silph Co Elevator-8F",
+      "coordinates": {
+        "x": 5832,
+        "y": 5560
+      }
+    },
+    {
+      "from": "Silph Co 8F to Silph Co 2F S",
+      "to": "Silph Co 2F",
+      "coordinates": {
+        "x": 5720,
+        "y": 5640
+      }
+    },
+    {
+      "from": "Silph Co 8F to Silph Co 2F N",
+      "to": "Silph Co 2F",
+      "coordinates": {
+        "x": 5592,
+        "y": 5800
+      }
+    },
+    {
+      "from": "Silph Co 8F",
+      "to": "Silph Co 8F-W",
+      "coordinates": {
+        "x": 5720,
+        "y": 5704
+      }
+    }
+  ],
+  "Silph Co 8F-W": [
+    {
+      "from": "Silph Co 8F-W",
+      "to": "Silph Co 8F",
+      "coordinates": {
+        "x": 5592,
+        "y": 5736
+      }
+    }
+  ],
+  "Silph Co 9F": [
+    {
+      "from": "Silph Co 9F",
+      "to": "Silph Co 10F",
+      "coordinates": {
+        "x": 6280,
+        "y": 5880
+      }
+    },
+    {
+      "from": "Silph Co 9F",
+      "to": "Silph Co 8F",
+      "coordinates": {
+        "x": 6312,
+        "y": 5880
+      }
+    },
+    {
+      "from": "Silph Co 9F",
+      "to": "Silph Co Elevator-9F",
+      "coordinates": {
+        "x": 6344,
+        "y": 5880
+      }
+    },
+    {
+      "from": "Silph Co 9F",
+      "to": "Silph Co 5F",
+      "coordinates": {
+        "x": 6328,
+        "y": 6120
+      }
+    }
+  ],
+  "Silph Co 9F-NW": [
+    {
+      "from": "Silph Co 9F-NW",
+      "to": "Silph Co 3F-W",
+      "coordinates": {
+        "x": 6200,
+        "y": 5928
+      }
+    }
+  ],
+  "Silph Co 9F-SW": [],
+  "Silph Co Elevator": [],
+  "Silph Co Elevator-10F": [
+    {
+      "from": "Silph Co Elevator-10F",
+      "to": "Silph Co 10F",
+      "coordinates": {
+        "x": 5360,
+        "y": 5512
+      }
+    }
+  ],
+  "Silph Co Elevator-11F": [
+    {
+      "from": "Silph Co Elevator-11F",
+      "to": "Silph Co 11F",
+      "coordinates": {
+        "x": 5360,
+        "y": 5512
+      }
+    }
+  ],
+  "Silph Co Elevator-1F": [
+    {
+      "from": "Silph Co Elevator-1F",
+      "to": "Silph Co 1F",
+      "coordinates": {
+        "x": 5360,
+        "y": 5512
+      }
+    }
+  ],
+  "Silph Co Elevator-2F": [
+    {
+      "from": "Silph Co Elevator-2F",
+      "to": "Silph Co 2F",
+      "coordinates": {
+        "x": 5360,
+        "y": 5512
+      }
+    }
+  ],
+  "Silph Co Elevator-3F": [
+    {
+      "from": "Silph Co Elevator-3F",
+      "to": "Silph Co 3F",
+      "coordinates": {
+        "x": 5360,
+        "y": 5512
+      }
+    }
+  ],
+  "Silph Co Elevator-4F": [
+    {
+      "from": "Silph Co Elevator-4F",
+      "to": "Silph Co 4F",
+      "coordinates": {
+        "x": 5360,
+        "y": 5512
+      }
+    }
+  ],
+  "Silph Co Elevator-5F": [
+    {
+      "from": "Silph Co Elevator-5F",
+      "to": "Silph Co 5F",
+      "coordinates": {
+        "x": 5360,
+        "y": 5512
+      }
+    }
+  ],
+  "Silph Co Elevator-6F": [
+    {
+      "from": "Silph Co Elevator-6F",
+      "to": "Silph Co 6F",
+      "coordinates": {
+        "x": 5360,
+        "y": 5512
+      }
+    }
+  ],
+  "Silph Co Elevator-7F": [
+    {
+      "from": "Silph Co Elevator-7F",
+      "to": "Silph Co 7F",
+      "coordinates": {
+        "x": 5360,
+        "y": 5512
+      }
+    }
+  ],
+  "Silph Co Elevator-8F": [
+    {
+      "from": "Silph Co Elevator-8F",
+      "to": "Silph Co 8F",
+      "coordinates": {
+        "x": 5360,
+        "y": 5512
+      }
+    }
+  ],
+  "Silph Co Elevator-9F": [
+    {
+      "from": "Silph Co Elevator-9F",
+      "to": "Silph Co 9F",
+      "coordinates": {
+        "x": 5360,
+        "y": 5512
+      }
+    }
+  ],
+  "Underground Path North South": [
+    {
+      "from": "Underground Path North South",
+      "to": "Underground Path Route 5",
+      "coordinates": {
+        "x": 4008,
+        "y": 1912
+      }
+    },
+    {
+      "from": "Underground Path North South",
+      "to": "Underground Path Route 6",
+      "coordinates": {
+        "x": 3960,
+        "y": 2504
+      }
+    }
+  ],
+  "Underground Path Route 5": [
+    {
+      "from": "Underground Path Route 5",
+      "to": "Route 5",
+      "coordinates": {
+        "x": 4136,
+        "y": 2056
+      }
+    },
+    {
+      "from": "Underground Path Route 5",
+      "to": "Underground Path North South",
+      "coordinates": {
+        "x": 4136,
+        "y": 2008
+      }
+    }
+  ],
+  "Underground Path Route 6": [
+    {
+      "from": "Underground Path Route 6",
+      "to": "Route 6",
+      "coordinates": {
+        "x": 3816,
+        "y": 2472
+      }
+    },
+    {
+      "from": "Underground Path Route 6",
+      "to": "Underground Path North South",
+      "coordinates": {
+        "x": 3816,
+        "y": 2424
+      }
+    }
+  ],
+  "Underground Path Route 7": [
+    {
+      "from": "Underground Path Route 7",
+      "to": "Route 7",
+      "coordinates": {
+        "x": 3992,
+        "y": 3080
+      }
+    },
+    {
+      "from": "Underground Path Route 7",
+      "to": "Underground Path West East",
+      "coordinates": {
+        "x": 4008,
+        "y": 3032
+      }
+    }
+  ],
+  "Underground Path Route 8": [
+    {
+      "from": "Underground Path Route 8",
+      "to": "Route 8",
+      "coordinates": {
+        "x": 5464,
+        "y": 3208
+      }
+    },
+    {
+      "from": "Underground Path Route 8",
+      "to": "Underground Path West East",
+      "coordinates": {
+        "x": 5480,
+        "y": 3160
+      }
+    }
+  ],
+  "Underground Path West East": [
+    {
+      "from": "Underground Path West East",
+      "to": "Underground Path Route 7",
+      "coordinates": {
+        "x": 4776,
+        "y": 3336
+      }
+    },
+    {
+      "from": "Underground Path West East",
+      "to": "Underground Path Route 8",
+      "coordinates": {
+        "x": 5496,
+        "y": 3288
+      }
+    }
+  ],
+  "Vermilion City": [
+    {
+      "from": "Vermilion City",
+      "to": "Vermilion Pokemon Center",
+      "coordinates": {
+        "x": 4408,
+        "y": 3720
+      }
+    },
+    {
+      "from": "Vermilion City",
+      "to": "Vermilion Pokemon Fan Club",
+      "coordinates": {
+        "x": 4376,
+        "y": 3880
+      }
+    },
+    {
+      "from": "Vermilion City",
+      "to": "Vermilion Pokemart",
+      "coordinates": {
+        "x": 4600,
+        "y": 3880
+      }
+    },
+    {
+      "from": "Vermilion City",
+      "to": "Vermilion Pidgey House",
+      "coordinates": {
+        "x": 4600,
+        "y": 3976
+      }
+    },
+    {
+      "from": "Vermilion City",
+      "to": "Vermilion Trade House",
+      "coordinates": {
+        "x": 4472,
+        "y": 3880
+      }
+    },
+    {
+      "from": "Vermilion City",
+      "to": "Vermilion Old Rod House",
+      "coordinates": {
+        "x": 4344,
+        "y": 3720
+      }
+    }
+  ],
+  "Vermilion City-Dock": [
+    {
+      "from": "Vermilion City-Dock",
+      "to": "Vermilion Dock",
+      "coordinates": {
+        "x": 4536,
+        "y": 4168
+      }
+    }
+  ],
+  "Vermilion City-G": [
+    {
+      "from": "Vermilion City-G",
+      "to": "Vermilion Gym",
+      "coordinates": {
+        "x": 4424,
+        "y": 3976
+      }
+    }
+  ],
+  "Vermilion Dock": [
+    {
+      "from": "Vermilion Dock",
+      "to": "Vermilion City-Dock",
+      "coordinates": {
+        "x": 6408,
+        "y": 4376
+      }
+    },
+    {
+      "from": "Vermilion Dock",
+      "to": "S.S. Anne 1F",
+      "coordinates": {
+        "x": 6408,
+        "y": 4408
+      }
+    }
+  ],
+  "Vermilion Gym": [
+    {
+      "from": "Vermilion Gym",
+      "to": "Vermilion City-G",
+      "coordinates": {
+        "x": 4120,
+        "y": 4200
+      }
+    }
+  ],
+  "Vermilion Old Rod House": [
+    {
+      "from": "Vermilion Old Rod House",
+      "to": "Vermilion City",
+      "coordinates": {
+        "x": 4024,
+        "y": 3720
+      }
+    }
+  ],
+  "Vermilion Pidgey House": [
+    {
+      "from": "Vermilion Pidgey House",
+      "to": "Vermilion City",
+      "coordinates": {
+        "x": 4936,
+        "y": 4232
+      }
+    }
+  ],
+  "Vermilion Pokemart": [
+    {
+      "from": "Vermilion Pokemart",
+      "to": "Vermilion City",
+      "coordinates": {
+        "x": 4792,
+        "y": 3624
+      }
+    }
+  ],
+  "Vermilion Pokemon Center": [
+    {
+      "from": "Vermilion Pokemon Center",
+      "to": "Vermilion City",
+      "coordinates": {
+        "x": 4200,
+        "y": 3624
+      }
+    }
+  ],
+  "Vermilion Pokemon Fan Club": [
+    {
+      "from": "Vermilion Pokemon Fan Club",
+      "to": "Vermilion City",
+      "coordinates": {
+        "x": 4120,
+        "y": 3880
+      }
+    }
+  ],
+  "Vermilion Trade House": [
+    {
+      "from": "Vermilion Trade House",
+      "to": "Vermilion City",
+      "coordinates": {
+        "x": 4280,
+        "y": 3464
+      }
+    }
+  ],
+  "Victory Road 1F": [
+    {
+      "from": "Victory Road 1F",
+      "to": "Victory Road 2F-W",
+      "coordinates": {
+        "x": 376,
+        "y": 1448
+      }
+    }
+  ],
+  "Victory Road 1F-S": [
+    {
+      "from": "Victory Road 1F-S",
+      "to": "Route 23-C",
+      "coordinates": {
+        "x": 504,
+        "y": 1704
+      }
+    }
+  ],
+  "Victory Road 1F-Wild": [],
+  "Victory Road 2F-C": [
+    {
+      "from": "Victory Road 2F-C",
+      "to": "Victory Road 3F",
+      "coordinates": {
+        "x": 568,
+        "y": 1864
+      }
+    }
+  ],
+  "Victory Road 2F-E": [
+    {
+      "from": "Victory Road 2F-E",
+      "to": "Route 23-N",
+      "coordinates": {
+        "x": 664,
+        "y": 1864
+      }
+    },
+    {
+      "from": "Victory Road 2F-E",
+      "to": "Victory Road 3F-SE",
+      "coordinates": {
+        "x": 632,
+        "y": 1864
+      }
+    }
+  ],
+  "Victory Road 2F-NW": [
+    {
+      "from": "Victory Road 2F-NW",
+      "to": "Victory Road 3F",
+      "coordinates": {
+        "x": 216,
+        "y": 1768
+      }
+    }
+  ],
+  "Victory Road 2F-SE": [
+    {
+      "from": "Victory Road 2F-SE",
+      "to": "Victory Road 3F-SE",
+      "coordinates": {
+        "x": 600,
+        "y": 1976
+      }
+    }
+  ],
+  "Victory Road 2F-W": [
+    {
+      "from": "Victory Road 2F-W",
+      "to": "Victory Road 1F",
+      "coordinates": {
+        "x": 200,
+        "y": 1880
+      }
+    }
+  ],
+  "Victory Road 2F-Wild": [],
+  "Victory Road 3F": [
+    {
+      "from": "Victory Road 3F",
+      "to": "Victory Road 2F-C",
+      "coordinates": {
+        "x": 568,
+        "y": 2184
+      }
+    },
+    {
+      "from": "Victory Road 3F",
+      "to": "Victory Road 2F-NW",
+      "coordinates": {
+        "x": 232,
+        "y": 2072
+      }
+    }
+  ],
+  "Victory Road 3F-S": [],
+  "Victory Road 3F-SE": [
+    {
+      "from": "Victory Road 3F-SE",
+      "to": "Victory Road 2F-E",
+      "coordinates": {
+        "x": 616,
+        "y": 2200
+      }
+    },
+    {
+      "from": "Victory Road 3F-SE",
+      "to": "Victory Road 2F-SE",
+      "coordinates": {
+        "x": 632,
+        "y": 2312
+      }
+    }
+  ],
+  "Victory Road 3F-Wild": [],
+  "Viridian City": [
+    {
+      "from": "Viridian City",
+      "to": "Viridian Pokemon Center",
+      "coordinates": {
+        "x": 1720,
+        "y": 3784
+      }
+    },
+    {
+      "from": "Viridian City",
+      "to": "Viridian Pokemart",
+      "coordinates": {
+        "x": 1816,
+        "y": 3688
+      }
+    },
+    {
+      "from": "Viridian City",
+      "to": "Viridian School House",
+      "coordinates": {
+        "x": 1688,
+        "y": 3624
+      }
+    },
+    {
+      "from": "Viridian City",
+      "to": "Viridian Nickname House",
+      "coordinates": {
+        "x": 1688,
+        "y": 3528
+      }
+    }
+  ],
+  "Viridian City-G": [
+    {
+      "from": "Viridian City-G",
+      "to": "Viridian Gym",
+      "coordinates": {
+        "x": 1864,
+        "y": 3496
+      }
+    }
+  ],
+  "Viridian City-N": [],
+  "Viridian Forest": [
+    {
+      "from": "Viridian Forest",
+      "to": "Viridian Forest North Gate",
+      "coordinates": {
+        "x": 1880,
+        "y": 2552
+      }
+    },
+    {
+      "from": "Viridian Forest",
+      "to": "Viridian Forest South Gate",
+      "coordinates": {
+        "x": 2104,
+        "y": 3304
+      }
+    }
+  ],
+  "Viridian Forest North Gate": [
+    {
+      "from": "Viridian Forest North Gate",
+      "to": "Route 2-NW",
+      "coordinates": {
+        "x": 1400,
+        "y": 2440
+      }
+    },
+    {
+      "from": "Viridian Forest North Gate",
+      "to": "Viridian Forest",
+      "coordinates": {
+        "x": 1400,
+        "y": 2552
+      }
+    }
+  ],
+  "Viridian Forest South Gate": [
+    {
+      "from": "Viridian Forest South Gate",
+      "to": "Viridian Forest",
+      "coordinates": {
+        "x": 1400,
+        "y": 2904
+      }
+    },
+    {
+      "from": "Viridian Forest South Gate",
+      "to": "Route 2-SW",
+      "coordinates": {
+        "x": 1400,
+        "y": 3016
+      }
+    }
+  ],
+  "Viridian Gym": [
+    {
+      "from": "Viridian Gym",
+      "to": "Viridian City-G",
+      "coordinates": {
+        "x": 2280,
+        "y": 3624
+      }
+    }
+  ],
+  "Viridian Nickname House": [
+    {
+      "from": "Viridian Nickname House",
+      "to": "Viridian City",
+      "coordinates": {
+        "x": 1400,
+        "y": 3336
+      }
+    }
+  ],
+  "Viridian Pokemart": [
+    {
+      "from": "Viridian Pokemart",
+      "to": "Viridian City",
+      "coordinates": {
+        "x": 2072,
+        "y": 3784
+      }
+    }
+  ],
+  "Viridian Pokemon Center": [
+    {
+      "from": "Viridian Pokemon Center",
+      "to": "Viridian City",
+      "coordinates": {
+        "x": 2072,
+        "y": 3944
+      }
+    }
+  ],
+  "Viridian School House": [
+    {
+      "from": "Viridian School House",
+      "to": "Viridian City",
+      "coordinates": {
+        "x": 1272,
+        "y": 3432
+      }
+    }
   ]
 }
