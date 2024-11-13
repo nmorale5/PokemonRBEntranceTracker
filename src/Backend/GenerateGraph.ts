@@ -1,3 +1,4 @@
+import { logFlag, client } from "./Archipelago";
 import { CheckAccessibility, Check, generateChecks, generatePokemonChecks } from "./Checks";
 import {
   WarpAccessibility,
@@ -136,6 +137,8 @@ export const defaultSettings = {
   RandomizeLegendaryPokemon: RandomizeLegendaryPokemon.Shuffle,
 };
 
+////////////////////// State /////////////////////////////////////////////////////
+
 export class State {
   public items: Set<string> = new Set();
   public regions: Set<string> = new Set();
@@ -147,6 +150,45 @@ export class State {
     this.checks = this.checks.concat(generatePokemonChecks(this));
     this.warps = generateWarps(this);
     this.fakeWarps = generateConstantWarps(this);
+    this.setupArch(); // Happens asynchonously, we shouldn't need to wait for it to finish.
+  }
+
+  async setupArch(): Promise<void> {
+    await logFlag; // Wait until the user is fully logged in
+    client.items.on("itemsReceived", (items) => {
+        for (const item of items) {
+          // if (item.progression) {}? tentative on using this
+            this.items.add(item.name);
+        }
+        this.updateAll();
+    });
+
+    client.room.on("locationsChecked", (locations) => { // These are the CHECKS
+        for (const loc of locations) {
+            const checkName: string = client.package.lookupLocationName("Pokemon Red and Blue", loc); // names
+            for (const check of this.checks) {
+              if (check.name === checkName) {
+                check.acquired = true;
+              }
+            }
+        }
+        this.updateAll();
+    })
+
+    // TODO: 'S.S. Anne B1F Rooms - Fisherman' was not considered a 'received check' -- probably a name discrepancy, which means
+    // Adding another field to the checks data structure might prove necessary... but it will hopefully be the last.
+    /*   {  // The check in question :(
+    "name": "Fisherman",
+    "region": "S.S. Anne B1F Rooms-Fisherman Room",
+    "type": "Basic",
+    "inclusion": "trainersanity",
+    "coordinates": { "x": 6376, "y": 4984 }
+    },*/
+    const receivedChecks: Set<string> = new Set(client.room.checkedLocations.map((id) => client.package.lookupLocationName("Pokemon Red and Blue", id)));
+    // not mapping, just filling the state appropriately
+    this.checks.map((check) => {check.acquired = receivedChecks.has(check.region + " - " + check.name)});
+    client.items.received.map((item) => this.items.add(item.name));
+    this.updateAll();
   }
 
   updateAll(): void {
@@ -169,6 +211,8 @@ export class State {
   }
 }
 
+///////////////////////////// API ///////////////////////////////////////////////////////
+
 export function entranceAccessible(entrance: Warp): WarpAccessibility {
   /**
    * Consider using entrance.accessibility
@@ -179,6 +223,8 @@ export function entranceAccessible(entrance: Warp): WarpAccessibility {
    */
   return entrance.accessibility;
 }
+
+/////////////////////////////// Check API ///////////////////////////////////////////////
 
 export function getCheckStatus(check: Check): CheckAccessibility {
   /**
@@ -202,6 +248,8 @@ export function setCheckAcquired(check: Check, acquired: boolean) {
    */
   check.acquired = acquired;
 }
+
+//////////////////////////////// Search and Update API //////////////////////////
 
 export function generateTextPath(warpPath: Array<Warp>): Array<string> {
   /**
@@ -296,6 +344,8 @@ export function shortestPath(
   return [];
 }
 
+/////////////////////////////// Warp API /////////////////////////////////////////////
+
 export function setWarp(fromWarp: Warp, toWarp: Warp, state: State) {
   /**
    * Adds a connection between two warps.
@@ -345,7 +395,7 @@ export function getWarp(fromWarp: Warp): Warp | null {
   return fromWarp.linkedWarp;
 }
 
-////////////////////// ITEM STATUS ///////////////////////////////
+////////////////////// ITEM STATUS API ///////////////////////////////
 
 /** "item" refers to the item that is received from a check (e.g., HM01) */
 export function setItemStatus(itemName: string, found: boolean, state: State) {
@@ -361,6 +411,8 @@ export function setItemStatus(itemName: string, found: boolean, state: State) {
 export function getItemStatus(itemName: string, state: State): boolean {
   return state.items.has(itemName);
 }
+
+// Creating default state
 
 export const defaultState: State = new State(defaultSettings);
 defaultState.regions.add("Pallet Town"); // Pallet Warp
