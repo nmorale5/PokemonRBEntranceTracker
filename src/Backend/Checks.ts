@@ -1,15 +1,10 @@
-// What we need to know about each check:
-//  1. Is check actually a check (Depends on Settings) -- Results in check not being added
-//  2. Can the check be physically reached (Depends on Graph) -- Means method of check must take Graph as parameter
-//  3. Can the check be received (Depends on items like Coin Case or events like Liberated Silph Co.)
-//  4. Has the check already been received (Depends on external input (player/arch))
-
 import { State, RandomizeHidden, CardKey } from "./GenerateGraph";
 import checkData from "../PokemonData/CheckData.json";
 import checkReq from "../PokemonData/CheckReq.json";
 import pokeData from "../PokemonData/Pokemon.json";
 import { canCut, canGetHiddenItems, canRockTunnel, canStrength, canSurf, cardKeyAccess, oaksAidCheck, pokeDollSkippable } from "./Requirements";
 
+const POKEDEX_ID_START = 172000549;
 export enum CheckAccessibility {
   "Inaccessible",
   "Accessible",
@@ -30,6 +25,7 @@ export class Check {
     public name: string,
     public region: string | null,
     public type: string,
+    public id: number,
     public coordinates: { x: number; y: number } | null,
     public state: State,
     public enableTrigger: (state: State) => boolean,
@@ -172,7 +168,7 @@ export function generateChecks(state: State): Array<Check> {
       const cnf = checkReq[checkReqName as keyof typeof checkReq];
       reqFunc = setAccessible(cnf);
     }
-    checks.push(new Check(check["name"], check["region"], check["type"], check["coordinates"], state, incl_to_func.get(check["inclusion"])!, reqFunc));
+    checks.push(new Check(check["name"], check["region"], check["type"], check["id"], check["coordinates"], state, incl_to_func.get(check["inclusion"])!, reqFunc));
   }
   return checks;
 }
@@ -180,12 +176,14 @@ export function generateChecks(state: State): Array<Check> {
 
 export function generatePokemonChecks(state: State): Array<Check> {
   const checks: Array<Check> = [];
+  let i = 0;
   for (const poke of Object.keys(pokeData)) {
     checks.push(
       new Check(
         poke,
         null,
         "Pokemon",
+        POKEDEX_ID_START + i,
         null,
         state,
         () => {
@@ -196,6 +194,7 @@ export function generatePokemonChecks(state: State): Array<Check> {
         }
       )
     );
+    i += 1;
   }
   return checks;
 }

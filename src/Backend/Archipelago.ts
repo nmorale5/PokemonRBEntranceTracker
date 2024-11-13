@@ -75,29 +75,18 @@ export class Session {
     this.client.room.on("locationsChecked", locations => {
       // These are the CHECKS
       for (const loc of locations) {
-        const checkName: string = this.client.package.lookupLocationName("Pokemon Red and Blue", loc); // names
         for (const check of state.checks) {
-          if (check.region + " - " + check.name === checkName) {
+          if (check.id === loc) {
             check.acquired = true;
           }
         }
       }
       state.updateAll();
     });
-
-    // TODO: 'S.S. Anne B1F Rooms - Fisherman' was not considered a 'received check' -- probably a name discrepancy, which means
-    // Adding another field to the checks data structure might prove necessary... but it will hopefully be the last.
-    /*   {  // The check in question :(
-    "name": "Fisherman",
-    "region": "S.S. Anne B1F Rooms-Fisherman Room",
-    "type": "Basic",
-    "inclusion": "trainersanity",
-    "coordinates": { "x": 6376, "y": 4984 }
-    },*/
-    const receivedChecks: Set<string> = new Set(this.client.room.checkedLocations.map(id => this.client.package.lookupLocationName("Pokemon Red and Blue", id)));
+    const receivedChecks: Set<number> = new Set(this.client.room.checkedLocations);
     // not mapping, just filling the state appropriately
     state.checks.map(check => {
-      check.acquired = receivedChecks.has(check.region + " - " + check.name);
+      check.acquired = receivedChecks.has(check.id);
     });
     this.client.items.received.map(item => state.items.add(item.name));
     state.updateAll();
