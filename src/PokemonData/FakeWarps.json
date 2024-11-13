@@ -30,9 +30,7 @@
       "one_way": "False"
     }
   ],
-  "Route 1": [
-    { "from": "Route 1", "to": "Viridian City", "func": [[]], "parameter": 0, "one_way": "False" }
-  ],
+  "Route 1": [{ "from": "Route 1", "to": "Viridian City", "func": [[]], "parameter": 0, "one_way": "False" }],
   "Viridian City": [
     { "from": "Viridian City", "to": "Route 22", "func": [[]], "parameter": 0, "one_way": "False" },
     {
@@ -190,12 +188,8 @@
       "one_way": "True"
     }
   ],
-  "Route 3": [
-    { "from": "Route 3", "to": "Pewter City-E", "func": [[]], "parameter": 0, "one_way": "True" }
-  ],
-  "Route 4-W": [
-    { "from": "Route 4-W", "to": "Route 3", "func": [[]], "parameter": 0, "one_way": "False" }
-  ],
+  "Route 3": [{ "from": "Route 3", "to": "Pewter City-E", "func": [[]], "parameter": 0, "one_way": "True" }],
+  "Route 4-W": [{ "from": "Route 4-W", "to": "Route 3", "func": [[]], "parameter": 0, "one_way": "False" }],
   "Route 24": [
     {
       "from": "Route 24",
@@ -256,15 +250,9 @@
       "one_way": "True"
     }
   ],
-  "Route 4-Lass": [
-    { "from": "Route 4-Lass", "to": "Route 4-C", "func": [[]], "parameter": 0, "one_way": "True" }
-  ],
-  "Route 4-C": [
-    { "from": "Route 4-C", "to": "Route 4-E", "func": [[]], "parameter": 0, "one_way": "True" }
-  ],
-  "Route 4-E": [
-    { "from": "Route 4-E", "to": "Cerulean City", "func": [[]], "parameter": 0, "one_way": "False" }
-  ],
+  "Route 4-Lass": [{ "from": "Route 4-Lass", "to": "Route 4-C", "func": [[]], "parameter": 0, "one_way": "True" }],
+  "Route 4-C": [{ "from": "Route 4-C", "to": "Route 4-E", "func": [[]], "parameter": 0, "one_way": "True" }],
+  "Route 4-E": [{ "from": "Route 4-E", "to": "Cerulean City", "func": [[]], "parameter": 0, "one_way": "False" }],
   "Cerulean City": [
     { "from": "Cerulean City", "to": "Route 24", "func": [[]], "parameter": 0, "one_way": "False" },
     {
@@ -328,9 +316,7 @@
       "one_way": "True"
     }
   ],
-  "Route 9": [
-    { "from": "Route 9", "to": "Route 10-N", "func": [[]], "parameter": 0, "one_way": "False" }
-  ],
+  "Route 9": [{ "from": "Route 9", "to": "Route 10-N", "func": [[]], "parameter": 0, "one_way": "False" }],
   "Route 10-N": [
     {
       "from": "Route 10-N",
@@ -1054,9 +1040,7 @@
       "one_way": "False"
     }
   ],
-  "Route 7": [
-    { "from": "Route 7", "to": "Celadon City", "func": [[]], "parameter": 0, "one_way": "False" }
-  ],
+  "Route 7": [{ "from": "Route 7", "to": "Celadon City", "func": [[]], "parameter": 0, "one_way": "False" }],
   "Route 18 Gate 1F-W": [
     {
       "from": "Route 18 Gate 1F-W",
@@ -1100,9 +1084,7 @@
       "one_way": "True"
     }
   ],
-  "Route 15": [
-    { "from": "Route 15", "to": "Route 14", "func": [[]], "parameter": 0, "one_way": "False" }
-  ],
+  "Route 15": [{ "from": "Route 15", "to": "Route 14", "func": [[]], "parameter": 0, "one_way": "False" }],
   "Route 14": [
     {
       "from": "Route 14",

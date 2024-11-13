@@ -1,12 +1,8 @@
 import { logFlag, client } from "./Archipelago";
 import { CheckAccessibility, Check, generateChecks, generatePokemonChecks } from "./Checks";
-import {
-  WarpAccessibility,
-  Warp,
-  ConstantWarp,
-  generateWarps,
-  generateConstantWarps,
-} from "./Warps";
+import { WarpAccessibility, Warp, ConstantWarp, generateWarps, generateConstantWarps } from "./Warps";
+import { BehaviorSubject, Observable } from "rxjs";
+import _ from "lodash";
 
 const MAX_KEY_ITEMS = 100;
 const MAX_TRAINERS = 317;
@@ -145,35 +141,39 @@ export class State {
   public checks: Array<Check>;
   public warps: Array<Warp>;
   public fakeWarps: Array<ConstantWarp>;
+
+  private _behaviorSubject: BehaviorSubject<State> | null = null;
+
   constructor(public settings: typeof defaultSettings) {
     this.checks = generateChecks(this);
     this.checks = this.checks.concat(generatePokemonChecks(this));
     this.warps = generateWarps(this);
     this.fakeWarps = generateConstantWarps(this);
-    this.setupArch(); // Happens asynchonously, we shouldn't need to wait for it to finish.
+    void this.setupArch(); // Happens asynchonously, we shouldn't need to wait for it to finish.
   }
 
   async setupArch(): Promise<void> {
     await logFlag; // Wait until the user is fully logged in
-    client.items.on("itemsReceived", (items) => {
-        for (const item of items) {
-          // if (item.progression) {}? tentative on using this
-            this.items.add(item.name);
-        }
-        this.updateAll();
+    client.items.on("itemsReceived", items => {
+      for (const item of items) {
+        // if (item.progression) {}? tentative on using this
+        this.items.add(item.name);
+      }
+      this.updateAll();
     });
 
-    client.room.on("locationsChecked", (locations) => { // These are the CHECKS
-        for (const loc of locations) {
-            const checkName: string = client.package.lookupLocationName("Pokemon Red and Blue", loc); // names
-            for (const check of this.checks) {
-              if (check.name === checkName) {
-                check.acquired = true;
-              }
-            }
+    client.room.on("locationsChecked", locations => {
+      // These are the CHECKS
+      for (const loc of locations) {
+        const checkName: string = client.package.lookupLocationName("Pokemon Red and Blue", loc); // names
+        for (const check of this.checks) {
+          if (check.name === checkName) {
+            check.acquired = true;
+          }
         }
-        this.updateAll();
-    })
+      }
+      this.updateAll();
+    });
 
     // TODO: 'S.S. Anne B1F Rooms - Fisherman' was not considered a 'received check' -- probably a name discrepancy, which means
     // Adding another field to the checks data structure might prove necessary... but it will hopefully be the last.
@@ -184,10 +184,12 @@ export class State {
     "inclusion": "trainersanity",
     "coordinates": { "x": 6376, "y": 4984 }
     },*/
-    const receivedChecks: Set<string> = new Set(client.room.checkedLocations.map((id) => client.package.lookupLocationName("Pokemon Red and Blue", id)));
+    const receivedChecks: Set<string> = new Set(client.room.checkedLocations.map(id => client.package.lookupLocationName("Pokemon Red and Blue", id)));
     // not mapping, just filling the state appropriately
-    this.checks.map((check) => {check.acquired = receivedChecks.has(check.region + " - " + check.name)});
-    client.items.received.map((item) => this.items.add(item.name));
+    this.checks.map(check => {
+      check.acquired = receivedChecks.has(check.region + " - " + check.name);
+    });
+    client.items.received.map(item => this.items.add(item.name));
     this.updateAll();
   }
 
@@ -195,7 +197,7 @@ export class State {
     /**
      * Performs updates to the accessibility of warps and items based on player inventory,
      * the regions that are available, and the settings.
-     * 
+     *
      * This should be called every time the set of items or settings is changed, and is
      * automatically called whenever the set of regions changes.
      */
@@ -208,6 +210,14 @@ export class State {
     for (const check of this.checks) {
       check.updateCheckStatus();
     }
+    this._behaviorSubject?.next(_.cloneDeep(this)); // put this line wherever else state may get updated
+  }
+
+  public asObservable(): Observable<State> {
+    if (!this._behaviorSubject) {
+      this._behaviorSubject = new BehaviorSubject<State>(_.cloneDeep(this));
+    }
+    return this._behaviorSubject;
   }
 }
 
@@ -216,7 +226,7 @@ export class State {
 export function entranceAccessible(entrance: Warp): WarpAccessibility {
   /**
    * Consider using entrance.accessibility
-   * 
+   *
    * Parameters:
    *  Warp: Representation of an entrance
    * Returns enum EntranceAccessibility
@@ -229,7 +239,7 @@ export function entranceAccessible(entrance: Warp): WarpAccessibility {
 export function getCheckStatus(check: Check): CheckAccessibility {
   /**
    * Consider using check.accessibility
-   * 
+   *
    * Parameters:
    *  check: Representation of a check
    * Return enum CheckAccessibility
@@ -241,7 +251,7 @@ export function getCheckStatus(check: Check): CheckAccessibility {
 export function setCheckAcquired(check: Check, acquired: boolean) {
   /**
    * Please just use check.acquired.
-   * 
+   *
    * Parameters:
    *  check (Check): The check to set acquired to
    *  acquired (boolean): The value to set acquired to
@@ -260,7 +270,7 @@ export function generateTextPath(warpPath: Array<Warp>): Array<string> {
    *  warpPath: An array of warps
    * Returns An array of human-readable string representations of warps
    */
-  return warpPath.map((warp) => {
+  return warpPath.map(warp => {
     return warp.toString();
   });
 }
@@ -268,7 +278,7 @@ export function generateTextPath(warpPath: Array<Warp>): Array<string> {
 export function updateRegionAccessibility(state: State) {
   /**
    * Updates the Regions set to include all the accessible regions.
-   * 
+   *
    * Parameters:
    *  state (State): The game state to modify the regions of
    */
@@ -277,15 +287,10 @@ export function updateRegionAccessibility(state: State) {
   state.updateAll();
 }
 
-export function shortestPath(
-  startRegion: string,
-  endRegion: string,
-  state: State,
-  modifyState: boolean = false
-): Array<Warp> {
+export function shortestPath(startRegion: string, endRegion: string, state: State, modifyState: boolean = false): Array<Warp> {
   /**
    * Gets shortest path from one region to another.
-   * 
+   *
    * Parameters:
    *  startRegion: start region string
    *  endRegion: destination region string
@@ -309,19 +314,13 @@ export function shortestPath(
         warp.updateAccessibility();
         if (warp.region === region) {
           if (warp instanceof ConstantWarp) {
-            if (
-              !exploredRegions.has(warp.toWarp) &&
-              warp.accessibility === WarpAccessibility.Accessible
-            ) {
+            if (!exploredRegions.has(warp.toWarp) && warp.accessibility === WarpAccessibility.Accessible) {
               nextExplore.push(warp.toWarp);
               exploredRegions.set(warp.toWarp, exploredRegions.get(region)!.concat([warp]));
             }
           } else if (warp.linkedWarp) {
             const linkedWarp: Warp = warp.linkedWarp;
-            if (
-              !exploredRegions.has(linkedWarp.region) &&
-              warp.accessibility === WarpAccessibility.Accessible
-            ) {
+            if (!exploredRegions.has(linkedWarp.region) && warp.accessibility === WarpAccessibility.Accessible) {
               nextExplore.push(linkedWarp.region);
               exploredRegions.set(linkedWarp.region, exploredRegions.get(region)!.concat([warp]));
             }
@@ -350,7 +349,7 @@ export function setWarp(fromWarp: Warp, toWarp: Warp, state: State) {
   /**
    * Adds a connection between two warps.
    * Also mutates the region set of state in response to the additional warp.
-   * 
+   *
    * Parameters:
    *  fromWarp (Warp): The starting point of the connection
    *  toWarp (Warp): The ending point of the connection
@@ -369,7 +368,7 @@ export function removeWarp(warp: Warp, state: State) {
    * Mutates both warp and the linkedWarp (if linked) by setting their linkedWarp
    * attributes to null. Also mutates the set of regions of state in response to
    * the removed warp.
-   * 
+   *
    * Parameters:
    *  warp (Warp): The warp on either end of the connection to disconnect
    *  state (State): The game state object the warp is a part of
@@ -386,10 +385,10 @@ export function getWarp(fromWarp: Warp): Warp | null {
   /**
    * Gets the connecting warp from a warp. Consider using
    * warp.linkedWarp directly.
-   * 
+   *
    * Parameters:
    *  fromWarp (Warp): The warp to get the corresponding linked warp from.
-   * 
+   *
    * Returns the linked warp, or null if it isn't linked.
    */
   return fromWarp.linkedWarp;

@@ -116,10 +116,7 @@ export function generateWarps(state: State): Array<Warp> {
 
 // export const warps: Array<Warp> = generateWarps(defaultState);
 
-const flag_to_func: Map<
-  string,
-  ((state: State) => boolean) | ((state: State, param: number) => boolean)
-> = new Map();
+const flag_to_func: Map<string, ((state: State) => boolean) | ((state: State, param: number) => boolean)> = new Map();
 flag_to_func.set("seafoam_exit_boulder", seafoamExitBoulder);
 flag_to_func.set("lift_key", (state: State) => {
   return state.items.has("Lift Key");
@@ -215,11 +212,7 @@ flag_to_func.set("viridian_gym_badges", canEnterViridianGym);
 
 const takesParam = new Set(["fossil_checks", "card_key"]);
 
-function setFlags(
-  cnf: Array<Array<string>>,
-  state: State,
-  params: number
-): (state: State) => WarpAccessibility {
+function setFlags(cnf: Array<Array<string>>, state: State, params: number): (state: State) => WarpAccessibility {
   // Does the CNF to logic magic, and uses flag_to_func
   function helper(): WarpAccessibility {
     for (const clause of cnf) {
@@ -250,15 +243,7 @@ export function generateConstantWarps(state: State): Array<ConstantWarp> {
     const regionData = fakeWarpData[region as keyof typeof fakeWarpData];
     for (const fields of regionData) {
       const oneWay = fields.one_way === "True";
-      warps.push(
-        new ConstantWarp(
-          fields["from"],
-          fields["to"],
-          region,
-          state,
-          setFlags(fields.func, state, fields.parameter)
-        )
-      );
+      warps.push(new ConstantWarp(fields["from"], fields["to"], region, state, setFlags(fields.func, state, fields.parameter)));
       if (!oneWay) {
         warps.push(
           new ConstantWarp(

@@ -4,42 +4,23 @@ import { BadgeHMRequirement, State, Route3Req } from "./GenerateGraph";
 // The ability to use an HM move
 
 export function canSurf(state: State): boolean {
-  return (
-    state.items.has("HM 03 Surf") &&
-    (state.items.has("Soul Badge") || state.settings.BadgeHMRequirement === BadgeHMRequirement.None)
-  );
+  return state.items.has("HM 03 Surf") && (state.items.has("Soul Badge") || state.settings.BadgeHMRequirement === BadgeHMRequirement.None);
 }
 
 export function canCut(state: State): boolean {
-  return (
-    state.items.has("HM 01 Cut") &&
-    (state.items.has("Cascade Badge") ||
-      state.settings.BadgeHMRequirement === BadgeHMRequirement.None)
-  );
+  return state.items.has("HM 01 Cut") && (state.items.has("Cascade Badge") || state.settings.BadgeHMRequirement === BadgeHMRequirement.None);
 }
 
 export function canFly(state: State): boolean {
-  return (
-    (state.items.has("HM 02 Fly") || state.items.has("Flute")) &&
-    (state.items.has("Thunder Badge") ||
-      state.settings.BadgeHMRequirement === BadgeHMRequirement.None)
-  );
+  return (state.items.has("HM 02 Fly") || state.items.has("Flute")) && (state.items.has("Thunder Badge") || state.settings.BadgeHMRequirement === BadgeHMRequirement.None);
 }
 
 export function canStrength(state: State): boolean {
-  return (
-    (state.items.has("HM 04 Strength") || state.items.has("Titan's Mitt")) &&
-    (state.items.has("Rainbow Badge") ||
-      state.settings.BadgeHMRequirement === BadgeHMRequirement.None)
-  );
+  return (state.items.has("HM 04 Strength") || state.items.has("Titan's Mitt")) && (state.items.has("Rainbow Badge") || state.settings.BadgeHMRequirement === BadgeHMRequirement.None);
 }
 
 function canFlash(state: State): boolean {
-  return (
-    (state.items.has("HM 05 Flash") || state.items.has("Lamp")) &&
-    (state.items.has("Boulder Badge") ||
-      state.settings.BadgeHMRequirement === BadgeHMRequirement.None)
-  );
+  return (state.items.has("HM 05 Flash") || state.items.has("Lamp")) && (state.items.has("Boulder Badge") || state.settings.BadgeHMRequirement === BadgeHMRequirement.None);
 }
 
 export function canLearnHM(state: State): boolean {
@@ -53,7 +34,7 @@ export function canGetHiddenItems(state: State): boolean {
 }
 
 function countCheck(array: Array<string>, count: number, state: State): boolean {
-  return array.filter((item) => state.items.has(item)).length >= count;
+  return array.filter(item => state.items.has(item)).length >= count;
 }
 
 export function enoughKeyItems(count: number, state: State): boolean {
@@ -107,27 +88,11 @@ export function enoughKeyItems(count: number, state: State): boolean {
 }
 
 export function canPassGuards(state: State): boolean {
-  return (
-    (state.settings.Tea && state.items.has("Tea")) ||
-    (!state.settings.Tea && state.items.has("Vending Machine Drinks"))
-  );
+  return (state.settings.Tea && state.items.has("Tea")) || (!state.settings.Tea && state.items.has("Vending Machine Drinks"));
 }
 
 export function enoughBadges(count: number, state: State): boolean {
-  return countCheck(
-    [
-      "Boulder Badge",
-      "Cascade Badge",
-      "Thunder Badge",
-      "Rainbow Badge",
-      "Marsh Badge",
-      "Soul Badge",
-      "Volcano Badge",
-      "Earth Badge",
-    ],
-    count,
-    state
-  );
+  return countCheck(["Boulder Badge", "Cascade Badge", "Thunder Badge", "Rainbow Badge", "Marsh Badge", "Soul Badge", "Volcano Badge", "Earth Badge"], count, state);
 }
 
 export function enoughPokemon(count: number, state: State): boolean {
@@ -139,9 +104,7 @@ export function enoughPokemon(count: number, state: State): boolean {
 }
 
 export function oaksAidCheck(count: number, state: State): boolean {
-  return (
-    enoughPokemon(count, state) && (state.items.has("Pokedex") || !state.settings.RequirePokedex)
-  );
+  return enoughPokemon(count, state) && (state.items.has("Pokedex") || !state.settings.RequirePokedex);
 }
 
 export function enoughFossils(count: number, state: State): boolean {
@@ -165,20 +128,7 @@ export function canRoute3(state: State): boolean {
   return (
     (state.items.has("Defeat Brock") && state.settings.Route3Req === Route3Req.DefeatBrock) ||
     (state.items.has("Boulder Badge") && state.settings.Route3Req === Route3Req.BoulderBadge) ||
-    (countCheck(
-      [
-        "Defeat Brock",
-        "Defeat Misty",
-        "Defeat Lt. Surge",
-        "Defeat Erika",
-        "Defeat Koga",
-        "Defeat Blaine",
-        "Defeat Sabrina",
-        "Defeat Viridian Gym Giovanni",
-      ],
-      1,
-      state
-    ) &&
+    (countCheck(["Defeat Brock", "Defeat Misty", "Defeat Lt. Surge", "Defeat Erika", "Defeat Koga", "Defeat Blaine", "Defeat Sabrina", "Defeat Viridian Gym Giovanni"], 1, state) &&
       state.settings.Route3Req === Route3Req.DefeatAny) ||
     (enoughBadges(1, state) && state.settings.Route3Req === Route3Req.AnyBadge)
   );
@@ -188,16 +138,7 @@ export function evolveLevel(level: number, state: State): boolean {
   // This is a function to know if the evolution of pokemon should be considered in logic
   // Every gym defeated gives +7 levels to the evolution levels considered in logic for pokemon checks
   return (
-    [
-      "Defeat Brock",
-      "Defeat Misty",
-      "Defeat Lt. Surge",
-      "Defeat Erika",
-      "Defeat Koga",
-      "Defeat Blaine",
-      "Defeat Sabrina",
-      "Defeat Viridian Gym Giovanni",
-    ].filter((gym) => state.items.has(gym)).length >
+    ["Defeat Brock", "Defeat Misty", "Defeat Lt. Surge", "Defeat Erika", "Defeat Koga", "Defeat Blaine", "Defeat Sabrina", "Defeat Viridian Gym Giovanni"].filter(gym => state.items.has(gym)).length >
     level / 7
   );
 }
@@ -218,11 +159,7 @@ export function canEnterCeruleanCave(state: State): boolean {
   // connect(multiworld, player, "Cerulean City-Water", "Cerulean City-Cave", lambda state:
   // logic.has_badges(state, world.options.cerulean_cave_badges_condition.value, player) and
   // logic.has_key_items(state, world.options.cerulean_cave_key_items_condition.total, player) and logic.can_surf(state, world, player))
-  return (
-    enoughBadges(state.settings.CeruleanCaveBadges, state) &&
-    enoughKeyItems(state.settings.CeruleanCaveKeyItems, state) &&
-    canSurf(state)
-  );
+  return enoughBadges(state.settings.CeruleanCaveBadges, state) && enoughKeyItems(state.settings.CeruleanCaveKeyItems, state) && canSurf(state);
 }
 
 export function canEnterEliteFour(state: State): boolean {
@@ -231,9 +168,7 @@ export function canEnterEliteFour(state: State): boolean {
     enoughBadges(state.settings.EliteFourBadges, state) &&
     enoughPokemon(state.settings.EliteFourPokedex, state) &&
     enoughKeyItems(state.settings.EliteFourKeyItems, state) &&
-    (state.items.has("Pokedex") ||
-      !state.settings.RequirePokedex ||
-      state.settings.EliteFourPokedex === 0)
+    (state.items.has("Pokedex") || !state.settings.RequirePokedex || state.settings.EliteFourPokedex === 0)
   );
 }
 

@@ -8,16 +8,7 @@ import { State, RandomizeHidden, CardKey } from "./GenerateGraph";
 import checkData from "../PokemonData/CheckData.json";
 import checkReq from "../PokemonData/CheckReq.json";
 import pokeData from "../PokemonData/Pokemon.json";
-import {
-  canCut,
-  canGetHiddenItems,
-  canRockTunnel,
-  canStrength,
-  canSurf,
-  cardKeyAccess,
-  oaksAidCheck,
-  pokeDollSkippable,
-} from "./Requirements";
+import { canCut, canGetHiddenItems, canRockTunnel, canStrength, canSurf, cardKeyAccess, oaksAidCheck, pokeDollSkippable } from "./Requirements";
 
 export enum CheckAccessibility {
   "Inaccessible",
@@ -181,17 +172,7 @@ export function generateChecks(state: State): Array<Check> {
       const cnf = checkReq[checkReqName as keyof typeof checkReq];
       reqFunc = setAccessible(cnf);
     }
-    checks.push(
-      new Check(
-        check["name"],
-        check["region"],
-        check["type"],
-        check["coordinates"],
-        state,
-        incl_to_func.get(check["inclusion"])!,
-        reqFunc
-      )
-    );
+    checks.push(new Check(check["name"], check["region"], check["type"], check["coordinates"], state, incl_to_func.get(check["inclusion"])!, reqFunc));
   }
   return checks;
 }

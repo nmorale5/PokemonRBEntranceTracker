@@ -1,24 +1,19 @@
-import React, { forwardRef, MutableRefObject, useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import "./Map.css";
 import { defaultState } from "../Backend/GenerateGraph";
 import { latLngFromPixelCoordinates } from "../util";
 import L, { DivIcon } from "leaflet";
 import warpData from "../PokemonData/WarpData.json";
 import checkData from "../PokemonData/CheckData.json";
-import { Check, CheckAccessibility } from "../Backend/Checks";
-import { BehaviorSubject, distinctUntilChanged, map, Subscription } from "rxjs";
+import { CheckAccessibility } from "../Backend/Checks";
+import { distinctUntilChanged, map, pairwise, Subscription } from "rxjs";
 import { WarpAccessibility } from "../Backend/Warps";
 
-const Map = forwardRef<BehaviorSubject<void>>((props: {}, ref) => {
-  const stateRef = useRef(defaultState);
-
+const Map = (props: {}) => {
   useEffect(() => {
     const unsubscribeArray: Subscription[] = [];
     const myMap = L.map("map").setView(latLngFromPixelCoordinates(3600, 3600));
-    const latLngBounds = L.latLngBounds(
-      latLngFromPixelCoordinates(0, 0),
-      latLngFromPixelCoordinates(7200, 7200),
-    );
+    const latLngBounds = L.latLngBounds(latLngFromPixelCoordinates(0, 0), latLngFromPixelCoordinates(7200, 7200));
     L.imageOverlay("/PokemonRedMapNoArrows.png", latLngBounds, {
       alt: "Pokemon Red/Blue Map",
       interactive: true,
@@ -26,11 +21,15 @@ const Map = forwardRef<BehaviorSubject<void>>((props: {}, ref) => {
 
     myMap.fitBounds(latLngBounds);
 
-    Object.entries(warpData).flatMap(([key, value]) => value).forEach((warp, i) => {
-      const warpId = `warp-${i}`;
-      const icon = new DivIcon({
-        className: "Warp",
-        html: `<div id="${warpId}" style="
+    const currentState = defaultState.asObservable();
+
+    Object.entries(warpData)
+      .flatMap(([key, value]) => value)
+      .forEach((warp, i) => {
+        const warpId = `warp-${i}`;
+        const icon = new DivIcon({
+          className: "Warp",
+          html: `<div id="${warpId}" style="
           width: 20px;
           height: 20px;
           background-color: red;
@@ -41,23 +40,23 @@ const Map = forwardRef<BehaviorSubject<void>>((props: {}, ref) => {
           transform: rotate(45deg);
           box-sizing: border-box;
         " />`,
+        });
+        L.marker(latLngFromPixelCoordinates(warp.coordinates.x, warp.coordinates.y), {
+          title: `${warp.from} to ${warp.to}`,
+          icon: icon,
+        }).addTo(myMap);
+        unsubscribeArray.push(
+          currentState
+            .pipe(
+              map(state => state.warps.find(w => w.fromWarp === warp.from && w.toWarp === warp.to)!),
+              distinctUntilChanged((prevWarp, curWarp) => prevWarp.accessibility === curWarp.accessibility),
+            )
+            .subscribe(warp => {
+              document.getElementById(warpId)!.style.backgroundColor =
+                warp.accessibility === WarpAccessibility.Accessible ? "lawngreen" : warp.accessibility === WarpAccessibility.Inaccessible ? "red" : "gray";
+            }),
+        );
       });
-      L.marker(latLngFromPixelCoordinates(warp.coordinates.x, warp.coordinates.y), {
-        title: `${warp.from} to ${warp.to}`,
-        icon: icon,
-      }).addTo(myMap);
-      unsubscribeArray.push((ref! as MutableRefObject<BehaviorSubject<void>>).current.pipe(
-        map(_ => stateRef.current),
-        map(state => state.warps.find(w => w.fromWarp === warp.from && w.toWarp === warp.to)!),
-        distinctUntilChanged((prevWarp, curWarp) => prevWarp.accessibility === curWarp.accessibility),
-      ).subscribe((warp) => {
-        document.getElementById(warpId)!.style.backgroundColor = warp.accessibility === WarpAccessibility.Accessible
-          ? "lawngreen"
-          : warp.accessibility === WarpAccessibility.Inaccessible
-            ? "red"
-            : "gray"
-      }));
-    });
 
     checkData.forEach((check, i) => {
       if (!check.coordinates) {
@@ -76,19 +75,22 @@ const Map = forwardRef<BehaviorSubject<void>>((props: {}, ref) => {
         title: check.name,
         icon: icon,
       }).addTo(myMap);
-      unsubscribeArray.push((ref! as MutableRefObject<BehaviorSubject<void>>).current.pipe(
-        map(_ => stateRef.current),
-        map(state => state.checks.find(c => c.name === check.name && c.region === check.region)!),
-        distinctUntilChanged((prevCheck, curCheck) => prevCheck.enabled === curCheck.enabled && prevCheck.acquired === curCheck.acquired && prevCheck.accessibility === curCheck.accessibility),
-      ).subscribe((check) => {
-        document.getElementById(checkId)!.style.backgroundColor = check.acquired
-          ? "gray"
-          : check.accessibility === CheckAccessibility.Accessible
-            ? "lawngreen"
-            : check.accessibility === CheckAccessibility.Inaccessible
-              ? "red"
-              : "yellow";
-      }));
+      unsubscribeArray.push(
+        currentState
+          .pipe(
+            map(state => state.checks.find(c => c.name === check.name && c.region === check.region)!),
+            distinctUntilChanged((prevCheck, curCheck) => prevCheck.enabled === curCheck.enabled && prevCheck.acquired === curCheck.acquired && prevCheck.accessibility === curCheck.accessibility),
+          )
+          .subscribe(check => {
+            document.getElementById(checkId)!.style.backgroundColor = check.acquired
+              ? "gray"
+              : check.accessibility === CheckAccessibility.Accessible
+                ? "lawngreen"
+                : check.accessibility === CheckAccessibility.Inaccessible
+                  ? "red"
+                  : "yellow";
+          }),
+      );
     });
 
     // function findClosestCoordinate(
@@ -124,15 +126,15 @@ const Map = forwardRef<BehaviorSubject<void>>((props: {}, ref) => {
 
     return () => {
       myMap.remove();
-      unsubscribeArray.forEach(sub => sub.unsubscribe());
+      // unsubscribeArray.forEach(sub => sub.unsubscribe());
     };
-  }, [ref]);
+  }, []);
 
   return (
     <>
       <div id="map"></div>
     </>
   );
-});
+};
 
 export default Map;

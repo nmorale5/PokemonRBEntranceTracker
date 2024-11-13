@@ -21,31 +21,13 @@
   "Celadon Game Corner - Hidden Item Southwest Corner": [["coin_case"], ["can_get_hidden"]],
   "Celadon Game Corner - Hidden Item Near Rumor Man": [["coin_case"], ["can_get_hidden"]],
   "Celadon Game Corner - Hidden Item Near Speculating Woman": [["coin_case"], ["can_get_hidden"]],
-  "Celadon Game Corner - Hidden Item Near West Gifting Gambler": [
-    ["coin_case"],
-    ["can_get_hidden"]
-  ],
-  "Celadon Game Corner - Hidden Item Near Wonderful Time Woman": [
-    ["coin_case"],
-    ["can_get_hidden"]
-  ],
-  "Celadon Game Corner - Hidden Item Near Failing Gym Information Guy": [
-    ["coin_case"],
-    ["can_get_hidden"]
-  ],
-  "Celadon Game Corner - Hidden Item Near East Gifting Gambler": [
-    ["coin_case"],
-    ["can_get_hidden"]
-  ],
+  "Celadon Game Corner - Hidden Item Near West Gifting Gambler": [["coin_case"], ["can_get_hidden"]],
+  "Celadon Game Corner - Hidden Item Near Wonderful Time Woman": [["coin_case"], ["can_get_hidden"]],
+  "Celadon Game Corner - Hidden Item Near Failing Gym Information Guy": [["coin_case"], ["can_get_hidden"]],
+  "Celadon Game Corner - Hidden Item Near East Gifting Gambler": [["coin_case"], ["can_get_hidden"]],
   "Celadon Game Corner - Hidden Item Near Hooked Guy": [["coin_case"], ["can_get_hidden"]],
-  "Celadon Game Corner - Hidden Item at End of Horizontal Machine Row": [
-    ["coin_case"],
-    ["can_get_hidden"]
-  ],
-  "Celadon Game Corner - Hidden Item in Front of Horizontal Machine Row": [
-    ["coin_case"],
-    ["can_get_hidden"]
-  ],
+  "Celadon Game Corner - Hidden Item at End of Horizontal Machine Row": [["coin_case"], ["can_get_hidden"]],
+  "Celadon Game Corner - Hidden Item in Front of Horizontal Machine Row": [["coin_case"], ["can_get_hidden"]],
   "Celadon Prize Corner - Item Prize 1": [["coin_case"], ["game_corner"]],
   "Celadon Prize Corner - Item Prize 2": [["coin_case"], ["game_corner"]],
   "Celadon Prize Corner - Item Prize 3": [["coin_case"], ["game_corner"]],
@@ -80,10 +62,7 @@
   "Route 9 - Hidden Item Bush By Grass": [["hidden_items"]],
   "S.S. Anne Kitchen - Hidden Item Kitchen Trash": [["hidden_items"]],
   "S.S. Anne B1F Rooms - Hidden Item Under Pillow": [["hidden_items"]],
-  "Route 10 - Hidden Item Behind Rock Tunnel Entrance Cuttable Tree": [
-    ["hidden_items"],
-    ["can_cut"]
-  ],
+  "Route 10 - Hidden Item Behind Rock Tunnel Entrance Cuttable Tree": [["hidden_items"], ["can_cut"]],
   "Route 10 - Hidden Item Bush": [["hidden_items"]],
   "Rocket Hideout B1F - Hidden Item Pot Plant": [["hidden_items"]],
   "Rocket Hideout B3F - Hidden Item Near East Item": [["hidden_items"]],
