@@ -6,7 +6,7 @@ import L, { DivIcon } from "leaflet";
 import warpData from "../PokemonData/WarpData.json";
 import checkData from "../PokemonData/CheckData.json";
 import { CheckAccessibility } from "../Backend/Checks";
-import { distinctUntilChanged, map, pairwise, Subscription } from "rxjs";
+import { distinctUntilChanged, map, pairwise, Subscription, tap } from "rxjs";
 import { WarpAccessibility } from "../Backend/Warps";
 
 const Map = (props: {}) => {
@@ -20,7 +20,6 @@ const Map = (props: {}) => {
     }).addTo(myMap);
 
     myMap.fitBounds(latLngBounds);
-
     const currentState = defaultState.asObservable();
 
     Object.entries(warpData)
@@ -48,13 +47,13 @@ const Map = (props: {}) => {
         unsubscribeArray.push(
           currentState
             .pipe(
-              map(state => state.warps.find(w => w.fromWarp === warp.from && w.toWarp === warp.to)!),
-              distinctUntilChanged((prevWarp, curWarp) => prevWarp.accessibility === curWarp.accessibility),
+              map(state => state.warps.find(w => w.fromWarp === warp.from && w.toWarp === warp.to)!)
+              // distinctUntilChanged((prevWarp, curWarp) => prevWarp.accessibility === curWarp.accessibility)
             )
             .subscribe(warp => {
               document.getElementById(warpId)!.style.backgroundColor =
                 warp.accessibility === WarpAccessibility.Accessible ? "lawngreen" : warp.accessibility === WarpAccessibility.Inaccessible ? "red" : "gray";
-            }),
+            })
         );
       });
 
@@ -78,8 +77,8 @@ const Map = (props: {}) => {
       unsubscribeArray.push(
         currentState
           .pipe(
-            map(state => state.checks.find(c => c.name === check.name && c.region === check.region)!),
-            distinctUntilChanged((prevCheck, curCheck) => prevCheck.enabled === curCheck.enabled && prevCheck.acquired === curCheck.acquired && prevCheck.accessibility === curCheck.accessibility),
+            map(state => state.checks.find(c => c.name === check.name && c.region === check.region)!)
+            // distinctUntilChanged((prevCheck, curCheck) => prevCheck.enabled === curCheck.enabled && prevCheck.acquired === curCheck.acquired && prevCheck.accessibility === curCheck.accessibility)
           )
           .subscribe(check => {
             document.getElementById(checkId)!.style.backgroundColor = check.acquired
@@ -89,7 +88,7 @@ const Map = (props: {}) => {
                 : check.accessibility === CheckAccessibility.Inaccessible
                   ? "red"
                   : "yellow";
-          }),
+          })
       );
     });
 
@@ -126,7 +125,7 @@ const Map = (props: {}) => {
 
     return () => {
       myMap.remove();
-      // unsubscribeArray.forEach(sub => sub.unsubscribe());
+      unsubscribeArray.forEach(sub => sub.unsubscribe());
     };
   }, []);
 

@@ -167,7 +167,7 @@ export class State {
       for (const loc of locations) {
         const checkName: string = client.package.lookupLocationName("Pokemon Red and Blue", loc); // names
         for (const check of this.checks) {
-          if (check.name === checkName) {
+          if (check.region + " - " + check.name === checkName) {
             check.acquired = true;
           }
         }
@@ -210,12 +210,12 @@ export class State {
     for (const check of this.checks) {
       check.updateCheckStatus();
     }
-    this._behaviorSubject?.next(_.cloneDeep(this)); // put this line wherever else state may get updated
+    this._behaviorSubject?.next(this); // put this line wherever else state may get updated
   }
 
   public asObservable(): Observable<State> {
     if (!this._behaviorSubject) {
-      this._behaviorSubject = new BehaviorSubject<State>(_.cloneDeep(this));
+      this._behaviorSubject = new BehaviorSubject<State>(this);
     }
     return this._behaviorSubject;
   }

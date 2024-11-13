@@ -1,6 +1,6 @@
 import { Client, clientStatuses } from "archipelago.js";
 
-const PORT = "57558";
+const PORT = "55459";
 const PLAYER = "Halaffa";
 
 // Create a new instance of the Client class.
