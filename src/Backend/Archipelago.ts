@@ -1,40 +1,105 @@
 import { Client, clientStatuses } from "archipelago.js";
+import { defaultState, State } from "./GenerateGraph";
 
 const PORT = "55459";
 const PLAYER = "Halaffa";
 
-// Create a new instance of the Client class.
-export const client = new Client();
-
-async function login(): Promise<void> {
-  if (!client.socket.connected) {
-    await client.socket.connect("wss://archipelago.gg:" + PORT); // Need to connect before logging in
-  }
-  if (!client.authenticated) {
-    await client.login("wss://archipelago.gg:" + PORT, PLAYER, "Pokemon Red and Blue").then(() => client.messages.say("Hello, multiworld!"));
-  }
+export function urlFromPort(port: string) {
+  return "wss://archipelago.gg:" + port;
 }
 
-export const logFlag: Promise<void> = login(); // only attempt to login once.
+export class Session {
+  public client: Client = new Client();
+  public logFlag: Promise<void>;
 
-export async function logItems(): Promise<void> {
-  await logFlag;
-  // Setup a listener for whenever items are received and log the details.
-  client.items.on("itemsReceived", items => {
-    for (const item of items) {
-      console.log(`Received item ${item.name} from player ${item.sender}.`);
-      // item.name is all we need, if it's an important item to remember, we add it to the item set (or really all items tbh)
+  constructor(url: string, playerName: string) {
+    this.logFlag = this.login(url, playerName);
+  }
+
+  async login(url: string, playerName: string): Promise<void> {
+    if (!this.client.socket.connected) {
+      await this.client.socket.connect(url); // Need to connect before logging in
     }
-  });
-
-  client.room.on("locationsChecked", locations => {
-    // These are the CHECKS
-    for (const loc of locations) {
-      console.log(loc); // is only the id
-      console.log(client.room.checkedLocations.map(id => client.package.lookupLocationName("Pokemon Red and Blue", id))); // names
+    if (!this.client.authenticated) {
+      await this.client.login(url, playerName, "Pokemon Red and Blue").then(() => this.client.messages.say("Hello, multiworld!"));
     }
-  });
+  }
 
-  console.log(client.room.checkedLocations.map(id => client.package.lookupLocationName("Pokemon Red and Blue", id))); // All checks, call on join
-  console.log(client.items.received.map(item => item.name)); // All items, call on join.
+  async logItems(): Promise<void> {
+    await this.logFlag;
+    // Setup a listener for whenever items are received and log the details.
+    this.client.items.on("itemsReceived", items => {
+      for (const item of items) {
+        console.log(`Received item ${item.name} from player ${item.sender}.`);
+        // item.name is all we need, if it's an important item to remember, we add it to the item set (or really all items tbh)
+      }
+    });
+
+    this.client.room.on("locationsChecked", locations => {
+      // These are the CHECKS
+      for (const loc of locations) {
+        console.log(loc); // is only the id
+        console.log(this.client.room.checkedLocations.map(id => this.client.package.lookupLocationName("Pokemon Red and Blue", id))); // names
+      }
+    });
+
+    console.log(this.client.room.checkedLocations.map(id => this.client.package.lookupLocationName("Pokemon Red and Blue", id))); // All checks, call on join
+    console.log(this.client.items.received.map(item => item.name)); // All items, call on join.
+  }
+
+  async findNameDiscrepancies(state: State): Promise<void> {
+    await this.logFlag;
+    const checkNames = new Set(this.client.room.allLocations.map(id => this.client.package.lookupLocationName("Pokemon Red and Blue", id)));
+    console.log(state.checks.filter(check => !checkNames.has(check.region + " - " + check.name)).map(check => check.region + " - " + check.name));
+  }
+
+  async generateLocationIdTable(): Promise<Map<string, number>> {
+    await this.logFlag;
+    const map = new Map();
+    for (const elem of this.client.room.allLocations) {
+      map.set(this.client.package.lookupLocationName("Pokemon Red and Blue", elem), elem);
+    }
+    return map;
+  }
+
+  async setupArch(state: State): Promise<void> {
+    await this.logFlag; // Wait until the user is fully logged in
+    this.client.items.on("itemsReceived", items => {
+      for (const item of items) {
+        // if (item.progression) {}? tentative on using this
+        state.items.add(item.name);
+      }
+      state.updateAll();
+    });
+
+    this.client.room.on("locationsChecked", locations => {
+      // These are the CHECKS
+      for (const loc of locations) {
+        const checkName: string = this.client.package.lookupLocationName("Pokemon Red and Blue", loc); // names
+        for (const check of state.checks) {
+          if (check.region + " - " + check.name === checkName) {
+            check.acquired = true;
+          }
+        }
+      }
+      state.updateAll();
+    });
+
+    // TODO: 'S.S. Anne B1F Rooms - Fisherman' was not considered a 'received check' -- probably a name discrepancy, which means
+    // Adding another field to the checks data structure might prove necessary... but it will hopefully be the last.
+    /*   {  // The check in question :(
+    "name": "Fisherman",
+    "region": "S.S. Anne B1F Rooms-Fisherman Room",
+    "type": "Basic",
+    "inclusion": "trainersanity",
+    "coordinates": { "x": 6376, "y": 4984 }
+    },*/
+    const receivedChecks: Set<string> = new Set(this.client.room.checkedLocations.map(id => this.client.package.lookupLocationName("Pokemon Red and Blue", id)));
+    // not mapping, just filling the state appropriately
+    state.checks.map(check => {
+      check.acquired = receivedChecks.has(check.region + " - " + check.name);
+    });
+    this.client.items.received.map(item => state.items.add(item.name));
+    state.updateAll();
+  }
 }

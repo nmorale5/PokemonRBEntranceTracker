@@ -1,4 +1,3 @@
-import { logFlag, client } from "./Archipelago";
 import { CheckAccessibility, Check, generateChecks, generatePokemonChecks } from "./Checks";
 import { WarpAccessibility, Warp, ConstantWarp, generateWarps, generateConstantWarps } from "./Warps";
 import { BehaviorSubject, Observable } from "rxjs";
@@ -149,48 +148,6 @@ export class State {
     this.checks = this.checks.concat(generatePokemonChecks(this));
     this.warps = generateWarps(this);
     this.fakeWarps = generateConstantWarps(this);
-    void this.setupArch(); // Happens asynchonously, we shouldn't need to wait for it to finish.
-  }
-
-  async setupArch(): Promise<void> {
-    await logFlag; // Wait until the user is fully logged in
-    client.items.on("itemsReceived", items => {
-      for (const item of items) {
-        // if (item.progression) {}? tentative on using this
-        this.items.add(item.name);
-      }
-      this.updateAll();
-    });
-
-    client.room.on("locationsChecked", locations => {
-      // These are the CHECKS
-      for (const loc of locations) {
-        const checkName: string = client.package.lookupLocationName("Pokemon Red and Blue", loc); // names
-        for (const check of this.checks) {
-          if (check.region + " - " + check.name === checkName) {
-            check.acquired = true;
-          }
-        }
-      }
-      this.updateAll();
-    });
-
-    // TODO: 'S.S. Anne B1F Rooms - Fisherman' was not considered a 'received check' -- probably a name discrepancy, which means
-    // Adding another field to the checks data structure might prove necessary... but it will hopefully be the last.
-    /*   {  // The check in question :(
-    "name": "Fisherman",
-    "region": "S.S. Anne B1F Rooms-Fisherman Room",
-    "type": "Basic",
-    "inclusion": "trainersanity",
-    "coordinates": { "x": 6376, "y": 4984 }
-    },*/
-    const receivedChecks: Set<string> = new Set(client.room.checkedLocations.map(id => client.package.lookupLocationName("Pokemon Red and Blue", id)));
-    // not mapping, just filling the state appropriately
-    this.checks.map(check => {
-      check.acquired = receivedChecks.has(check.region + " - " + check.name);
-    });
-    client.items.received.map(item => this.items.add(item.name));
-    this.updateAll();
   }
 
   updateAll(): void {

@@ -8,6 +8,10 @@ import checkData from "../PokemonData/CheckData.json";
 import { CheckAccessibility } from "../Backend/Checks";
 import { distinctUntilChanged, map, pairwise, Subscription, tap } from "rxjs";
 import { WarpAccessibility } from "../Backend/Warps";
+import { Session, urlFromPort } from "../Backend/Archipelago";
+
+const PORT = "55459";
+const PLAYER = "Halaffa";
 
 const Map = (props: {}) => {
   useEffect(() => {
@@ -21,7 +25,8 @@ const Map = (props: {}) => {
 
     myMap.fitBounds(latLngBounds);
     const currentState = defaultState.asObservable();
-
+    const session = new Session(urlFromPort(PORT), PLAYER);
+    session.setupArch(defaultState);
     Object.entries(warpData)
       .flatMap(([key, value]) => value)
       .forEach((warp, i) => {

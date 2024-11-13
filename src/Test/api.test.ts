@@ -1,6 +1,7 @@
 import { entranceAccessible, getCheckStatus, generateTextPath, shortestPath, updateRegionAccessibility, setWarp, removeWarp, getWarp, State, defaultSettings } from "../Backend/GenerateGraph";
 import { CheckAccessibility } from "../Backend/Checks";
 import { Warp, WarpAccessibility } from "../Backend/Warps";
+import { Session, urlFromPort } from "../Backend/Archipelago";
 
 describe("entranceAccessible", () => {
   it("should initialize warps to be inaccessible", () => {

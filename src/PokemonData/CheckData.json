@@ -2762,14 +2762,14 @@
     "region": "Route 11",
     "type": "Basic",
     "inclusion": "trainersanity",
-    "coordinates": { "x": 5224, "y": 3864 }
+    "coordinates": { "x": 5224, "y": 3992 }
   },
   {
     "name": "Youngster 3",
     "region": "Route 11",
     "type": "Basic",
     "inclusion": "trainersanity",
-    "coordinates": { "x": 5224, "y": 3992 }
+    "coordinates": { "x": 5224, "y": 3864 }
   },
   {
     "name": "Gambler 2",
