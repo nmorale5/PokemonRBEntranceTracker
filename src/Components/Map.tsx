@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import "./Map.css";
-import { defaultState } from "../Backend/GenerateGraph";
+import { defaultState, removeWarp, setWarp, State } from "../Backend/GenerateGraph";
 import { latLngFromPixelCoordinates } from "../util";
 import L, { DivIcon } from "leaflet";
 import warpData from "../PokemonData/WarpData.json";
 import checkData from "../PokemonData/CheckData.json";
 import { CheckAccessibility } from "../Backend/Checks";
-import { distinctUntilChanged, map, pairwise, Subscription, tap } from "rxjs";
-import { WarpAccessibility } from "../Backend/Warps";
+import { BehaviorSubject, map, Subscription } from "rxjs";
+import { Warp, WarpAccessibility } from "../Backend/Warps";
 import { Session, urlFromPort } from "../Backend/Archipelago";
 
 const PORT = "55459";
@@ -25,8 +25,11 @@ const Map = (props: {}) => {
 
     myMap.fitBounds(latLngBounds);
     const currentState = defaultState.asObservable();
+
     const session = new Session(urlFromPort(PORT), PLAYER);
     session.setupArch(defaultState);
+
+    let pairedWarp: Warp | null = null;
     Object.entries(warpData)
       .flatMap(([key, value]) => value)
       .forEach((warp, i) => {
@@ -60,6 +63,20 @@ const Map = (props: {}) => {
                 warp.accessibility === WarpAccessibility.Accessible ? "lawngreen" : warp.accessibility === WarpAccessibility.Inaccessible ? "red" : "gray";
             })
         );
+        document.getElementById(warpId)!.addEventListener("click", ev => {
+          console.log(pairedWarp);
+          const state = (currentState as BehaviorSubject<State>).value;
+          if (pairedWarp) {
+            if (pairedWarp.equals(warp)) {
+              removeWarp(warp, state);
+            } else {
+              setWarp(pairedWarp, warp, state);
+            }
+            pairedWarp = null;
+          } else {
+            pairedWarp = warp;
+          }
+        });
       });
 
     checkData.forEach((check, i) => {
