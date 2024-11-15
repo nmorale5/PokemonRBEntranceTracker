@@ -304,7 +304,7 @@ export function shortestPath(startRegion: string, endRegion: string, state: Stat
 
 export function setWarp(fromWarp: Warp, toWarp: Warp, state: State) {
   /**
-   * Adds a connection between two warps.
+   * Adds a connection between two warps. Removes any existing connections first.
    * Also mutates the region set of state in response to the additional warp.
    *
    * Parameters:
@@ -312,8 +312,10 @@ export function setWarp(fromWarp: Warp, toWarp: Warp, state: State) {
    *  toWarp (Warp): The ending point of the connection
    *  state (State): The game state object the warps are a part of
    */
+  removeWarp(fromWarp, state);
   fromWarp.linkedWarp = toWarp;
   if (state.settings.DoorShuffle !== DoorShuffle.Decoupled) {
+    removeWarp(toWarp, state);
     toWarp.linkedWarp = fromWarp;
   }
   updateRegionAccessibility(state);
