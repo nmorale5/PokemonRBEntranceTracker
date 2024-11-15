@@ -16,6 +16,7 @@ import {
   canPassVictoryRoadGate,
   canPassRoute22Gate,
   canEnterViridianGym,
+  canFlyTo,
 } from "./Requirements";
 
 import warpData from "../PokemonData/WarpData.json";
@@ -164,6 +165,9 @@ flag_to_func.set("safari_pass", (state: State) => {
 });
 flag_to_func.set("card_key", (state: State, param: number) => {
   return cardKeyAccess(param, state);
+});
+flag_to_func.set("can_fly_to", (state: State, param: number) => {
+  return canFlyTo(param, state);
 });
 flag_to_func.set("mansion_key", (state: State) => {
   return state.items.has("Mansion Key");

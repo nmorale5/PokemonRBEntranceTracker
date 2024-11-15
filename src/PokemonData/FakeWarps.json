@@ -46,6 +46,13 @@
       "func": [["oak's_parcel", "old_man", "can_cut"]],
       "parameter": 0,
       "one_way": "False"
+    },
+    {
+      "from": "Viridian City",
+      "to": "Fly",
+      "func": [["can_fly_to"]],
+      "parameter": 1,
+      "one_way": "False"
     }
   ],
   "Route 22": [
@@ -168,6 +175,13 @@
       "func": [["can_cut"]],
       "parameter": 0,
       "one_way": "True"
+    },
+    {
+      "from": "Pewter City",
+      "to": "Fly",
+      "func": [["can_fly_to"]],
+      "parameter": 2,
+      "one_way": "False"
     }
   ],
   "Pewter City-M": [
@@ -275,6 +289,13 @@
       "func": [["super_rod"]],
       "parameter": 0,
       "one_way": "True"
+    },
+    {
+      "from": "Cerulean City",
+      "to": "Fly",
+      "func": [["can_fly_to"]],
+      "parameter": 3,
+      "one_way": "False"
     }
   ],
   "Cerulean City-Outskirts": [
@@ -298,6 +319,31 @@
       "func": [[]],
       "parameter": 0,
       "one_way": "False"
+    },
+    {
+      "from": "Cerulean City-Outskirts",
+      "to": "Cerulean City",
+      "func": [["can_fly"]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Cerulean City-Badge House Backyard": [
+    {
+      "from": "Cerulean City-Badge House Backyard",
+      "to": "Cerulean City",
+      "func": [["can_fly"]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Cerulean City-T": [
+    {
+      "from": "Cerulean City-T",
+      "to": "Cerulean City",
+      "func": [["can_fly"]],
+      "parameter": 0,
+      "one_way": "True"
     }
   ],
   "Cerulean Cave B1F": [
@@ -415,7 +461,23 @@
       "parameter": 0,
       "one_way": "False"
     },
-    { "from": "Vermilion City", "to": "Route 11", "func": [[]], "parameter": 0, "one_way": "False" }
+    { "from": "Vermilion City", "to": "Route 11", "func": [[]], "parameter": 0, "one_way": "False" },
+    {
+      "from": "Vermilion City",
+      "to": "Fly",
+      "func": [["can_fly_to"]],
+      "parameter": 4,
+      "one_way": "False"
+    }
+  ],
+  "Vermilion City-G": [
+    {
+      "from": "Vermilion City-G",
+      "to": "Vermilion City",
+      "func": [["can_fly"]],
+      "parameter": 0,
+      "one_way": "True"
+    }
   ],
   "Vermilion Dock": [
     {
@@ -441,7 +503,23 @@
       "parameter": 0,
       "one_way": "False"
     },
-    { "from": "Celadon City", "to": "Route 16-E", "func": [[]], "parameter": 0, "one_way": "False" }
+    { "from": "Celadon City", "to": "Route 16-E", "func": [[]], "parameter": 0, "one_way": "False" },
+    {
+      "from": "Celadon City",
+      "to": "Fly",
+      "func": [["can_fly_to"]],
+      "parameter": 5,
+      "one_way": "False"
+    }
+  ],
+  "Celadon City-G": [
+    {
+      "from": "Celadon City-G",
+      "to": "Celadon City",
+      "func": [["can_fly"]],
+      "parameter": 0,
+      "one_way": "True"
+    }
   ],
   "Safari Zone Center-NW": [
     {
@@ -691,6 +769,13 @@
       "func": [["mansion_key", "!extra_key_items"]],
       "parameter": 0,
       "one_way": "False"
+    },
+    {
+      "from": "Cinnabar Island",
+      "to": "Fly",
+      "func": [["can_fly_to"]],
+      "parameter": 9,
+      "one_way": "False"
     }
   ],
   "Route 20-IW": [
@@ -896,7 +981,23 @@
       "parameter": 0,
       "one_way": "False"
     },
-    { "from": "Fuchsia City", "to": "Route 19-N", "func": [[]], "parameter": 0, "one_way": "False" }
+    { "from": "Fuchsia City", "to": "Route 19-N", "func": [[]], "parameter": 0, "one_way": "False" },
+    {
+      "from": "Fuschia City",
+      "to": "Fly",
+      "func": [["can_fly_to"]],
+      "parameter": 7,
+      "one_way": "False"
+    }
+  ],
+  "Fuchsia City-Good Rod House Backyard": [
+    {
+      "from": "Fuchsia City-Good Rod House Backyard",
+      "to": "Fuchsia City",
+      "func": [["can_fly"]],
+      "parameter": 0,
+      "one_way": "True"
+    }
   ],
   "Cinnabar Lab Fossil Room": [
     {
@@ -975,6 +1076,13 @@
       "func": [["fuji_saved"]],
       "parameter": 0,
       "one_way": "False"
+    },
+    {
+      "from": "Saffron City",
+      "to": "Fly",
+      "func": [["can_fly_to"]],
+      "parameter": 8,
+      "one_way": "False"
     }
   ],
   "Route 12-W": [
@@ -1015,6 +1123,15 @@
       "to": "Lavender Town",
       "func": [[]],
       "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Lavender Town": [
+    {
+      "from": "Lavender Town",
+      "to": "Fly",
+      "func": [["can_fly_to"]],
+      "parameter": 6,
       "one_way": "False"
     }
   ],
@@ -1989,6 +2106,15 @@
       "to": "Indigo Plateau",
       "func": [[]],
       "parameter": 0,
+      "one_way": "False"
+    }
+  ],
+  "Indigo Plateau": [
+    {
+      "from": "Indigo Plateau",
+      "to": "Fly",
+      "func": [["can_fly_to"]],
+      "parameter": 10,
       "one_way": "False"
     }
   ]

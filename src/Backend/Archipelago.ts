@@ -25,6 +25,16 @@ export class Session {
     }
   }
 
+  isConnected() {
+    return this.client.socket.connected;
+  }
+
+  async logout() {
+    if (this.isConnected()) {
+      this.client.socket.disconnect();
+    }
+  }
+
   async logItems(): Promise<void> {
     await this.logFlag;
     // Setup a listener for whenever items are received and log the details.

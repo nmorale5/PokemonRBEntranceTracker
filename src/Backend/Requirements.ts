@@ -1,7 +1,24 @@
-import { BadgeHMRequirement, State, Route3Req } from "./GenerateGraph";
+import { BadgeHMRequirement, State, Route3Req, shortestPath } from "./GenerateGraph";
 
 // TODO: Implement workaround for Extra and Extra Plus HM Badge settings to allow user to manually indicate
 // The ability to use an HM move
+
+export function canFlyTo(city: number, state: State) {
+  const cities: Array<string> = [
+    "Pallet Town",
+    "Viridian City",
+    "Pewter City",
+    "Cerulean City",
+    "Vermillion City",
+    "Celadon City",
+    "Lavender Town",
+    "Fuchsia City",
+    "Saffron City",
+    "Cinnabar Island",
+    "Indigo Plateau",
+  ];
+  return canFly(state) && shortestPath("Pallet Town", cities[city], state).length !== 0;
+}
 
 export function canSurf(state: State): boolean {
   return state.items.has("HM 03 Surf") && (state.items.has("Soul Badge") || state.settings.BadgeHMRequirement === BadgeHMRequirement.None);

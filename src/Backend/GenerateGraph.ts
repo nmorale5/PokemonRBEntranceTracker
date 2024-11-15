@@ -2,6 +2,7 @@ import { CheckAccessibility, Check, generateChecks, generatePokemonChecks } from
 import { WarpAccessibility, Warp, ConstantWarp, generateWarps, generateConstantWarps } from "./Warps";
 import { BehaviorSubject, Observable } from "rxjs";
 import _ from "lodash";
+import { canFly } from "./Requirements";
 
 const MAX_KEY_ITEMS = 100;
 const MAX_TRAINERS = 317;
@@ -244,7 +245,7 @@ export function updateRegionAccessibility(state: State) {
   state.updateAll();
 }
 
-export function shortestPath(startRegion: string, endRegion: string, state: State, modifyState: boolean = false): Array<Warp> {
+export function shortestPath(startRegion: string, endRegion: string, state: State, modifyState: boolean = false, includePalletWarp: boolean = true): Array<Warp> {
   /**
    * Gets shortest path from one region to another.
    *
@@ -260,6 +261,12 @@ export function shortestPath(startRegion: string, endRegion: string, state: Stat
   const combinedWarps: Array<Warp> = state.warps.concat(state.fakeWarps);
   const exploredRegions: Map<string, Array<Warp>> = new Map(); // Array of maps from region to Warp (to get there)
   exploredRegions.set(startRegion, []);
+  if (includePalletWarp) {
+    exploredRegions.set("Pallet Town", []); // Can Pallet Warp
+  }
+  // if (state.settings.FreeFlyLocation && canFly(state)) {
+  //   exploredRegions.set(state.options.FreeFlyLocation, []);
+  // }
   let toExplore: Array<string> = [startRegion]; // regions to find new paths from
   let nextExplore: Array<string> = [];
   while (toExplore.length > 0) {
