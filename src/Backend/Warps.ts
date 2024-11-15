@@ -46,6 +46,7 @@ export class Warp {
     public fromWarp: string,
     public toWarp: string,
     public region: string,
+    public coordinates: { x: number; y: number } | null,
     public state: State
   ) {}
 
@@ -84,7 +85,7 @@ export class ConstantWarp extends Warp {
     public state: State,
     public flags: (state: State) => WarpAccessibility
   ) {
-    super(fromWarp, toWarp, region, state);
+    super(fromWarp, toWarp, region, null, state);
   }
 
   updateAccessibility(): void {
@@ -108,7 +109,7 @@ export function generateWarps(state: State): Array<Warp> {
   for (const region of Object.keys(warpData)) {
     const regionData = warpData[region as keyof typeof warpData];
     for (const sides of regionData) {
-      warps.push(new Warp(sides["from"], sides["to"], region, state));
+      warps.push(new Warp(sides["from"], sides["to"], region, sides.coordinates, state));
     }
   }
   return warps;

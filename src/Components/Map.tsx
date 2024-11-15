@@ -1,159 +1,70 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Map.css";
-import { defaultState, removeWarp, setWarp, State } from "../Backend/GenerateGraph";
+import { defaultState } from "../Backend/GenerateGraph";
 import { latLngFromPixelCoordinates } from "../util";
-import L, { DivIcon } from "leaflet";
-import warpData from "../PokemonData/WarpData.json";
-import checkData from "../PokemonData/CheckData.json";
+import L from "leaflet";
 import { CheckAccessibility } from "../Backend/Checks";
-import { BehaviorSubject, map, Subscription } from "rxjs";
 import { Warp, WarpAccessibility } from "../Backend/Warps";
 import { Session, urlFromPort } from "../Backend/Archipelago";
+import { ImageOverlay, MapContainer, Marker, Tooltip } from "react-leaflet";
+import _ from "lodash";
+import { getCheckIcon, getWarpIcon } from "./Icons";
+import WarpClickHandler from "./WarpClickHandler";
 
 const PORT = "55459";
 const PLAYER = "Halaffa";
 
 const Map = (props: {}) => {
+  const [currentState, setCurrentState] = useState(defaultState);
+  const [selectedWarp, setSelectedWarp] = useState<Warp | null>(null);
+
   useEffect(() => {
-    const unsubscribeArray: Subscription[] = [];
-    const myMap = L.map("map").setView(latLngFromPixelCoordinates(3600, 3600));
-    const latLngBounds = L.latLngBounds(latLngFromPixelCoordinates(0, 0), latLngFromPixelCoordinates(7200, 7200));
-    L.imageOverlay("/PokemonRedMapNoArrows.png", latLngBounds, {
-      alt: "Pokemon Red/Blue Map",
-      interactive: true,
-    }).addTo(myMap);
+    // const session = new Session(urlFromPort(PORT), PLAYER);
+    // void session.setupArch(defaultState);
 
-    myMap.fitBounds(latLngBounds);
-    const currentState = defaultState.asObservable();
-
-    const session = new Session(urlFromPort(PORT), PLAYER);
-    session.setupArch(defaultState);
-
-    let pairedWarp: Warp | null = null;
-    Object.entries(warpData)
-      .flatMap(([key, value]) => value)
-      .forEach((warp, i) => {
-        const warpId = `warp-${i}`;
-        const icon = new DivIcon({
-          className: "Warp",
-          html: `<div id="${warpId}" style="
-          width: 20px;
-          height: 20px;
-          background-color: red;
-          border-left: 2px solid black;
-          border-right: 2px solid black;
-          border-top: 2px solid black;
-          border-bottom: 2px solid black;
-          transform: rotate(45deg);
-          box-sizing: border-box;
-        " />`,
-        });
-        L.marker(latLngFromPixelCoordinates(warp.coordinates.x, warp.coordinates.y), {
-          title: `${warp.from} to ${warp.to}`,
-          icon: icon,
-        }).addTo(myMap);
-        unsubscribeArray.push(
-          currentState
-            .pipe(
-              map(state => state.warps.find(w => w.fromWarp === warp.from && w.toWarp === warp.to)!)
-              // distinctUntilChanged((prevWarp, curWarp) => prevWarp.accessibility === curWarp.accessibility)
-            )
-            .subscribe(warp => {
-              document.getElementById(warpId)!.style.backgroundColor =
-                warp.accessibility === WarpAccessibility.Accessible ? "lawngreen" : warp.accessibility === WarpAccessibility.Inaccessible ? "red" : "gray";
-            })
-        );
-        document.getElementById(warpId)!.addEventListener("click", ev => {
-          console.log(pairedWarp);
-          const state = (currentState as BehaviorSubject<State>).value;
-          if (pairedWarp) {
-            if (pairedWarp.equals(warp)) {
-              removeWarp(warp, state);
-            } else {
-              setWarp(pairedWarp, warp, state);
-            }
-            pairedWarp = null;
-          } else {
-            pairedWarp = warp;
-          }
-        });
-      });
-
-    checkData.forEach((check, i) => {
-      if (!check.coordinates) {
-        return;
-      }
-      const checkId = `check-${i}`;
-      const icon = new DivIcon({
-        className: "Check",
-        html: `<div id="${checkId}" style="
-          width: 16px;
-          height: 16px;
-          border: 2px solid black
-        " />`,
-      });
-      L.marker(latLngFromPixelCoordinates(check.coordinates.x, check.coordinates.y), {
-        title: check.name,
-        icon: icon,
-      }).addTo(myMap);
-      unsubscribeArray.push(
-        currentState
-          .pipe(
-            map(state => state.checks.find(c => c.name === check.name && c.region === check.region)!)
-            // distinctUntilChanged((prevCheck, curCheck) => prevCheck.enabled === curCheck.enabled && prevCheck.acquired === curCheck.acquired && prevCheck.accessibility === curCheck.accessibility)
-          )
-          .subscribe(check => {
-            document.getElementById(checkId)!.style.backgroundColor = check.acquired
-              ? "gray"
-              : check.accessibility === CheckAccessibility.Accessible
-                ? "lawngreen"
-                : check.accessibility === CheckAccessibility.Inaccessible
-                  ? "red"
-                  : "yellow";
-          })
-      );
-    });
-
-    // function findClosestCoordinate(
-    //   coordinates: [number, number][],
-    //   c: [number, number]
-    // ): [number, number] {
-    //   return coordinates.reduce((closest, current) => {
-    //     const distance = Math.sqrt(
-    //       Math.pow(current[0] - c[0], 2) + Math.pow(current[1] - c[1], 2)
-    //     );
-    //     const closestDistance = Math.sqrt(
-    //       Math.pow(closest[0] - c[0], 2) + Math.pow(closest[1] - c[1], 2)
-    //     );
-    //
-    //     return distance < closestDistance ? current : closest;
-    //   });
-    // }
-
-    // myMap.on("click", async function(e) {
-    //   const [x, y] = pixelCoordinatesFromLatLng(e.latlng);
-    //   const [newX, newY] = findClosestCoordinate(warpData.map(warp => warp.from)
-    //     .concat(warpData.map(warp => warp.to))
-    //     .map(({x, y}) => [x, y]), [x, y])
-    //   await navigator.clipboard.writeText(`,\n      "coordinates": {\n        "x": ${newX},\n        "y": ${newY}\n      }`);
-    // });
-
-    // myMap.on("click", async function(e) {
-    //   const [x, y] = pixelCoordinatesFromLatLng(e.latlng).map(
-    //     (num) => Math.round((num + 8) / 16) * 16 - 8,
-    //   );
-    //   await navigator.clipboard.writeText(`,\n      "coordinates": {\n        "x": ${x},\n        "y": ${y}\n      }`);
-    // });
-
-    return () => {
-      myMap.remove();
-      unsubscribeArray.forEach(sub => sub.unsubscribe());
-    };
+    WarpClickHandler.registerCurrentState(defaultState);
+    const subscription = defaultState.asObservable().subscribe(state => setCurrentState(_.cloneDeep(state)));
+    return () => subscription.unsubscribe();
   }, []);
 
   return (
     <>
-      <div id="map"></div>
+      <MapContainer zoom={10} center={latLngFromPixelCoordinates(3600, 3600)} style={{ height: "100vh", width: "100vw" }}>
+        <ImageOverlay url={"/PokemonRedMapNoArrows.png"} bounds={L.latLngBounds(latLngFromPixelCoordinates(0, 0), latLngFromPixelCoordinates(7200, 7200))}></ImageOverlay>
+        {currentState.checks
+          .filter(check => check.coordinates !== null)
+          .map((check, i) => (
+            <Marker
+              key={i}
+              position={latLngFromPixelCoordinates(check.coordinates!.x, check.coordinates!.y)}
+              icon={getCheckIcon(
+                check.acquired ? "gray" : check.accessibility === CheckAccessibility.Accessible ? "lawngreen" : check.accessibility === CheckAccessibility.Inaccessible ? "red" : "yellow"
+              )}
+            >
+              <Tooltip sticky>{check.name}</Tooltip>
+            </Marker>
+          ))}
+        {currentState.warps
+          .filter(warp => warp.coordinates !== null) // all warps should be non-null anyway, this is just for completeness
+          .map((warp, i) => (
+            <Marker
+              key={i}
+              position={latLngFromPixelCoordinates(warp.coordinates!.x, warp.coordinates!.y)}
+              icon={getWarpIcon(
+                warp.accessibility === WarpAccessibility.Accessible ? "lawngreen" : warp.accessibility === WarpAccessibility.Inaccessible ? "red" : "gray",
+                selectedWarp?.equals(warp) ?? false
+              )}
+              eventHandlers={{
+                click: () => {
+                  WarpClickHandler.handleClick(warp);
+                  setSelectedWarp(WarpClickHandler.selectedWarp);
+                },
+              }}
+            >
+              <Tooltip sticky>{`${warp.toString()} → ${warp.linkedWarp?.toString() ?? "(not yet linked)"}`}</Tooltip>
+            </Marker>
+          ))}
+      </MapContainer>
     </>
   );
 };
