@@ -1,4 +1,4 @@
-import { State, OldMan } from "./GenerateGraph";
+import { OldMan } from "./Settings";
 import {
   canCut,
   canSurf,
@@ -21,6 +21,7 @@ import {
 
 import warpData from "../PokemonData/WarpData.json";
 import fakeWarpData from "../PokemonData/FakeWarps.json";
+import LogicState from "./LogicState";
 
 export enum WarpAccessibility {
   "Inaccessible",
@@ -46,7 +47,7 @@ export class Warp {
     public toWarp: string,
     public region: string,
     public coordinates: { x: number; y: number } | null,
-    public state: State
+    public state: LogicState
   ) {}
 
   equals(other: Warp) {
@@ -81,8 +82,8 @@ export class ConstantWarp extends Warp {
     public fromWarp: string,
     public toWarp: string,
     public region: string,
-    public state: State,
-    public flags: (state: State) => WarpAccessibility
+    public state: LogicState,
+    public flags: (state: LogicState) => WarpAccessibility
   ) {
     super(fromWarp, toWarp, region, null, state);
   }
@@ -103,7 +104,7 @@ export class ConstantWarp extends Warp {
 let map = new Map();
 map.set("1", 1);
 
-export function generateWarps(state: State): Array<Warp> {
+export function generateWarps(state: LogicState): Array<Warp> {
   const warps: Array<Warp> = [];
   for (const region of Object.keys(warpData)) {
     const regionData = warpData[region as keyof typeof warpData];
@@ -116,97 +117,97 @@ export function generateWarps(state: State): Array<Warp> {
 
 // export const warps: Array<Warp> = generateWarps(defaultState);
 
-const flag_to_func: Map<string, ((state: State) => boolean) | ((state: State, param: number) => boolean)> = new Map();
+const flag_to_func: Map<string, ((state: LogicState) => boolean) | ((state: LogicState, param: number) => boolean)> = new Map();
 flag_to_func.set("seafoam_exit_boulder", seafoamExitBoulder);
-flag_to_func.set("lift_key", (state: State) => {
+flag_to_func.set("lift_key", (state: LogicState) => {
   return state.items.has("Lift Key");
 });
-flag_to_func.set("good_rod", (state: State) => {
+flag_to_func.set("good_rod", (state: LogicState) => {
   return state.items.has("Good Rod");
 });
-flag_to_func.set("!extra_strength_boulders", (state: State) => {
+flag_to_func.set("!extra_strength_boulders", (state: LogicState) => {
   return !state.settings.ExtraBoulders;
 });
 flag_to_func.set("buy_poke_doll", pokeDollSkippable);
-flag_to_func.set("hideout_key", (state: State) => {
+flag_to_func.set("hideout_key", (state: LogicState) => {
   return state.items.has("Hideout Key");
 });
 flag_to_func.set("can_surf", canSurf);
-flag_to_func.set("super_rod", (state: State) => {
+flag_to_func.set("super_rod", (state: LogicState) => {
   return state.items.has("Super Rod");
 });
-flag_to_func.set("poke_flute", (state: State) => {
+flag_to_func.set("poke_flute", (state: LogicState) => {
   return state.items.has("Poke Flute");
 });
-flag_to_func.set("fuji_saved", (state: State) => {
+flag_to_func.set("fuji_saved", (state: LogicState) => {
   return state.items.has("Fuji Saved");
 });
-flag_to_func.set("has_bicycle", (state: State) => {
+flag_to_func.set("has_bicycle", (state: LogicState) => {
   return state.items.has("Bicycle");
 });
 flag_to_func.set("rock_tunnel", canRockTunnel);
-flag_to_func.set("old_man", (state: State) => {
+flag_to_func.set("old_man", (state: LogicState) => {
   return state.settings.OldMan === OldMan.None;
 });
-flag_to_func.set("help_bill", (state: State) => {
+flag_to_func.set("help_bill", (state: LogicState) => {
   return state.items.has("Help Bill");
 });
 flag_to_func.set("victory_road_boulder", victoryRoadBoulder);
-flag_to_func.set("plant_key", (state: State) => {
+flag_to_func.set("plant_key", (state: LogicState) => {
   return state.items.has("Plant Key");
 });
-flag_to_func.set("!all_elevators_locked", (state: State) => {
+flag_to_func.set("!all_elevators_locked", (state: LogicState) => {
   return !state.settings.AllElevatorsLocked;
 });
 flag_to_func.set("cerulean_cave", canEnterCeruleanCave);
 flag_to_func.set("can_strength", canStrength);
-flag_to_func.set("safari_pass", (state: State) => {
+flag_to_func.set("safari_pass", (state: LogicState) => {
   return state.items.has("Safari Pass");
 });
-flag_to_func.set("card_key", (state: State, param: number) => {
+flag_to_func.set("card_key", (state: LogicState, param: number) => {
   return cardKeyAccess(param, state);
 });
-flag_to_func.set("can_fly_to", (state: State, param: number) => {
+flag_to_func.set("can_fly_to", (state: LogicState, param: number) => {
   return canFlyTo(param, state);
 });
-flag_to_func.set("mansion_key", (state: State) => {
+flag_to_func.set("mansion_key", (state: LogicState) => {
   return state.items.has("Mansion Key");
 });
 flag_to_func.set("enter_elite_four", canEnterEliteFour);
-flag_to_func.set("!extra_key_items", (state: State) => {
+flag_to_func.set("!extra_key_items", (state: LogicState) => {
   return !state.settings.ExtraKeyItems;
 });
 flag_to_func.set("route_3", canRoute3);
-flag_to_func.set("secret_key", (state: State) => {
+flag_to_func.set("secret_key", (state: LogicState) => {
   return state.items.has("Secret Key");
 });
-flag_to_func.set("old_rod", (state: State) => {
+flag_to_func.set("old_rod", (state: LogicState) => {
   return state.items.has("Old Rod");
 });
 flag_to_func.set("can_pass_guards", canPassGuards);
-flag_to_func.set("oak's_parcel", (state: State) => {
+flag_to_func.set("oak's_parcel", (state: LogicState) => {
   return state.items.has("Oak's Parcel");
 });
-flag_to_func.set("poke_doll_skip", (state: State) => {
+flag_to_func.set("poke_doll_skip", (state: LogicState) => {
   return state.settings.PokeDollSkip;
 });
 flag_to_func.set("can_cut", canCut);
-flag_to_func.set("ss_ticket", (state: State) => {
+flag_to_func.set("ss_ticket", (state: LogicState) => {
   return state.items.has("S.S. Ticket");
 });
-flag_to_func.set("silph_scope", (state: State) => {
+flag_to_func.set("silph_scope", (state: LogicState) => {
   return state.items.has("Silph Scope");
 });
-flag_to_func.set("bicycle_skip", (state: State) => {
+flag_to_func.set("bicycle_skip", (state: LogicState) => {
   return state.settings.BicycleGateSkip;
 });
-flag_to_func.set("defeat_viridian_gym_giovanni", (state: State) => {
+flag_to_func.set("defeat_viridian_gym_giovanni", (state: LogicState) => {
   return state.items.has("Defeat Viridian Gym Giovanni");
 });
-flag_to_func.set("silph_co_liberated", (state: State) => {
+flag_to_func.set("silph_co_liberated", (state: LogicState) => {
   return state.items.has("Silph Co Liberated");
 });
-flag_to_func.set("fossil_checks", (state: State, param: number) => {
+flag_to_func.set("fossil_checks", (state: LogicState, param: number) => {
   return enoughFossils(param, state);
 });
 flag_to_func.set("victory_road_gate_badges", canPassVictoryRoadGate);
@@ -215,7 +216,7 @@ flag_to_func.set("viridian_gym_badges", canEnterViridianGym);
 
 const takesParam = new Set(["fossil_checks", "card_key"]);
 
-function setFlags(cnf: Array<Array<string>>, state: State, params: number): (state: State) => WarpAccessibility {
+function setFlags(cnf: Array<Array<string>>, state: LogicState, params: number): (state: LogicState) => WarpAccessibility {
   // Does the CNF to logic magic, and uses flag_to_func
   function helper(): WarpAccessibility {
     for (const clause of cnf) {
@@ -225,7 +226,7 @@ function setFlags(cnf: Array<Array<string>>, state: State, params: number): (sta
         if (takesParam.has(expr)) {
           satisfied = func(state, params);
         } else {
-          satisfied = (func as (state: State) => boolean)(state);
+          satisfied = (func as (state: LogicState) => boolean)(state);
         }
         if (satisfied) {
           break;
@@ -240,7 +241,7 @@ function setFlags(cnf: Array<Array<string>>, state: State, params: number): (sta
   return helper;
 }
 
-export function generateConstantWarps(state: State): Array<ConstantWarp> {
+export function generateConstantWarps(state: LogicState): Array<ConstantWarp> {
   const warps: Array<ConstantWarp> = [];
   for (const region of Object.keys(fakeWarpData)) {
     const regionData = fakeWarpData[region as keyof typeof fakeWarpData];

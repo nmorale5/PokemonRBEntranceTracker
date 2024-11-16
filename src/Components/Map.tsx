@@ -1,29 +1,21 @@
 import React, { useEffect, useState } from "react";
 import "./Map.css";
-import { defaultState } from "../Backend/GenerateGraph";
 import { latLngFromPixelCoordinates } from "../util";
 import L from "leaflet";
 import { CheckAccessibility } from "../Backend/Checks";
 import { Warp, WarpAccessibility } from "../Backend/Warps";
-import { Session, urlFromPort } from "../Backend/Archipelago";
 import { ImageOverlay, MapContainer, Marker, Tooltip } from "react-leaflet";
-import _ from "lodash";
 import { getCheckIcon, getWarpIcon } from "./Icons";
 import WarpClickHandler from "./WarpClickHandler";
-
-const PORT = "55459";
-const PLAYER = "Halaffa";
+import LogicState from "../Backend/LogicState";
+import { tap } from "rxjs";
 
 const Map = (props: {}) => {
-  const [currentState, setCurrentState] = useState(defaultState);
+  const [currentState, setCurrentState] = useState(LogicState.currentState.value);
   const [selectedWarp, setSelectedWarp] = useState<Warp | null>(null);
 
   useEffect(() => {
-    // const session = new Session(urlFromPort(PORT), PLAYER);
-    // void session.setupArch(defaultState);
-
-    WarpClickHandler.registerCurrentState(defaultState);
-    const subscription = defaultState.asObservable().subscribe(state => setCurrentState(_.cloneDeep(state)));
+    const subscription = LogicState.currentState.pipe(tap(state => console.log(state))).subscribe(state => setCurrentState(state));
     return () => subscription.unsubscribe();
   }, []);
 

@@ -1,5 +1,4 @@
 import "./Map.css";
-import { defaultState } from "../Backend/GenerateGraph";
 import { Session, urlFromPort } from "../Backend/Archipelago";
 import "./Login.css";
 
@@ -12,19 +11,17 @@ const Login = () => {
   return (
     <div className="Login">
       <button
-        onClick={() => {
+        onClick={async () => {
           const portText = document.getElementById("port") as HTMLInputElement;
           const playerText = document.getElementById("player") as HTMLInputElement;
-          if (ongoingSession && ongoingSession.isConnected()) {
-            void ongoingSession.logout();
+          if (ongoingSession && ongoingSession.isConnected) {
+            await ongoingSession.logout();
           }
-          const session = new Session(urlFromPort(portText.value), playerText.value);
-          void session
-            .setupArch(defaultState)
-            .then()
-            .catch(() => {
-              console.log("Couldn't log you in. Check your credentials");
-            });
+          const session = new Session();
+          await session.login(urlFromPort(portText.value), playerText.value);
+          await session.setupArch().catch(() => {
+            console.log("Couldn't log you in. Check your credentials");
+          });
         }}
         color="gray"
       >
