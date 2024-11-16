@@ -121,7 +121,6 @@ export default class LogicState {
     while (toExplore.length > 0) {
       for (const region of toExplore) {
         if (modifyState) {
-          console.log(region);
           this.regions.add(region); // Only add the this if you are doing the update for accessibility!
         }
         for (const warp of combinedWarps) {
@@ -163,7 +162,6 @@ export default class LogicState {
   public updateRegionAccessibility() {
     this.regions.clear();
     this.shortestPath("Pallet Town", "", true); // Abusing the benefit of attempting a full search from the start location
-    console.log(this.regions);
     this.updateAll();
   }
 

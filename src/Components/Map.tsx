@@ -15,7 +15,7 @@ const Map = (props: {}) => {
   const [selectedWarp, setSelectedWarp] = useState<Warp | null>(null);
 
   useEffect(() => {
-    const subscription = LogicState.currentState.pipe(tap(state => console.log(state))).subscribe(state => setCurrentState(state));
+    const subscription = LogicState.currentState.subscribe(state => setCurrentState(state));
     return () => subscription.unsubscribe();
   }, []);
 
