@@ -1,21 +1,22 @@
 import "./Map.css";
 import { defaultState } from "../Backend/GenerateGraph";
 import { Session, urlFromPort } from "../Backend/Archipelago";
+import "./Login.css";
 
 // const PORT = "55459";
 // const PLAYER = "Halaffa";
 
 let ongoingSession: Session;
 
-const UI = () => {
+const Login = () => {
   return (
-    <>
+    <div className="Login">
       <button
         onClick={() => {
-          const portText: HTMLTextAreaElement = document.getElementById("port") as HTMLTextAreaElement;
-          const playerText: HTMLTextAreaElement = document.getElementById("player") as HTMLTextAreaElement;
+          const portText = document.getElementById("port") as HTMLInputElement;
+          const playerText = document.getElementById("player") as HTMLInputElement;
           if (ongoingSession && ongoingSession.isConnected()) {
-            ongoingSession.logout();
+            void ongoingSession.logout();
           }
           const session = new Session(urlFromPort(portText.value), playerText.value);
           void session
@@ -30,11 +31,11 @@ const UI = () => {
         Connect
       </button>
       <label>PORT</label>
-      <textarea id="port" />
+      <input type="text" id="port" />
       <label>PLAYER</label>
-      <textarea id="player" />
-    </>
+      <input type="text" id="player" />
+    </div>
   );
 };
 
-export default UI;
+export default Login;
