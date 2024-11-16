@@ -266,7 +266,7 @@
       "to": "Celadon Department Store 2F",
       "coordinates": {
         "x": 3072,
-        "y": 2376
+        "y": 2360
       }
     }
   ],
@@ -276,7 +276,7 @@
       "to": "Celadon Department Store 3F",
       "coordinates": {
         "x": 3072,
-        "y": 2376
+        "y": 2344
       }
     }
   ],
@@ -286,7 +286,7 @@
       "to": "Celadon Department Store 4F",
       "coordinates": {
         "x": 3072,
-        "y": 2376
+        "y": 2328
       }
     }
   ],
@@ -296,7 +296,7 @@
       "to": "Celadon Department Store 5F",
       "coordinates": {
         "x": 3072,
-        "y": 2376
+        "y": 2312
       }
     }
   ],
@@ -2299,7 +2299,7 @@
       "to": "Rocket Hideout B1F-SE",
       "coordinates": {
         "x": 3888,
-        "y": 3944
+        "y": 3912
       }
     }
   ],
@@ -2309,7 +2309,7 @@
       "to": "Rocket Hideout B2F",
       "coordinates": {
         "x": 3888,
-        "y": 3944
+        "y": 3928
       }
     }
   ],
@@ -5079,7 +5079,7 @@
       "to": "Silph Co 10F",
       "coordinates": {
         "x": 5360,
-        "y": 5512
+        "y": 5368
       }
     }
   ],
@@ -5089,7 +5089,7 @@
       "to": "Silph Co 11F",
       "coordinates": {
         "x": 5360,
-        "y": 5512
+        "y": 5352
       }
     }
   ],
@@ -5109,7 +5109,7 @@
       "to": "Silph Co 2F",
       "coordinates": {
         "x": 5360,
-        "y": 5512
+        "y": 5496
       }
     }
   ],
@@ -5119,7 +5119,7 @@
       "to": "Silph Co 3F",
       "coordinates": {
         "x": 5360,
-        "y": 5512
+        "y": 5480
       }
     }
   ],
@@ -5129,7 +5129,7 @@
       "to": "Silph Co 4F",
       "coordinates": {
         "x": 5360,
-        "y": 5512
+        "y": 5464
       }
     }
   ],
@@ -5139,7 +5139,7 @@
       "to": "Silph Co 5F",
       "coordinates": {
         "x": 5360,
-        "y": 5512
+        "y": 5448
       }
     }
   ],
@@ -5149,7 +5149,7 @@
       "to": "Silph Co 6F",
       "coordinates": {
         "x": 5360,
-        "y": 5512
+        "y": 5432
       }
     }
   ],
@@ -5159,7 +5159,7 @@
       "to": "Silph Co 7F",
       "coordinates": {
         "x": 5360,
-        "y": 5512
+        "y": 5416
       }
     }
   ],
@@ -5169,7 +5169,7 @@
       "to": "Silph Co 8F",
       "coordinates": {
         "x": 5360,
-        "y": 5512
+        "y": 5400
       }
     }
   ],
@@ -5179,7 +5179,7 @@
       "to": "Silph Co 9F",
       "coordinates": {
         "x": 5360,
-        "y": 5512
+        "y": 5384
       }
     }
   ],
