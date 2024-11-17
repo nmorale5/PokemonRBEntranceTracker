@@ -17,6 +17,7 @@ import {
   canPassRoute22Gate,
   canEnterViridianGym,
   canFlyTo,
+  canFly,
 } from "./Requirements";
 
 import warpData from "../PokemonData/WarpData.json";
@@ -129,6 +130,7 @@ flag_to_func.set("hideout_key", (state: LogicState) => {
   return state.items.has("Hideout Key");
 });
 flag_to_func.set("can_surf", canSurf);
+flag_to_func.set("can_fly", canFly);
 flag_to_func.set("super_rod", (state: LogicState) => {
   return state.items.has("Super Rod");
 });
@@ -219,6 +221,9 @@ function setFlags(cnf: Array<Array<string>>, state: LogicState, params: number):
       let satisfied = true;
       for (const expr of clause) {
         const func = flag_to_func.get(expr)!;
+        if (!func) {
+          console.log(expr);
+        }
         if (takesParam.has(expr)) {
           satisfied = func(state, params);
         } else {
