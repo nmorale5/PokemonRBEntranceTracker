@@ -8,7 +8,6 @@ import { ImageOverlay, MapContainer, Marker, Tooltip } from "react-leaflet";
 import { getCheckIcon, getWarpIcon } from "./Icons";
 import WarpClickHandler from "./WarpClickHandler";
 import LogicState from "../Backend/LogicState";
-import { tap } from "rxjs";
 
 const Map = (props: {}) => {
   const [currentState, setCurrentState] = useState(LogicState.currentState.value);
@@ -25,6 +24,7 @@ const Map = (props: {}) => {
         <ImageOverlay url={"/PokemonRedMapNoArrows.png"} bounds={L.latLngBounds(latLngFromPixelCoordinates(0, 0), latLngFromPixelCoordinates(7200, 7200))}></ImageOverlay>
         {currentState.checks
           .filter(check => check.coordinates !== null)
+          .filter(check => check.enabled)
           .map((check, i) => (
             <Marker
               key={i}

@@ -73,6 +73,10 @@ incl_to_func.set("hidden_items", (state: LogicState) => {
   // 61
   return state.settings.RandomizeHidden === RandomizeHidden.Yes;
 });
+incl_to_func.set("can_get_hidden", (state: LogicState) => {
+  // 61
+  return state.settings.RandomizeHidden === RandomizeHidden.Yes;
+});
 incl_to_func.set("hidden_moon_stones", (state: LogicState) => {
   // 2
   return state.settings.RandomizeHidden === RandomizeHidden.Yes || state.settings.StoneSanity;
@@ -119,6 +123,9 @@ enabled_to_func.set("coin_case", (state: LogicState) => {
   return state.items.has("Coin Case");
 });
 enabled_to_func.set("hidden_items", (state: LogicState) => {
+  return canGetHiddenItems(state);
+});
+enabled_to_func.set("can_get_hidden", (state: LogicState) => {
   return canGetHiddenItems(state);
 });
 enabled_to_func.set("game_corner", (state: LogicState) => {
