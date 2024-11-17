@@ -5699,12 +5699,12 @@
   },
   {
     "name": "Cooltrainer F 1",
-    "region": "Victory Road 3F-S",
+    "region": "Victory Road 3F",
     "type": "Basic",
     "inclusion": "trainersanity",
     "coordinates": {
-      "x": 312,
-      "y": 2280
+      "x": 408,
+      "y": 2120
     },
     "id": 172000518
   },
@@ -5721,12 +5721,12 @@
   },
   {
     "name": "Cooltrainer F 2",
-    "region": "Victory Road 3F",
+    "region": "Victory Road 3F-S",
     "type": "Basic",
     "inclusion": "trainersanity",
     "coordinates": {
-      "x": 408,
-      "y": 2120
+      "x": 312,
+      "y": 2280
     },
     "id": 172000520
   },
@@ -6077,8 +6077,8 @@
     "type": "Basic",
     "inclusion": "split_card_key",
     "coordinates": {
-      "x": 5832,
-      "y": 6408
+      "x": 5704,
+      "y": 6296
     },
     "id": 172000703
   },
