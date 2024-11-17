@@ -1622,7 +1622,7 @@
       "to": "Pokemon Mansion 3F-SE",
       "func": [[]],
       "parameter": 0,
-      "one_way": "True"
+      "one_way": "False"
     }
   ],
   "Pokemon Mansion 3F-SW": [
@@ -1638,6 +1638,20 @@
     {
       "from": "Pokemon Mansion 3F-SE",
       "to": "Pokemon Mansion 3F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Pokemon Mansion 3F-SE",
+      "to": "Pokemon Mansion 2F",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Pokemon Mansion 3F-SE",
+      "to": "Pokemon Mansion 1F-SE",
       "func": [[]],
       "parameter": 0,
       "one_way": "True"
