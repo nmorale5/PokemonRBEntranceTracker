@@ -119,7 +119,7 @@ export function enoughPokemon(count: number, state: LogicState): boolean {
   if (count === 0) {
     return true;
   }
-  throw new Error("Not Implemented");
+  return count <= state.checks.filter(check => check.type === "Pokemon" && check.acquired).length;
 }
 
 export function oaksAidCheck(count: number, state: LogicState): boolean {

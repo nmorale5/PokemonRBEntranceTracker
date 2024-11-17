@@ -100,13 +100,13 @@ enabled_to_func.set("oak's_parcel", (state: LogicState) => {
 enabled_to_func.set("can_cut", canCut);
 enabled_to_func.set("can_surf", canSurf);
 enabled_to_func.set("can_strength", canStrength);
-enabled_to_func.set("oak's_aide_route_2", (state: LogicState) => {
+enabled_to_func.set("oak's_aid_rt_2", (state: LogicState) => {
   return oaksAidCheck(state.settings.OaksAidRt2, state);
 });
-enabled_to_func.set("oak's_aide_route_11", (state: LogicState) => {
+enabled_to_func.set("oak's_aid_rt_11", (state: LogicState) => {
   return oaksAidCheck(state.settings.OaksAidRt11, state);
 });
-enabled_to_func.set("oak's_aide_route_15", (state: LogicState) => {
+enabled_to_func.set("oak's_aid_rt_15", (state: LogicState) => {
   return oaksAidCheck(state.settings.OaksAidRt15, state);
 });
 enabled_to_func.set("bike_voucher", (state: LogicState) => {
