@@ -43,7 +43,7 @@ const Map = (props: {}) => {
               key={i}
               position={latLngFromPixelCoordinates(warp.coordinates!.x, warp.coordinates!.y)}
               icon={getWarpIcon(
-                warp.accessibility === WarpAccessibility.Accessible ? "lawngreen" : warp.accessibility === WarpAccessibility.Inaccessible ? "red" : "gray",
+                warp.linkedWarp !== null ? "saddlebrown" : warp.accessibility === WarpAccessibility.Accessible ? "lawngreen" : warp.accessibility === WarpAccessibility.Inaccessible ? "red" : "gray",
                 selectedWarp?.equals(warp) ?? false
               )}
               eventHandlers={{
