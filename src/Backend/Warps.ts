@@ -90,11 +90,7 @@ export class ConstantWarp extends Warp {
 
   updateAccessibility(): void {
     if (this.state.regions.has(this.region)) {
-      // const canTraverse = this.flags();
       this.accessibility = this.flags(this.state);
-      // if (canTraverse) {
-      //   this.state.regions.add(this.toWarp); // Another place to change accessibility... good or bad?
-      // }
     } else {
       this.accessibility = WarpAccessibility.Inaccessible;
     }
@@ -191,7 +187,7 @@ flag_to_func.set("oak's_parcel", (state: LogicState) => {
 flag_to_func.set("poke_doll_skip", (state: LogicState) => {
   return state.settings.PokeDollSkip;
 });
-flag_to_func.set("can_cut", canCut);
+flag_to_func.set("can_cut", (state: LogicState) => canCut(state));
 flag_to_func.set("ss_ticket", (state: LogicState) => {
   return state.items.has("S.S. Ticket");
 });

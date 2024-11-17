@@ -3,7 +3,7 @@ import { Check, generateChecks, generatePokemonChecks } from "./Checks";
 import { defaultSettings, DoorShuffle } from "./Settings";
 import _ from "lodash";
 import { BehaviorSubject } from "rxjs";
-import { canFly, cities } from "./Requirements";
+import { canCut, canFly, cities } from "./Requirements";
 
 export default class LogicState {
   public items: Set<string> = new Set([]);
@@ -23,7 +23,9 @@ export default class LogicState {
   public static freeFly: string = "";
 
   public clone(): LogicState {
-    return _.cloneDeep(this);
+    const newState = _.cloneDeep(this);
+    newState.fakeWarps = generateConstantWarps(newState); // Requires reference to new state
+    return newState;
   }
 
   /** "check" refers to the specific check-giving thing that is found on the map */
@@ -112,13 +114,16 @@ export default class LogicState {
     const combinedWarps: Array<Warp> = this.warps.concat(this.fakeWarps);
     const exploredRegions: Map<string, Array<Warp>> = new Map(); // Array of maps from region to Warp (to get there)
     exploredRegions.set(startRegion, []);
+    let toExplore: Array<string> = [startRegion]; // regions to find new paths from
     if (includePalletWarp) {
       exploredRegions.set("Pallet Town", []); // Can Pallet Warp
+      toExplore.push("Pallet Town");
     }
     if (canFly(this) && cities.includes(LogicState.freeFly)) {
       exploredRegions.set(LogicState.freeFly, []);
+      toExplore.push(LogicState.freeFly);
     }
-    let toExplore: Array<string> = [startRegion]; // regions to find new paths from
+
     let nextExplore: Array<string> = [];
     while (toExplore.length > 0) {
       for (const region of toExplore) {
