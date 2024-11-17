@@ -2841,8 +2841,8 @@
       "from": "Route 20-IE",
       "to": "Seafoam Islands 1F",
       "coordinates": {
-        "x": 2600,
-        "y": 6344
+        "x": 2760,
+        "y": 6408
       }
     }
   ],
@@ -2851,8 +2851,8 @@
       "from": "Route 20-IW",
       "to": "Seafoam Islands 1F-SE",
       "coordinates": {
-        "x": 2760,
-        "y": 6408
+        "x": 2600,
+        "y": 6344
       }
     }
   ],
