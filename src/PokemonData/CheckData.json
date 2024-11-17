@@ -154,7 +154,7 @@
     "id": 172000013
   },
   {
-    "name": "",
+    "name": "Cerulean Bicycle Shop",
     "region": "Cerulean Bicycle Shop",
     "type": "Basic",
     "inclusion": "",
@@ -5329,8 +5329,8 @@
     "type": "Basic",
     "inclusion": "trainersanity",
     "coordinates": {
-      "x": 6696,
-      "y": 2984
+      "x": 6680,
+      "y": 2904
     },
     "id": 172000484
   },
@@ -5340,8 +5340,8 @@
     "type": "Basic",
     "inclusion": "trainersanity",
     "coordinates": {
-      "x": 6680,
-      "y": 2904
+      "x": 6696,
+      "y": 2984
     },
     "id": 172000485
   },
