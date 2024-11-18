@@ -5016,7 +5016,7 @@
     "id": 172000455
   },
   {
-    "name": "Psychic 1",
+    "name": "Psychic 3",
     "region": "Saffron Gym-NE",
     "type": "Basic",
     "inclusion": "trainersanity",
@@ -5024,7 +5024,7 @@
       "x": 5208,
       "y": 2312
     },
-    "id": 172000456
+    "id": 172000458
   },
   {
     "name": "Psychic 2",
@@ -5038,7 +5038,7 @@
     "id": 172000457
   },
   {
-    "name": "Psychic 3",
+    "name": "Psychic 1",
     "region": "Saffron Gym-SE",
     "type": "Basic",
     "inclusion": "trainersanity",
@@ -5046,7 +5046,7 @@
       "x": 5208,
       "y": 2504
     },
-    "id": 172000458
+    "id": 172000456
   },
   {
     "name": "Channeler 1",
