@@ -1057,25 +1057,11 @@
       "one_way": "False"
     },
     {
-      "from": "Saffron City-Copycat",
-      "to": "Saffron City",
-      "func": [["can_fly"]],
-      "parameter": 0,
-      "one_way": "True"
-    },
-    {
       "from": "Saffron City",
       "to": "Saffron City-Pidgey",
       "func": [["silph_co_liberated"]],
       "parameter": 0,
       "one_way": "False"
-    },
-    {
-      "from": "Saffron City-Pidgey",
-      "to": "Saffron City",
-      "func": [["can_fly"]],
-      "parameter": 0,
-      "one_way": "True"
     },
     {
       "from": "Saffron City",
@@ -1085,13 +1071,6 @@
       "one_way": "False"
     },
     {
-      "from": "Saffron City-G",
-      "to": "Saffron City",
-      "func": [["can_fly"]],
-      "parameter": 0,
-      "one_way": "True"
-    },
-    {
       "from": "Saffron City",
       "to": "Saffron City-Silph",
       "func": [["fuji_saved"]],
@@ -1099,18 +1078,47 @@
       "one_way": "False"
     },
     {
-      "from": "Saffron City-Silph",
-      "to": "Saffron City",
-      "func": [["can_fly"]],
-      "parameter": 0,
-      "one_way": "True"
-    },
-    {
       "from": "Saffron City",
       "to": "Fly",
       "func": [["can_fly_to"]],
       "parameter": 8,
       "one_way": "False"
+    }
+  ],
+  "Saffron City-Silph": [
+    {
+      "from": "Saffron City-Silph",
+      "to": "Saffron City",
+      "func": [["can_fly"]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Saffron City-Pidgey": [
+    {
+      "from": "Saffron City-Pidgey",
+      "to": "Saffron City",
+      "func": [["can_fly"]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Saffron City-Copycat": [
+    {
+      "from": "Saffron City-Copycat",
+      "to": "Saffron City",
+      "func": [["can_fly"]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
+  "Saffron City-G": [
+    {
+      "from": "Saffron City-G",
+      "to": "Saffron City",
+      "func": [["can_fly"]],
+      "parameter": 0,
+      "one_way": "True"
     }
   ],
   "Route 12-W": [
