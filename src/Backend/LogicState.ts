@@ -3,7 +3,7 @@ import { Check, generateChecks, generatePokemonChecks } from "./Checks";
 import { defaultSettings, DoorShuffle } from "./Settings";
 import _ from "lodash";
 import { BehaviorSubject } from "rxjs";
-import { canCut, canFly, cities } from "./Requirements";
+import { canCut, canFly, CITIES } from "./Requirements";
 
 export default class LogicState {
   public items: Set<string> = new Set([]);
@@ -11,6 +11,7 @@ export default class LogicState {
   public checks: Array<Check>;
   public warps: Array<Warp>;
   public fakeWarps: Array<ConstantWarp>;
+  public freeFly: string = "";
 
   public constructor(public settings: typeof defaultSettings) {
     this.checks = generateChecks(this).concat(generatePokemonChecks(this));
@@ -20,7 +21,6 @@ export default class LogicState {
   }
 
   public static readonly currentState = new BehaviorSubject<LogicState>(new LogicState(defaultSettings));
-  public static freeFly: string = "";
 
   public clone(): LogicState {
     const newState = _.cloneDeep(this);
@@ -119,9 +119,9 @@ export default class LogicState {
       exploredRegions.set("Pallet Town", []); // Can Pallet Warp
       toExplore.push("Pallet Town");
     }
-    if (canFly(this) && cities.includes(LogicState.freeFly)) {
-      exploredRegions.set(LogicState.freeFly, []);
-      toExplore.push(LogicState.freeFly);
+    if (canFly(this) && CITIES.includes(this.freeFly)) {
+      exploredRegions.set(this.freeFly, []);
+      toExplore.push(this.freeFly);
     }
 
     let nextExplore: Array<string> = [];

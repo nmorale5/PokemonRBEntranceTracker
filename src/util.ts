@@ -13,3 +13,9 @@ export function pixelCoordinatesFromLatLng(latlng: L.LatLng): [number, number] {
   // @ts-ignore
   return [latlng.lng * 10000, 7200 - latlng.lat * 10000].map(Math.round);
 }
+
+export function setToArray<T>(set: Set<T>): Array<T> {
+  const arr = new Array<T>();
+  set.forEach(item => arr.push(item));
+  return arr;
+}

@@ -4,7 +4,7 @@ import LogicState from "./LogicState";
 // TODO: Implement workaround for Extra and Extra Plus HM Badge settings to allow user to manually indicate
 // The ability to use an HM move
 
-export const cities: Array<string> = [
+export const CITIES: Array<string> = [
   "Pallet Town",
   "Viridian City",
   "Pewter City",
@@ -19,7 +19,7 @@ export const cities: Array<string> = [
 ];
 
 export function canFlyTo(city: number, state: LogicState) {
-  return canFly(state) && state.shortestPath("Pallet Town", cities[city]).length !== 0;
+  return canFly(state) && state.shortestPath("Pallet Town", CITIES[city]).length !== 0;
 }
 
 export function canSurf(state: LogicState): boolean {
