@@ -33,7 +33,7 @@ const Map = (props: {}) => {
                 check.acquired ? "gray" : check.accessibility === CheckAccessibility.Accessible ? "lawngreen" : check.accessibility === CheckAccessibility.Inaccessible ? "red" : "yellow"
               )}
             >
-              <Tooltip sticky>{check.name}</Tooltip>
+              <Tooltip>{check.name}</Tooltip>
             </Marker>
           ))}
         {currentState.warps
@@ -53,7 +53,7 @@ const Map = (props: {}) => {
                 },
               }}
             >
-              <Tooltip sticky>{`${warp.toString()} → ${warp.linkedWarp?.toString() ?? "(not yet linked)"}`}</Tooltip>
+              <Tooltip>{`${warp.toString()} → ${warp.linkedWarp?.toString() ?? "(not yet linked)"}`}</Tooltip>
             </Marker>
           ))}
       </MapContainer>
