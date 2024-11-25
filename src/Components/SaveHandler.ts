@@ -8,6 +8,7 @@ type SaveEntry = {
   items: string[];
   checks: boolean[];
   warps: ({ toWarp: string; fromWarp: string } | null)[];
+  freeFly: string;
 };
 
 const SAVE_KEY = "save";
@@ -43,6 +44,7 @@ export default class SaveHandler {
     newState.warps.forEach(
       (warp, i) => (warp.linkedWarp = saveEntry.warps[i] === null ? null : newState.warps.find(w => w.toWarp === saveEntry.warps[i]!.toWarp && w.fromWarp === saveEntry.warps[i]!.fromWarp)!)
     );
+    newState.freeFly = saveEntry.freeFly;
     newState.updateRegionAccessibility();
     return newState;
   }
@@ -61,6 +63,7 @@ export default class SaveHandler {
               fromWarp: warp.linkedWarp.fromWarp,
             }
       ),
+      freeFly: state.freeFly,
     };
   }
 
