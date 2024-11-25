@@ -3,6 +3,7 @@ import "./Items.css";
 import LogicState from "../Backend/LogicState";
 import { CITIES } from "../Backend/Requirements";
 import { useEffect, useState } from "react";
+import itemIcons from "../PokemonData/ItemIcons.json";
 
 const Items = () => {
   const [currentState, setCurrentState] = useState(LogicState.currentState.value);
@@ -27,19 +28,26 @@ const Items = () => {
         }}
       >
         {CITIES.map((city, i) => (
-          <option key={i} value={city}>{city}</option>
+          <option key={i} value={city}>
+            {city}
+          </option>
         ))}
       </select>
-      {["Fuji Saved", "Silph Co Liberated"].map(name => (
-        <button
-          key={name}
-          onClick={async () => {
-            LogicState.currentState.next(LogicState.currentState.value.withItemStatus(name, !LogicState.currentState.value.items.has(name)));
+      {Object.entries(itemIcons).map(([itemName, imgLocation]) => (
+        <img
+          key={itemName}
+          src={`/items/${imgLocation}.png`}
+          alt={itemName}
+          onClick={() => {
+            const state = LogicState.currentState.value;
+            LogicState.currentState.next(state.withItemStatus(itemName, !state.items.has(itemName)));
           }}
-          color="gray"
-        >
-          {`${name}`}
-        </button>
+          style={{
+            width: "48px",
+            height: "48px",
+            filter: currentState.items.has(itemName) ? "none" : "grayscale(100%)",
+          }}
+        />
       ))}
     </div>
   );
