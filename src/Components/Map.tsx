@@ -56,6 +56,7 @@ const Map = (props: {}) => {
               <Tooltip>{`${warp.toString()} → ${warp.linkedWarp?.toString() ?? "(not yet linked)"}`}</Tooltip>
             </Marker>
           ))}
+        {/*<MapClickDebug />*/}
       </MapContainer>
     </>
   );
