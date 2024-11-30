@@ -2,24 +2,16 @@ import "./Map.css";
 import "./Items.css";
 import LogicState from "../Backend/LogicState";
 import { CITIES } from "../Backend/Requirements";
-import { useEffect, useState } from "react";
 import itemIcons from "../PokemonData/ItemIcons.json";
 
-const Items = () => {
-  const [currentState, setCurrentState] = useState(LogicState.currentState.value);
-
-  useEffect(() => {
-    const subscription = LogicState.currentState.subscribe(state => setCurrentState(state));
-    return () => subscription.unsubscribe();
-  }, []);
-
+const Items = (props: {currentState: LogicState}) => {
   return (
     <div className="Items">
       <label htmlFor="free-fly">Free Fly Location: </label>
       <select
         id="free-fly"
         name="free-fly"
-        value={currentState.freeFly}
+        value={props.currentState.freeFly}
         onChange={() => {
           const newState = LogicState.currentState.value.clone();
           newState.freeFly = (document.getElementById("free-fly") as HTMLSelectElement).value;
@@ -45,7 +37,7 @@ const Items = () => {
           style={{
             width: "32px",
             height: "32px",
-            filter: currentState.items.has(itemName) ? "none" : "grayscale(100%)",
+            filter: props.currentState.items.has(itemName) ? "none" : "grayscale(100%)",
           }}
         />
       ))}
