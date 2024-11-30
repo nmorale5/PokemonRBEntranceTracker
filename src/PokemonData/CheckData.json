@@ -2047,7 +2047,7 @@
   },
   {
     "name": "Hidden Item Rock",
-    "region": "Seafoam Islands B2F-NW",
+    "region": "Seafoam Islands B2F-SW",
     "type": "Hidden",
     "inclusion": "hidden_items",
     "coordinates": {
@@ -2788,8 +2788,8 @@
     "type": "Basic",
     "inclusion": "trainersanity",
     "coordinates": {
-      "x": 3272,
-      "y": 3896
+      "x": 3064,
+      "y": 4008
     },
     "id": 172000253
   },
@@ -2810,8 +2810,8 @@
     "type": "Basic",
     "inclusion": "trainersanity",
     "coordinates": {
-      "x": 3064,
-      "y": 4008
+      "x": 3272,
+      "y": 3896
     },
     "id": 172000255
   },
