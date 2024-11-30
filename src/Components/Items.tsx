@@ -43,8 +43,8 @@ const Items = () => {
             LogicState.currentState.next(state.withItemStatus(itemName, !state.items.has(itemName)));
           }}
           style={{
-            width: "48px",
-            height: "48px",
+            width: "32px",
+            height: "32px",
             filter: currentState.items.has(itemName) ? "none" : "grayscale(100%)",
           }}
         />

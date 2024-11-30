@@ -180,7 +180,6 @@ export function generateChecks(state: LogicState): Array<Check> {
   }
   return checks;
 }
-// export const checks: Array<Check> = generateChecks(defaultState);
 
 export function generatePokemonChecks(state: LogicState): Array<Check> {
   const checks: Array<Check> = [];
