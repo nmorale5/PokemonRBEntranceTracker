@@ -847,6 +847,13 @@
       "func": [["can_surf"], ["can_strength"], ["seafoam_exit_boulder"]],
       "parameter": 6,
       "one_way": "False"
+    },
+    {
+      "from": "Seafoam Islands B3F",
+      "to": "Seafoam Islands B4F",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
     }
   ],
   "Seafoam Islands B4F": [
@@ -1506,6 +1513,20 @@
       "func": [[]],
       "parameter": 0,
       "one_way": "True"
+    },
+    {
+      "from": "Seafoam Islands 1F",
+      "to": "Seafoam Islands B1F",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Seafoam Islands 1F",
+      "to": "Seafoam Islands B1F-NE",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
     }
   ],
   "Seafoam Islands 1F-SE": [
@@ -1521,6 +1542,13 @@
     {
       "from": "Seafoam Islands B1F",
       "to": "Seafoam Islands B1F-Wild",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Seafoam Islands B1F",
+      "to": "Seafoam Islands B2F-NW",
       "func": [[]],
       "parameter": 0,
       "one_way": "True"
@@ -1542,6 +1570,13 @@
       "func": [[]],
       "parameter": 0,
       "one_way": "True"
+    },
+    {
+      "from": "Seafoam Islands B1F-NE",
+      "to": "Seafoam Islands B2F-NE",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
     }
   ],
   "Seafoam Islands B2F-NW": [
@@ -1551,6 +1586,27 @@
       "func": [[]],
       "parameter": 0,
       "one_way": "True"
+    },
+    {
+      "from": "Seafoam Islands B2F-NW",
+      "to": "Seafoam Islands B4F-W",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Seafoam Islands B2F-NW",
+      "to": "Seafoam Islands B3F",
+      "func": [["seafoam_exit_boulder"]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Seafoam Islands B2F-NW",
+      "to": "Seafoam Islands B3F-SE",
+      "func": [["seafoam_exit_boulder"]],
+      "parameter": 0,
+      "one_way": "True"
     }
   ],
   "Seafoam Islands B2F-NE": [
@@ -1558,6 +1614,27 @@
       "from": "Seafoam Islands B2F-NE",
       "to": "Seafoam Islands B2F-Wild",
       "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Seafoam Islands B2F-NE",
+      "to": "Seafoam Islands B4F",
+      "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Seafoam Islands B2F-NE",
+      "to": "Seafoam Islands B3F",
+      "func": [["seafoam_exit_boulder"]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Seafoam Islands B2F-NE",
+      "to": "Seafoam Islands B3F-SE",
+      "func": [["seafoam_exit_boulder"]],
       "parameter": 0,
       "one_way": "True"
     }
@@ -1594,6 +1671,13 @@
       "from": "Seafoam Islands B3F-SE",
       "to": "Seafoam Islands B3F-Wild",
       "func": [[]],
+      "parameter": 0,
+      "one_way": "True"
+    },
+    {
+      "from": "Seafoam Islands B3F-SE",
+      "to": "Seafoam Islands B4F",
+      "func": [["can_surf"], ["can_strength"], ["seafoam_exit_boulder"]],
       "parameter": 0,
       "one_way": "True"
     }
