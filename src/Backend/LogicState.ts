@@ -98,6 +98,12 @@ export default class LogicState {
     return newState;
   }
 
+  public searchWarps(startRegion: string, endRegion: string) {}
+
+  public updateRegions() {
+    return this.shortestPath("Pallet Town", "", true); // Abusing the benefit of attempting a full search from the start location
+  }
+
   public shortestPath(startRegion: string, endRegion: string, modifyState: boolean = false, includePalletWarp: boolean = true): Array<Warp> {
     /**
      * Gets shortest path from one region to another.
@@ -118,10 +124,6 @@ export default class LogicState {
     if (includePalletWarp) {
       exploredRegions.set("Pallet Town", []); // Can Pallet Warp
       toExplore.push("Pallet Town");
-    }
-    if (canFly(this) && CITIES.includes(this.freeFly)) {
-      exploredRegions.set(this.freeFly, []);
-      toExplore.push(this.freeFly);
     }
 
     let nextExplore: Array<string> = [];
@@ -159,16 +161,13 @@ export default class LogicState {
       toExplore = nextExplore;
       nextExplore = [];
     }
-    // if (modifyState) {
-    //   return new Set(exploredRegions);
-    // }
     return [];
   }
 
   // warning: mutates this state, should only be called internally while creating a new state
   public updateRegionAccessibility() {
     this.regions.clear();
-    this.shortestPath("Pallet Town", "", true); // Abusing the benefit of attempting a full search from the start location
+    this.updateRegions();
     this.updateAll();
   }
 

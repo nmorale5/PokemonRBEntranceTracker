@@ -28,6 +28,13 @@
       "func": [["can_surf"]],
       "parameter": 0,
       "one_way": "False"
+    },
+    {
+      "from": "Pallet Town",
+      "to": "Fly",
+      "func": [["can_fly_to"]],
+      "parameter": 0,
+      "one_way": "False"
     }
   ],
   "Route 1": [{ "from": "Route 1", "to": "Viridian City", "func": [[]], "parameter": 0, "one_way": "False" }],
@@ -983,7 +990,7 @@
     },
     { "from": "Fuchsia City", "to": "Route 19-N", "func": [[]], "parameter": 0, "one_way": "False" },
     {
-      "from": "Fuschia City",
+      "from": "Fuchsia City",
       "to": "Fly",
       "func": [["can_fly_to"]],
       "parameter": 7,

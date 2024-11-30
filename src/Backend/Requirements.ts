@@ -19,7 +19,7 @@ export const CITIES: Array<string> = [
 ];
 
 export function canFlyTo(city: number, state: LogicState) {
-  return canFly(state) && state.shortestPath("Pallet Town", CITIES[city]).length !== 0;
+  return canFly(state) && (CITIES[city] === "Pallet Town" || state.freeFly === CITIES[city] || !!state.shortestPath("Pallet Town", CITIES[city]));
 }
 
 export function canSurf(state: LogicState): boolean {

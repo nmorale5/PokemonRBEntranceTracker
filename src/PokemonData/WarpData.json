@@ -2415,7 +2415,7 @@
       "from": "Route 11-C",
       "to": "Route 11 Gate 1F",
       "coordinates": {
-        "x": 5800,
+        "x": 5656,
         "y": 3944
       }
     }
@@ -2425,7 +2425,7 @@
       "from": "Route 11-E",
       "to": "Route 11 Gate 1F",
       "coordinates": {
-        "x": 5656,
+        "x": 5800,
         "y": 3944
       }
     }

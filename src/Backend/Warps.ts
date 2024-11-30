@@ -212,7 +212,7 @@ flag_to_func.set("victory_road_gate_badges", canPassVictoryRoadGate);
 flag_to_func.set("route_22_gate_badges", canPassRoute22Gate);
 flag_to_func.set("viridian_gym_badges", canEnterViridianGym);
 
-const takesParam = new Set(["fossil_checks", "card_key"]);
+const takesParam = new Set(["fossil_checks", "card_key", "can_fly_to"]);
 
 function setFlags(cnf: Array<Array<string>>, state: LogicState, params: number): (state: LogicState) => WarpAccessibility {
   // Does the CNF to logic magic, and uses flag_to_func
