@@ -164,14 +164,18 @@ export function evolveLevel(level: number, state: LogicState): boolean {
 
 // Custom functions I'm making to handle certain checks
 export function seafoamExitBoulder(state: LogicState): boolean {
-  // TODO: Regions
-  // connect(multiworld, player, "Seafoam Islands B3F", "Seafoam Islands B3F-SE", lambda state: logic.can_surf(state, world, player) and logic.can_strength(state, world, player) and state.has("Seafoam Exit Boulder", player, 6))
-  return canStrength(state); // && Regions.has(i) for (i of "regions with strength boulders to push down")
+  return (
+    canStrength(state) &&
+    state.regions.has("Seafoam Islands 1F") &&
+    state.regions.has("Seafoam Islands B1F-NE") &&
+    state.regions.has("Seafoam Islands B1F") &&
+    state.regions.has("Seafoam Islands B2F-NE") &&
+    state.regions.has("Seafoam Islands B2F-NW")
+  );
 }
 
 export function victoryRoadBoulder(state: LogicState): boolean {
-  // TODO: Region
-  return canStrength(state); // && Regions.has("area in Victory Road you need to push boulder in")
+  return canStrength(state) && state.regions.has("Victory Road 3F-S");
 }
 
 export function canEnterCeruleanCave(state: LogicState): boolean {
