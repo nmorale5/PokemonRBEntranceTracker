@@ -1381,7 +1381,7 @@
     {
       "from": "Victory Road 2F-C",
       "to": "Victory Road 2F-SE",
-      "func": [["can_strength", "victory_road_boulder"]],
+      "func": [["can_strength"], ["victory_road_boulder"]],
       "parameter": 0,
       "one_way": "True"
     }
