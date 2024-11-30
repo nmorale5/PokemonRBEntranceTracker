@@ -4537,8 +4537,8 @@
     "type": "Basic",
     "inclusion": "trainersanity",
     "coordinates": {
-      "x": 6856,
-      "y": 1272
+      "x": 6904,
+      "y": 1192
     },
     "id": 172000412
   },
@@ -4548,8 +4548,8 @@
     "type": "Basic",
     "inclusion": "trainersanity",
     "coordinates": {
-      "x": 6904,
-      "y": 1192
+      "x": 6856,
+      "y": 1272
     },
     "id": 172000413
   },
