@@ -4438,8 +4438,8 @@
     "type": "Basic",
     "inclusion": "trainersanity",
     "coordinates": {
-      "x": 6456,
-      "y": 1960
+      "x": 6296,
+      "y": 1800
     },
     "id": 172000403
   },
@@ -4460,8 +4460,8 @@
     "type": "Basic",
     "inclusion": "trainersanity",
     "coordinates": {
-      "x": 6296,
-      "y": 1800
+      "x": 6456,
+      "y": 1960
     },
     "id": 172000405
   },
