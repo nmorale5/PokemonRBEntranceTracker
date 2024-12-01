@@ -148,7 +148,7 @@ flag_to_func.set("old_man", (state: LogicState) => {
   return state.settings.OldMan === OldMan.None;
 });
 flag_to_func.set("help_bill", (state: LogicState) => {
-  return state.items.has("Help Bill");
+  return state.checks.some(check => check.name === "Bill" && check.acquired);
 });
 flag_to_func.set("victory_road_boulder", victoryRoadBoulder);
 flag_to_func.set("plant_key", (state: LogicState) => {
