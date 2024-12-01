@@ -1666,8 +1666,8 @@
     "type": "Basic",
     "inclusion": "extra_key_items",
     "coordinates": {
-      "x": 6456,
-      "y": 1512
+      "x": 6408,
+      "y": 1496
     },
     "id": 172000151
   },
@@ -1677,8 +1677,8 @@
     "type": "Basic",
     "inclusion": "extra_key_items",
     "coordinates": {
-      "x": 6520,
-      "y": 1160
+      "x": 6408,
+      "y": 1448
     },
     "id": 172000152
   },
@@ -1688,8 +1688,8 @@
     "type": "Basic",
     "inclusion": "extra_key_items",
     "coordinates": {
-      "x": 6712,
-      "y": 1176
+      "x": 6744,
+      "y": 1144
     },
     "id": 172000153
   },
