@@ -4020,8 +4020,8 @@
     "type": "Basic",
     "inclusion": "trainersanity",
     "coordinates": {
-      "x": 5112,
-      "y": 4760
+      "x": 4936,
+      "y": 4728
     },
     "id": 172000365
   },
@@ -4031,8 +4031,8 @@
     "type": "Basic",
     "inclusion": "trainersanity",
     "coordinates": {
-      "x": 4936,
-      "y": 4728
+      "x": 5112,
+      "y": 4760
     },
     "id": 172000366
   },
@@ -4086,8 +4086,8 @@
     "type": "Basic",
     "inclusion": "trainersanity",
     "coordinates": {
-      "x": 4952,
-      "y": 5288
+      "x": 4936,
+      "y": 5160
     },
     "id": 172000371
   },
@@ -4098,7 +4098,7 @@
     "inclusion": "trainersanity",
     "coordinates": {
       "x": 4936,
-      "y": 5160
+      "y": 5144
     },
     "id": 172000372
   },
@@ -4108,8 +4108,8 @@
     "type": "Basic",
     "inclusion": "trainersanity",
     "coordinates": {
-      "x": 4936,
-      "y": 5144
+      "x": 4952,
+      "y": 5288
     },
     "id": 172000373
   },
