@@ -11,6 +11,8 @@
   "Route 12-N - Island Item": [["can_surf"]],
   "Route 15 Gate 2F - Oak's Aide": [["oak's_aid_rt_15"]],
   "Route 25 - Item": [["can_cut"]],
+  "Victory Road 1F - Top Item": [["can_strength"]],
+  "Victory Road 1F - Left Item": [["can_strength"]],
   "Fuchsia Warden's House - Behind Boulder Item": [["can_strength"]],
   "Safari Zone Center-C - Island Item": [["can_surf"]],
   "Saffron Copycat's House 2F - Copycat": [["buy_poke_doll"]],
