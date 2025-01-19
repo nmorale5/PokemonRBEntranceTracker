@@ -3,6 +3,7 @@ import LogicState from "./LogicState";
 
 const PORT = "55459";
 const PLAYER = "Halaffa";
+const CARDKEYS = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map(num => `Card Key ${num}F`);
 
 export function urlFromPort(port: string) {
   return "wss://archipelago.gg:" + port;
@@ -78,7 +79,18 @@ export class Session {
     const receivedChecks: Set<number> = new Set(this.client.room.checkedLocations);
     newState.checks.forEach(check => (check.acquired = receivedChecks.has(check.id)));
     newState.items.clear();
-    this.client.items.received.forEach(item => newState.items.add(item.name));
+    this.client.items.received.forEach(item => {
+      let toAdd: string | undefined;
+      switch (item.name) {
+        case "Progressive Card Key":
+          toAdd = CARDKEYS.find(key => !newState.items.has(key));
+          break;
+        default:
+          toAdd = item.name;
+          break;
+      }
+      if (toAdd) newState.items.add(toAdd);
+    });
     newState.updateRegionAccessibility();
     stateObs.next(newState);
   }

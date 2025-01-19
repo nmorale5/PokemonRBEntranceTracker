@@ -108,7 +108,7 @@ export const defaultSettings = {
   TrainerSanity: MAX_TRAINERS,
   RequirePokedex: true,
   DexSanity: 0,
-  DoorShuffle: DoorShuffle.Insanity,
+  DoorShuffle: DoorShuffle.Decoupled,
   WarpTileShuffle: WarpTileShuffle.Mixed,
   RandomizeRockTunnel: true,
   RequireFlash: true,
