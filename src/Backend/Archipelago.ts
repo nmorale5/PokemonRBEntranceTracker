@@ -1,4 +1,4 @@
-import { Client } from "archipelago.js";
+import { Client, JSONRecord } from "archipelago.js";
 import LogicState from "./LogicState";
 
 const PORT = "55459";
@@ -11,13 +11,14 @@ export function urlFromPort(port: string) {
 
 export class Session {
   public client: Client = new Client();
+  public slotData: JSONRecord = {}
 
   public async login(url: string, playerName: string): Promise<void> {
     if (!this.client.socket.connected) {
       await this.client.socket.connect(url); // Need to connect before logging in
     }
     if (!this.client.authenticated) {
-      await this.client.login(url, playerName, "Pokemon Red and Blue");
+      this.slotData = await this.client.login(url, playerName, "Pokemon Red and Blue", { slotData: true });
     }
   }
 
