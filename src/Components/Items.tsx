@@ -1,16 +1,17 @@
 import "./Map.css";
 import "./Items.css";
 import LogicState from "../Backend/LogicState";
-import { CITIES } from "../Backend/Requirements";
+// import { CITIES } from "../Backend/Requirements";
 import itemIcons from "../PokemonData/ItemIcons.json";
 
-const Items = (props: {currentState: LogicState}) => {
+const Items = (props: { currentState: LogicState }) => {
   return (
     <div className="Items">
-      <label htmlFor="free-fly">Free Fly Location: </label>
+      {/* <label htmlFor="free-fly">Free Fly Location: </label>
       <select
         id="free-fly"
         name="free-fly"
+        value="TODO - Noah can you get rid of this?"
         value={props.currentState.freeFly}
         onChange={() => {
           const newState = LogicState.currentState.value.clone();
@@ -24,7 +25,7 @@ const Items = (props: {currentState: LogicState}) => {
             {city}
           </option>
         ))}
-      </select>
+      </select> */}
       {Object.entries(itemIcons).map(([itemName, imgLocation]) => (
         <img
           key={itemName}

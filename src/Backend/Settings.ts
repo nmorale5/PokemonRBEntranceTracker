@@ -1,5 +1,5 @@
 const MAX_KEY_ITEMS = 100;
-const MAX_TRAINERS = 317;
+export const MAX_TRAINERS = 317;
 const NUM_POKEMON = 151;
 
 export enum Route3Req {

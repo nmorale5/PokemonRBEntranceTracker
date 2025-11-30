@@ -10,8 +10,15 @@ export function urlFromPort(port: string) {
 }
 
 export class Session {
+  private static _instance: Session | undefined;
+  public static get instance() {
+    if (!this._instance) {
+      this._instance = new Session();
+    }
+    return this._instance;
+  }
   public client: Client = new Client();
-  public slotData: JSONRecord = {}
+  public slotData: JSONRecord = {};
 
   public async login(url: string, playerName: string): Promise<void> {
     if (!this.client.socket.connected) {
@@ -68,6 +75,7 @@ export class Session {
 
   async setupArch(): Promise<void> {
     const stateObs = LogicState.currentState;
+    stateObs.value.changeSettings(this.slotData);
     this.client.items.on("itemsReceived", items => {
       stateObs.next(items.reduce((prevState, curItem) => prevState.withItemStatus(curItem.name, true), stateObs.value));
     });

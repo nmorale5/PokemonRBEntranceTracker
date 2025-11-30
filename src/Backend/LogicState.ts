@@ -1,9 +1,11 @@
 import { ConstantWarp, generateConstantWarps, generateWarps, Warp, WarpAccessibility } from "./Warps";
 import { Check, generateChecks, generatePokemonChecks } from "./Checks";
-import { defaultSettings, DoorShuffle } from "./Settings";
-import _ from "lodash";
+import * as settingsClass from "./Settings";
+import _, { indexOf } from "lodash";
 import { BehaviorSubject } from "rxjs";
 import { canCut, canFly, CITIES } from "./Requirements";
+import { JSONRecord } from "archipelago.js";
+import { Session } from "./Archipelago";
 
 export default class LogicState {
   public items: Set<string> = new Set([]);
@@ -11,16 +13,18 @@ export default class LogicState {
   public checks: Array<Check>;
   public warps: Array<Warp>;
   public fakeWarps: Array<ConstantWarp>;
-  public freeFly: string = "";
+  public freeFly: Array<string> = ["", ""];
+  public badgeRequirements: Array<string> = ["", "", "", "", ""];
 
-  public constructor(public settings: typeof defaultSettings) {
+  public constructor(public settings: typeof settingsClass.defaultSettings) {
     this.checks = generateChecks(this).concat(generatePokemonChecks(this));
     this.warps = generateWarps(this);
     this.fakeWarps = generateConstantWarps(this);
     this.updateRegionAccessibility();
+    this.changeSettings(Session.instance.slotData);
   }
 
-  public static readonly currentState = new BehaviorSubject<LogicState>(new LogicState(defaultSettings));
+  public static readonly currentState = new BehaviorSubject<LogicState>(new LogicState(settingsClass.defaultSettings));
 
   public clone(): LogicState {
     const newState = _.cloneDeep(this);
@@ -50,7 +54,7 @@ export default class LogicState {
     const newFromWarp = newState.warps.find(warp => warp.equals(fromWarp))!;
     const newToWarp = newState.warps.find(warp => warp.equals(toWarp))!;
     newFromWarp.linkedWarp = newToWarp;
-    if (newState.settings.DoorShuffle !== DoorShuffle.Decoupled) {
+    if (newState.settings.DoorShuffle !== settingsClass.DoorShuffle.Decoupled) {
       newState._removeWarpMutating(newToWarp);
       newToWarp.linkedWarp = newFromWarp;
     }
@@ -77,7 +81,7 @@ export default class LogicState {
   // warning: mutates, should only be used with setWarp and removeWarp above
   private _removeWarpMutating(warp: Warp) {
     warp = this.warps.find(w => w.equals(warp))!;
-    if (this.settings.DoorShuffle !== DoorShuffle.Decoupled) {
+    if (this.settings.DoorShuffle !== settingsClass.DoorShuffle.Decoupled) {
       const otherWarp = warp.linkedWarp === null ? undefined : this.warps.find(w => w.equals(warp.linkedWarp!));
       if (otherWarp?.linkedWarp) {
         otherWarp.linkedWarp = null;
@@ -188,6 +192,68 @@ export default class LogicState {
     }
     for (const check of this.checks) {
       check.updateCheckStatus();
+    }
+  }
+
+  // warning: mutates this state, should only be called internally while creating a new state
+  public changeSettings(slotData: JSONRecord): void {
+    if (!slotData) {
+      return; // If you haven't loaded, don't try to change settings using this function!
+    }
+
+    const settings: typeof settingsClass.defaultSettings = {
+      OakWin: false, // Required?
+      EliteFourBadges: slotData["elite_four_badges_condition"] as number,
+      EliteFourKeyItems: slotData["elite_four_key_items_condition"] as number,
+      EliteFourPokedex: slotData["elite_four_pokedex_condition"] as number,
+      VictoryRoadBadges: slotData["victory_road_condition"] as number,
+      Route22Badges: slotData["route_22_gate_condition"] as number,
+      ViridianGymBadges: slotData["viridian_gym_condition"] as number,
+      CeruleanCaveBadges: slotData["cerulean_cave_badges_condition"] as number,
+      CeruleanCaveKeyItems: slotData["cerulean_cave_key_items_condition"] as number,
+      Route3Req: slotData["route_3_condition"] as number,
+      RobbedHouseOfficer: !!slotData["robbed_house_officer"],
+      FossilReviveCount: slotData["second_fossil_check_condition"] as number,
+      FossilItemTypes: settingsClass.FossilItemTypes.Any,
+      BadgeSanity: true, // No way currently to find this from state
+      BadgeHMRequirement: settingsClass.BadgeHMRequirement.Extra,
+      OldMan: slotData["old_man"] as number,
+      Pokedex: slotData["randomize_pokedex"] as number,
+      KeyItemsOnly: !!slotData["key_items_only"],
+      Tea: !!slotData["tea"],
+      ExtraKeyItems: !!slotData["extra_key_items"],
+      CardKey: slotData["split_card_key"] as number,
+      AllElevatorsLocked: !!slotData["all_elevators_locked"],
+      ExtraBoulders: !!slotData["extra_strength_boulders"],
+      RequireItemFinder: !!slotData["require_item_finder"],
+      RandomizeHidden: slotData["randomize_hidden_items"] as number,
+      PrizeSanity: !!slotData["prizesanity"],
+      TrainerSanity: slotData["trainersanity"] as number,
+      RequirePokedex: !!slotData["require_pokedex"],
+      DexSanity: 0, // No way currently to find this from state
+      DoorShuffle: slotData["door_shuffle"] as number,
+      WarpTileShuffle: slotData["warp_tile_shuffle"] as number,
+      RandomizeRockTunnel: true, // No way currently to find this from state
+      RequireFlash: !!slotData["dark_rock_tunnel_logic"],
+      OaksAidRt2: slotData["oaks_aide_rt_2"] as number,
+      OaksAidRt11: slotData["oaks_aide_rt_11"] as number,
+      OaksAidRt15: slotData["oaks_aide_rt_15"] as number,
+      StoneSanity: !!slotData["stonesanity"],
+      PokeDollSkip: !!slotData["poke_doll_skip"],
+      BicycleGateSkip: !!slotData["bicycle_gate_skips"],
+      RandomizeWildPokemon: settingsClass.RandomizePokemon.BSTMatch,
+      Area1To1Mapping: !!slotData["area_1_to_1_mapping"],
+      RandomizeStarterPokemon: settingsClass.RandomizePokemon.BSTMatch,
+      RandomizeStaticPokemon: settingsClass.RandomizePokemon.BSTMatch,
+      RandomizeLegendaryPokemon: settingsClass.RandomizeLegendaryPokemon.Shuffle,
+    };
+    this.settings = settings;
+    this.freeFly[0] = CITIES[slotData["free_fly_map"] as number];
+    this.freeFly[1] = CITIES[slotData["town_map_fly_map"] as number];
+    const extraBadges = slotData["extra_badges"] as JSONRecord;
+    const HMs: Array<string> = ["Cut", "Fly", "Surf", "Strength", "Flash"];
+    if (extraBadges) {
+      this.badgeRequirements = HMs.map(hm => extraBadges[hm] as string);
     }
   }
 }

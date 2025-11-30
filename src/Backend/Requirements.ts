@@ -1,45 +1,57 @@
 import { BadgeHMRequirement, Route3Req } from "./Settings";
 import LogicState from "./LogicState";
 
-// TODO: Implement workaround for Extra and Extra Plus HM Badge settings to allow user to manually indicate
-// The ability to use an HM move
-
 export const CITIES: Array<string> = [
   "Pallet Town",
   "Viridian City",
   "Pewter City",
   "Cerulean City",
+  "Lavender Town",
   "Vermillion City",
   "Celadon City",
-  "Lavender Town",
   "Fuchsia City",
-  "Saffron City",
   "Cinnabar Island",
   "Indigo Plateau",
+  "Saffron City",
 ];
 
 export function canFlyTo(city: number, state: LogicState) {
-  return canFly(state) && (state.freeFly === CITIES[city] || state.regions.has(CITIES[city])); // CITIES[city] === "Pallet Town" || !!state.shortestPath("Pallet Town", CITIES[city]));
+  return (
+    canFly(state) &&
+    (state.freeFly[0] === CITIES[city] || // True free fly
+      (state.freeFly[1] === CITIES[city] && state.items.has("Town Map")) || // Free fly with map
+      state.regions.has(CITIES[city]))
+  ); // Already visited
+  // CITIES[city] === "Pallet Town" || !!state.shortestPath("Pallet Town", CITIES[city]));
 }
 
 export function canSurf(state: LogicState): boolean {
-  return state.items.has("HM03 Surf") && (state.items.has("Soul Badge") || state.settings.BadgeHMRequirement === BadgeHMRequirement.None);
+  return state.items.has("HM03 Surf") && (state.items.has("Soul Badge") || state.items.has(state.badgeRequirements[2]) || state.settings.BadgeHMRequirement === BadgeHMRequirement.None);
 }
 
 export function canCut(state: LogicState): boolean {
-  return state.items.has("HM01 Cut") && (state.items.has("Cascade Badge") || state.settings.BadgeHMRequirement === BadgeHMRequirement.None);
+  return state.items.has("HM01 Cut") && (state.items.has("Cascade Badge") || state.items.has(state.badgeRequirements[0]) || state.settings.BadgeHMRequirement === BadgeHMRequirement.None);
 }
 
 export function canFly(state: LogicState): boolean {
-  return (state.items.has("HM02 Fly") || state.items.has("Flute")) && (state.items.has("Thunder Badge") || state.settings.BadgeHMRequirement === BadgeHMRequirement.None);
+  return (
+    (state.items.has("HM02 Fly") || state.items.has("Flute")) &&
+    (state.items.has("Thunder Badge") || state.items.has(state.badgeRequirements[1]) || state.settings.BadgeHMRequirement === BadgeHMRequirement.None)
+  );
 }
 
 export function canStrength(state: LogicState): boolean {
-  return (state.items.has("HM04 Strength") || state.items.has("Titan's Mitt")) && (state.items.has("Rainbow Badge") || state.settings.BadgeHMRequirement === BadgeHMRequirement.None);
+  return (
+    (state.items.has("HM04 Strength") || state.items.has(state.badgeRequirements[3]) || state.items.has("Titan's Mitt")) &&
+    (state.items.has("Rainbow Badge") || state.settings.BadgeHMRequirement === BadgeHMRequirement.None)
+  );
 }
 
 function canFlash(state: LogicState): boolean {
-  return (state.items.has("HM05 Flash") || state.items.has("Lamp")) && (state.items.has("Boulder Badge") || state.settings.BadgeHMRequirement === BadgeHMRequirement.None);
+  return (
+    (state.items.has("HM05 Flash") || state.items.has(state.badgeRequirements[4]) || state.items.has("Lamp")) &&
+    (state.items.has("Boulder Badge") || state.settings.BadgeHMRequirement === BadgeHMRequirement.None)
+  );
 }
 
 export function canLearnHM(state: LogicState): boolean {

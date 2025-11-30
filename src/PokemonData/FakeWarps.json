@@ -473,7 +473,7 @@
       "from": "Vermilion City",
       "to": "Fly",
       "func": [["can_fly_to"]],
-      "parameter": 4,
+      "parameter": 5,
       "one_way": "False"
     }
   ],
@@ -515,7 +515,7 @@
       "from": "Celadon City",
       "to": "Fly",
       "func": [["can_fly_to"]],
-      "parameter": 5,
+      "parameter": 6,
       "one_way": "False"
     }
   ],
@@ -781,7 +781,7 @@
       "from": "Cinnabar Island",
       "to": "Fly",
       "func": [["can_fly_to"]],
-      "parameter": 9,
+      "parameter": 8,
       "one_way": "False"
     }
   ],
@@ -1095,7 +1095,7 @@
       "from": "Saffron City",
       "to": "Fly",
       "func": [["can_fly_to"]],
-      "parameter": 8,
+      "parameter": 10,
       "one_way": "False"
     }
   ],
@@ -1181,7 +1181,7 @@
       "from": "Lavender Town",
       "to": "Fly",
       "func": [["can_fly_to"]],
-      "parameter": 6,
+      "parameter": 4,
       "one_way": "False"
     }
   ],
@@ -2255,7 +2255,7 @@
       "from": "Indigo Plateau",
       "to": "Fly",
       "func": [["can_fly_to"]],
-      "parameter": 10,
+      "parameter": 9,
       "one_way": "False"
     }
   ]
