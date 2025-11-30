@@ -35,6 +35,7 @@ const Items = (props: { currentState: LogicState }) => {
             const state = LogicState.currentState.value;
             LogicState.currentState.next(state.withItemStatus(itemName, !state.items.has(itemName)));
           }}
+          title={itemName}
           style={{
             width: "32px",
             height: "32px",
