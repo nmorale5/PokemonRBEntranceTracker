@@ -353,6 +353,15 @@
       "one_way": "True"
     }
   ],
+  "Cerulean City-Cave": [
+    {
+      "from": "Cerulean City-Cave",
+      "to": "Cerulean City",
+      "func": [["can_fly"]],
+      "parameter": 0,
+      "one_way": "True"
+    }
+  ],
   "Cerulean Cave B1F": [
     {
       "from": "Cerulean Cave B1F",
