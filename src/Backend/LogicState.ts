@@ -5,7 +5,7 @@ import _, { indexOf } from "lodash";
 import { BehaviorSubject } from "rxjs";
 import { canCut, canFly, CITIES } from "./Requirements";
 import { JSONRecord } from "archipelago.js";
-import { Session } from "./Archipelago";
+import { logItem, Session } from "./Archipelago";
 
 export default class LogicState {
   public items: Set<string> = new Set([]);
@@ -93,11 +93,7 @@ export default class LogicState {
 
   public withItemStatus(itemName: string, found: boolean): LogicState {
     const newState = this.clone();
-    if (found) {
-      newState.items.add(itemName);
-    } else {
-      newState.items.delete(itemName);
-    }
+    logItem(itemName, newState);
     newState.updateRegionAccessibility();
     return newState;
   }

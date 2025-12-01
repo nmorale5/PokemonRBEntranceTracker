@@ -1,4 +1,4 @@
-import { Client, JSONRecord } from "archipelago.js";
+import { Client, Item, JSONRecord } from "archipelago.js";
 import LogicState from "./LogicState";
 
 const PORT = "55459";
@@ -88,19 +88,21 @@ export class Session {
     const receivedChecks: Set<number> = new Set(this.client.room.checkedLocations);
     newState.checks.forEach(check => (check.acquired = receivedChecks.has(check.id)));
     newState.items.clear();
-    this.client.items.received.forEach(item => {
-      let toAdd: string | undefined;
-      switch (item.name) {
-        case "Progressive Card Key":
-          toAdd = CARDKEYS.find(key => !newState.items.has(key));
-          break;
-        default:
-          toAdd = item.name;
-          break;
-      }
-      if (toAdd) newState.items.add(toAdd);
-    });
+    this.client.items.received.forEach(item => logItem(item.name, newState));
     newState.updateRegionAccessibility();
     stateObs.next(newState);
   }
 }
+
+export const logItem = (itemName: string, state: LogicState) => {
+  let toAdd: string | undefined;
+  switch (itemName) {
+    case "Progressive Card Key":
+      toAdd = CARDKEYS.find(key => !state.items.has(key));
+      break;
+    default:
+      toAdd = itemName;
+      break;
+  }
+  if (toAdd) state.items.add(toAdd);
+};
