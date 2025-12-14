@@ -1,21 +1,20 @@
 import { Warp } from "../Backend/Warps";
-import LogicState from "../Backend/LogicState";
+import TrackedState from "../Backend/TrackedState";
 
 export default class WarpClickHandler {
   public static selectedWarp: Warp | null = null;
 
   public static handleClick(warp: Warp): void {
-    const state = LogicState.currentState.value;
-    warp = state.warps.find(w => w.equals(warp))!;
-    if (this.selectedWarp) {
-      if (this.selectedWarp.equals(warp)) {
-        LogicState.currentState.next(state.removeWarp(warp));
-      } else {
-        LogicState.currentState.next(state.setWarp(this.selectedWarp, warp));
-      }
-      this.selectedWarp = null;
-    } else {
+    warp = TrackedState.state.warps.find(w => w.equals(warp))!;
+    if (!this.selectedWarp) {
       this.selectedWarp = warp;
+      return;
     }
+    if (this.selectedWarp.equals(warp)) {
+      TrackedState.state.removeWarp(warp);
+    } else {
+      TrackedState.state.setWarp(this.selectedWarp, warp);
+    }
+    this.selectedWarp = null;
   }
 }

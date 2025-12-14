@@ -2,9 +2,9 @@ import "./Directions.css";
 import warpData from "../PokemonData/WarpData.json";
 import fakeWarpData from "../PokemonData/FakeWarps.json";
 import { useState } from "react";
-import LogicState from "../Backend/LogicState";
+import TrackedState from "../Backend/TrackedState";
 
-const Directions = (props: {currentState: LogicState}) => {
+const Directions = (props: {}) => {
   const [fromRegion, setFromRegion] = useState("");
   const [toRegion, setToRegion] = useState("");
 
@@ -21,7 +21,7 @@ const Directions = (props: {currentState: LogicState}) => {
         {regionList.map(region => <option value={region} key={region} />)}
       </datalist>
       <ol>
-        {regionList.includes(fromRegion) && regionList.includes(toRegion) && props.currentState.shortestPath(fromRegion, toRegion).map((warp, i) => <li key={i}>{warp.toString()}</li>)}
+        {regionList.includes(fromRegion) && regionList.includes(toRegion) && TrackedState.state.shortestPath(fromRegion, toRegion).map((warp, i) => <li key={i}>{warp.toString()}</li>)}
       </ol>
     </div>
   );

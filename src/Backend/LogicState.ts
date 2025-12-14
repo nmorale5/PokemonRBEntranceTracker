@@ -1,11 +1,19 @@
 import { ConstantWarp, generateConstantWarps, generateWarps, Warp, WarpAccessibility } from "./Warps";
 import { Check, generateChecks, generatePokemonChecks } from "./Checks";
-import * as settingsClass from "./Settings";
-import _, { indexOf } from "lodash";
-import { BehaviorSubject } from "rxjs";
-import { canCut, canFly, CITIES } from "./Requirements";
+import * as Settings from "./Settings";
+import { Observable, Subject } from "rxjs";
+import { CITIES } from "./Requirements";
 import { JSONRecord } from "archipelago.js";
-import { Session } from "./Archipelago";
+import _ from "lodash";
+
+export enum UpdateType {
+  Items,
+  Checks,
+  Warps,
+  Any,
+}
+
+type SavedWarp = { toWarp: string; fromWarp: string } | null;
 
 export default class LogicState {
   public items: Set<string> = new Set([]);
@@ -13,18 +21,21 @@ export default class LogicState {
   public checks: Array<Check>;
   public warps: Array<Warp>;
   public fakeWarps: Array<ConstantWarp>;
+  public settings: typeof Settings.defaultSettings = Settings.defaultSettings;
   public freeFly: Array<string> = ["", ""];
-  public badgeRequirements: Array<string> = ["", "", "", "", ""];
+  public extraBadgeRequirements: Array<string> = ["", "", "", "", ""]; // extra badge (if any) for ["Cut", "Fly", "Surf", "Strength", "Flash"], respectively
 
-  public constructor(public settings: typeof settingsClass.defaultSettings) {
+  private readonly _updates = new Subject<UpdateType>();
+  public readonly updates = this._updates as Observable<UpdateType>;
+
+  public constructor(slotData?: JSONRecord, savedWarps?: SavedWarp[]) {
     this.checks = generateChecks(this).concat(generatePokemonChecks(this));
     this.warps = generateWarps(this);
     this.fakeWarps = generateConstantWarps(this);
-    this.updateRegionAccessibility();
-    this.changeSettings(Session.instance.slotData);
+    this._populateWithSavedWarps(savedWarps);
+    this._setSettings(slotData);
+    this._updateRegionAccessibility();
   }
-
-  public static readonly currentState = new BehaviorSubject<LogicState>(new LogicState(settingsClass.defaultSettings));
 
   public clone(): LogicState {
     const newState = _.cloneDeep(this);
@@ -32,14 +43,36 @@ export default class LogicState {
     return newState;
   }
 
-  /** "check" refers to the specific check-giving thing that is found on the map */
-  public withCheckAcquired(checkId: number, acquired: boolean): LogicState {
-    const newState = this.clone();
-    newState.checks.find(check => check.id === checkId)!.acquired = acquired;
-    return newState;
+  private emitUpdate(updateType: UpdateType) {
+    this._updates.next(updateType);
   }
 
-  public setWarp(fromWarp: Warp, toWarp: Warp): LogicState {
+  public addChecks(checkIds: number[] | number) {
+    if (typeof checkIds === "number") {
+      checkIds = [checkIds];
+    }
+    for (const id of checkIds) {
+      this.checks.find(check => check.id === id)!.acquired = true;
+    }
+    this.emitUpdate(UpdateType.Checks);
+  }
+
+  public addItems(itemNames: string[] | string, deleteFlag = false) {
+    if (typeof itemNames === "string") {
+      itemNames = [itemNames];
+    }
+    for (const item of itemNames) {
+      if (deleteFlag) {
+        this.items.delete(item);
+      } else {
+        this.items.add(item);
+      }
+    }
+    this._updateRegionAccessibility();
+    this.emitUpdate(UpdateType.Items);
+  }
+
+  public setWarp(fromWarp: Warp, toWarp: Warp) {
     /**
      * Adds a connection between two warps. Removes any existing connections first.
      * Also mutates the region set of state in response to the additional warp.
@@ -49,20 +82,19 @@ export default class LogicState {
      *  toWarp (Warp): The ending point of the connection
      *  state (State): The game state object the warps are a part of
      */
-    const newState = this.clone();
-    newState._removeWarpMutating(fromWarp);
-    const newFromWarp = newState.warps.find(warp => warp.equals(fromWarp))!;
-    const newToWarp = newState.warps.find(warp => warp.equals(toWarp))!;
+    this._removeWarpInternal(fromWarp);
+    const newFromWarp = this.warps.find(warp => warp.equals(fromWarp))!;
+    const newToWarp = this.warps.find(warp => warp.equals(toWarp))!;
     newFromWarp.linkedWarp = newToWarp;
-    if (newState.settings.DoorShuffle !== settingsClass.DoorShuffle.Decoupled) {
-      newState._removeWarpMutating(newToWarp);
+    if (this.settings.DoorShuffle !== Settings.DoorShuffle.Decoupled) {
+      this._removeWarpInternal(newToWarp);
       newToWarp.linkedWarp = newFromWarp;
     }
-    newState.updateRegionAccessibility();
-    return newState;
+    this._updateRegionAccessibility();
+    this.emitUpdate(UpdateType.Warps);
   }
 
-  public removeWarp(warp: Warp): LogicState {
+  public removeWarp(warp: Warp) {
     /**
      * Removes the connection made between two warps.
      * Mutates both warp and the linkedWarp (if linked) by setting their linkedWarp
@@ -73,50 +105,29 @@ export default class LogicState {
      *  warp (Warp): The warp on either end of the connection to disconnect
      *  state (State): The game state object the warp is a part of
      */
-    const newState = this.clone();
-    newState._removeWarpMutating(warp);
-    return newState;
+    this._removeWarpInternal(warp);
+    this.emitUpdate(UpdateType.Warps);
   }
 
-  // warning: mutates, should only be used with setWarp and removeWarp above
-  private _removeWarpMutating(warp: Warp) {
+  private _removeWarpInternal(warp: Warp) {
     warp = this.warps.find(w => w.equals(warp))!;
-    if (this.settings.DoorShuffle !== settingsClass.DoorShuffle.Decoupled) {
+    if (this.settings.DoorShuffle !== Settings.DoorShuffle.Decoupled) {
       const otherWarp = warp.linkedWarp === null ? undefined : this.warps.find(w => w.equals(warp.linkedWarp!));
       if (otherWarp?.linkedWarp) {
         otherWarp.linkedWarp = null;
       }
     }
     warp.linkedWarp = null;
-    this.updateRegionAccessibility();
+    this._updateRegionAccessibility();
   }
 
-  public withItemStatus(itemName: string, found: boolean): LogicState {
-    const newState = this.clone();
-    if (found) {
-      newState.items.add(itemName);
-    } else {
-      newState.items.delete(itemName);
-    }
-    newState.updateRegionAccessibility();
-    return newState;
+  public shortestPath(startRegion: string, endRegion: string): Array<Warp> {
+    return this._bfs(startRegion, endRegion);
   }
 
-  public searchWarps(startRegion: string, endRegion: string) {}
-
-  public updateRegions() {
-    return this.shortestPath("Pallet Town", "", true); // Abusing the benefit of attempting a full search from the start location
-  }
-
-  public shortestPath(startRegion: string, endRegion: string, modifyState: boolean = false, includePalletWarp: boolean = true): Array<Warp> {
+  private _bfs(startRegion: string, endRegion: string, modifyState = false, includePalletWarp = true): Array<Warp> {
     /**
-     * Gets shortest path from one region to another.
-     *
-     * Parameters:
-     *  startRegion: start region string
-     *  endRegion: destination region string
-     *  state: game state
-     * Returns: Ordered array of warps to enter to arrive at endRegion
+     * Returns an ordered array of warps to enter to get from startRegion to endRegion
      */
     if (startRegion === endRegion) {
       return [];
@@ -168,22 +179,16 @@ export default class LogicState {
     return [];
   }
 
-  // warning: mutates this state, should only be called internally while creating a new state
-  public updateRegionAccessibility() {
-    this.regions.clear();
-    this.updateRegions();
-    this.updateAll();
-  }
-
-  // warning: mutates this state, should only be called internally while creating a new state
-  public updateAll(): void {
+  private _updateRegionAccessibility() {
     /**
-     * Performs updates to the accessibility of warps and items based on player inventory,
+     * Performs updates to the accessibility of warps and checks based on player inventory,
      * the regions that are available, and the settings.
      *
      * This should be called every time the set of items or settings is changed, and is
      * automatically called whenever the set of regions changes.
      */
+    this.regions.clear();
+    this._bfs("Pallet Town", "", true); // Abusing the benefit of attempting a full search from the start location
     for (const warp of this.warps) {
       warp.updateAccessibility();
     }
@@ -195,13 +200,16 @@ export default class LogicState {
     }
   }
 
-  // warning: mutates this state, should only be called internally while creating a new state
-  public changeSettings(slotData: JSONRecord): void {
-    if (!slotData) {
-      return; // If you haven't loaded, don't try to change settings using this function!
-    }
+  private _populateWithSavedWarps(savedWarps: SavedWarp[] | undefined) {
+    if (!savedWarps) return;
+    this.warps.forEach((warp, i) => (warp.linkedWarp = savedWarps[i] === null ? null : this.warps.find(w => w.toWarp === savedWarps[i]!.toWarp && w.fromWarp === savedWarps[i]!.fromWarp)!));
+  }
 
-    const settings: typeof settingsClass.defaultSettings = {
+  private _setSettings(slotData?: JSONRecord): void {
+    if (!slotData) {
+      return;
+    }
+    this.settings = {
       OakWin: false, // Required?
       EliteFourBadges: slotData["elite_four_badges_condition"] as number,
       EliteFourKeyItems: slotData["elite_four_key_items_condition"] as number,
@@ -214,9 +222,9 @@ export default class LogicState {
       Route3Req: slotData["route_3_condition"] as number,
       RobbedHouseOfficer: !!slotData["robbed_house_officer"],
       FossilReviveCount: slotData["second_fossil_check_condition"] as number,
-      FossilItemTypes: settingsClass.FossilItemTypes.Any,
+      FossilItemTypes: Settings.FossilItemTypes.Any,
       BadgeSanity: true, // No way currently to find this from state
-      BadgeHMRequirement: settingsClass.BadgeHMRequirement.Extra,
+      BadgeHMRequirement: Settings.BadgeHMRequirement.Extra,
       OldMan: slotData["old_man"] as number,
       Pokedex: slotData["randomize_pokedex"] as number,
       KeyItemsOnly: !!slotData["key_items_only"],
@@ -241,19 +249,17 @@ export default class LogicState {
       StoneSanity: !!slotData["stonesanity"],
       PokeDollSkip: !!slotData["poke_doll_skip"],
       BicycleGateSkip: !!slotData["bicycle_gate_skips"],
-      RandomizeWildPokemon: settingsClass.RandomizePokemon.BSTMatch,
+      RandomizeWildPokemon: Settings.RandomizePokemon.BSTMatch,
       Area1To1Mapping: !!slotData["area_1_to_1_mapping"],
-      RandomizeStarterPokemon: settingsClass.RandomizePokemon.BSTMatch,
-      RandomizeStaticPokemon: settingsClass.RandomizePokemon.BSTMatch,
-      RandomizeLegendaryPokemon: settingsClass.RandomizeLegendaryPokemon.Shuffle,
+      RandomizeStarterPokemon: Settings.RandomizePokemon.BSTMatch,
+      RandomizeStaticPokemon: Settings.RandomizePokemon.BSTMatch,
+      RandomizeLegendaryPokemon: Settings.RandomizeLegendaryPokemon.Shuffle,
     };
-    this.settings = settings;
     this.freeFly[0] = CITIES[slotData["free_fly_map"] as number];
     this.freeFly[1] = CITIES[slotData["town_map_fly_map"] as number];
     const extraBadges = slotData["extra_badges"] as JSONRecord;
-    const HMs: Array<string> = ["Cut", "Fly", "Surf", "Strength", "Flash"];
     if (extraBadges) {
-      this.badgeRequirements = HMs.map(hm => extraBadges[hm] as string);
+      this.extraBadgeRequirements = ["Cut", "Fly", "Surf", "Strength", "Flash"].map(hm => extraBadges[hm] as string);
     }
   }
 }

@@ -8,15 +8,16 @@ import { ImageOverlay, MapContainer, Marker, Tooltip } from "react-leaflet";
 import { getCheckIcon, getWarpIcon } from "./Icons";
 import WarpClickHandler from "./WarpClickHandler";
 import LogicState from "../Backend/LogicState";
+import TrackedState from "../Backend/TrackedState";
 
-const Map = (props: {currentState: LogicState}) => {
+const Map = (props: {}) => {
   const [selectedWarp, setSelectedWarp] = useState<Warp | null>(null);
 
   return (
     <>
       <MapContainer zoom={10} center={latLngFromPixelCoordinates(3600, 3600)} style={{ height: "100vh", width: "100vw" }}>
         <ImageOverlay url={"/PokemonRedMapNoArrows.png"} bounds={L.latLngBounds(latLngFromPixelCoordinates(0, 0), latLngFromPixelCoordinates(7200, 7200))}></ImageOverlay>
-        {props.currentState.checks
+        {TrackedState.state.checks
           .filter(check => check.coordinates !== null)
           .filter(check => check.enabled)
           .map((check, i) => (
@@ -30,7 +31,7 @@ const Map = (props: {currentState: LogicState}) => {
               <Tooltip>{check.name}</Tooltip>
             </Marker>
           ))}
-        {props.currentState.warps
+        {TrackedState.state.warps
           .filter(warp => warp.coordinates !== null) // all warps should be non-null anyway, this is just for completeness
           .map((warp, i) => (
             <Marker

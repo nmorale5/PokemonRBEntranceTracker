@@ -1,45 +1,25 @@
 import "./Map.css";
 import "./Items.css";
 import LogicState from "../Backend/LogicState";
-// import { CITIES } from "../Backend/Requirements";
 import itemIcons from "../PokemonData/ItemIcons.json";
+import TrackedState from "../Backend/TrackedState";
 
-const Items = (props: { currentState: LogicState }) => {
+const Items = (props: {}) => {
   return (
     <div className="Items">
-      {/* <label htmlFor="free-fly">Free Fly Location: </label>
-      <select
-        id="free-fly"
-        name="free-fly"
-        value="TODO - Noah can you get rid of this?"
-        value={props.currentState.freeFly}
-        onChange={() => {
-          const newState = LogicState.currentState.value.clone();
-          newState.freeFly = (document.getElementById("free-fly") as HTMLSelectElement).value;
-          newState.updateRegionAccessibility();
-          LogicState.currentState.next(newState);
-        }}
-      >
-        {CITIES.map((city, i) => (
-          <option key={i} value={city}>
-            {city}
-          </option>
-        ))}
-      </select> */}
       {Object.entries(itemIcons).map(([itemName, imgLocation]) => (
         <img
           key={itemName}
           src={`/items/${imgLocation}.png`}
           alt={itemName}
-          onClick={() => {
-            const state = LogicState.currentState.value;
-            LogicState.currentState.next(state.withItemStatus(itemName, !state.items.has(itemName)));
-          }}
           title={itemName}
+          onClick={() => {
+            TrackedState.state.addItems(itemName, TrackedState.state.items.has(itemName));
+          }}
           style={{
             width: "32px",
             height: "32px",
-            filter: props.currentState.items.has(itemName) ? "none" : "grayscale(100%)",
+            filter: TrackedState.state.items.has(itemName) ? "none" : "grayscale(100%)",
           }}
         />
       ))}

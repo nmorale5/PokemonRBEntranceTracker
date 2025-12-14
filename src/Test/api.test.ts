@@ -1,6 +1,6 @@
 import { defaultSettings } from "../Backend/Settings";
 import { CheckAccessibility } from "../Backend/Checks";
-import { Warp, WarpAccessibility } from "../Backend/Warps";
+import { WarpAccessibility } from "../Backend/Warps";
 import LogicState from "../Backend/LogicState";
 
 describe("entranceAccessible", () => {
@@ -40,7 +40,8 @@ describe("updateRegionAccessibility", () => {
   it("should update available regions when near other regions without requirements", () => {
     const state: LogicState = new LogicState(defaultSettings);
     state.regions.add("Pallet Town");
-    state.updateRegionAccessibility();
+    // @ts-ignore
+    state._updateRegionAccessibility();
     expect(state.regions.has("Route 1")).toBeTruthy();
     expect(state.regions.has("Viridian Forest")).toBeFalsy();
     expect(state.regions.has("Route 21")).toBeFalsy();
@@ -51,7 +52,8 @@ describe("updateRegionAccessibility", () => {
     state.regions.add("Pallet Town");
     state.items.add("HM03 Surf");
     state.items.add("Soul Badge");
-    state.updateRegionAccessibility();
+    // @ts-ignore
+    state._updateRegionAccessibility();
     expect(state.regions.has("Route 1")).toBeTruthy();
     expect(state.regions.has("Viridian Forest")).toBeFalsy();
     expect(state.regions.has("Route 21")).toBeTruthy();
@@ -73,7 +75,8 @@ describe("shortestPath", () => {
   it("should give path if reachable", () => {
     const state: LogicState = new LogicState(defaultSettings);
     state.regions.add("Pallet Town");
-    state.updateRegionAccessibility();
+    // @ts-ignore
+    state._updateRegionAccessibility();
     const path = state.shortestPath("Pallet Town", "Route 22");
     expect(path.length).toBe(3);
     expect(path.map(warp => warp.toString()).reduce((prev, next) => prev + next, "")).toBe(

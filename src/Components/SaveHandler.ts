@@ -1,20 +1,19 @@
-import LogicState from "../Backend/LogicState";
-import { defaultSettings } from "../Backend/Settings";
-import { setToArray } from "../util";
+import LogicState, { UpdateType } from "../Backend/LogicState";
+import { Credentials } from "../Backend/Archipelago";
+import { filter, startWith, Subscription } from "rxjs";
 
-type SaveEntry = {
-  name: string;
-  settings: typeof defaultSettings;
-  items: string[];
-  checks: boolean[];
-  warps: ({ toWarp: string; fromWarp: string } | null)[];
-  // freeFly: Set<string>;
-  // badgeRequirements: string[];
+export type SaveEntry = {
+  timeCreated: number;
+  credentials: Credentials;
+  savedWarps: ({
+    toWarp: string;
+    fromWarp: string;
+  } | null)[];
 };
 
 const SAVE_KEY = "save";
 
-export default class SaveHandler {
+export class SaveHandler {
   private static _instance: SaveHandler;
   public static get instance(): SaveHandler {
     if (!SaveHandler._instance) {
@@ -24,40 +23,22 @@ export default class SaveHandler {
   }
 
   public saveEntries: SaveEntry[] = [];
+  private _sub: Subscription = new Subscription();
 
   private constructor() {
     const localStorage = window.localStorage.getItem(SAVE_KEY);
-    this.saveEntries = localStorage ? JSON.parse(localStorage) : [this.toSaveEntry(new LogicState(defaultSettings), this.getAvailableName())];
+    this.saveEntries = localStorage ? JSON.parse(localStorage) : [];
   }
 
-  private writeSave() {
-    window.localStorage.setItem(SAVE_KEY, JSON.stringify(this.saveEntries));
-  }
-
-  public getState(saveName: string): LogicState {
-    const saveEntry = this.saveEntries.find(entry => entry.name === saveName);
-    if (!saveEntry) {
-      throw new Error(`save name ${saveName} not found`);
+  public save(state: LogicState, credentials: Credentials) {
+    const oldIdx = this.saveEntries.findIndex(entry => entry.credentials.port === credentials.port && entry.credentials.name === credentials.name);
+    if (oldIdx !== -1) {
+      this.saveEntries.splice(oldIdx, 1); // remove old entry before adding new one
     }
-    const newState = new LogicState(saveEntry.settings);
-    newState.items = new Set(saveEntry.items);
-    newState.checks.forEach((check, i) => (check.acquired = saveEntry.checks[i]));
-    newState.warps.forEach(
-      (warp, i) => (warp.linkedWarp = saveEntry.warps[i] === null ? null : newState.warps.find(w => w.toWarp === saveEntry.warps[i]!.toWarp && w.fromWarp === saveEntry.warps[i]!.fromWarp)!)
-    );
-    // newState.freeFly = saveEntry.freeFly;
-    // newState.badgeRequirements = saveEntry.badgeRequirements;
-    newState.updateRegionAccessibility();
-    return newState;
-  }
-
-  private toSaveEntry(state: LogicState, saveName: string): SaveEntry {
-    return {
-      name: saveName,
-      settings: state.settings,
-      items: setToArray(state.items),
-      checks: state.checks.map(check => check.acquired),
-      warps: state.warps.map(warp =>
+    this.saveEntries.push({
+      timeCreated: Date.now(),
+      credentials: credentials,
+      savedWarps: state.warps.map(warp =>
         warp.linkedWarp === null
           ? null
           : {
@@ -65,31 +46,12 @@ export default class SaveHandler {
               fromWarp: warp.linkedWarp.fromWarp,
             }
       ),
-      // freeFly: state.freeFly,
-      // badgeRequirements: state.badgeRequirements,
-    };
+    });
+    window.localStorage.setItem(SAVE_KEY, JSON.stringify(this.saveEntries));
   }
 
-  public setState(state: LogicState, saveName: string) {
-    this.saveEntries = this.saveEntries.filter(entry => entry.name !== saveName);
-    this.saveEntries.push(this.toSaveEntry(state, saveName));
-    this.writeSave();
-  }
-
-  public renameSave(oldName: string, newName: string) {
-    if (this.saveEntries.some(entry => entry.name === newName)) {
-      throw new Error(`new name ${newName} already exists as a save!`);
-    }
-    this.saveEntries.find(entry => entry.name === oldName)!.name = newName;
-    this.writeSave();
-  }
-
-  public getAvailableName(): string {
-    let i = 1;
-    let candidateName = `Rando${i}`;
-    while (this.saveEntries.map(entry => entry.name).includes(candidateName)) {
-      candidateName = `Rando${++i}`;
-    }
-    return candidateName;
+  public autosave(state: LogicState, credentials: Credentials) {
+    this._sub.unsubscribe();
+    this._sub = state.updates.pipe(filter(updateType => updateType === UpdateType.Any || updateType === UpdateType.Warps), startWith(UpdateType.Any)).subscribe(_ => this.save(state, credentials));
   }
 }

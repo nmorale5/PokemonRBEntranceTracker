@@ -26,30 +26,30 @@ export function canFlyTo(city: number, state: LogicState) {
 }
 
 export function canSurf(state: LogicState): boolean {
-  return state.items.has("HM03 Surf") && (state.items.has("Soul Badge") || state.items.has(state.badgeRequirements[2]) || state.settings.BadgeHMRequirement === BadgeHMRequirement.None);
+  return state.items.has("HM03 Surf") && (state.items.has("Soul Badge") || state.items.has(state.extraBadgeRequirements[2]) || state.settings.BadgeHMRequirement === BadgeHMRequirement.None);
 }
 
 export function canCut(state: LogicState): boolean {
-  return state.items.has("HM01 Cut") && (state.items.has("Cascade Badge") || state.items.has(state.badgeRequirements[0]) || state.settings.BadgeHMRequirement === BadgeHMRequirement.None);
+  return state.items.has("HM01 Cut") && (state.items.has("Cascade Badge") || state.items.has(state.extraBadgeRequirements[0]) || state.settings.BadgeHMRequirement === BadgeHMRequirement.None);
 }
 
 export function canFly(state: LogicState): boolean {
   return (
     (state.items.has("HM02 Fly") || state.items.has("Flute")) &&
-    (state.items.has("Thunder Badge") || state.items.has(state.badgeRequirements[1]) || state.settings.BadgeHMRequirement === BadgeHMRequirement.None)
+    (state.items.has("Thunder Badge") || state.items.has(state.extraBadgeRequirements[1]) || state.settings.BadgeHMRequirement === BadgeHMRequirement.None)
   );
 }
 
 export function canStrength(state: LogicState): boolean {
   return (
-    (state.items.has("HM04 Strength") || state.items.has(state.badgeRequirements[3]) || state.items.has("Titan's Mitt")) &&
+    (state.items.has("HM04 Strength") || state.items.has(state.extraBadgeRequirements[3]) || state.items.has("Titan's Mitt")) &&
     (state.items.has("Rainbow Badge") || state.settings.BadgeHMRequirement === BadgeHMRequirement.None)
   );
 }
 
 function canFlash(state: LogicState): boolean {
   return (
-    (state.items.has("HM05 Flash") || state.items.has(state.badgeRequirements[4]) || state.items.has("Lamp")) &&
+    (state.items.has("HM05 Flash") || state.items.has(state.extraBadgeRequirements[4]) || state.items.has("Lamp")) &&
     (state.items.has("Boulder Badge") || state.settings.BadgeHMRequirement === BadgeHMRequirement.None)
   );
 }
