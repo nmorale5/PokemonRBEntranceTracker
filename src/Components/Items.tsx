@@ -14,7 +14,7 @@ const Items = (props: {}) => {
           alt={itemName}
           title={itemName}
           onClick={() => {
-            TrackedState.state.addItems(itemName, TrackedState.state.items.has(itemName));
+            TrackedState.state.addItem(itemName, TrackedState.state.items.has(itemName));
           }}
           style={{
             width: "32px",

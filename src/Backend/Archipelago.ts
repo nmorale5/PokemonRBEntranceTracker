@@ -90,11 +90,11 @@ export class ArchipelagoClient {
   public syncLogicState(logicState: LogicState) {
     // populate with all current checks and items
     logicState.addChecks(this.client.room.checkedLocations);
-    logicState.addItems(this.client.items.received.map(item => getItemName(item, logicState)));
+    this.client.items.received.forEach(item => logicState.addItem(getItemName(item, logicState)));
 
     // subscribe to future checks and items
     this.client.room.on("locationsChecked", locations => logicState.addChecks(locations));
-    this.client.items.on("itemsReceived", items => logicState.addItems(items.map(item => getItemName(item, logicState))));
+    this.client.items.on("itemsReceived", items => items.forEach(item => logicState.addItem(getItemName(item, logicState))));
   }
 
   // async logItems(): Promise<void> {

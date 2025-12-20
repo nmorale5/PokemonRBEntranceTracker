@@ -57,16 +57,11 @@ export default class LogicState {
     this.emitUpdate(UpdateType.Checks);
   }
 
-  public addItems(itemNames: string[] | string, deleteFlag = false) {
-    if (typeof itemNames === "string") {
-      itemNames = [itemNames];
-    }
-    for (const item of itemNames) {
-      if (deleteFlag) {
-        this.items.delete(item);
-      } else {
-        this.items.add(item);
-      }
+  public addItem(itemName: string, deleteFlag = false) {
+    if (deleteFlag) {
+      this.items.delete(itemName);
+    } else {
+      this.items.add(itemName);
     }
     this._updateRegionAccessibility();
     this.emitUpdate(UpdateType.Items);
