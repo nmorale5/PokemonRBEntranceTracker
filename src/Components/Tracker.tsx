@@ -16,6 +16,6 @@ const Tracker = (props: { onLoggedOut: () => void }) => {
       {/*}}>Home</button>*/}
     </div>
   );
-}
+};
 
 export default Tracker;

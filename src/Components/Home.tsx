@@ -55,39 +55,42 @@ const Home = (props: { onLoggedIn: (slotData: JSONRecord, savedWarps: any) => vo
 
       <h3>Continue Rando</h3>
       <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-        {SaveHandler.instance.saveEntries.slice().reverse().map((entry, index) => (
-          <div
-            key={index}
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr 1fr 1fr auto",
-              alignItems: "center",
-              gap: "12px",
-              padding: "8px",
-              border: "1px solid #ccc",
-              borderRadius: "6px",
-            }}
-          >
-            <span>{entry.credentials.port}</span>
-            <span>{entry.credentials.name}</span>
-            <span>{new Date(entry.timeCreated).toLocaleDateString()}</span>
-
-            <button
-              onClick={async () => {
-                const success = await tryLogin({
-                  port: entry.credentials.port,
-                  name: entry.credentials.name,
-                  password: entry.credentials.password,
-                });
-                if (success) {
-                  props.onLoggedIn(ArchipelagoClient.instance.slotData!, entry.savedWarps);
-                }
+        {SaveHandler.instance.saveEntries
+          .slice()
+          .reverse()
+          .map((entry, index) => (
+            <div
+              key={index}
+              style={{
+                display: "grid",
+                gridTemplateColumns: "1fr 1fr 1fr auto",
+                alignItems: "center",
+                gap: "12px",
+                padding: "8px",
+                border: "1px solid #ccc",
+                borderRadius: "6px",
               }}
             >
-              Go
-            </button>
-          </div>
-        ))}
+              <span>{entry.credentials.port}</span>
+              <span>{entry.credentials.name}</span>
+              <span>{new Date(entry.timeCreated).toLocaleDateString()}</span>
+
+              <button
+                onClick={async () => {
+                  const success = await tryLogin({
+                    port: entry.credentials.port,
+                    name: entry.credentials.name,
+                    password: entry.credentials.password,
+                  });
+                  if (success) {
+                    props.onLoggedIn(ArchipelagoClient.instance.slotData!, entry.savedWarps);
+                  }
+                }}
+              >
+                Go
+              </button>
+            </div>
+          ))}
       </div>
     </div>
   );

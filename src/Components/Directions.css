@@ -1,9 +1,9 @@
 .Directions {
-    background-color: #eee;
-    position: absolute;
-    top: 15vh;
-    right: 0;
-    z-index: 999;
-    width: 300px;
-    height: 70vh;
+  background-color: #eee;
+  position: absolute;
+  top: 15vh;
+  right: 0;
+  z-index: 999;
+  width: 300px;
+  height: 70vh;
 }

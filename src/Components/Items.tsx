@@ -1,6 +1,5 @@
 import "./Map.css";
 import "./Items.css";
-import LogicState from "../Backend/LogicState";
 import itemIcons from "../PokemonData/ItemIcons.json";
 import TrackedState from "../Backend/TrackedState";
 

@@ -52,6 +52,11 @@ export class SaveHandler {
 
   public autosave(state: LogicState, credentials: Credentials) {
     this._sub.unsubscribe();
-    this._sub = state.updates.pipe(filter(updateType => updateType === UpdateType.Any || updateType === UpdateType.Warps), startWith(UpdateType.Any)).subscribe(_ => this.save(state, credentials));
+    this._sub = state.updates
+      .pipe(
+        filter(updateType => updateType === UpdateType.Any || updateType === UpdateType.Warps),
+        startWith(UpdateType.Any)
+      )
+      .subscribe(_ => this.save(state, credentials));
   }
 }

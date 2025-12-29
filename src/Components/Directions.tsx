@@ -14,15 +14,15 @@ const Directions = (props: {}) => {
     <div className="Directions">
       <label htmlFor="direction-from">From:</label>
       <input list="regions" id="direction-from" name="direction-from" onChange={() => setFromRegion((document.getElementById("direction-from") as HTMLInputElement).value)} />
-      <br/>
+      <br />
       <label htmlFor="direction-to">To:</label>
       <input list="regions" id="direction-to" name="direction-to" onChange={() => setToRegion((document.getElementById("direction-to") as HTMLInputElement).value)} />
       <datalist id="regions">
-        {regionList.map(region => <option value={region} key={region} />)}
+        {regionList.map(region => (
+          <option value={region} key={region} />
+        ))}
       </datalist>
-      <ol>
-        {regionList.includes(fromRegion) && regionList.includes(toRegion) && TrackedState.state.shortestPath(fromRegion, toRegion).map((warp, i) => <li key={i}>{warp.toString()}</li>)}
-      </ol>
+      <ol>{regionList.includes(fromRegion) && regionList.includes(toRegion) && TrackedState.state.shortestPath(fromRegion, toRegion).map((warp, i) => <li key={i}>{warp.toString()}</li>)}</ol>
     </div>
   );
 };
