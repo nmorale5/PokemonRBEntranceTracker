@@ -29,10 +29,12 @@ const Home = (props: { onLoggedIn: (slotData: JSONRecord, savedWarps: any) => vo
       <div className="Login">
         <button
           onClick={async () => {
+            const serverText = (document.getElementById("server") as HTMLInputElement).value;
             const portText = (document.getElementById("port") as HTMLInputElement).value;
             const playerText = (document.getElementById("player") as HTMLInputElement).value;
             const passwordText = (document.getElementById("password") as HTMLInputElement).value;
             const success = await tryLogin({
+              server: serverText,
               port: Number(portText),
               name: playerText,
               password: passwordText,
@@ -45,6 +47,8 @@ const Home = (props: { onLoggedIn: (slotData: JSONRecord, savedWarps: any) => vo
         >
           Connect
         </button>
+        <label>Server</label>
+        <input type="text" id="server" defaultValue="wss://archipelago.gg" />
         <label>Port</label>
         <input type="text" id="port" />
         <label>Slot Name</label>
@@ -77,11 +81,7 @@ const Home = (props: { onLoggedIn: (slotData: JSONRecord, savedWarps: any) => vo
 
               <button
                 onClick={async () => {
-                  const success = await tryLogin({
-                    port: entry.credentials.port,
-                    name: entry.credentials.name,
-                    password: entry.credentials.password,
-                  });
+                  const success = await tryLogin(entry.credentials);
                   if (success) {
                     props.onLoggedIn(ArchipelagoClient.instance.slotData!, entry.savedWarps);
                   }

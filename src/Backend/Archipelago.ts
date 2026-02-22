@@ -4,6 +4,7 @@ import LogicState from "./LogicState";
 const CARDKEYS = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map(num => `Card Key ${num}F`);
 
 export type Credentials = {
+  server: string;
   port: number;
   name: string;
   password: string;
@@ -47,7 +48,7 @@ export class ArchipelagoClient {
       return LoginResult.AlreadyLoggingIn; // already logging in from a different call to this function, or is already connected
     }
     this.loggingIn = true;
-    const url = "wss://archipelago.gg:" + credentials.port;
+    const url = `${credentials.server}:${credentials.port}`;
 
     try {
       await this.client.socket.connect(url); // Need to connect before logging in
